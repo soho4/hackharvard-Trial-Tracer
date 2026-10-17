@@ -2,7 +2,7 @@
 
 Working repository name: `hackharvard-clinical-trials`.
 
-This is our shared workspace for HackHarvard 2026. Clinical trials are a tentative idea; the team has not yet chosen the project scope or tech stack. Update this README after we agree on a direction.
+This is our shared workspace for HackHarvard 2026. Clinical trials are the current idea. The team has not yet chosen the project scope or tech stack. Update this README as needed.
 
 ## Getting started
 
