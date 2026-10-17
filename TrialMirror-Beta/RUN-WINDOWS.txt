@@ -1,0 +1,25 @@
+TRIALMIRROR DESIGN STUDIO - WINDOWS QUICK START
+
+1. Extract the ZIP (right-click -> Extract All). Do not run inside the ZIP.
+2. Install Python 3.10 or newer from python.org if needed. During installation check "Add Python to PATH".
+3. Open the extracted TrialMirror-Beta folder.
+4. Double-click start.bat. Windows SmartScreen, if shown: More info -> Run anyway ONLY if you trust the files.
+5. First run downloads Python dependencies. Keep the black terminal window open.
+6. Your browser should open automatically. If it does not, open Chrome and type http://127.0.0.1:8000
+7. Choose Offline Demo -> Analyze trial. Then click Design optimizer in the left sidebar.
+8. In Design optimizer, set maximum sites to 40, keep visits locked, click Generate feasible scenarios.
+9. For real data, return to Trial benchmark, choose Live ClinicalTrials.gov, enter a real NCT ID and Analyze trial. Click the original government record link and verify values. Network access to clinicaltrials.gov is required.
+10. To stop, click the terminal window and press Ctrl+C, then Y if asked.
+11. To restart, double-click start.bat again.
+
+Run tests (open PowerShell in extracted folder):
+    .venv\Scripts\python.exe -m pytest -q
+
+Troubleshooting:
+- "python not found": install Python and reopen your terminal.
+- "port already in use": close any older TrialMirror terminal, or press Ctrl+C there.
+- Browser won't connect: wait for "Uvicorn running" message in the terminal, then refresh.
+- Live API not available: check Wi-Fi / proxy; Offline Demo does not need the government website.
+- Corporate network or VPN may block requests to clinicaltrials.gov.
+
+Prototype research/education only. Registry data are reported by study sponsors and may be incomplete; matching is approximate, and the 500-record candidate sample is not exhaustive. Do not use for clinical decisions.
