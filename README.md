@@ -8,8 +8,7 @@ This is our shared workspace for HackHarvard 2026. Clinical trials are a tentati
 
 1. Accept your GitHub repository invitation.
 2. Clone this repository using its green **Code** button, then open the folder in your editor.
-3. Check [TEAM-TASKS.md](TEAM-TASKS.md), pick a task, and add your name.
-4. Add setup and run instructions here once the team chooses its tools.
+3. Add setup and run instructions here once the team chooses its tools.
 
 ## Working together
 
@@ -27,7 +26,7 @@ git push -u origin your-name/short-task
 
 On GitHub, open a pull request into `main`. Explain what changed and how you checked it, then ask a teammate to review before merging. After merging, switch back to `main` and pull before starting your next task. GitHub's web editor is also fine for small documentation edits; choose a new branch and open a pull request.
 
-Keep tasks small and mark the team list as you go. Use GitHub Issues if the team prefers them; link the issue in your pull request.
+Keep tasks small. Use GitHub Issues if the team prefers them; link the issue in your pull request.
 
 ## Repository access
 
