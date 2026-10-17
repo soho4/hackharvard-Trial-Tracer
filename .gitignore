@@ -1,0 +1,19 @@
+# Operating system and editor files
+.DS_Store
+Thumbs.db
+*~
+*.swp
+.idea/
+.vscode/
+
+# Local secrets and configuration
+.env
+.env.*
+!.env.example
+
+# Local logs and temporary files
+*.log
+tmp/
+.cache/
+
+# Add stack-specific generated files after the team chooses its tools.
