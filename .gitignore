@@ -28,3 +28,11 @@ __pycache__/
 *.egg-info/
 # Explicit safe command evidence is versioned.
 !docs/trialtrace/commands/**/*.log
+
+# Packaging caches and archived earlier local runs
+build/
+dist/
+.previous/
+# Original curl telemetry stays local (host network details).
+docs/trialtrace/source_check/logs/curl_acquire.stdout
+!docs/trialtrace/review_tests/**/*.log

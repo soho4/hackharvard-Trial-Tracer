@@ -1,0 +1,24 @@
+{
+  "label": "g2-arithmetic-mutation",
+  "command": [
+    "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/.venv/bin/python",
+    "-m",
+    "pytest",
+    "tests/test_engine.py",
+    "-k",
+    "inclusive_boundaries_and_outside_distance",
+    "-q"
+  ],
+  "cwd": "/private/var/folders/vm/bb1q66z528z8t83ytl7z3vx80000gn/T/trialtrace-mutation-mlbi3o3g",
+  "started_at": "2026-10-18T07:29:27.320953+00:00",
+  "finished_at": "2026-10-18T07:29:27.571346+00:00",
+  "elapsed_seconds": 0.250034,
+  "status": "EXIT_NONZERO",
+  "exit_code": 1,
+  "stdout_path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/docs/trialtrace/commands/20261018T072927.320953Z-g2-arithmetic-mutation-33337224/stdout.log",
+  "stderr_path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/docs/trialtrace/commands/20261018T072927.320953Z-g2-arithmetic-mutation-33337224/stderr.log",
+  "stdout_sha256": "042aa9904a2b4e5e19b09dc031ac4797456ccbe77a01281940d8e1eb02133718",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "gate_acceptance": "NOT_DETERMINED_BY_COMMAND_RECORDER",
+  "warning": "Logs are not tamper-proof; this does not establish test assertions, source review, or clinical validity."
+}

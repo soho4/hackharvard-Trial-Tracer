@@ -1,0 +1,22 @@
+{
+  "label": "configuration-safety-regression",
+  "command": [
+    ".venv/bin/python",
+    "-m",
+    "pytest",
+    "tests/test_configuration_safety.py",
+    "-q"
+  ],
+  "cwd": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace",
+  "started_at": "2026-10-18T07:32:14.893476+00:00",
+  "finished_at": "2026-10-18T07:32:15.507703+00:00",
+  "elapsed_seconds": 0.613742,
+  "status": "EXIT_ZERO",
+  "exit_code": 0,
+  "stdout_path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/docs/trialtrace/review_tests/20261018T073214.893476Z-configuration-safety-regression-108e7bbe/stdout.log",
+  "stderr_path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/docs/trialtrace/review_tests/20261018T073214.893476Z-configuration-safety-regression-108e7bbe/stderr.log",
+  "stdout_sha256": "62a4c6f50ca1b1c8559ad035a3e20dde28e7bb2f3ea910a2352d4ee6d128e06a",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "gate_acceptance": "NOT_DETERMINED_BY_COMMAND_RECORDER",
+  "warning": "Logs are not tamper-proof; this does not establish test assertions, source review, or clinical validity."
+}

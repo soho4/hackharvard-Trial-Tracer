@@ -1,0 +1,21 @@
+{
+  "label": "g1-verify-remote-sha",
+  "command": [
+    "git",
+    "ls-remote",
+    "origin",
+    "refs/heads/codex/trialtrace-core-v4"
+  ],
+  "cwd": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace",
+  "started_at": "2026-10-18T07:24:51.654617+00:00",
+  "finished_at": "2026-10-18T07:24:51.836726+00:00",
+  "elapsed_seconds": 0.181734,
+  "status": "EXIT_ZERO",
+  "exit_code": 0,
+  "stdout_path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/docs/trialtrace/commands/20261018T072451.654617Z-g1-verify-remote-sha-be57e501/stdout.log",
+  "stderr_path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/docs/trialtrace/commands/20261018T072451.654617Z-g1-verify-remote-sha-be57e501/stderr.log",
+  "stdout_sha256": "d1f284c31e60395f75b364ddf3b644d7e7e000b543ee96b29691445f5f4c8a28",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "gate_acceptance": "NOT_DETERMINED_BY_COMMAND_RECORDER",
+  "warning": "Logs are not tamper-proof; this does not establish test assertions, source review, or clinical validity."
+}

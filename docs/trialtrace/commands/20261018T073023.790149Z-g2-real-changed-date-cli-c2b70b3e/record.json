@@ -1,0 +1,33 @@
+{
+  "label": "g2-real-changed-date-cli",
+  "command": [
+    ".venv/bin/python",
+    "-m",
+    "trialtrace.cli",
+    "--anchors",
+    "examples/novel/anchors.csv",
+    "--visits",
+    "examples/novel/visits_changed.csv",
+    "--assignments",
+    "examples/novel/assignments.csv",
+    "--rule",
+    "rules/candidate_rule.json",
+    "--draft-synthetic",
+    "--source-pdf",
+    "../source_check/.sources/Prot_000.pdf",
+    "--output",
+    "examples/novel/after.json"
+  ],
+  "cwd": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace",
+  "started_at": "2026-10-18T07:30:23.790149+00:00",
+  "finished_at": "2026-10-18T07:30:23.812802+00:00",
+  "elapsed_seconds": 0.022217,
+  "status": "EXIT_NONZERO",
+  "exit_code": 1,
+  "stdout_path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/docs/trialtrace/commands/20261018T073023.790149Z-g2-real-changed-date-cli-c2b70b3e/stdout.log",
+  "stderr_path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/docs/trialtrace/commands/20261018T073023.790149Z-g2-real-changed-date-cli-c2b70b3e/stderr.log",
+  "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr_sha256": "d0c89669a72bac45d7702a6a6e8a3fd53dd8a735713fd79593ace5083184901e",
+  "gate_acceptance": "NOT_DETERMINED_BY_COMMAND_RECORDER",
+  "warning": "Logs are not tamper-proof; this does not establish test assertions, source review, or clinical validity."
+}

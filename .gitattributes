@@ -1,0 +1,5 @@
+# Preserve exact process evidence, including native tool trailing whitespace.
+docs/trialtrace/commands/**/*.log -whitespace
+docs/trialtrace/review_tests/**/*.log -whitespace
+docs/trialtrace/review/**/*.stdout -whitespace
+docs/trialtrace/review/**/*.stderr -whitespace

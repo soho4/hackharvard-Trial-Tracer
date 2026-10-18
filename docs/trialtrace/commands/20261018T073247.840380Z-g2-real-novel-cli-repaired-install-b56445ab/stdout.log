@@ -1,0 +1,1 @@
+{"status": "SUCCESS_DRAFT_ENGINEERING", "output": "examples/novel/before.json", "run_id": "25fb671285509e2132640139b0b6b5e892a50af2bc7ed14ab112868bd8580e94", "summary": {"visit_evaluations": 1, "statuses": {"PASS": 1, "POTENTIAL_DEVIATION": 0, "DATA_QUERY": 0, "NOT_EVALUABLE": 0}}, "previous_output": null}

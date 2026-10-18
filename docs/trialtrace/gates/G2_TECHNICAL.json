@@ -1,0 +1,57 @@
+{
+  "gate": "G2_TECHNICAL",
+  "state": "PASS_DRAFT_ENGINEERING",
+  "updated_at": "2026-10-18T07:37:52.737797+00:00",
+  "requirements": [
+    "I06-I10",
+    "D01-D05",
+    "C01-C02",
+    "E01-E02",
+    "E06",
+    "X02-X05"
+  ],
+  "code_commit_before_checkpoint": "22819663b5b12f9d32d90f45e8edba30a171cd13",
+  "dirty": true,
+  "code_sha256": "58a1a80115a5409160529739efe27163a81af1d1184433a20900721e57a90a9f",
+  "rule_sha256": "f36336df90a1793a80b92f48ce273488a091547110856bdcc602587ddad9e7f0",
+  "commands": [
+    {
+      "path": "docs/trialtrace/commands/20261018T072623.585031Z-g2-computed-results-tests-03232197/record.json",
+      "exit_code": 0
+    },
+    {
+      "path": "docs/trialtrace/commands/20261018T073519.572528Z-final-cli-safety-and-core-tests-68311646/record.json",
+      "exit_code": 0
+    },
+    {
+      "path": "docs/trialtrace/commands/20261018T073248.968840Z-g2-current-code-mutation-e90e1bc8/record.json",
+      "exit_code": 0
+    },
+    {
+      "path": "docs/trialtrace/commands/20261018T072927.320953Z-g2-arithmetic-mutation-33337224/record.json",
+      "exit_code": 1
+    },
+    {
+      "path": "docs/trialtrace/commands/20261018T073249.019327Z-g2-arithmetic-mutation-68242e27/record.json",
+      "exit_code": 1
+    },
+    {
+      "path": "docs/trialtrace/commands/20261018T073620.629417Z-core-current-code-actual-acceptance-4ab5c8a6/record.json",
+      "exit_code": 0
+    }
+  ],
+  "expected_vs_observed": {
+    "frozen_counts": {
+      "PASS": 4,
+      "POTENTIAL_DEVIATION": 2,
+      "DATA_QUERY": 2,
+      "NOT_EVALUABLE": 2
+    },
+    "new_file_date_change": "2032-01-06 PASS -> 2032-01-07 POTENTIAL_DEVIATION, 1 day outside",
+    "current_application_suite": "236 passed, no skips",
+    "mutation": "Temporary upper-bound +1 caused five assertion failures, exit 1; source unchanged"
+  },
+  "source_gate": "BLOCKED_PENDING_REAL_HUMAN_REVIEW",
+  "reviewed_mode": "FAIL_CLOSED; approved-mode enabling mechanism not delivered",
+  "next_allowed_work": "Finish CORE_EXPORT compatibility/reproduction and hand-back"
+}

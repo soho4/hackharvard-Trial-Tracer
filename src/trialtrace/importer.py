@@ -19,7 +19,7 @@ MAX_CELL = 10_000
 
 def _logical_records(text, name):
     """Enforce CSV quote placement (csv.reader(strict=True) alone allows stray quotes)."""
-    start, i, state = 0, 0, "start"
+    start, i, state, cell_chars = 0, 0, "start", 0
     while i < len(text):
         c = text[i]
         if c == "\r" and (i + 1 == len(text) or text[i + 1] != "\n"):
@@ -27,16 +27,21 @@ def _logical_records(text, name):
         if state == "quoted":
             if c == '"':
                 if i + 1 < len(text) and text[i + 1] == '"':
+                    cell_chars += 1
+                    if cell_chars > MAX_CELL:
+                        raise InputError("CELL_SIZE_LIMIT", "Cell exceeds 10,000 characters", file=name)
                     i += 2
                     continue
                 state = "closed"
+            else:
+                cell_chars += 1
         elif c in "\r\n":
             end = i + (2 if c == "\r" else 1)
             yield text[start:end]
-            start, i, state = end, end, "start"
+            start, i, state, cell_chars = end, end, "start", 0
             continue
         elif c == ",":
-            state = "start"
+            state, cell_chars = "start", 0
         elif c == '"':
             if state != "start":
                 raise InputError("CSV_QUOTING", "Quote inside an unquoted field", file=name)
@@ -45,6 +50,9 @@ def _logical_records(text, name):
             raise InputError("CSV_QUOTING", "Characters after a closing quote", file=name)
         else:
             state = "unquoted"
+            cell_chars += 1
+        if cell_chars > MAX_CELL:
+            raise InputError("CELL_SIZE_LIMIT", "Cell exceeds 10,000 characters", file=name)
         i += 1
     if state == "quoted":
         raise InputError("CSV_QUOTING", "Unclosed quoted field", file=name)

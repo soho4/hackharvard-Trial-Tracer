@@ -1,0 +1,96 @@
+FFFFF                                                                    [100%]
+=================================== FAILURES ===================================
+_________ test_inclusive_boundaries_and_outside_distance[2026-05-07-1] _________
+
+actual = '2026-05-07', outside = 1
+
+    @pytest.mark.parametrize("actual,outside", [("2026-05-07", 1), ("2026-05-08", 0), ("2026-05-11", 0), ("2026-05-12", 1), ("2026-05-20", 9)])
+    def test_inclusive_boundaries_and_outside_distance(actual, outside):
+>       assert calculate("2026-05-01", actual) == {
+            "target": "2026-05-08", "earliest": "2026-05-08", "latest": "2026-05-11", "actual": actual, "days_outside": outside,
+        }
+E       AssertionError: assert {'target': '2...6-05-07', ...} == {'target': '2...6-05-07', ...}
+E         
+E         Omitting 4 identical items, use -vv to show
+E         Differing items:
+E         {'latest': '2026-05-12'} != {'latest': '2026-05-11'}
+E         Use -v to get more diff
+
+tests/test_engine.py:13: AssertionError
+_________ test_inclusive_boundaries_and_outside_distance[2026-05-08-0] _________
+
+actual = '2026-05-08', outside = 0
+
+    @pytest.mark.parametrize("actual,outside", [("2026-05-07", 1), ("2026-05-08", 0), ("2026-05-11", 0), ("2026-05-12", 1), ("2026-05-20", 9)])
+    def test_inclusive_boundaries_and_outside_distance(actual, outside):
+>       assert calculate("2026-05-01", actual) == {
+            "target": "2026-05-08", "earliest": "2026-05-08", "latest": "2026-05-11", "actual": actual, "days_outside": outside,
+        }
+E       AssertionError: assert {'target': '2...6-05-08', ...} == {'target': '2...6-05-08', ...}
+E         
+E         Omitting 4 identical items, use -vv to show
+E         Differing items:
+E         {'latest': '2026-05-12'} != {'latest': '2026-05-11'}
+E         Use -v to get more diff
+
+tests/test_engine.py:13: AssertionError
+_________ test_inclusive_boundaries_and_outside_distance[2026-05-11-0] _________
+
+actual = '2026-05-11', outside = 0
+
+    @pytest.mark.parametrize("actual,outside", [("2026-05-07", 1), ("2026-05-08", 0), ("2026-05-11", 0), ("2026-05-12", 1), ("2026-05-20", 9)])
+    def test_inclusive_boundaries_and_outside_distance(actual, outside):
+>       assert calculate("2026-05-01", actual) == {
+            "target": "2026-05-08", "earliest": "2026-05-08", "latest": "2026-05-11", "actual": actual, "days_outside": outside,
+        }
+E       AssertionError: assert {'target': '2...6-05-11', ...} == {'target': '2...6-05-11', ...}
+E         
+E         Omitting 4 identical items, use -vv to show
+E         Differing items:
+E         {'latest': '2026-05-12'} != {'latest': '2026-05-11'}
+E         Use -v to get more diff
+
+tests/test_engine.py:13: AssertionError
+_________ test_inclusive_boundaries_and_outside_distance[2026-05-12-1] _________
+
+actual = '2026-05-12', outside = 1
+
+    @pytest.mark.parametrize("actual,outside", [("2026-05-07", 1), ("2026-05-08", 0), ("2026-05-11", 0), ("2026-05-12", 1), ("2026-05-20", 9)])
+    def test_inclusive_boundaries_and_outside_distance(actual, outside):
+>       assert calculate("2026-05-01", actual) == {
+            "target": "2026-05-08", "earliest": "2026-05-08", "latest": "2026-05-11", "actual": actual, "days_outside": outside,
+        }
+E       AssertionError: assert {'target': '2...6-05-12', ...} == {'target': '2...6-05-12', ...}
+E         
+E         Omitting 3 identical items, use -vv to show
+E         Differing items:
+E         {'latest': '2026-05-12'} != {'latest': '2026-05-11'}
+E         {'days_outside': 0} != {'days_outside': 1}
+E         Use -v to get more diff
+
+tests/test_engine.py:13: AssertionError
+_________ test_inclusive_boundaries_and_outside_distance[2026-05-20-9] _________
+
+actual = '2026-05-20', outside = 9
+
+    @pytest.mark.parametrize("actual,outside", [("2026-05-07", 1), ("2026-05-08", 0), ("2026-05-11", 0), ("2026-05-12", 1), ("2026-05-20", 9)])
+    def test_inclusive_boundaries_and_outside_distance(actual, outside):
+>       assert calculate("2026-05-01", actual) == {
+            "target": "2026-05-08", "earliest": "2026-05-08", "latest": "2026-05-11", "actual": actual, "days_outside": outside,
+        }
+E       AssertionError: assert {'target': '2...6-05-20', ...} == {'target': '2...6-05-20', ...}
+E         
+E         Omitting 3 identical items, use -vv to show
+E         Differing items:
+E         {'latest': '2026-05-12'} != {'latest': '2026-05-11'}
+E         {'days_outside': 8} != {'days_outside': 9}
+E         Use -v to get more diff
+
+tests/test_engine.py:13: AssertionError
+=========================== short test summary info ============================
+FAILED tests/test_engine.py::test_inclusive_boundaries_and_outside_distance[2026-05-07-1]
+FAILED tests/test_engine.py::test_inclusive_boundaries_and_outside_distance[2026-05-08-0]
+FAILED tests/test_engine.py::test_inclusive_boundaries_and_outside_distance[2026-05-11-0]
+FAILED tests/test_engine.py::test_inclusive_boundaries_and_outside_distance[2026-05-12-1]
+FAILED tests/test_engine.py::test_inclusive_boundaries_and_outside_distance[2026-05-20-9]
+5 failed, 20 deselected in 0.03s

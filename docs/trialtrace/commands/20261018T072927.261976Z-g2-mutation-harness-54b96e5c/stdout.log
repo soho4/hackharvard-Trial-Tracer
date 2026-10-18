@@ -1,0 +1,14 @@
+{
+  "status": "MUTATION_DETECTED_BY_ASSERTIONS",
+  "mutation": {
+    "from": "latest = target + timedelta(days=upper_days)",
+    "to": "latest = target + timedelta(days=upper_days + 1)"
+  },
+  "original_engine_sha256": "0945d9216b34644478d370ffacd08b542d65579ba7d79bf2b8cc2ec49cbd22d9",
+  "mutant_engine_sha256": "4e525448acec5aff46e4c7a48aabb19a328299f21725e1cfad28ab7b35a52c1a",
+  "command_record": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/docs/trialtrace/commands/20261018T072927.320953Z-g2-arithmetic-mutation-33337224/record.json",
+  "exit_code": 1,
+  "expected": "Five boundary calculation assertions fail, exit 1; no syntax/import failure",
+  "observed_assertion_failure": true,
+  "implementation_unchanged": true
+}

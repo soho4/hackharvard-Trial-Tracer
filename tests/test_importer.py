@@ -92,6 +92,17 @@ def test_invalid_encoding_nul_quoting_or_row_width_blocks(records, write_inputs,
     assert_structural_error(paths)
 
 
+@pytest.mark.parametrize("bad_cell", [b'bad"quote', b'"closed"trailing'])
+def test_quote_placement_is_rejected_even_when_column_count_matches(records, write_inputs, bad_cell):
+    paths = write_inputs(records)
+    header, body = paths["visits.csv"].read_bytes().split(b"\n", 1)
+    cells = body.rstrip(b"\n").split(b",")
+    cells[3] = bad_cell
+    assert len(cells) == 10
+    paths["visits.csv"].write_bytes(header + b"\n" + b",".join(cells) + b"\n")
+    assert_structural_error(paths)
+
+
 @pytest.mark.parametrize("raw", [b"", b" ", b"\r\n\t\n", b"\xef\xbb\xbf"])
 def test_empty_or_whitespace_only_files_are_structural_failures(records, write_inputs, raw):
     paths = write_inputs(records)
@@ -151,6 +162,16 @@ def test_cell_at_limit_and_one_over(records, write_inputs):
     assert len(tables["assignments.csv"]["records"][0]["raw_record"]["mapping_note"]) == 10000
     records["assignments.csv"][0]["mapping_note"] += "x"
     assert_structural_error(write_inputs(records))
+
+
+@pytest.mark.parametrize("content", ["x" * 140000, '"' * 140000])
+def test_extreme_cell_reports_declared_cell_limit_not_csv_library_failure(records, write_inputs, content):
+    records["assignments.csv"][0]["mapping_note"] = content
+    paths = write_inputs(records)
+    assert paths["assignments.csv"].stat().st_size < 1000000
+    with pytest.raises(InputError) as error:
+        load_inputs(paths)
+    assert error.value.code == "CELL_SIZE_LIMIT"
 
 
 def test_record_limit_at_500_then_501(records, write_inputs):

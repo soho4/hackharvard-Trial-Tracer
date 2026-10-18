@@ -1,18 +1,22 @@
 {
   "spec_version": "4.0",
-  "status": "G2_TECHNICAL_NEXT",
+  "status": "CORE_EXPORT_VALIDATION",
   "repo": "https://github.com/soho4/hackharvard-Trial-Tracer",
   "branch": "codex/trialtrace-core-v4",
-  "commit": null,
-  "dirty_source_digest": "3fa007b9f43b0854a0b570448b7f69e1bb98028232383921947f0905345c6572",
+  "commit": "22819663b5b12f9d32d90f45e8edba30a171cd13",
+  "dirty_source_digest": "58a1a80115a5409160529739efe27163a81af1d1184433a20900721e57a90a9f",
   "source_acceptance": "BLOCKED_PENDING_HUMAN_REVIEW",
   "engineering": {
     "G1_TECHNICAL": "PASS",
-    "G2_TECHNICAL": "NOT_STARTED",
-    "CORE_EXPORT": "NOT_STARTED",
+    "G2_TECHNICAL": "PASS",
+    "CORE_EXPORT": "ACTUAL_EXPORT_VALIDATED_FINAL_PACKAGE_IN_PROGRESS",
     "G3": "NOT_AUTHORIZED_THIS_SESSION"
   },
   "next_action": "Run preflight against the actual selected checkout",
   "last_command_record": null,
-  "updated_at": "2026-10-18T07:23:21.419663+00:00"
+  "updated_at": "2026-10-18T07:37:52.737797+00:00",
+  "push": {
+    "status": "REMOTE_SHA_VERIFIED",
+    "sha": "22819663b5b12f9d32d90f45e8edba30a171cd13"
+  }
 }

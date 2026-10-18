@@ -2,7 +2,10 @@
 
 from collections import defaultdict
 from datetime import date
+import json
 import re
+
+from .errors import InputError
 
 KEYS = {"anchors.csv": "anchor_id", "visits.csv": "visit_id", "assignments.csv": "assignment_id"}
 SUPPORTED = {
@@ -22,9 +25,22 @@ def evidence(table, record):
     return {"source_file": table["name"], "sha256": table["sha256"], **record}
 
 
-def inspect_inputs(tables):
+def inspect_inputs(tables, *, max_evidence_bytes=None):
     """Return per-row issues, complete source accounting and indexed visit joins."""
     issues, indexes, by_id, accounting = {}, {}, {}, {}
+    evidence_sizes, evidence_bytes = {}, 0
+
+    def bounded_evidence(table, record):
+        nonlocal evidence_bytes
+        item = evidence(table, record)
+        if max_evidence_bytes is not None:
+            key = (table["name"], record["record_ordinal"])
+            if key not in evidence_sizes:
+                evidence_sizes[key] = len(json.dumps(item, ensure_ascii=False, sort_keys=True, separators=(",", ":")).encode("utf-8"))
+            evidence_bytes += evidence_sizes[key]
+            if evidence_bytes > max_evidence_bytes:
+                raise InputError("OUTPUT_SIZE_LIMIT", "Full evidence exceeds the 2,000,000-byte viewer limit; no evidence was truncated")
+        return item
     for name, table in tables.items():
         index, ids = defaultdict(list), defaultdict(list)
         for rec in table["records"]:
@@ -67,17 +83,17 @@ def inspect_inputs(tables):
                 if not row["mapping_note"].strip():
                     add("MISSING_MAPPING_NOTE", "DATA_QUERY", "mapping_note")
             issues[(name, ordinal)] = found
-            accounting[name]["issues"].extend({**item, "evidence": evidence(table, rec)} for item in found)
+            accounting[name]["issues"].extend({**item, "evidence": bounded_evidence(table, rec)} for item in found)
 
     visits, referenced = [], {name: set() for name in tables}
     for visit in tables["visits.csv"]["records"]:
         row, ordinal = visit["raw_record"], visit["record_ordinal"]
         problems = list(issues[("visits.csv", ordinal)])
         # Own row first; duplicate visit rows remain inspectable as conflicts.
-        ev = [evidence(tables["visits.csv"], visit)]
+        ev = [bounded_evidence(tables["visits.csv"], visit)]
         for duplicate in indexes["visits.csv"][(row["study_id"], row["visit_id"])]:
             if duplicate["record_ordinal"] != ordinal:
-                ev.append(evidence(tables["visits.csv"], duplicate))
+                ev.append(bounded_evidence(tables["visits.csv"], duplicate))
         joined = {}
         for name, key in (("anchors.csv", "anchor_id"), ("assignments.csv", "assignment_id")):
             matches = indexes[name].get((row["study_id"], row[key]), [])
@@ -90,14 +106,14 @@ def inspect_inputs(tables):
                 relation_issues.append({"code": "AMBIGUOUS_" + key.upper(), "status": "DATA_QUERY", "field": key})
             for rec in candidates:
                 referenced[name].add(rec["record_ordinal"])
-                ev.append(evidence(tables[name], rec))
+                ev.append(bounded_evidence(tables[name], rec))
                 problems.extend({**item, "source_file": name} for item in issues[(name, rec["record_ordinal"])])
                 for field in ("study_id", "participant_id", "site_id"):
                     if rec["raw_record"][field] != row[field]:
                         relation_issues.append({"code": "MISMATCH_" + field.upper(), "status": "DATA_QUERY", "field": field, "source_file": name, "related_record_ordinal": rec["record_ordinal"]})
             for item in relation_issues:
                 problems.append(item)
-                accounting["visits.csv"]["issues"].append({**item, "record_ordinal": ordinal, "evidence": evidence(tables["visits.csv"], visit)})
+                accounting["visits.csv"]["issues"].append({**item, "record_ordinal": ordinal, "evidence": bounded_evidence(tables["visits.csv"], visit)})
             joined[name] = matches[0] if len(matches) == 1 else None
         visits.append({"record": visit, "problems": problems, "evidence": ev, "joined": joined})
     for name, table in tables.items():
