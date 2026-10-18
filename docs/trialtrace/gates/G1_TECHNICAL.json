@@ -1,0 +1,38 @@
+{
+  "gate": "G1_TECHNICAL",
+  "state": "PASS",
+  "updated_at": "2026-10-18T07:23:21.419663+00:00",
+  "requirements": [
+    "P01-P09",
+    "I01-I05",
+    "I06-I10: diagnostics only; timing applicability next"
+  ],
+  "code_commit_before_checkpoint": "b173f377a866b5441a696a0281a98a9a5676a92c",
+  "dirty": true,
+  "source_digest": "3fa007b9f43b0854a0b570448b7f69e1bb98028232383921947f0905345c6572",
+  "commands": [
+    {
+      "record": "docs/trialtrace/commands/20261018T072219.340618Z-g1-parser-tests-08d51b76/record.json",
+      "exit_code": 0
+    },
+    {
+      "record": "docs/trialtrace/commands/20261018T072246.946888Z-g1-novel-import-cli-9e4ba27c/record.json",
+      "exit_code": 0
+    },
+    {
+      "record": "docs/trialtrace/commands/20261018T072247.074589Z-g1-corrupt-import-cli-861f4219/record.json",
+      "exit_code": 2
+    },
+    {
+      "record": "docs/trialtrace/commands/20261018T072320.979339Z-g1-required-tests-f7aff91a/record.json",
+      "exit_code": 0
+    }
+  ],
+  "expected_vs_observed": "55 required parser/relationship tests pass; actual novel CLI input has 1 visit and 1 record per role, exact hashes/ordinals and no issues; malformed header exits 2 with structured error.",
+  "source_review": "PENDING; G0 not passed",
+  "next_allowed_work": "G2_TECHNICAL draft arithmetic and applicability",
+  "limitations": [
+    "No main calculation/export implemented at this checkpoint.",
+    "No human source interpretation review."
+  ]
+}

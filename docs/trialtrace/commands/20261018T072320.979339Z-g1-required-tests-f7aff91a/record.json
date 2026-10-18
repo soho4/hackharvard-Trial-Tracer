@@ -1,0 +1,23 @@
+{
+  "label": "g1-required-tests",
+  "command": [
+    ".venv/bin/python",
+    "-m",
+    "pytest",
+    "tests/test_importer.py",
+    "tests/test_relationships.py",
+    "-q"
+  ],
+  "cwd": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace",
+  "started_at": "2026-10-18T07:23:20.979339+00:00",
+  "finished_at": "2026-10-18T07:23:21.380245+00:00",
+  "elapsed_seconds": 0.400249,
+  "status": "EXIT_ZERO",
+  "exit_code": 0,
+  "stdout_path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/docs/trialtrace/commands/20261018T072320.979339Z-g1-required-tests-f7aff91a/stdout.log",
+  "stderr_path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/docs/trialtrace/commands/20261018T072320.979339Z-g1-required-tests-f7aff91a/stderr.log",
+  "stdout_sha256": "c5303614c1eb129e28f99aa2dfa5acbc5adda4b6d8133b24f34c971af913547c",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "gate_acceptance": "NOT_DETERMINED_BY_COMMAND_RECORDER",
+  "warning": "Logs are not tamper-proof; this does not establish test assertions, source review, or clinical validity."
+}

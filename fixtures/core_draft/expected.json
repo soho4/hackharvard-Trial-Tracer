@@ -1,0 +1,99 @@
+{
+  "basis": "Pre-implementation authored draft engineering expectations. Not human source review or measured clinical accuracy.",
+  "run_mode": "DRAFT_ENGINEERING",
+  "rule_sha256": "f36336df90a1793a80b92f48ce273488a091547110856bdcc602587ddad9e7f0",
+  "expected_totals": {
+    "DATA_QUERY": 2,
+    "NOT_EVALUABLE": 2,
+    "PASS": 4,
+    "POTENTIAL_DEVIATION": 2
+  },
+  "findings": [
+    {
+      "visit_id": "H01",
+      "status": "PASS",
+      "calculation": {
+        "target": "2026-05-08",
+        "earliest": "2026-05-08",
+        "latest": "2026-05-11",
+        "actual": "2026-05-08",
+        "days_outside": 0
+      }
+    },
+    {
+      "visit_id": "H02",
+      "status": "PASS",
+      "calculation": {
+        "target": "2026-05-08",
+        "earliest": "2026-05-08",
+        "latest": "2026-05-11",
+        "actual": "2026-05-11",
+        "days_outside": 0
+      }
+    },
+    {
+      "visit_id": "H03",
+      "status": "POTENTIAL_DEVIATION",
+      "calculation": {
+        "target": "2026-05-08",
+        "earliest": "2026-05-08",
+        "latest": "2026-05-11",
+        "actual": "2026-05-12",
+        "days_outside": 1
+      }
+    },
+    {
+      "visit_id": "H04",
+      "status": "POTENTIAL_DEVIATION",
+      "calculation": {
+        "target": "2026-05-08",
+        "earliest": "2026-05-08",
+        "latest": "2026-05-11",
+        "actual": "2026-05-07",
+        "days_outside": 1
+      }
+    },
+    {
+      "visit_id": "H05",
+      "status": "DATA_QUERY",
+      "calculation": null
+    },
+    {
+      "visit_id": "H06",
+      "status": "PASS",
+      "calculation": {
+        "target": "2026-05-10",
+        "earliest": "2026-05-10",
+        "latest": "2026-05-13",
+        "actual": "2026-05-10",
+        "days_outside": 0
+      }
+    },
+    {
+      "visit_id": "H07",
+      "status": "NOT_EVALUABLE",
+      "calculation": null
+    },
+    {
+      "visit_id": "H08",
+      "status": "DATA_QUERY",
+      "calculation": null
+    },
+    {
+      "visit_id": "H09",
+      "status": "NOT_EVALUABLE",
+      "calculation": null
+    },
+    {
+      "visit_id": "H10",
+      "status": "PASS",
+      "calculation": {
+        "target": "2028-02-29",
+        "earliest": "2028-02-29",
+        "latest": "2028-03-03",
+        "actual": "2028-02-29",
+        "days_outside": 0
+      }
+    }
+  ]
+}

@@ -17,3 +17,14 @@ tmp/
 .cache/
 
 # Add stack-specific generated files after the team chooses its tools.
+
+# TrialTrace local-only inputs, source PDFs, personal handoff and runtime
+trialtrace_handoff/
+.sources/
+source_review.completed.json
+.venv/
+__pycache__/
+.pytest_cache/
+*.egg-info/
+# Explicit safe command evidence is versioned.
+!docs/trialtrace/commands/**/*.log

@@ -1,0 +1,27 @@
+
+==================================== ERRORS ====================================
+____________________ ERROR collecting tests/test_engine.py _____________________
+ImportError while importing test module '/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/tests/test_engine.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/importlib/__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests/test_engine.py:7: in <module>
+    from trialtrace.engine import calculate, validate_rule
+E   ModuleNotFoundError: No module named 'trialtrace.engine'
+_______________ ERROR collecting tests/test_frozen_acceptance.py _______________
+ImportError while importing test module '/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/tests/test_frozen_acceptance.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/importlib/__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests/test_frozen_acceptance.py:8: in <module>
+    from trialtrace.exporter import build_bundle, validate_bundle
+E   ModuleNotFoundError: No module named 'trialtrace.exporter'
+=========================== short test summary info ============================
+ERROR tests/test_engine.py
+ERROR tests/test_frozen_acceptance.py
+!!!!!!!!!!!!!!!!!!! Interrupted: 2 errors during collection !!!!!!!!!!!!!!!!!!!!
+2 errors in 0.06s

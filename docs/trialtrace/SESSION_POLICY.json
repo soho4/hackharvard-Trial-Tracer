@@ -1,0 +1,40 @@
+{
+  "version": "4.0",
+  "session_mode": "CORE_THEN_REPORT",
+  "primary_builder": "Codex",
+  "allowed_technical_units": [
+    "PREFLIGHT",
+    "G0_SOURCE_ACQUISITION_ONLY",
+    "G1_TECHNICAL",
+    "G2_TECHNICAL",
+    "CORE_EXPORT"
+  ],
+  "routine_technical_confirmation_required": false,
+  "advance_only_after_executed_required_checks": true,
+  "source_acceptance_requires_real_independent_review_and_integrator": true,
+  "draft_work_while_source_pending": true,
+  "draft_work_is_source_approval": false,
+  "frontend_in_first_session": false,
+  "automatic_public_deployment": false,
+  "new_billable_services": false,
+  "git": {
+    "target": "user-selected existing TrialTrace checkout; resolve actual origin",
+    "branch_suggestion": "codex/trialtrace-core-v4",
+    "commit_safe_explicit_paths": true,
+    "push_verified_feature_branch_if_authenticated": true,
+    "merge_default_branch": false,
+    "force_push": false,
+    "change_repo_visibility": false
+  },
+  "stop_when": [
+    "CORE_EXPORT completed and evidence bundle prepared",
+    "no permitted independent work remains",
+    "nondelegated interpretation/scope/security decision required",
+    "environment or platform needs intervention"
+  ],
+  "source_acceptance_initial": "BLOCKED_PENDING_RETRIEVAL_AND_HUMAN_REVIEW",
+  "deadline_from_user_material": "2026-10-18T08:00:00-04:00",
+  "deadline_is_not_permission_to_invent_results": true,
+  "sleep_constraint_hours": 4,
+  "do_not_reuse_old_timetable": true
+}

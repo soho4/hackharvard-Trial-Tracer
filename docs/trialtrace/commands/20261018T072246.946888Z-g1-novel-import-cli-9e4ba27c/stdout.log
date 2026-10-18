@@ -1,0 +1,96 @@
+{
+  "stage": "IMPORT_ONLY_NO_TIMING",
+  "tables": {
+    "anchors.csv": {
+      "name": "anchors.csv",
+      "display_name": "anchors.csv",
+      "sha256": "5e61be512e024f2abc02355186f995c481fe366136d31668481c3af15f731337",
+      "bom": false,
+      "byte_count": 168,
+      "records": [
+        {
+          "record_ordinal": 1,
+          "raw_record": {
+            "study_id": "NCT04470427",
+            "participant_id": "SYNTH-RIVER-41",
+            "site_id": "SYNTH-SITE-8",
+            "anchor_id": "SYNTH-DOSE-41",
+            "anchor_code": "OL_D1",
+            "anchor_kind": "ACTUAL_VACCINATION",
+            "anchor_date": "2031-12-27"
+          },
+          "raw_csv": "NCT04470427,SYNTH-RIVER-41,SYNTH-SITE-8,SYNTH-DOSE-41,OL_D1,ACTUAL_VACCINATION,2031-12-27\n"
+        }
+      ]
+    },
+    "visits.csv": {
+      "name": "visits.csv",
+      "display_name": "visits.csv",
+      "sha256": "bf9282afa71bc6480a9d62b24a5925ea39deb7c280dba2de3c1bb17bfeafc97d",
+      "bom": false,
+      "byte_count": 238,
+      "records": [
+        {
+          "record_ordinal": 1,
+          "raw_record": {
+            "study_id": "NCT04470427",
+            "participant_id": "SYNTH-RIVER-41",
+            "site_id": "SYNTH-SITE-8",
+            "visit_id": "SYNTH-CALL-41",
+            "visit_code": "OL_D8",
+            "event_kind": "SAFETY_PHONE_CALL",
+            "actual_date": "2032-01-06",
+            "visit_status": "COMPLETED",
+            "anchor_id": "SYNTH-DOSE-41",
+            "assignment_id": "SYNTH-MAP-41"
+          },
+          "raw_csv": "NCT04470427,SYNTH-RIVER-41,SYNTH-SITE-8,SYNTH-CALL-41,OL_D8,SAFETY_PHONE_CALL,2032-01-06,COMPLETED,SYNTH-DOSE-41,SYNTH-MAP-41\n"
+        }
+      ]
+    },
+    "assignments.csv": {
+      "name": "assignments.csv",
+      "display_name": "assignments.csv",
+      "sha256": "972ab8ff63b14b27b4d962d3ad78dfd5575284481938d019529b5ad9d1b26fe7",
+      "bom": false,
+      "byte_count": 260,
+      "records": [
+        {
+          "record_ordinal": 1,
+          "raw_record": {
+            "assignment_id": "SYNTH-MAP-41",
+            "study_id": "NCT04470427",
+            "participant_id": "SYNTH-RIVER-41",
+            "site_id": "SYNTH-SITE-8",
+            "rule_version": "A10_DRAFT_2",
+            "schedule_code": "TABLE21",
+            "mapping_status": "DRAFT_SYNTHETIC",
+            "mapping_note": "New synthetic engineering case; source interpretation remains pending"
+          },
+          "raw_csv": "SYNTH-MAP-41,NCT04470427,SYNTH-RIVER-41,SYNTH-SITE-8,A10_DRAFT_2,TABLE21,DRAFT_SYNTHETIC,New synthetic engineering case; source interpretation remains pending\n"
+        }
+      ]
+    }
+  },
+  "input_accounting": {
+    "anchors.csv": {
+      "record_count": 1,
+      "issues": [],
+      "referenced_record_count": 1,
+      "unreferenced_record_ordinals": []
+    },
+    "visits.csv": {
+      "record_count": 1,
+      "issues": [],
+      "referenced_record_count": 1,
+      "unreferenced_record_ordinals": []
+    },
+    "assignments.csv": {
+      "record_count": 1,
+      "issues": [],
+      "referenced_record_count": 1,
+      "unreferenced_record_ordinals": []
+    }
+  },
+  "visit_evaluations": 1
+}

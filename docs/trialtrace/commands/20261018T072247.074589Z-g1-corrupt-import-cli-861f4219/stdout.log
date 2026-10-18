@@ -1,0 +1,1 @@
+{"status": "FAILED", "diagnostic": {"code": "INVALID_HEADER", "message": "Headers must contain each required name exactly once", "file": "visits.csv"}}
