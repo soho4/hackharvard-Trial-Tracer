@@ -1,0 +1,46 @@
+{
+  "status": "PASS",
+  "completed_at": "2026-10-18T08:25:44.680788+00:00",
+  "basis": "Independent synthetic engineering challenge. Literal calendar expectations; no human or clinical source review.",
+  "execution": "Real current-source CLI subprocess, using actual novel UTF-8 BOM/CRLF/reordered-header CSV files.",
+  "visits": 24,
+  "status_counts": {
+    "PASS": 9,
+    "POTENTIAL_DEVIATION": 5,
+    "DATA_QUERY": 7,
+    "NOT_EVALUABLE": 3
+  },
+  "checks": [
+    "14 literal calendar cases including century leap rules and representable bounds",
+    "10 uncertainty/relationship cases",
+    "All source rows and orphan issues accounted",
+    "Every evidence row and SHA matches actual input bytes",
+    "Byte-identical repeated output"
+  ],
+  "cli_command": [
+    "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/.venv/bin/python",
+    "-m",
+    "trialtrace.cli",
+    "--anchors",
+    "docs/trialtrace/review/g3_challenge/actual_run/inputs/unfamiliar-upload-31.csv",
+    "--visits",
+    "docs/trialtrace/review/g3_challenge/actual_run/inputs/unfamiliar-upload-32.csv",
+    "--assignments",
+    "docs/trialtrace/review/g3_challenge/actual_run/inputs/unfamiliar-upload-33.csv",
+    "--rule",
+    "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/rules/candidate_rule.json",
+    "--draft-synthetic",
+    "--output",
+    "docs/trialtrace/review/g3_challenge/actual_run/actual_bundle.json"
+  ],
+  "cli_exit_code": 0,
+  "input_sha256": {
+    "anchors.csv": "6921a601c073e7cce3d048eb539217d4b9d1262d29e4e26e6770e620e43e2c0d",
+    "visits.csv": "b867eb58e467b35c61dbf852b8c7e485f9829368e0496b979d8467fabf8566ba",
+    "assignments.csv": "91ef6bee7456eef3fa99db4c66c5a4905553c7816c8e5a90ed2fb80d1e039156"
+  },
+  "rule_sha256": "f36336df90a1793a80b92f48ce273488a091547110856bdcc602587ddad9e7f0",
+  "code_sha256": "eb7350f8c7adef275604cfc03b2c27fe8d1c0dd0b4a794f9bf39e41bbc80ebc2",
+  "output_sha256": "f7b659cc518614455c3e3c482955f354e7eb4b0aaae06a0707f9628b0aa71592",
+  "run_id": "31fc959c7adaec9e464a9bd0f43fef0a3495d0f078adc73c384ad53583d383f8"
+}

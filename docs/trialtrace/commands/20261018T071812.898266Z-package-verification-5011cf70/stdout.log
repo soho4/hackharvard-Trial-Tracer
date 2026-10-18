@@ -1,0 +1,6 @@
+{
+  "status": "PASS",
+  "checked_files": 171,
+  "errors": [],
+  "meaning": "File-byte consistency with this manifest only; not authenticity or application/source approval."
+}

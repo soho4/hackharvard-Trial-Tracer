@@ -1,0 +1,56 @@
+{
+  "ready_for_draft_check": false,
+  "missing_roles": [
+    "assignments.csv"
+  ],
+  "unexpected_roles": [],
+  "configuration_problems": [],
+  "files": [
+    {
+      "role": "anchors.csv",
+      "state": "REJECTED",
+      "display_name": "bad-anchors.csv",
+      "byte_count": 15,
+      "sha256": "5681d04ecf32779cc97147ee153756b590eccd905331b85240c88f4154bd31ec",
+      "bom": false,
+      "record_count": null,
+      "problems": [
+        {
+          "code": "INVALID_HEADER",
+          "message": "Headers must contain each required name exactly once",
+          "file": "anchors.csv"
+        }
+      ]
+    },
+    {
+      "role": "visits.csv",
+      "state": "REJECTED",
+      "display_name": "bad-visits.csv",
+      "byte_count": 1,
+      "sha256": "a8100ae6aa1940d0b663bb31cd466142ebbdbd5187131b92d93818987832eb89",
+      "bom": false,
+      "record_count": null,
+      "problems": [
+        {
+          "code": "INVALID_UTF8",
+          "message": "Input is not UTF-8",
+          "file": "visits.csv"
+        }
+      ]
+    },
+    {
+      "role": "assignments.csv",
+      "state": "MISSING",
+      "display_name": null,
+      "byte_count": null,
+      "sha256": null,
+      "bom": null,
+      "record_count": null,
+      "problems": []
+    }
+  ],
+  "input_accounting": null,
+  "relationship_summary": null,
+  "inspection_problems": [],
+  "timing_evaluated": false
+}

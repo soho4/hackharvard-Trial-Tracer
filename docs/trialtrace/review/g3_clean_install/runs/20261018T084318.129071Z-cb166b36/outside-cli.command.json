@@ -1,0 +1,25 @@
+{
+  "command": [
+    "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/g3_clean_env/bin/python",
+    "-I",
+    "-m",
+    "trialtrace.cli",
+    "--draft-synthetic",
+    "--anchors",
+    "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/examples/browser/outside/anchors.csv",
+    "--visits",
+    "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/examples/browser/outside/visits.csv",
+    "--assignments",
+    "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/examples/browser/outside/assignments.csv",
+    "--rule",
+    "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/rules/candidate_rule.json",
+    "--output",
+    "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/docs/trialtrace/review/g3_clean_install/runs/20261018T084318.129071Z-cb166b36/outside-cli.json",
+    "--source-pdf",
+    "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/source_check/.sources/Prot_000.pdf"
+  ],
+  "cwd": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work",
+  "exit_code": 0,
+  "stdout_sha256": "1023ff849522d1746ea2ab2a6f5a1003af2b931574d71d003d28f10f7e7210f1",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

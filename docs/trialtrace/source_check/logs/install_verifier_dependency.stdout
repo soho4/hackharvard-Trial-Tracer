@@ -1,0 +1,6 @@
+Collecting PyMuPDF==1.26.7
+  Downloading pymupdf-1.26.7-cp310-abi3-macosx_11_0_arm64.whl.metadata (3.4 kB)
+Downloading pymupdf-1.26.7-cp310-abi3-macosx_11_0_arm64.whl (22.5 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 22.5/22.5 MB 4.6 MB/s eta 0:00:00
+Installing collected packages: PyMuPDF
+Successfully installed PyMuPDF-1.26.7

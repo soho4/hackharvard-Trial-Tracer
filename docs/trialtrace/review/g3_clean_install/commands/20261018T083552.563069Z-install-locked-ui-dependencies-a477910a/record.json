@@ -1,0 +1,23 @@
+{
+  "label": "install-locked-ui-dependencies",
+  "command": [
+    "../g3_clean_env/bin/python",
+    "-m",
+    "pip",
+    "install",
+    "-r",
+    "requirements-ui.lock"
+  ],
+  "cwd": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace",
+  "started_at": "2026-10-18T08:35:52.563069+00:00",
+  "finished_at": "2026-10-18T08:36:02.654375+00:00",
+  "elapsed_seconds": 10.090867,
+  "status": "EXIT_ZERO",
+  "exit_code": 0,
+  "stdout_path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/docs/trialtrace/review/g3_clean_install/commands/20261018T083552.563069Z-install-locked-ui-dependencies-a477910a/stdout.log",
+  "stderr_path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/docs/trialtrace/review/g3_clean_install/commands/20261018T083552.563069Z-install-locked-ui-dependencies-a477910a/stderr.log",
+  "stdout_sha256": "25ed571616d03b9a98bc3d80d2242bfb473c1e95b76c15e348f896fe874be579",
+  "stderr_sha256": "4e077e0484c6a88d5872943356747eab9a7f8c6a5c8f92c1202b4a68bfcebfcb",
+  "gate_acceptance": "NOT_DETERMINED_BY_COMMAND_RECORDER",
+  "warning": "Logs are not tamper-proof; this does not establish test assertions, source review, or clinical validity."
+}

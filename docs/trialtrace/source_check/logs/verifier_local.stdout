@@ -1,0 +1,22 @@
+{
+  "url": "https://cdn.clinicaltrials.gov/large-docs/27/NCT04470427/Prot_000.pdf",
+  "checked_at": "2026-10-18T07:19:33.095798+00:00",
+  "acquisition": "USER_SUPPLIED_LOCAL_COPY_REQUIRES_ORIGIN_REVIEW",
+  "status": "LOCAL_PDF_IDENTITY_CHECKED",
+  "sha256": "da946b1ae23d40c41b332f1d0cb3311f0634e57009b4a37b9c6d6c60ee8bf186",
+  "byte_count": 2728675,
+  "page_count": 193,
+  "checks": {
+    "study_identity": true,
+    "protocol_identity": true,
+    "amendment_identity": true,
+    "document_date": true,
+    "table21_present": true,
+    "anchor_and_event_present": true,
+    "allowance_present": true,
+    "phone_call_context": true
+  },
+  "semantic_review": "PENDING_HUMAN_REVIEW",
+  "limitation": "Identity tokens are not proof of table interpretation, document authenticity, or clinical validity.",
+  "pdf_path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/source_check/.sources/Prot_000.pdf"
+}

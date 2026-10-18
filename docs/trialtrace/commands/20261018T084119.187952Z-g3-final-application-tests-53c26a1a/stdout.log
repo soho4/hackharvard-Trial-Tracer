@@ -1,0 +1,386 @@
+........................................................................ [ 27%]
+........................................................................ [ 54%]
+........................................................................ [ 82%]
+............................FFFFFFF...........                           [100%]
+=================================== FAILURES ===================================
+_______ test_initial_app_requires_three_files_and_synthetic_confirmation _______
+
+app = AppTest(
+    _script_path='/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTr...                11: Info()
+            }
+        ),
+        2: SpecialBlock(
+            type='event'
+        )
+    }
+)
+records = {'anchors.csv': [{'study_id': 'NCT04470427', 'participant_id': 'synthetic-never-bundled-817', 'site_id': 'synthetic-si...pant_id': 'synthetic-never-bundled-817', 'site_id': 'synthetic-site-new', 'assignment_id': 'assignment-new-817', ...}]}
+write_inputs = <function write_inputs.<locals>.write at 0x1089b9bc0>
+
+    def test_initial_app_requires_three_files_and_synthetic_confirmation(app, records, write_inputs):
+        assert len(app.file_uploader) == 3
+        assert all(uploader.allowed_type == [] for uploader in app.file_uploader)
+        assert app.button[0].disabled
+        assert_no_report(app)
+        paths = write_inputs(records)
+        subset = {name: path for name, path in paths.items() if name != "assignments.csv"}
+>       upload_files(app, subset)
+
+tests/test_streamlit_app.py:55: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_streamlit_app.py:24: in upload_files
+    app.file_uploader(key="upload_" + name).set_value((path.name, path.read_bytes(), "text/csv"))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = WidgetList(_list=[FileUploader(key='upload_anchors.csv_0', _files=InitialValue(), label='anchors.csv', help='Required ...eaders: assignment_id, study_id, participant_id, site_id, rule_version, schedule_code, mapping_status, mapping_note')])
+key = 'upload_anchors.csv'
+
+    def __call__(self, key: str) -> El_co:
+        """Return the first element in this collection with the given user key.
+    
+        The same key can appear on different element types, so this returns the
+        first match in this collection. Use ``get_by_key`` when an ambiguous
+        key should raise.
+        """
+        for e in self._list:
+            if getattr(e, "key", None) == key:
+                return e
+>       raise KeyError(key)
+E       KeyError: 'upload_anchors.csv'
+
+.venv/lib/python3.13/site-packages/streamlit/testing/v1/element_tree.py:590: KeyError
+---------------------------- Captured stderr setup -----------------------------
+2026-10-18 04:41:25.069 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-10-18 04:41:25.195 Please replace `st.components.v1.html` with `st.iframe`.
+
+`st.components.v1.html` will be removed after 2026-06-01.
+------------------------------ Captured log setup ------------------------------
+WARNING  streamlit.runtime.scriptrunner_utils.script_run_context:script_run_context.py:508 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+WARNING  streamlit.deprecation_util:deprecation_util.py:81 Please replace `st.components.v1.html` with `st.iframe`.
+
+`st.components.v1.html` will be removed after 2026-06-01.
+______ test_actual_script_upload_compute_filter_select_and_download_state ______
+
+app = AppTest(
+    _script_path='/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTr...                11: Info()
+            }
+        ),
+        2: SpecialBlock(
+            type='event'
+        )
+    }
+)
+records = {'anchors.csv': [{'study_id': 'NCT04470427', 'participant_id': 'synthetic-never-bundled-817', 'site_id': 'synthetic-si...pant_id': 'synthetic-never-bundled-817', 'site_id': 'synthetic-site-new', 'assignment_id': 'assignment-new-817', ...}]}
+write_inputs = <function write_inputs.<locals>.write at 0x108c49e40>
+
+    def test_actual_script_upload_compute_filter_select_and_download_state(app, records, write_inputs):
+        records["visits.csv"].append(dict(records["visits.csv"][0], visit_id="app-new-late-event", actual_date="2033-01-05"))
+        records["assignments.csv"][0]["mapping_note"] = 'Synthetic <script>literal text only</script>\nwith "quotes"'
+        paths = write_inputs(records)
+>       upload_files(app, paths)
+
+tests/test_streamlit_app.py:69: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_streamlit_app.py:24: in upload_files
+    app.file_uploader(key="upload_" + name).set_value((path.name, path.read_bytes(), "text/csv"))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = WidgetList(_list=[FileUploader(key='upload_anchors.csv_0', _files=InitialValue(), label='anchors.csv', help='Required ...eaders: assignment_id, study_id, participant_id, site_id, rule_version, schedule_code, mapping_status, mapping_note')])
+key = 'upload_anchors.csv'
+
+    def __call__(self, key: str) -> El_co:
+        """Return the first element in this collection with the given user key.
+    
+        The same key can appear on different element types, so this returns the
+        first match in this collection. Use ``get_by_key`` when an ambiguous
+        key should raise.
+        """
+        for e in self._list:
+            if getattr(e, "key", None) == key:
+                return e
+>       raise KeyError(key)
+E       KeyError: 'upload_anchors.csv'
+
+.venv/lib/python3.13/site-packages/streamlit/testing/v1/element_tree.py:590: KeyError
+---------------------------- Captured stderr setup -----------------------------
+2026-10-18 04:41:25.228 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-10-18 04:41:25.285 Please replace `st.components.v1.html` with `st.iframe`.
+
+`st.components.v1.html` will be removed after 2026-06-01.
+------------------------------ Captured log setup ------------------------------
+WARNING  streamlit.runtime.scriptrunner_utils.script_run_context:script_run_context.py:508 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+WARNING  streamlit.deprecation_util:deprecation_util.py:81 Please replace `st.components.v1.html` with `st.iframe`.
+
+`st.components.v1.html` will be removed after 2026-06-01.
+________ test_replacing_uploaded_date_invalidates_before_recomputation _________
+
+app = AppTest(
+    _script_path='/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTr...                11: Info()
+            }
+        ),
+        2: SpecialBlock(
+            type='event'
+        )
+    }
+)
+records = {'anchors.csv': [{'study_id': 'NCT04470427', 'participant_id': 'synthetic-never-bundled-817', 'site_id': 'synthetic-si...pant_id': 'synthetic-never-bundled-817', 'site_id': 'synthetic-site-new', 'assignment_id': 'assignment-new-817', ...}]}
+write_inputs = <function write_inputs.<locals>.write at 0x1089ba840>
+
+    def test_replacing_uploaded_date_invalidates_before_recomputation(app, records, write_inputs):
+        paths = write_inputs(records)
+>       upload_files(app, paths)
+
+tests/test_streamlit_app.py:100: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_streamlit_app.py:24: in upload_files
+    app.file_uploader(key="upload_" + name).set_value((path.name, path.read_bytes(), "text/csv"))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = WidgetList(_list=[FileUploader(key='upload_anchors.csv_0', _files=InitialValue(), label='anchors.csv', help='Required ...eaders: assignment_id, study_id, participant_id, site_id, rule_version, schedule_code, mapping_status, mapping_note')])
+key = 'upload_anchors.csv'
+
+    def __call__(self, key: str) -> El_co:
+        """Return the first element in this collection with the given user key.
+    
+        The same key can appear on different element types, so this returns the
+        first match in this collection. Use ``get_by_key`` when an ambiguous
+        key should raise.
+        """
+        for e in self._list:
+            if getattr(e, "key", None) == key:
+                return e
+>       raise KeyError(key)
+E       KeyError: 'upload_anchors.csv'
+
+.venv/lib/python3.13/site-packages/streamlit/testing/v1/element_tree.py:590: KeyError
+---------------------------- Captured stderr setup -----------------------------
+2026-10-18 04:41:25.315 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-10-18 04:41:25.372 Please replace `st.components.v1.html` with `st.iframe`.
+
+`st.components.v1.html` will be removed after 2026-06-01.
+------------------------------ Captured log setup ------------------------------
+WARNING  streamlit.runtime.scriptrunner_utils.script_run_context:script_run_context.py:508 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+WARNING  streamlit.deprecation_util:deprecation_util.py:81 Please replace `st.components.v1.html` with `st.iframe`.
+
+`st.components.v1.html` will be removed after 2026-06-01.
+__________ test_invalid_replacement_removes_old_findings_and_download __________
+
+app = AppTest(
+    _script_path='/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTr...                11: Info()
+            }
+        ),
+        2: SpecialBlock(
+            type='event'
+        )
+    }
+)
+records = {'anchors.csv': [{'study_id': 'NCT04470427', 'participant_id': 'synthetic-never-bundled-817', 'site_id': 'synthetic-si...pant_id': 'synthetic-never-bundled-817', 'site_id': 'synthetic-site-new', 'assignment_id': 'assignment-new-817', ...}]}
+write_inputs = <function write_inputs.<locals>.write at 0x108c44860>
+
+    def test_invalid_replacement_removes_old_findings_and_download(app, records, write_inputs):
+>       upload_files(app, write_inputs(records))
+
+tests/test_streamlit_app.py:118: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_streamlit_app.py:24: in upload_files
+    app.file_uploader(key="upload_" + name).set_value((path.name, path.read_bytes(), "text/csv"))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = WidgetList(_list=[FileUploader(key='upload_anchors.csv_0', _files=InitialValue(), label='anchors.csv', help='Required ...eaders: assignment_id, study_id, participant_id, site_id, rule_version, schedule_code, mapping_status, mapping_note')])
+key = 'upload_anchors.csv'
+
+    def __call__(self, key: str) -> El_co:
+        """Return the first element in this collection with the given user key.
+    
+        The same key can appear on different element types, so this returns the
+        first match in this collection. Use ``get_by_key`` when an ambiguous
+        key should raise.
+        """
+        for e in self._list:
+            if getattr(e, "key", None) == key:
+                return e
+>       raise KeyError(key)
+E       KeyError: 'upload_anchors.csv'
+
+.venv/lib/python3.13/site-packages/streamlit/testing/v1/element_tree.py:590: KeyError
+---------------------------- Captured stderr setup -----------------------------
+2026-10-18 04:41:25.401 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-10-18 04:41:25.458 Please replace `st.components.v1.html` with `st.iframe`.
+
+`st.components.v1.html` will be removed after 2026-06-01.
+------------------------------ Captured log setup ------------------------------
+WARNING  streamlit.runtime.scriptrunner_utils.script_run_context:script_run_context.py:508 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+WARNING  streamlit.deprecation_util:deprecation_util.py:81 Please replace `st.components.v1.html` with `st.iframe`.
+
+`st.components.v1.html` will be removed after 2026-06-01.
+_ test_removal_or_withdrawn_confirmation_invalidates_current_report[remove_file] _
+
+app = AppTest(
+    _script_path='/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTr...                11: Info()
+            }
+        ),
+        2: SpecialBlock(
+            type='event'
+        )
+    }
+)
+records = {'anchors.csv': [{'study_id': 'NCT04470427', 'participant_id': 'synthetic-never-bundled-817', 'site_id': 'synthetic-si...pant_id': 'synthetic-never-bundled-817', 'site_id': 'synthetic-site-new', 'assignment_id': 'assignment-new-817', ...}]}
+write_inputs = <function write_inputs.<locals>.write at 0x108c47240>
+change = 'remove_file'
+
+    @pytest.mark.parametrize("change", ["remove_file", "withdraw_confirmation"])
+    def test_removal_or_withdrawn_confirmation_invalidates_current_report(app, records, write_inputs, change):
+>       upload_files(app, write_inputs(records))
+
+tests/test_streamlit_app.py:134: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_streamlit_app.py:24: in upload_files
+    app.file_uploader(key="upload_" + name).set_value((path.name, path.read_bytes(), "text/csv"))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = WidgetList(_list=[FileUploader(key='upload_anchors.csv_0', _files=InitialValue(), label='anchors.csv', help='Required ...eaders: assignment_id, study_id, participant_id, site_id, rule_version, schedule_code, mapping_status, mapping_note')])
+key = 'upload_anchors.csv'
+
+    def __call__(self, key: str) -> El_co:
+        """Return the first element in this collection with the given user key.
+    
+        The same key can appear on different element types, so this returns the
+        first match in this collection. Use ``get_by_key`` when an ambiguous
+        key should raise.
+        """
+        for e in self._list:
+            if getattr(e, "key", None) == key:
+                return e
+>       raise KeyError(key)
+E       KeyError: 'upload_anchors.csv'
+
+.venv/lib/python3.13/site-packages/streamlit/testing/v1/element_tree.py:590: KeyError
+---------------------------- Captured stderr setup -----------------------------
+2026-10-18 04:41:25.488 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-10-18 04:41:25.545 Please replace `st.components.v1.html` with `st.iframe`.
+
+`st.components.v1.html` will be removed after 2026-06-01.
+------------------------------ Captured log setup ------------------------------
+WARNING  streamlit.runtime.scriptrunner_utils.script_run_context:script_run_context.py:508 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+WARNING  streamlit.deprecation_util:deprecation_util.py:81 Please replace `st.components.v1.html` with `st.iframe`.
+
+`st.components.v1.html` will be removed after 2026-06-01.
+_ test_removal_or_withdrawn_confirmation_invalidates_current_report[withdraw_confirmation] _
+
+app = AppTest(
+    _script_path='/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTr...                11: Info()
+            }
+        ),
+        2: SpecialBlock(
+            type='event'
+        )
+    }
+)
+records = {'anchors.csv': [{'study_id': 'NCT04470427', 'participant_id': 'synthetic-never-bundled-817', 'site_id': 'synthetic-si...pant_id': 'synthetic-never-bundled-817', 'site_id': 'synthetic-site-new', 'assignment_id': 'assignment-new-817', ...}]}
+write_inputs = <function write_inputs.<locals>.write at 0x108c4b1a0>
+change = 'withdraw_confirmation'
+
+    @pytest.mark.parametrize("change", ["remove_file", "withdraw_confirmation"])
+    def test_removal_or_withdrawn_confirmation_invalidates_current_report(app, records, write_inputs, change):
+>       upload_files(app, write_inputs(records))
+
+tests/test_streamlit_app.py:134: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_streamlit_app.py:24: in upload_files
+    app.file_uploader(key="upload_" + name).set_value((path.name, path.read_bytes(), "text/csv"))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = WidgetList(_list=[FileUploader(key='upload_anchors.csv_0', _files=InitialValue(), label='anchors.csv', help='Required ...eaders: assignment_id, study_id, participant_id, site_id, rule_version, schedule_code, mapping_status, mapping_note')])
+key = 'upload_anchors.csv'
+
+    def __call__(self, key: str) -> El_co:
+        """Return the first element in this collection with the given user key.
+    
+        The same key can appear on different element types, so this returns the
+        first match in this collection. Use ``get_by_key`` when an ambiguous
+        key should raise.
+        """
+        for e in self._list:
+            if getattr(e, "key", None) == key:
+                return e
+>       raise KeyError(key)
+E       KeyError: 'upload_anchors.csv'
+
+.venv/lib/python3.13/site-packages/streamlit/testing/v1/element_tree.py:590: KeyError
+---------------------------- Captured stderr setup -----------------------------
+2026-10-18 04:41:25.576 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-10-18 04:41:25.633 Please replace `st.components.v1.html` with `st.iframe`.
+
+`st.components.v1.html` will be removed after 2026-06-01.
+------------------------------ Captured log setup ------------------------------
+WARNING  streamlit.runtime.scriptrunner_utils.script_run_context:script_run_context.py:508 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+WARNING  streamlit.deprecation_util:deprecation_util.py:81 Please replace `st.components.v1.html` with `st.iframe`.
+
+`st.components.v1.html` will be removed after 2026-06-01.
+________ test_header_only_visits_displays_zero_without_compliance_claim ________
+
+app = AppTest(
+    _script_path='/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTr...                11: Info()
+            }
+        ),
+        2: SpecialBlock(
+            type='event'
+        )
+    }
+)
+records = {'anchors.csv': [{'study_id': 'NCT04470427', 'participant_id': 'synthetic-never-bundled-817', 'site_id': 'synthetic-si...pant_id': 'synthetic-never-bundled-817', 'site_id': 'synthetic-site-new', 'assignment_id': 'assignment-new-817', ...}]}
+write_inputs = <function write_inputs.<locals>.write at 0x108dc8d60>
+
+    def test_header_only_visits_displays_zero_without_compliance_claim(app, records, write_inputs):
+        records["visits.csv"] = []
+>       upload_files(app, write_inputs(records))
+
+tests/test_streamlit_app.py:146: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_streamlit_app.py:24: in upload_files
+    app.file_uploader(key="upload_" + name).set_value((path.name, path.read_bytes(), "text/csv"))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = WidgetList(_list=[FileUploader(key='upload_anchors.csv_0', _files=InitialValue(), label='anchors.csv', help='Required ...eaders: assignment_id, study_id, participant_id, site_id, rule_version, schedule_code, mapping_status, mapping_note')])
+key = 'upload_anchors.csv'
+
+    def __call__(self, key: str) -> El_co:
+        """Return the first element in this collection with the given user key.
+    
+        The same key can appear on different element types, so this returns the
+        first match in this collection. Use ``get_by_key`` when an ambiguous
+        key should raise.
+        """
+        for e in self._list:
+            if getattr(e, "key", None) == key:
+                return e
+>       raise KeyError(key)
+E       KeyError: 'upload_anchors.csv'
+
+.venv/lib/python3.13/site-packages/streamlit/testing/v1/element_tree.py:590: KeyError
+---------------------------- Captured stderr setup -----------------------------
+2026-10-18 04:41:25.664 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-10-18 04:41:25.735 Please replace `st.components.v1.html` with `st.iframe`.
+
+`st.components.v1.html` will be removed after 2026-06-01.
+------------------------------ Captured log setup ------------------------------
+WARNING  streamlit.runtime.scriptrunner_utils.script_run_context:script_run_context.py:508 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+WARNING  streamlit.deprecation_util:deprecation_util.py:81 Please replace `st.components.v1.html` with `st.iframe`.
+
+`st.components.v1.html` will be removed after 2026-06-01.
+=========================== short test summary info ============================
+FAILED tests/test_streamlit_app.py::test_initial_app_requires_three_files_and_synthetic_confirmation
+FAILED tests/test_streamlit_app.py::test_actual_script_upload_compute_filter_select_and_download_state
+FAILED tests/test_streamlit_app.py::test_replacing_uploaded_date_invalidates_before_recomputation
+FAILED tests/test_streamlit_app.py::test_invalid_replacement_removes_old_findings_and_download
+FAILED tests/test_streamlit_app.py::test_removal_or_withdrawn_confirmation_invalidates_current_report[remove_file]
+FAILED tests/test_streamlit_app.py::test_removal_or_withdrawn_confirmation_invalidates_current_report[withdraw_confirmation]
+FAILED tests/test_streamlit_app.py::test_header_only_visits_displays_zero_without_compliance_claim
+7 failed, 255 passed in 6.44s

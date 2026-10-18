@@ -1,0 +1,258 @@
+docs/trialtrace/review/g3_challenge/actual_run/inputs/unfamiliar-upload-31.csv:1: trailing whitespace.
++﻿anchor_date,anchor_kind,anchor_code,anchor_id,site_id,participant_id,study_id
+docs/trialtrace/review/g3_challenge/actual_run/inputs/unfamiliar-upload-31.csv:2: trailing whitespace.
++0001-01-01,ACTUAL_VACCINATION,OL_D1,g3-synthetic-minimum-year-anchor,g3-synthetic-site-東京,g3-synthetic-minimum-year-Δ,NCT04470427
+docs/trialtrace/review/g3_challenge/actual_run/inputs/unfamiliar-upload-31.csv:3: trailing whitespace.
++1899-12-25,ACTUAL_VACCINATION,OL_D1,g3-synthetic-nineteenth-century-anchor,g3-synthetic-site-東京,g3-synthetic-nineteenth-century-Δ,NCT04470427
+docs/trialtrace/review/g3_challenge/actual_run/inputs/unfamiliar-upload-31.csv:4: trailing whitespace.
++1900-02-22,ACTUAL_VACCINATION,OL_D1,g3-synthetic-1900-not-leap-anchor,g3-synthetic-site-東京,g3-synthetic-1900-not-leap-Δ,NCT04470427
+docs/trialtrace/review/g3_challenge/actual_run/inputs/unfamiliar-upload-31.csv:5: trailing whitespace.
++1900-02-22,ACTUAL_VACCINATION,OL_D1,g3-synthetic-1900-one-early-anchor,g3-synthetic-site-東京,g3-synthetic-1900-one-early-Δ,NCT04470427
+docs/trialtrace/review/g3_challenge/actual_run/inputs/unfamiliar-upload-31.csv:6: trailing whitespace.
++1999-12-25,ACTUAL_VACCINATION,OL_D1,g3-synthetic-millennium-anchor,g3-synthetic-site-東京,g3-synthetic-millennium-Δ,NCT04470427
+docs/trialtrace/review/g3_challenge/actual_run/inputs/unfamiliar-upload-31.csv:7: trailing whitespace.
++2000-02-22,ACTUAL_VACCINATION,OL_D1,g3-synthetic-2000-is-leap-anchor,g3-synthetic-site-東京,g3-synthetic-2000-is-leap-Δ,NCT04470427
+docs/trialtrace/review/g3_challenge/actual_run/inputs/unfamiliar-upload-31.csv:8: trailing whitespace.
++2000-02-22,ACTUAL_VACCINATION,OL_D1,g3-synthetic-2000-upper-bound-anchor,g3-synthetic-site-東京,g3-synthetic-2000-upper-bound-Δ,NCT04470427
+docs/trialtrace/review/g3_challenge/actual_run/inputs/unfamiliar-upload-31.csv:9: trailing whitespace.
++2000-02-22,ACTUAL_VACCINATION,OL_D1,g3-synthetic-2000-two-late-anchor,g3-synthetic-site-東京,g3-synthetic-2000-two-late-Δ,NCT04470427
+docs/trialtrace/review/g3_challenge/actual_run/inputs/unfamiliar-upload-31.csv:10: trailing whitespace.
++2024-02-23,ACTUAL_VACCINATION,OL_D1,g3-synthetic-2024-leap-crossing-anchor,g3-synthetic-site-東京,g3-synthetic-2024-leap-crossing-Δ,NCT04470427
+docs/trialtrace/review/g3_challenge/actual_run/inputs/unfamiliar-upload-31.csv:11: trailing whitespace.
++2024-02-20,ACTUAL_VACCINATION,OL_D1,g3-synthetic-2024-before-leap-anchor,g3-synthetic-site-東京,g3-synthetic-2024-before-leap-Δ,NCT04470427
+docs/trialtrace/review/g3_challenge/actual_run/inputs/unfamiliar-upload-31.csv:12: trailing whitespace.
++2047-04-26,ACTUAL_VACCINATION,OL_D1,g3-synthetic-april-month-boundary-anchor,g3-synthetic-site-東京,g3-synthetic-april-month-boundary-Δ,NCT04470427
+docs/trialtrace/review/g3_challenge/actual_run/inputs/unfamiliar-upload-31.csv:13: trailing whitespace.
++2100-02-22,ACTUAL_VACCINATION,OL_D1,g3-synthetic-2100-not-leap-anchor,g3-synthetic-site-東京,g3-synthetic-2100-not-leap-Δ,NCT04470427
+docs/trialtrace/review/g3_challenge/actual_run/inputs/unfamiliar-upload-31.csv:14: trailing whitespace.
++2400-02-22,ACTUAL_VACCINATION,OL_D1,g3-synthetic-2400-is-leap-anchor,g3-synthetic-site-東京,g3-synthetic-2400-is-leap-Δ,NCT04470427
+docs/trialtrace/review/g3_challenge/actual_run/inputs/unfamiliar-upload-31.csv:15: trailing whitespace.
++9999-12-21,ACTUAL_VACCINATION,OL_D1,g3-synthetic-maximum-year-safe-anchor,g3-synthetic-site-東京,g3-synthetic-maximum-year-safe-Δ,NCT04470427
+docs/trialtrace/review/g3_challenge/actual_run/inputs/unfamiliar-upload-31.csv:16: trailing whitespace.
++2077-08-24,ACTUAL_VACCINATION,OL_D1,g3-synthetic-wrong-person-anchor,g3-synthetic-site-東京,another-synthetic-person,NCT04470427
+docs/trialtrace/review/g3_challenge/actual_run/inputs/unfamiliar-upload-31.csv:17: trailing whitespace.
++2077-08-24,ACTUAL_VACCINATION,OL_D1,g3-synthetic-unresolved-scope-anchor,g3-synthetic-site-東京,g3-synthetic-unresolved-scope-Δ,NCT04470427
+docs/trialtrace/review/g3_challenge/actual_run/inputs/unfamiliar-upload-31.csv:18: trailing whitespace.
++2077-08-24,ACTUAL_VACCINATION,OL_D1,g3-synthetic-unknown-completion-anchor,g3-synthetic-site-東京,g3-synthetic-unknown-completion-Δ,NCT04470427
+docs/trialtrace/review/g3_challenge/actual_run/inputs/unfamiliar-upload-31.csv:19: trailing whitespace.
++2077-08-24,ACTUAL_VACCINATION,OL_D1,g3-synthetic-duplicate-anchor-anchor,g3-synthetic-site-東京,g3-synthetic-duplicate-anchor-Δ,NCT04470427
+docs/trialtrace/review/g3_challenge/actual_run/inputs/unfamiliar-upload-31.csv:20: trailing whitespace.
++2077-08-24,ACTUAL_VACCINATION,OL_D1,g3-synthetic-duplicate-anchor-anchor,g3-synthetic-site-東京,g3-synthetic-duplicate-anchor-Δ,NCT04470427
+docs/trialtrace/review/g3_challenge/actual_run/inputs/unfamiliar-upload-31.csv:21: trailing whitespace.
++2077-08-24,PARTICIPANT_DECISION,OL_D1,g3-synthetic-decision-anchor-anchor,g3-synthetic-site-東京,g3-synthetic-decision-anchor-Δ,NCT04470427
+docs/trialtrace/review/g3_challenge/actual_run/inputs/unfamiliar-upload-31.csv:22: trailing whitespace.
++2077-08-24,ACTUAL_VACCINATION,OL_D1,g3-synthetic-wrong-event-anchor,g3-synthetic-site-東京,g3-synthetic-wrong-event-Δ,NCT04470427
+docs/trialtrace/review/g3_challenge/actual_run/inputs/unfamiliar-upload-31.csv:23: trailing whitespace.
++9999-12-22,ACTUAL_VACCINATION,OL_D1,g3-synthetic-derived-overflow-anchor,g3-synthetic-site-東京,g3-synthetic-derived-overflow-Δ,NCT04470427
+docs/trialtrace/review/g3_challenge/actual_run/inputs/unfamiliar-upload-31.csv:24: trailing whitespace.
++2077-08-24,ACTUAL_VACCINATION,OL_D1,g3-synthetic-invalid-nonleap-date-anchor,g3-synthetic-site-東京,g3-synthetic-invalid-nonleap-date-Δ,NCT04470427
+docs/trialtrace/review/g3_challenge/actual_run/inputs/unfamiliar-upload-31.csv:25: trailing whitespace.
++2077-08-24,ACTUAL_VACCINATION,OL_D1,g3-synthetic-case-sensitive-id-anchor,g3-synthetic-site-東京,g3-synthetic-case-sensitive-id-Δ,NCT04470427
+docs/trialtrace/review/g3_challenge/actual_run/inputs/unfamiliar-upload-31.csv:26: trailing whitespace.
++not-a-date,ACTUAL_VACCINATION,OL_D1,g3-orphan-invalid-anchor,g3-synthetic-site-東京,g3-synthetic-minimum-year-Δ,NCT04470427
+docs/trialtrace/review/g3_challenge/actual_run/inputs/unfamiliar-upload-32.csv:1: trailing whitespace.
++﻿assignment_id,anchor_id,visit_status,actual_date,event_kind,visit_code,visit_id,site_id,participant_id,study_id
+docs/trialtrace/review/g3_challenge/actual_run/inputs/unfamiliar-upload-32.csv:2: trailing whitespace.
++g3-synthetic-minimum-year-mapping,g3-synthetic-minimum-year-anchor,COMPLETED,0001-01-08,SAFETY_PHONE_CALL,OL_D8,g3-synthetic-minimum-year-visit,g3-synthetic-site-東京,g3-synthetic-minimum-year-Δ,NCT04470427
+docs/trialtrace/review/g3_challenge/actual_run/inputs/unfamiliar-upload-32.csv:3: trailing whitespace.
++g3-synthetic-nineteenth-century-mapping,g3-synthetic-nineteenth-century-anchor,COMPLETED,1900-01-01,SAFETY_PHONE_CALL,OL_D8,g3-synthetic-nineteenth-century-visit,g3-synthetic-site-東京,g3-synthetic-nineteenth-century-Δ,NCT04470427
+docs/trialtrace/review/g3_challenge/actual_run/inputs/unfamiliar-upload-32.csv:4: trailing whitespace.
++g3-synthetic-1900-not-leap-mapping,g3-synthetic-1900-not-leap-anchor,COMPLETED,1900-03-01,SAFETY_PHONE_CALL,OL_D8,g3-synthetic-1900-not-leap-visit,g3-synthetic-site-東京,g3-synthetic-1900-not-leap-Δ,NCT04470427
+docs/trialtrace/review/g3_challenge/actual_run/inputs/unfamiliar-upload-32.csv:5: trailing whitespace.
++g3-synthetic-1900-one-early-mapping,g3-synthetic-1900-one-early-anchor,COMPLETED,1900-02-28,SAFETY_PHONE_CALL,OL_D8,g3-synthetic-1900-one-early-visit,g3-synthetic-site-東京,g3-synthetic-1900-one-early-Δ,NCT04470427
+docs/trialtrace/review/g3_challenge/actual_run/inputs/unfamiliar-upload-32.csv:6: trailing whitespace.
++g3-synthetic-millennium-mapping,g3-synthetic-millennium-anchor,COMPLETED,2000-01-05,SAFETY_PHONE_CALL,OL_D8,g3-synthetic-millennium-visit,g3-synthetic-site-東京,g3-synthetic-millennium-Δ,NCT04470427
+docs/trialtrace/review/g3_challenge/actual_run/inputs/unfamiliar-upload-32.csv:7: trailing whitespace.
++g3-synthetic-2000-is-leap-mapping,g3-synthetic-2000-is-leap-anchor,COMPLETED,2000-02-29,SAFETY_PHONE_CALL,OL_D8,g3-synthetic-2000-is-leap-visit,g3-synthetic-site-東京,g3-synthetic-2000-is-leap-Δ,NCT04470427
+docs/trialtrace/review/g3_challenge/actual_run/inputs/unfamiliar-upload-32.csv:8: trailing whitespace.
++g3-synthetic-2000-upper-bound-mapping,g3-synthetic-2000-upper-bound-anchor,COMPLETED,2000-03-03,SAFETY_PHONE_CALL,OL_D8,g3-synthetic-2000-upper-bound-visit,g3-synthetic-site-東京,g3-synthetic-2000-upper-bound-Δ,NCT04470427
+docs/trialtrace/review/g3_challenge/actual_run/inputs/unfamiliar-upload-32.csv:9: trailing whitespace.
++g3-synthetic-2000-two-late-mapping,g3-synthetic-2000-two-late-anchor,COMPLETED,2000-03-05,SAFETY_PHONE_CALL,OL_D8,g3-synthetic-2000-two-late-visit,g3-synthetic-site-東京,g3-synthetic-2000-two-late-Δ,NCT04470427
+docs/trialtrace/review/g3_challenge/actual_run/inputs/unfamiliar-upload-32.csv:10: trailing whitespace.
++g3-synthetic-2024-leap-crossing-mapping,g3-synthetic-2024-leap-crossing-anchor,COMPLETED,2024-03-04,SAFETY_PHONE_CALL,OL_D8,g3-synthetic-2024-leap-crossing-visit,g3-synthetic-site-東京,g3-synthetic-2024-leap-crossing-Δ,NCT04470427
+docs/trialtrace/review/g3_challenge/actual_run/inputs/unfamiliar-upload-32.csv:11: trailing whitespace.
++g3-synthetic-2024-before-leap-mapping,g3-synthetic-2024-before-leap-anchor,COMPLETED,2024-02-26,SAFETY_PHONE_CALL,OL_D8,g3-synthetic-2024-before-leap-visit,g3-synthetic-site-東京,g3-synthetic-2024-before-leap-Δ,NCT04470427
+docs/trialtrace/review/g3_challenge/actual_run/inputs/unfamiliar-upload-32.csv:12: trailing whitespace.
++g3-synthetic-april-month-boundary-mapping,g3-synthetic-april-month-boundary-anchor,COMPLETED,2047-05-06,SAFETY_PHONE_CALL,OL_D8,g3-synthetic-april-month-boundary-visit,g3-synthetic-site-東京,g3-synthetic-april-month-boundary-Δ,NCT04470427
+docs/trialtrace/review/g3_challenge/actual_run/inputs/unfamiliar-upload-32.csv:13: trailing whitespace.
++g3-synthetic-2100-not-leap-mapping,g3-synthetic-2100-not-leap-anchor,COMPLETED,2100-03-05,SAFETY_PHONE_CALL,OL_D8,g3-synthetic-2100-not-leap-visit,g3-synthetic-site-東京,g3-synthetic-2100-not-leap-Δ,NCT04470427
+docs/trialtrace/review/g3_challenge/actual_run/inputs/unfamiliar-upload-32.csv:14: trailing whitespace.
++g3-synthetic-2400-is-leap-mapping,g3-synthetic-2400-is-leap-anchor,COMPLETED,2400-02-29,SAFETY_PHONE_CALL,OL_D8,g3-synthetic-2400-is-leap-visit,g3-synthetic-site-東京,g3-synthetic-2400-is-leap-Δ,NCT04470427
+docs/trialtrace/review/g3_challenge/actual_run/inputs/unfamiliar-upload-32.csv:15: trailing whitespace.
++g3-synthetic-maximum-year-safe-mapping,g3-synthetic-maximum-year-safe-anchor,COMPLETED,9999-12-31,SAFETY_PHONE_CALL,OL_D8,g3-synthetic-maximum-year-safe-visit,g3-synthetic-site-東京,g3-synthetic-maximum-year-safe-Δ,NCT04470427
+docs/trialtrace/review/g3_challenge/actual_run/inputs/unfamiliar-upload-32.csv:16: trailing whitespace.
++g3-synthetic-missing-anchor-mapping,g3-synthetic-missing-anchor-anchor,COMPLETED,2077-08-31,SAFETY_PHONE_CALL,OL_D8,g3-synthetic-missing-anchor-visit,g3-synthetic-site-東京,g3-synthetic-missing-anchor-Δ,NCT04470427
+docs/trialtrace/review/g3_challenge/actual_run/inputs/unfamiliar-upload-32.csv:17: trailing whitespace.
++g3-synthetic-wrong-person-mapping,g3-synthetic-wrong-person-anchor,COMPLETED,2077-08-31,SAFETY_PHONE_CALL,OL_D8,g3-synthetic-wrong-person-visit,g3-synthetic-site-東京,g3-synthetic-wrong-person-Δ,NCT04470427
+docs/trialtrace/review/g3_challenge/actual_run/inputs/unfamiliar-upload-32.csv:18: trailing whitespace.
++g3-synthetic-unresolved-scope-mapping,g3-synthetic-unresolved-scope-anchor,COMPLETED,2077-08-31,SAFETY_PHONE_CALL,OL_D8,g3-synthetic-unresolved-scope-visit,g3-synthetic-site-東京,g3-synthetic-unresolved-scope-Δ,NCT04470427
+docs/trialtrace/review/g3_challenge/actual_run/inputs/unfamiliar-upload-32.csv:19: trailing whitespace.
++g3-synthetic-unknown-completion-mapping,g3-synthetic-unknown-completion-anchor,UNKNOWN,2077-08-31,SAFETY_PHONE_CALL,OL_D8,g3-synthetic-unknown-completion-visit,g3-synthetic-site-東京,g3-synthetic-unknown-completion-Δ,NCT04470427
+docs/trialtrace/review/g3_challenge/actual_run/inputs/unfamiliar-upload-32.csv:20: trailing whitespace.
++g3-synthetic-duplicate-anchor-mapping,g3-synthetic-duplicate-anchor-anchor,COMPLETED,2077-08-31,SAFETY_PHONE_CALL,OL_D8,g3-synthetic-duplicate-anchor-visit,g3-synthetic-site-東京,g3-synthetic-duplicate-anchor-Δ,NCT04470427
+docs/trialtrace/review/g3_challenge/actual_run/inputs/unfamiliar-upload-32.csv:21: trailing whitespace.
++g3-synthetic-decision-anchor-mapping,g3-synthetic-decision-anchor-anchor,COMPLETED,2077-08-31,SAFETY_PHONE_CALL,OL_D8,g3-synthetic-decision-anchor-visit,g3-synthetic-site-東京,g3-synthetic-decision-anchor-Δ,NCT04470427
+docs/trialtrace/review/g3_challenge/actual_run/inputs/unfamiliar-upload-32.csv:22: trailing whitespace.
++g3-synthetic-wrong-event-mapping,g3-synthetic-wrong-event-anchor,COMPLETED,2077-08-31,CLINIC_VISIT,OL_D8,g3-synthetic-wrong-event-visit,g3-synthetic-site-東京,g3-synthetic-wrong-event-Δ,NCT04470427
+docs/trialtrace/review/g3_challenge/actual_run/inputs/unfamiliar-upload-32.csv:23: trailing whitespace.
++g3-synthetic-derived-overflow-mapping,g3-synthetic-derived-overflow-anchor,COMPLETED,2077-08-31,SAFETY_PHONE_CALL,OL_D8,g3-synthetic-derived-overflow-visit,g3-synthetic-site-東京,g3-synthetic-derived-overflow-Δ,NCT04470427
+docs/trialtrace/review/g3_challenge/actual_run/inputs/unfamiliar-upload-32.csv:24: trailing whitespace.
++g3-synthetic-invalid-nonleap-date-mapping,g3-synthetic-invalid-nonleap-date-anchor,COMPLETED,2100-02-29,SAFETY_PHONE_CALL,OL_D8,g3-synthetic-invalid-nonleap-date-visit,g3-synthetic-site-東京,g3-synthetic-invalid-nonleap-date-Δ,NCT04470427
+docs/trialtrace/review/g3_challenge/actual_run/inputs/unfamiliar-upload-32.csv:25: trailing whitespace.
++g3-synthetic-case-sensitive-id-mapping,G3-SYNTHETIC-CASE-SENSITIVE-ID-ANCHOR,COMPLETED,2077-08-31,SAFETY_PHONE_CALL,OL_D8,g3-synthetic-case-sensitive-id-visit,g3-synthetic-site-東京,g3-synthetic-case-sensitive-id-Δ,NCT04470427
+docs/trialtrace/review/g3_challenge/actual_run/inputs/unfamiliar-upload-33.csv:1: trailing whitespace.
++﻿mapping_note,mapping_status,schedule_code,rule_version,site_id,participant_id,study_id,assignment_id
+docs/trialtrace/review/g3_challenge/actual_run/inputs/unfamiliar-upload-33.csv:2: trailing whitespace.
++"Independent authored synthetic record, not human review.
+docs/trialtrace/review/g3_challenge/actual_run/inputs/unfamiliar-upload-33.csv:3: trailing whitespace.
++Quoted ""cell""; literal <script>alert(""no execution"")</script> 🧪",DRAFT_SYNTHETIC,TABLE21,A10_DRAFT_2,g3-synthetic-site-東京,g3-synthetic-minimum-year-Δ,NCT04470427,g3-synthetic-minimum-year-mapping
+docs/trialtrace/review/g3_challenge/actual_run/inputs/unfamiliar-upload-33.csv:4: trailing whitespace.
++"Independent authored synthetic record, not human review.
+docs/trialtrace/review/g3_challenge/actual_run/inputs/unfamiliar-upload-33.csv:5: trailing whitespace.
++Quoted ""cell""; literal <script>alert(""no execution"")</script> 🧪",DRAFT_SYNTHETIC,TABLE21,A10_DRAFT_2,g3-synthetic-site-東京,g3-synthetic-nineteenth-century-Δ,NCT04470427,g3-synthetic-nineteenth-century-mapping
+docs/trialtrace/review/g3_challenge/actual_run/inputs/unfamiliar-upload-33.csv:6: trailing whitespace.
++"Independent authored synthetic record, not human review.
+docs/trialtrace/review/g3_challenge/actual_run/inputs/unfamiliar-upload-33.csv:7: trailing whitespace.
++Quoted ""cell""; literal <script>alert(""no execution"")</script> 🧪",DRAFT_SYNTHETIC,TABLE21,A10_DRAFT_2,g3-synthetic-site-東京,g3-synthetic-1900-not-leap-Δ,NCT04470427,g3-synthetic-1900-not-leap-mapping
+docs/trialtrace/review/g3_challenge/actual_run/inputs/unfamiliar-upload-33.csv:8: trailing whitespace.
++"Independent authored synthetic record, not human review.
+docs/trialtrace/review/g3_challenge/actual_run/inputs/unfamiliar-upload-33.csv:9: trailing whitespace.
++Quoted ""cell""; literal <script>alert(""no execution"")</script> 🧪",DRAFT_SYNTHETIC,TABLE21,A10_DRAFT_2,g3-synthetic-site-東京,g3-synthetic-1900-one-early-Δ,NCT04470427,g3-synthetic-1900-one-early-mapping
+docs/trialtrace/review/g3_challenge/actual_run/inputs/unfamiliar-upload-33.csv:10: trailing whitespace.
++"Independent authored synthetic record, not human review.
+docs/trialtrace/review/g3_challenge/actual_run/inputs/unfamiliar-upload-33.csv:11: trailing whitespace.
++Quoted ""cell""; literal <script>alert(""no execution"")</script> 🧪",DRAFT_SYNTHETIC,TABLE21,A10_DRAFT_2,g3-synthetic-site-東京,g3-synthetic-millennium-Δ,NCT04470427,g3-synthetic-millennium-mapping
+docs/trialtrace/review/g3_challenge/actual_run/inputs/unfamiliar-upload-33.csv:12: trailing whitespace.
++"Independent authored synthetic record, not human review.
+docs/trialtrace/review/g3_challenge/actual_run/inputs/unfamiliar-upload-33.csv:13: trailing whitespace.
++Quoted ""cell""; literal <script>alert(""no execution"")</script> 🧪",DRAFT_SYNTHETIC,TABLE21,A10_DRAFT_2,g3-synthetic-site-東京,g3-synthetic-2000-is-leap-Δ,NCT04470427,g3-synthetic-2000-is-leap-mapping
+docs/trialtrace/review/g3_challenge/actual_run/inputs/unfamiliar-upload-33.csv:14: trailing whitespace.
++"Independent authored synthetic record, not human review.
+docs/trialtrace/review/g3_challenge/actual_run/inputs/unfamiliar-upload-33.csv:15: trailing whitespace.
++Quoted ""cell""; literal <script>alert(""no execution"")</script> 🧪",DRAFT_SYNTHETIC,TABLE21,A10_DRAFT_2,g3-synthetic-site-東京,g3-synthetic-2000-upper-bound-Δ,NCT04470427,g3-synthetic-2000-upper-bound-mapping
+docs/trialtrace/review/g3_challenge/actual_run/inputs/unfamiliar-upload-33.csv:16: trailing whitespace.
++"Independent authored synthetic record, not human review.
+docs/trialtrace/review/g3_challenge/actual_run/inputs/unfamiliar-upload-33.csv:17: trailing whitespace.
++Quoted ""cell""; literal <script>alert(""no execution"")</script> 🧪",DRAFT_SYNTHETIC,TABLE21,A10_DRAFT_2,g3-synthetic-site-東京,g3-synthetic-2000-two-late-Δ,NCT04470427,g3-synthetic-2000-two-late-mapping
+docs/trialtrace/review/g3_challenge/actual_run/inputs/unfamiliar-upload-33.csv:18: trailing whitespace.
++"Independent authored synthetic record, not human review.
+docs/trialtrace/review/g3_challenge/actual_run/inputs/unfamiliar-upload-33.csv:19: trailing whitespace.
++Quoted ""cell""; literal <script>alert(""no execution"")</script> 🧪",DRAFT_SYNTHETIC,TABLE21,A10_DRAFT_2,g3-synthetic-site-東京,g3-synthetic-2024-leap-crossing-Δ,NCT04470427,g3-synthetic-2024-leap-crossing-mapping
+docs/trialtrace/review/g3_challenge/actual_run/inputs/unfamiliar-upload-33.csv:20: trailing whitespace.
++"Independent authored synthetic record, not human review.
+docs/trialtrace/review/g3_challenge/actual_run/inputs/unfamiliar-upload-33.csv:21: trailing whitespace.
++Quoted ""cell""; literal <script>alert(""no execution"")</script> 🧪",DRAFT_SYNTHETIC,TABLE21,A10_DRAFT_2,g3-synthetic-site-東京,g3-synthetic-2024-before-leap-Δ,NCT04470427,g3-synthetic-2024-before-leap-mapping
+docs/trialtrace/review/g3_challenge/actual_run/inputs/unfamiliar-upload-33.csv:22: trailing whitespace.
++"Independent authored synthetic record, not human review.
+docs/trialtrace/review/g3_challenge/actual_run/inputs/unfamiliar-upload-33.csv:23: trailing whitespace.
++Quoted ""cell""; literal <script>alert(""no execution"")</script> 🧪",DRAFT_SYNTHETIC,TABLE21,A10_DRAFT_2,g3-synthetic-site-東京,g3-synthetic-april-month-boundary-Δ,NCT04470427,g3-synthetic-april-month-boundary-mapping
+docs/trialtrace/review/g3_challenge/actual_run/inputs/unfamiliar-upload-33.csv:24: trailing whitespace.
++"Independent authored synthetic record, not human review.
+docs/trialtrace/review/g3_challenge/actual_run/inputs/unfamiliar-upload-33.csv:25: trailing whitespace.
++Quoted ""cell""; literal <script>alert(""no execution"")</script> 🧪",DRAFT_SYNTHETIC,TABLE21,A10_DRAFT_2,g3-synthetic-site-東京,g3-synthetic-2100-not-leap-Δ,NCT04470427,g3-synthetic-2100-not-leap-mapping
+docs/trialtrace/review/g3_challenge/actual_run/inputs/unfamiliar-upload-33.csv:26: trailing whitespace.
++"Independent authored synthetic record, not human review.
+docs/trialtrace/review/g3_challenge/actual_run/inputs/unfamiliar-upload-33.csv:27: trailing whitespace.
++Quoted ""cell""; literal <script>alert(""no execution"")</script> 🧪",DRAFT_SYNTHETIC,TABLE21,A10_DRAFT_2,g3-synthetic-site-東京,g3-synthetic-2400-is-leap-Δ,NCT04470427,g3-synthetic-2400-is-leap-mapping
+docs/trialtrace/review/g3_challenge/actual_run/inputs/unfamiliar-upload-33.csv:28: trailing whitespace.
++"Independent authored synthetic record, not human review.
+docs/trialtrace/review/g3_challenge/actual_run/inputs/unfamiliar-upload-33.csv:29: trailing whitespace.
++Quoted ""cell""; literal <script>alert(""no execution"")</script> 🧪",DRAFT_SYNTHETIC,TABLE21,A10_DRAFT_2,g3-synthetic-site-東京,g3-synthetic-maximum-year-safe-Δ,NCT04470427,g3-synthetic-maximum-year-safe-mapping
+docs/trialtrace/review/g3_challenge/actual_run/inputs/unfamiliar-upload-33.csv:30: trailing whitespace.
++"Independent authored synthetic record, not human review.
+docs/trialtrace/review/g3_challenge/actual_run/inputs/unfamiliar-upload-33.csv:31: trailing whitespace.
++Quoted ""cell""; literal <script>alert(""no execution"")</script> 🧪",DRAFT_SYNTHETIC,TABLE21,A10_DRAFT_2,g3-synthetic-site-東京,g3-synthetic-missing-anchor-Δ,NCT04470427,g3-synthetic-missing-anchor-mapping
+docs/trialtrace/review/g3_challenge/actual_run/inputs/unfamiliar-upload-33.csv:32: trailing whitespace.
++"Independent authored synthetic record, not human review.
+docs/trialtrace/review/g3_challenge/actual_run/inputs/unfamiliar-upload-33.csv:33: trailing whitespace.
++Quoted ""cell""; literal <script>alert(""no execution"")</script> 🧪",DRAFT_SYNTHETIC,TABLE21,A10_DRAFT_2,g3-synthetic-site-東京,g3-synthetic-wrong-person-Δ,NCT04470427,g3-synthetic-wrong-person-mapping
+docs/trialtrace/review/g3_challenge/actual_run/inputs/unfamiliar-upload-33.csv:34: trailing whitespace.
++"Independent authored synthetic record, not human review.
+docs/trialtrace/review/g3_challenge/actual_run/inputs/unfamiliar-upload-33.csv:35: trailing whitespace.
++Quoted ""cell""; literal <script>alert(""no execution"")</script> 🧪",UNRESOLVED,TABLE21,A10_DRAFT_2,g3-synthetic-site-東京,g3-synthetic-unresolved-scope-Δ,NCT04470427,g3-synthetic-unresolved-scope-mapping
+docs/trialtrace/review/g3_challenge/actual_run/inputs/unfamiliar-upload-33.csv:36: trailing whitespace.
++"Independent authored synthetic record, not human review.
+docs/trialtrace/review/g3_challenge/actual_run/inputs/unfamiliar-upload-33.csv:37: trailing whitespace.
++Quoted ""cell""; literal <script>alert(""no execution"")</script> 🧪",DRAFT_SYNTHETIC,TABLE21,A10_DRAFT_2,g3-synthetic-site-東京,g3-synthetic-unknown-completion-Δ,NCT04470427,g3-synthetic-unknown-completion-mapping
+docs/trialtrace/review/g3_challenge/actual_run/inputs/unfamiliar-upload-33.csv:38: trailing whitespace.
++"Independent authored synthetic record, not human review.
+docs/trialtrace/review/g3_challenge/actual_run/inputs/unfamiliar-upload-33.csv:39: trailing whitespace.
++Quoted ""cell""; literal <script>alert(""no execution"")</script> 🧪",DRAFT_SYNTHETIC,TABLE21,A10_DRAFT_2,g3-synthetic-site-東京,g3-synthetic-duplicate-anchor-Δ,NCT04470427,g3-synthetic-duplicate-anchor-mapping
+docs/trialtrace/review/g3_challenge/actual_run/inputs/unfamiliar-upload-33.csv:40: trailing whitespace.
++"Independent authored synthetic record, not human review.
+docs/trialtrace/review/g3_challenge/actual_run/inputs/unfamiliar-upload-33.csv:41: trailing whitespace.
++Quoted ""cell""; literal <script>alert(""no execution"")</script> 🧪",DRAFT_SYNTHETIC,TABLE21,A10_DRAFT_2,g3-synthetic-site-東京,g3-synthetic-decision-anchor-Δ,NCT04470427,g3-synthetic-decision-anchor-mapping
+docs/trialtrace/review/g3_challenge/actual_run/inputs/unfamiliar-upload-33.csv:42: trailing whitespace.
++"Independent authored synthetic record, not human review.
+docs/trialtrace/review/g3_challenge/actual_run/inputs/unfamiliar-upload-33.csv:43: trailing whitespace.
++Quoted ""cell""; literal <script>alert(""no execution"")</script> 🧪",DRAFT_SYNTHETIC,TABLE21,A10_DRAFT_2,g3-synthetic-site-東京,g3-synthetic-wrong-event-Δ,NCT04470427,g3-synthetic-wrong-event-mapping
+docs/trialtrace/review/g3_challenge/actual_run/inputs/unfamiliar-upload-33.csv:44: trailing whitespace.
++"Independent authored synthetic record, not human review.
+docs/trialtrace/review/g3_challenge/actual_run/inputs/unfamiliar-upload-33.csv:45: trailing whitespace.
++Quoted ""cell""; literal <script>alert(""no execution"")</script> 🧪",DRAFT_SYNTHETIC,TABLE21,A10_DRAFT_2,g3-synthetic-site-東京,g3-synthetic-derived-overflow-Δ,NCT04470427,g3-synthetic-derived-overflow-mapping
+docs/trialtrace/review/g3_challenge/actual_run/inputs/unfamiliar-upload-33.csv:46: trailing whitespace.
++"Independent authored synthetic record, not human review.
+docs/trialtrace/review/g3_challenge/actual_run/inputs/unfamiliar-upload-33.csv:47: trailing whitespace.
++Quoted ""cell""; literal <script>alert(""no execution"")</script> 🧪",DRAFT_SYNTHETIC,TABLE21,A10_DRAFT_2,g3-synthetic-site-東京,g3-synthetic-invalid-nonleap-date-Δ,NCT04470427,g3-synthetic-invalid-nonleap-date-mapping
+docs/trialtrace/review/g3_challenge/actual_run/inputs/unfamiliar-upload-33.csv:48: trailing whitespace.
++"Independent authored synthetic record, not human review.
+docs/trialtrace/review/g3_challenge/actual_run/inputs/unfamiliar-upload-33.csv:49: trailing whitespace.
++Quoted ""cell""; literal <script>alert(""no execution"")</script> 🧪",DRAFT_SYNTHETIC,TABLE21,A10_DRAFT_2,g3-synthetic-site-東京,g3-synthetic-case-sensitive-id-Δ,NCT04470427,g3-synthetic-case-sensitive-id-mapping
+docs/trialtrace/review/g3_challenge/actual_run/inputs/unfamiliar-upload-33.csv:50: trailing whitespace.
++"Independent authored synthetic record, not human review.
+docs/trialtrace/review/g3_challenge/actual_run/inputs/unfamiliar-upload-33.csv:51: trailing whitespace.
++Quoted ""cell""; literal <script>alert(""no execution"")</script> 🧪",DRAFT_SYNTHETIC,TABLE21,A10_DRAFT_2,g3-synthetic-site-東京, ,NCT04470427,g3-orphan-invalid-mapping
+docs/trialtrace/review/g3_viewer/inputs/early0001/anchors.csv:1: trailing whitespace.
++study_id,participant_id,site_id,anchor_id,anchor_code,anchor_kind,anchor_date
+docs/trialtrace/review/g3_viewer/inputs/early0001/anchors.csv:2: trailing whitespace.
++NCT04470427,SYNTH-RIVER-41-early0001,SYNTH-SITE-8-early0001,SYNTH-DOSE-41-early0001,OL_D1,ACTUAL_VACCINATION,0001-01-01
+docs/trialtrace/review/g3_viewer/inputs/early0001/assignments.csv:1: trailing whitespace.
++assignment_id,study_id,participant_id,site_id,rule_version,schedule_code,mapping_status,mapping_note
+docs/trialtrace/review/g3_viewer/inputs/early0001/assignments.csv:2: trailing whitespace.
++SYNTH-MAP-41-early0001,NCT04470427,SYNTH-RIVER-41-early0001,SYNTH-SITE-8-early0001,A10_DRAFT_2,TABLE21,DRAFT_SYNTHETIC,New synthetic engineering case; source interpretation remains pending
+docs/trialtrace/review/g3_viewer/inputs/early0001/visits.csv:1: trailing whitespace.
++study_id,participant_id,site_id,visit_id,visit_code,event_kind,actual_date,visit_status,anchor_id,assignment_id
+docs/trialtrace/review/g3_viewer/inputs/early0001/visits.csv:2: trailing whitespace.
++NCT04470427,SYNTH-RIVER-41-early0001,SYNTH-SITE-8-early0001,SYNTH-CALL-41-early0001,OL_D8,SAFETY_PHONE_CALL,0001-01-11,COMPLETED,SYNTH-DOSE-41-early0001,SYNTH-MAP-41-early0001
+docs/trialtrace/review/g3_viewer/inputs/early0099/anchors.csv:1: trailing whitespace.
++study_id,participant_id,site_id,anchor_id,anchor_code,anchor_kind,anchor_date
+docs/trialtrace/review/g3_viewer/inputs/early0099/anchors.csv:2: trailing whitespace.
++NCT04470427,SYNTH-RIVER-41-early0099,SYNTH-SITE-8-early0099,SYNTH-DOSE-41-early0099,OL_D1,ACTUAL_VACCINATION,0099-12-20
+docs/trialtrace/review/g3_viewer/inputs/early0099/assignments.csv:1: trailing whitespace.
++assignment_id,study_id,participant_id,site_id,rule_version,schedule_code,mapping_status,mapping_note
+docs/trialtrace/review/g3_viewer/inputs/early0099/assignments.csv:2: trailing whitespace.
++SYNTH-MAP-41-early0099,NCT04470427,SYNTH-RIVER-41-early0099,SYNTH-SITE-8-early0099,A10_DRAFT_2,TABLE21,DRAFT_SYNTHETIC,New synthetic engineering case; source interpretation remains pending
+docs/trialtrace/review/g3_viewer/inputs/early0099/visits.csv:1: trailing whitespace.
++study_id,participant_id,site_id,visit_id,visit_code,event_kind,actual_date,visit_status,anchor_id,assignment_id
+docs/trialtrace/review/g3_viewer/inputs/early0099/visits.csv:2: trailing whitespace.
++NCT04470427,SYNTH-RIVER-41-early0099,SYNTH-SITE-8-early0099,SYNTH-CALL-41-early0099,OL_D8,SAFETY_PHONE_CALL,0099-12-31,COMPLETED,SYNTH-DOSE-41-early0099,SYNTH-MAP-41-early0099
+docs/trialtrace/review/g3_viewer/inputs/leap0004/anchors.csv:1: trailing whitespace.
++study_id,participant_id,site_id,anchor_id,anchor_code,anchor_kind,anchor_date
+docs/trialtrace/review/g3_viewer/inputs/leap0004/anchors.csv:2: trailing whitespace.
++NCT04470427,SYNTH-RIVER-41-leap0004,SYNTH-SITE-8-leap0004,SYNTH-DOSE-41-leap0004,OL_D1,ACTUAL_VACCINATION,0004-02-19
+docs/trialtrace/review/g3_viewer/inputs/leap0004/assignments.csv:1: trailing whitespace.
++assignment_id,study_id,participant_id,site_id,rule_version,schedule_code,mapping_status,mapping_note
+docs/trialtrace/review/g3_viewer/inputs/leap0004/assignments.csv:2: trailing whitespace.
++SYNTH-MAP-41-leap0004,NCT04470427,SYNTH-RIVER-41-leap0004,SYNTH-SITE-8-leap0004,A10_DRAFT_2,TABLE21,DRAFT_SYNTHETIC,New synthetic engineering case; source interpretation remains pending
+docs/trialtrace/review/g3_viewer/inputs/leap0004/visits.csv:1: trailing whitespace.
++study_id,participant_id,site_id,visit_id,visit_code,event_kind,actual_date,visit_status,anchor_id,assignment_id
+docs/trialtrace/review/g3_viewer/inputs/leap0004/visits.csv:2: trailing whitespace.
++NCT04470427,SYNTH-RIVER-41-leap0004,SYNTH-SITE-8-leap0004,SYNTH-CALL-41-leap0004,OL_D8,SAFETY_PHONE_CALL,0004-02-29,COMPLETED,SYNTH-DOSE-41-leap0004,SYNTH-MAP-41-leap0004
+features/evidence_viewer/tests/ACCEPTANCE_CASES.md:24: new blank line at EOF.
+features/evidence_viewer/tests/browser_inputs/broken.json:1: trailing whitespace.
++{"schema_version": "trialtrace.evidence.v1", 
+tools/g3_viewer/calendar_date_fix.patch:14: trailing whitespace.
++ 
+tools/g3_viewer/calendar_date_fix.patch:14: new blank line at EOF.
+tools/g3_viewer/candidate/tests/ACCEPTANCE_CASES.md:24: new blank line at EOF.
+tools/g3_viewer/candidate/tests/browser_inputs/broken.json:1: trailing whitespace.
++{"schema_version": "trialtrace.evidence.v1", 
+tools/g3_viewer/integration_fixes.patch:14: trailing whitespace.
++ 
+tools/g3_viewer/integration_fixes.patch:23: trailing whitespace.
++ 
+tools/g3_viewer/layout_overflow_fix.patch:9: trailing whitespace.
++ 
+tools/g3_viewer/native_snapshot/tests/ACCEPTANCE_CASES.md:24: new blank line at EOF.
+tools/g3_viewer/native_snapshot/tests/browser_inputs/broken.json:1: trailing whitespace.
++{"schema_version": "trialtrace.evidence.v1", 

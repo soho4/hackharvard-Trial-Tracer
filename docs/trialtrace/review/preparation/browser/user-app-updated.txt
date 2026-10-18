@@ -1,0 +1,226 @@
+Browser tab: 4, Title: "TrialTrace · Timing evidence", URL: "http://127.0.0.1:8502/".
+0 AXWebArea TrialTrace · Timing evidence, URL: 127.0.0.1:8502/
+	1 container
+		2 container
+			3 link Description: Skip to main content, Value: 127.0.0.1:8502/#stMain
+			4 container Description: Sidebar, ID: stSidebar
+				5 container
+					6 heading Public source · draft interpretation, Value: 3
+						7 text Public source · draft interpretation
+					8 text NCT04470427 · Moderna mRNA-1273-P301
+					9 text Supported check: documented OL-D8 safety phone call, anchored to an explicitly mapped actual OL-D1 vaccination.
+					10 text Candidate window: vaccination date +7 through +10 calendar days, inclusive. Table 21, amendment 10, 2022-04-07.
+					11 link Description: Open public protocol, Value: cdn.clinicaltrials.gov/large-docs/27/NCT04470427/Prot_000.pdf
+					12 link Description: Open trial registry, Value: clinicaltrials.gov/study/NCT04470427
+					13 text Registry: COMPLETED · ModernaTX, Inc.
+					14 text Public metadata fetched 2026-10-18; registry updated 2024-03-21. Snapshot, not a live feed.
+					15 text The registry contains aggregate results, not the participant visit dates used in this check.
+					16 button (collapsed) Fetched public registry metadata, Secondary Actions: Expand
+						17 text Fetched public registry metadata
+					18 button (expanded) Rule and source provenance, Secondary Actions: Collapse
+						19 text Rule and source provenance
+					20 text Rule SHA-256
+					21 text f36336df90a1793a80b92f48ce273488a091547110856bdcc602587ddad9e7f0
+					22 text Source PDF SHA-256 for this run
+					23 text Not available — source PDF bytes not supplied to this app
+					24 text A file hash identifies bytes. It does not approve the interpretation or verify participant records.
+					25 container
+						26 text {
+						27 container
+							28 text " schema_version "
+						29 text :
+						30 container
+							31 text " trialtrace.rulecard.v0.3 "
+						32 container
+							33 text " rule_id "
+						34 text :
+						35 container
+							36 text " TABLE21_OL_D8_WINDOW "
+						37 container
+							38 text " rule_version "
+						39 text :
+						40 container
+							41 text " A10_DRAFT_2 "
+						42 container
+							43 text " source_id "
+						44 text :
+						45 container
+							46 text " NCT04470427_A10 "
+						47 container
+							48 text " source_url "
+						49 text :
+						50 container
+							51 text " https://cdn.clinicaltrials.gov/large-docs/27/NCT04470427/Prot_000.pdf "
+						52 container
+							53 text " source_locator " :
+						54 text {
+						55 container
+							56 text " table "
+						57 text :
+						58 container
+							59 text " 21 "
+						60 container
+							61 text " printed_pages " :
+						62 text [
+						63 container
+							64 text 0 :
+						65 text 150
+						66 container
+							67 text 1 :
+						68 text 151
+						69 container
+							70 text 2 :
+						71 text 152
+						72 text ]
+						73 container
+							74 text " pdf_pages_one_indexed " :
+						75 text [
+						76 container
+							77 text 0 :
+						78 text 150
+						79 container
+							80 text 1 :
+						81 text 151
+						82 container
+							83 text 2 :
+						84 text 152
+						85 text ] }
+						86 container
+							87 text " study_id "
+						88 text :
+						89 container
+							90 text " NCT04470427 "
+						91 container
+							92 text " protocol_id "
+						93 text :
+						94 container
+							95 text " mRNA-1273-P301 "
+						96 container
+							97 text " amendment "
+						98 text :
+						99 text 10
+						100 container
+							101 text " document_date "
+						102 text :
+						103 container
+							104 text " 2022-04-07 "
+						105 container
+							106 text " scope "
+						107 text :
+						108 container
+							109 text " Table 21: Part A placebo recipients requesting open-label mRNA-1273; synthetic explicitly mapped cases only. "
+						110 container
+							111 text " supported_visit_code "
+						112 text :
+						113 container
+							114 text " OL_D8 "
+						115 container
+							116 text " event_kind "
+						117 text :
+						118 container
+							119 text " SAFETY_PHONE_CALL "
+						120 container
+							121 text " anchor_code "
+						122 text :
+						123 container
+							124 text " OL_D1 "
+						125 container
+							126 text " anchor_kind "
+						127 text :
+						128 container
+							129 text " ACTUAL_VACCINATION "
+						130 container
+							131 text " offset_days "
+						132 text :
+						133 text 7
+						134 container
+							135 text " lower_days "
+						136 text :
+						137 text 0
+						138 container
+							139 text " upper_days "
+						140 text :
+						141 text 3
+						142 container
+							143 text " bounds "
+						144 text :
+						145 container
+							146 text " inclusive "
+						147 container
+							148 text " units "
+						149 text :
+						150 container
+							151 text " calendar_days "
+						152 container
+							153 text " interpretation_notes " :
+						154 text [
+						155 container
+							156 text 0 :
+						157 container
+							158 text " Table cells give seven days after OL-D1 and +3 days. Zero early allowance and inclusive date boundaries are the candidate software interpretation requiring team review. "
+						159 container
+							160 text 1 :
+						161 container
+							162 text " OL-D1 and participant-decision visit may occur separately; never use the decision/consent/booking date instead of actual mapped vaccination. "
+						163 container
+							164 text 2 :
+						165 container
+							166 text " This checks timing of a documented safety phone call, not completion or adequacy of its safety assessments. "
+						167 container
+							168 text 3 :
+						169 container
+							170 text " No inference of eligibility, historical amendment applicability, missed events, clinical importance or exceptions. "
+						171 text ]
+						172 container
+							173 text " review_status "
+						174 text :
+						175 container
+							176 text " PENDING_TEAM_SOURCE_REVIEW "
+						177 container
+							178 text " data_kind "
+						179 text :
+						180 container
+							181 text " SYNTHETIC_ONLY "
+						182 container
+							183 text " clinical_validation "
+						184 text :
+						185 text false
+						186 text }
+					187 text Human source review is pending. This app cannot infer eligibility, applicable amendment, missing activities, or the adequacy of a safety assessment.
+			188 container
+				212 button (collapsed) Description: Expand sidebar, Secondary Actions: Expand
+				213 button Deploy
+				194 pop up button (collapsed) Description: Main menu, Secondary Actions: Expand
+			195 container stMain
+				196 text TRIALTRACE / LOCAL WORKSPACE
+				197 heading TrialTrace timing checks, Value: 1, ID: trial-trace-timing-checks
+					198 text TrialTrace timing checks
+					199 link Description: Link to heading, Value: 127.0.0.1:8502/#trial-trace-timing-checks
+				200 text Check recorded safety-call timing against one supported draft rule. Map a spreadsheet or supply prepared tables, then inspect the evidence behind each result.
+				201 text DRAFT · Synthetic inputs only. Public protocol data is real; participant examples are synthetic. Source interpretation awaits human review. No clinical validation.
+				202 tab group react-aria2520950421-:r4:
+					203 tab (selected, settable, boolean) Map one spreadsheet, Value: 1, ID: react-aria2520950421-:r4:-tab-0
+						214 text Map one spreadsheet
+					204 tab (selectable, settable, boolean) Check uploaded data, ID: react-aria2520950421-:r4:-tab-1, Value: 0
+Check uploaded data
+					205 tab (selectable, settable, boolean) Open saved evidence report, ID: react-aria2520950421-:r4:-tab-2, Value: 0
+Open saved evidence report
+					215 tab (selectable, settable, boolean) Compare saved reports, ID: react-aria2520950421-:r4:-tab-3, Value: 0
+Compare saved reports
+				206 container Description: Map one spreadsheet, ID: react-aria2520950421-:r4:-tabpanel-0
+					207 heading Check one spreadsheet, Value: 3, ID: check-one-spreadsheet
+						208 text Check one spreadsheet
+						209 link Description: Link to heading, Value: 127.0.0.1:8502/#check-one-spreadsheet
+					210 text Use a CSV with one safety-call record per row, including its vaccination reference. Choose which columns mean what; preview the mapping before running.
+					211 text This is a limited import path, not a direct REDCap, OpenClinica or CDISC connector. A CSV must contain both actual dates, identifiers and call completion status. Multi-event rows, partial dates and missing columns are not inferred.
+					216 button (collapsed) What this import can and cannot establish, Secondary Actions: Expand
+						217 text What this import can and cannot establish
+					218 container
+						219 container Source spreadsheet CSV
+							220 button file upload
+							221 button Upload
+								222 text Upload
+							223 text 1MB per file
+					224 text Choose your CSV to inspect its columns. The three-table route remains available in Check uploaded data.
+
+The focused UI element is 203 tab (selected, settable, boolean) Map one spreadsheet, Value: 1, ID: react-aria2520950421-:r4:-tab-0

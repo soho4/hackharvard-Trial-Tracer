@@ -1,0 +1,190 @@
+{
+  "status": "PASS",
+  "run_id": "20261018T091057.699404Z-e5baf537",
+  "scope": "Fresh venv and regular installed wheel on this same machine. AppTest is not a browser/network test.",
+  "python": "3.13.4 (v3.13.4:8a526ec7cbe, Jun  3 2025, 21:14:54) [Clang 16.0.0 (clang-1600.0.26.6)]",
+  "platform": "macOS-27.0-arm64-arm-64bit-Mach-O",
+  "executable": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/workflow_clean_env/bin/python",
+  "cwd": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work",
+  "isolated": 1,
+  "installed_module": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/workflow_clean_env/lib/python3.13/site-packages/trialtrace/__init__.py",
+  "installed_modules": {
+    "trialtrace": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/workflow_clean_env/lib/python3.13/site-packages/trialtrace/__init__.py",
+    "trialtrace.errors": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/workflow_clean_env/lib/python3.13/site-packages/trialtrace/errors.py",
+    "trialtrace.relationships": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/workflow_clean_env/lib/python3.13/site-packages/trialtrace/relationships.py",
+    "trialtrace.engine": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/workflow_clean_env/lib/python3.13/site-packages/trialtrace/engine.py",
+    "trialtrace.importer": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/workflow_clean_env/lib/python3.13/site-packages/trialtrace/importer.py",
+    "trialtrace.exporter": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/workflow_clean_env/lib/python3.13/site-packages/trialtrace/exporter.py",
+    "trialtrace.source": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/workflow_clean_env/lib/python3.13/site-packages/trialtrace/source.py",
+    "trialtrace.cli": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/workflow_clean_env/lib/python3.13/site-packages/trialtrace/cli.py",
+    "trialtrace.workflow": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/workflow_clean_env/lib/python3.13/site-packages/trialtrace/workflow.py",
+    "trialtrace.comparison": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/workflow_clean_env/lib/python3.13/site-packages/trialtrace/comparison.py",
+    "trialtrace.inspection": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/workflow_clean_env/lib/python3.13/site-packages/trialtrace/inspection.py",
+    "trialtrace.registry_metadata": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/workflow_clean_env/lib/python3.13/site-packages/trialtrace/registry_metadata.py"
+  },
+  "code_sha256": "5c3a04fc876cd946228433b156bfc78912b8c342011154288fda619fa08451d9",
+  "source_files_sha256": {
+    "__init__.py": "f73c7fc3426695231fe9fc8ddc89dfcd53b8c211d2d8f1b1ff4eb511c701542c",
+    "cli.py": "d63ad325e6831900fc49c3267ffa1642696a1ef96cd32b259b32a411c98513a5",
+    "comparison.py": "dd90947afb0b4da6fc99bf61779b8efa094e9303fb97fa887b4a9e415c253255",
+    "engine.py": "3afaee41f511a31c4fe03586ba7f0f5fb541661b6139439046bbf72d19159f6f",
+    "errors.py": "21751b169405f8f79486ab57ea226c88ba3d1f416ec1560b2ce4f5a198744ae3",
+    "exporter.py": "3838904ba69f09097d257dea2b84880930b51e833de449de50d0b8aa1c738a34",
+    "import_cli.py": "fc29843ac0d43c6295ae64d61f7a72e497e0878a934c1ce05c6e7307e0a44afc",
+    "importer.py": "3ef4772201bf25bd7481780961783b2d660d3e3629da4080ec25ff08ca655b55",
+    "inspection.py": "4d546e6cd24de12bb56fa43d7459694429016f4a677618b645096860e640143d",
+    "registry_metadata.py": "422816c2a141246dcb2f4688a1713c16ad4f4624d6769b732c4f6a448586eddb",
+    "relationships.py": "23a46a43723158334bbaa7406dcc695a08eea9a4265029d2ff495380e3318ef2",
+    "source.py": "b1713f49c318e00474a3a60993e88410dcd28b3377b722ad5bcc2b0462f41c35",
+    "workflow.py": "19c2104bbccda448c64e8ee0331e5d346a4c214f090438fd2acfc6a76062a9fc"
+  },
+  "schema_sha256": "706c2b68086f1c9d38ac5ddbc37653e6f1da45d7d595eabff194c3e9737abee0",
+  "app_sha256": "a90a5695a105d5e89a45da41514f049726edaa3db7c1ab21c6e6f2c15c279f23",
+  "requirements_ui_lock_sha256": "f284e9a44724f997950e91214a976dd342f3ff0cbe48160b3aedbfdb5319370e",
+  "rule_sha256": "f36336df90a1793a80b92f48ce273488a091547110856bdcc602587ddad9e7f0",
+  "source_metadata": {
+    "pdf_sha256": "da946b1ae23d40c41b332f1d0cb3311f0634e57009b4a37b9c6d6c60ee8bf186",
+    "retrieval_status": "LOCAL_PDF_BYTES_HASHED_IDENTITY_NOT_CHECKED_BY_RUNTIME"
+  },
+  "dependencies": {
+    "narwhals": "2.27.1",
+    "uvicorn": "0.54.0",
+    "websockets": "17.2",
+    "click": "8.5.0",
+    "packaging": "26.3",
+    "protobuf": "7.36.2",
+    "Pygments": "2.21.0",
+    "pyarrow": "26.0.0",
+    "jsonschema-specifications": "2025.9.1",
+    "pip": "25.1.1",
+    "requests": "2.34.2",
+    "jsonschema": "4.26.0",
+    "itsdangerous": "2.2.0",
+    "iniconfig": "2.3.1",
+    "numpy": "2.5.4",
+    "trialtrace-core": "0.1.0",
+    "pluggy": "1.7.0",
+    "pytest": "9.1.1",
+    "setuptools": "84.0.0",
+    "urllib3": "2.8.0",
+    "h11": "0.16.0",
+    "python-multipart": "0.0.32",
+    "python-dateutil": "2.9.0.post0",
+    "starlette": "1.8.0",
+    "altair": "6.3.0",
+    "streamlit": "1.66.0",
+    "pydeck": "0.9.3",
+    "certifi": "2026.7.22",
+    "Jinja2": "3.1.6",
+    "referencing": "0.37.0",
+    "rpds-py": "2026.9.1",
+    "pandas": "3.0.6",
+    "attrs": "26.1.0",
+    "typing_extensions": "4.16.0",
+    "MarkupSafe": "3.0.4",
+    "charset-normalizer": "3.5.2",
+    "pillow": "12.3.0",
+    "anyio": "4.15.1",
+    "six": "1.17.0",
+    "idna": "3.20"
+  },
+  "cases": [
+    {
+      "case": "boundary",
+      "status": "PASS",
+      "calculation": {
+        "target": "2040-02-29",
+        "earliest": "2040-02-29",
+        "latest": "2040-03-03",
+        "actual": "2040-03-03",
+        "days_outside": 0
+      },
+      "cli_exit_code": 0,
+      "cli_adapter_bytes_identical": true,
+      "intake_ready_without_timing": true,
+      "review_findings": 0,
+      "input_issues": 0,
+      "output_sha256": "57ca3702332c95afab873b2b94ab8fca388736d8c8cb30f2c3a6ac4ac4159bcf",
+      "input_sha256": {
+        "anchors.csv": "49992742203c6f09467c896f8dcc7b8f0bd755d78e172fee05700c06d1ceba3e",
+        "visits.csv": "d24b62515df9b55cc5da757a8eebe69d5b36e07300489914d392a3d5cfa23d63",
+        "assignments.csv": "31256fe70bae3d5089e8f1fb3dae552ae023c41d790270bf1e333bbd1f16bf8a"
+      },
+      "command_record": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/docs/trialtrace/review/workflows/clean_install/runs/20261018T091057.699404Z-e5baf537/boundary-cli.command.json"
+    },
+    {
+      "case": "outside",
+      "status": "POTENTIAL_DEVIATION",
+      "calculation": {
+        "target": "2040-02-29",
+        "earliest": "2040-02-29",
+        "latest": "2040-03-03",
+        "actual": "2040-03-04",
+        "days_outside": 1
+      },
+      "cli_exit_code": 0,
+      "cli_adapter_bytes_identical": true,
+      "intake_ready_without_timing": true,
+      "review_findings": 1,
+      "input_issues": 0,
+      "output_sha256": "2ee3abaee43810f6a01ed87c255076b20e22699b3106c4bf1680ae23a8add82c",
+      "input_sha256": {
+        "anchors.csv": "49992742203c6f09467c896f8dcc7b8f0bd755d78e172fee05700c06d1ceba3e",
+        "visits.csv": "33bdff8c5f071f97923a551fb871ebe5001d73e91915e430430410a23609734c",
+        "assignments.csv": "31256fe70bae3d5089e8f1fb3dae552ae023c41d790270bf1e333bbd1f16bf8a"
+      },
+      "command_record": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/docs/trialtrace/review/workflows/clean_install/runs/20261018T091057.699404Z-e5baf537/outside-cli.command.json"
+    },
+    {
+      "case": "missing_anchor",
+      "status": "DATA_QUERY",
+      "calculation": null,
+      "cli_exit_code": 0,
+      "cli_adapter_bytes_identical": true,
+      "intake_ready_without_timing": true,
+      "review_findings": 1,
+      "input_issues": 1,
+      "output_sha256": "0a2019e9bd6a92418d24e982975a722fa0dd1b3b11c3c2aac325ec892df71261",
+      "input_sha256": {
+        "anchors.csv": "9f6b25c90aabd9d298c9caf9a0a1780ee85ac7d8d8f4dafbe81baef52307440e",
+        "visits.csv": "d24b62515df9b55cc5da757a8eebe69d5b36e07300489914d392a3d5cfa23d63",
+        "assignments.csv": "31256fe70bae3d5089e8f1fb3dae552ae023c41d790270bf1e333bbd1f16bf8a"
+      },
+      "command_record": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/docs/trialtrace/review/workflows/clean_install/runs/20261018T091057.699404Z-e5baf537/missing_anchor-cli.command.json"
+    }
+  ],
+  "malformed_upload_rejection": "INVALID_HEADER",
+  "comparison": {
+    "matched": 1,
+    "changed": 1,
+    "provenance_only": 0,
+    "unchanged": 0,
+    "added": 0,
+    "removed": 0,
+    "unmatched_before": 0,
+    "unmatched_after": 0
+  },
+  "app_test": {
+    "actual_script": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/app.py",
+    "uploads": 3,
+    "draft_confirmed": true,
+    "initial_upload_slots": 5,
+    "csv_slots_selected_by_role": true,
+    "findings_status": "PASS",
+    "metrics": [
+      "1",
+      "0",
+      "0",
+      "0"
+    ],
+    "bytes_match_cli": true,
+    "clear_retires_report_and_download": true,
+    "app_exceptions": 0,
+    "classification": "IN_PROCESS_APPTEST_NOT_BROWSER"
+  },
+  "limitations": [
+    "Not a second-machine reproduction.",
+    "No human source review or clinical validation.",
+    "Main browser/server checks are recorded separately."
+  ]
+}

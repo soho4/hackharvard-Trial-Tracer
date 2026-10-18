@@ -1,0 +1,2 @@
+study_id,participant_id,site_id,visit_id,visit_code,event_kind,actual_date,visit_status,anchor_id,assignment_id
+NCT04470427,SYNTH-RIVER-41-early0099,SYNTH-SITE-8-early0099,SYNTH-CALL-41-early0099,OL_D8,SAFETY_PHONE_CALL,0099-12-31,COMPLETED,SYNTH-DOSE-41-early0099,SYNTH-MAP-41-early0099

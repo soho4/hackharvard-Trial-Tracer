@@ -1,0 +1,321 @@
+- link "Skip to main content":
+  - /url: "#stMain"
+- region "Sidebar":
+  - heading "Public source · draft interpretation" [level=3]
+  - paragraph: NCT04470427 · Moderna mRNA-1273-P301
+  - paragraph: "Supported check: documented OL-D8 safety phone call, anchored to an explicitly mapped actual OL-D1 vaccination."
+  - paragraph: "Candidate window: vaccination date +7 through +10 calendar days, inclusive. Table 21, amendment 10, 7 April 2022."
+  - link "Open public protocol":
+    - /url: https://cdn.clinicaltrials.gov/large-docs/27/NCT04470427/Prot_000.pdf
+    - paragraph: Open public protocol
+  - link "Open trial registry":
+    - /url: https://clinicaltrials.gov/study/NCT04470427
+    - paragraph: Open trial registry
+  - generic "Fetched public registry metadata":
+    - generic: keyboard_arrow_right
+    - paragraph: Fetched public registry metadata
+  - generic "Rule and source provenance":
+    - generic: keyboard_arrow_right
+    - paragraph: Rule and source provenance
+  - status:
+    - paragraph: Human source review is pending. This app cannot infer eligibility, applicable amendment, missing activities, or the adequacy of a safety assessment.
+- banner:
+  - button "Expand sidebar":
+    - generic: keyboard_double_arrow_right
+  - button "Deploy":
+    - generic: Deploy
+  - button "Main menu":
+- main:
+  - paragraph: TRIALTRACE / LOCAL WORKSPACE
+  - heading "TrialTrace timing checks" [level=1]:
+    - text: TrialTrace timing checks
+    - link "Link to heading":
+      - /url: "#trial-trace-timing-checks"
+  - paragraph: Upload three tables, check the supported timing rule, and inspect every result against the original records.
+  - alert:
+    - paragraph: DRAFT · Synthetic inputs only. Public protocol data is real; participant examples are synthetic. Source interpretation awaits human review. No clinical validation.
+  - tablist:
+    - tab "Check uploaded data" [selected]:
+      - paragraph: Check uploaded data
+    - tab "Open saved evidence report":
+      - paragraph: Open saved evidence report
+  - tabpanel "Check uploaded data":
+    - heading "1. Supply the three source tables" [level=3]:
+      - text: 1. Supply the three source tables
+      - link "Link to heading":
+        - /url: "#1-supply-the-three-source-tables"
+    - paragraph: UTF-8 CSV · up to 1,000,000 bytes and 500 rows per table · dates YYYY-MM-DD. Files stay in this local app session; no database or model service is used.
+    - paragraph: anchors.csv
+    - button "Help for anchors.csv":
+    - region "anchors.csv":
+      - button "file upload"
+      - generic "anchors.csv, 166.0B":
+        - generic "anchors.csv"
+        - generic: 166.0B
+        - button "Remove anchors.csv":
+      - button "Add files":
+        - generic: add icon
+        - generic: add
+    - button "Download anchors.csv template":
+      - generic "Download anchors.csv template":
+        - paragraph: Download anchors.csv template
+    - paragraph: visits.csv
+    - button "Help for visits.csv":
+    - region "visits.csv":
+      - button "file upload"
+      - generic "visits.csv, 236.0B":
+        - generic "visits.csv"
+        - generic: 236.0B
+        - button "Remove visits.csv":
+      - generic "browser-large.csv, 1.1MB":
+        - generic "browser-large.csv"
+        - generic: 1.1MB
+        - button "Remove browser-large.csv":
+        - alert: "Error: File must be 1.0MB or smaller."
+      - button "Add files" [active]:
+        - generic: add icon
+        - generic: add
+    - button "Download visits.csv template":
+      - paragraph: Download visits.csv template
+    - paragraph: assignments.csv
+    - button "Help for assignments.csv":
+    - region "assignments.csv":
+      - button "file upload"
+      - generic "assignments.csv, 241.0B":
+        - generic "assignments.csv"
+        - generic: 241.0B
+        - button "Remove assignments.csv":
+      - button "Add files":
+        - generic: add icon
+        - generic: add
+    - button "Download assignments.csv template":
+      - generic "Download assignments.csv template":
+        - paragraph: Download assignments.csv template
+    - checkbox "These are synthetic records; run the unreviewed draft timing check." [checked]
+    - paragraph: These are synthetic records; run the unreviewed draft timing check.
+    - heading "2. Run the timing check" [level=3]:
+      - text: 2. Run the timing check
+      - link "Link to heading":
+        - /url: "#2-run-the-timing-check"
+    - button "Run timing check":
+      - paragraph: Run timing check
+    - heading "Results from your uploaded files" [level=3]:
+      - text: Results from your uploaded files
+      - link "Link to heading":
+        - /url: "#results-from-your-uploaded-files"
+    - paragraph: Draft engineering · synthetic records · source interpretation pending review
+    - paragraph: Pass
+    - paragraph: "1"
+    - paragraph: Potential Deviation
+    - paragraph: "0"
+    - paragraph: Data Query
+    - paragraph: "0"
+    - paragraph: Not Evaluable
+    - paragraph: "0"
+    - paragraph: 1 documented visit record(s) checked. Counts always describe the whole report.
+    - button "Download evidence JSON":
+      - paragraph: Download evidence JSON
+    - paragraph: The download contains the full report, including original evidence and unresolved records. Filters do not change it.
+    - paragraph: Outcome filter
+    - combobox "Outcome filter": ALL
+    - button "Open":
+    - paragraph: Search participant, visit, site or reason
+    - textbox "Search participant, visit, site or reason":
+      - /placeholder: ""
+    - paragraph: Showing 1 of 1 findings
+    - paragraph: Select finding
+    - combobox "Select finding": SYNTH-ELM-2040 · SYNTH-CALL-95 · PASS
+    - button "Open":
+    - heading "Selected finding" [level=3]:
+      - text: Selected finding
+      - link "Link to heading":
+        - /url: "#selected-finding"
+    - generic: PASS · WITHIN_INCLUSIVE_WINDOW
+    - table:
+      - rowgroup:
+        - row "Date Value":
+          - columnheader "Date":
+            - paragraph: Date
+          - columnheader "Value":
+            - paragraph: Value
+      - rowgroup:
+        - row "Target 2040-02-29":
+          - cell "Target":
+            - paragraph: Target
+          - cell "2040-02-29":
+            - paragraph: 2040-02-29
+        - row "Earliest 2040-02-29":
+          - cell "Earliest":
+            - paragraph: Earliest
+          - cell "2040-02-29":
+            - paragraph: 2040-02-29
+        - row "Latest 2040-03-03":
+          - cell "Latest":
+            - paragraph: Latest
+          - cell "2040-03-03":
+            - paragraph: 2040-03-03
+        - row "Actual 2040-03-03":
+          - cell "Actual":
+            - paragraph: Actual
+          - cell "2040-03-03":
+            - paragraph: 2040-03-03
+        - row "Days Outside 0":
+          - cell "Days Outside":
+            - paragraph: Days Outside
+          - cell "0":
+            - paragraph: "0"
+    - paragraph: Original records used for this finding
+    - generic "visits.csv · record 1":
+      - generic: keyboard_arrow_down
+      - paragraph: visits.csv · record 1
+    - generic: "{"
+    - text: "\""
+    - generic: study_id
+    - text: "\""
+    - generic: ":"
+    - generic: "\"NCT04470427\""
+    - text: "\""
+    - generic: participant_id
+    - text: "\""
+    - generic: ":"
+    - generic: "\"SYNTH-ELM-2040\""
+    - text: "\""
+    - generic: site_id
+    - text: "\""
+    - generic: ":"
+    - generic: "\"SYNTH-NORTH\""
+    - text: "\""
+    - generic: visit_id
+    - text: "\""
+    - generic: ":"
+    - generic: "\"SYNTH-CALL-95\""
+    - text: "\""
+    - generic: visit_code
+    - text: "\""
+    - generic: ":"
+    - generic: "\"OL_D8\""
+    - text: "\""
+    - generic: event_kind
+    - text: "\""
+    - generic: ":"
+    - generic: "\"SAFETY_PHONE_CALL\""
+    - text: "\""
+    - generic: actual_date
+    - text: "\""
+    - generic: ":"
+    - generic: "\"2040-03-03\""
+    - text: "\""
+    - generic: visit_status
+    - text: "\""
+    - generic: ":"
+    - generic: "\"COMPLETED\""
+    - text: "\""
+    - generic: anchor_id
+    - text: "\""
+    - generic: ":"
+    - generic: "\"SYNTH-VAX-62\""
+    - text: "\""
+    - generic: assignment_id
+    - text: "\""
+    - generic: ":"
+    - generic: "\"SYNTH-MAP-81\""
+    - generic: "}"
+    - paragraph: Exact source file SHA-256
+    - code: d24b62515df9b55cc5da757a8eebe69d5b36e07300489914d392a3d5cfa23d63
+    - generic "anchors.csv · record 1":
+      - generic: keyboard_arrow_down
+      - paragraph: anchors.csv · record 1
+    - generic: "{"
+    - text: "\""
+    - generic: study_id
+    - text: "\""
+    - generic: ":"
+    - generic: "\"NCT04470427\""
+    - text: "\""
+    - generic: participant_id
+    - text: "\""
+    - generic: ":"
+    - generic: "\"SYNTH-ELM-2040\""
+    - text: "\""
+    - generic: site_id
+    - text: "\""
+    - generic: ":"
+    - generic: "\"SYNTH-NORTH\""
+    - text: "\""
+    - generic: anchor_id
+    - text: "\""
+    - generic: ":"
+    - generic: "\"SYNTH-VAX-62\""
+    - text: "\""
+    - generic: anchor_code
+    - text: "\""
+    - generic: ":"
+    - generic: "\"OL_D1\""
+    - text: "\""
+    - generic: anchor_kind
+    - text: "\""
+    - generic: ":"
+    - generic: "\"ACTUAL_VACCINATION\""
+    - text: "\""
+    - generic: anchor_date
+    - text: "\""
+    - generic: ":"
+    - generic: "\"2040-02-22\""
+    - generic: "}"
+    - paragraph: Exact source file SHA-256
+    - code: 49992742203c6f09467c896f8dcc7b8f0bd755d78e172fee05700c06d1ceba3e
+    - generic "assignments.csv · record 1":
+      - generic: keyboard_arrow_down
+      - paragraph: assignments.csv · record 1
+    - generic: "{"
+    - text: "\""
+    - generic: assignment_id
+    - text: "\""
+    - generic: ":"
+    - generic: "\"SYNTH-MAP-81\""
+    - text: "\""
+    - generic: study_id
+    - text: "\""
+    - generic: ":"
+    - generic: "\"NCT04470427\""
+    - text: "\""
+    - generic: participant_id
+    - text: "\""
+    - generic: ":"
+    - generic: "\"SYNTH-ELM-2040\""
+    - text: "\""
+    - generic: site_id
+    - text: "\""
+    - generic: ":"
+    - generic: "\"SYNTH-NORTH\""
+    - text: "\""
+    - generic: rule_version
+    - text: "\""
+    - generic: ":"
+    - generic: "\"A10_DRAFT_2\""
+    - text: "\""
+    - generic: schedule_code
+    - text: "\""
+    - generic: ":"
+    - generic: "\"TABLE21\""
+    - text: "\""
+    - generic: mapping_status
+    - text: "\""
+    - generic: ":"
+    - generic: "\"DRAFT_SYNTHETIC\""
+    - text: "\""
+    - generic: mapping_note
+    - text: "\""
+    - generic: ":"
+    - generic: "\"New synthetic browser challenge; no source approval\""
+    - generic: "}"
+    - paragraph: Exact source file SHA-256
+    - code: 31256fe70bae3d5089e8f1fb3dae552ae023c41d790270bf1e333bbd1f16bf8a
+    - generic "Input accounting, including unused or problematic rows":
+      - generic: keyboard_arrow_right
+      - paragraph: Input accounting, including unused or problematic rows
+    - generic "Report identity and input fingerprints":
+      - generic: keyboard_arrow_right
+      - paragraph: Report identity and input fingerprints
+- tooltip "File must be 1.0MB or smaller.":
+  - generic: File must be 1.0MB or smaller.

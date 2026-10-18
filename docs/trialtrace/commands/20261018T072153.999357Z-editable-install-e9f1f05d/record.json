@@ -1,0 +1,23 @@
+{
+  "label": "editable-install",
+  "command": [
+    ".venv/bin/python",
+    "-m",
+    "pip",
+    "install",
+    "-e",
+    "."
+  ],
+  "cwd": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace",
+  "started_at": "2026-10-18T07:21:53.999357+00:00",
+  "finished_at": "2026-10-18T07:21:55.530068+00:00",
+  "elapsed_seconds": 1.530074,
+  "status": "EXIT_ZERO",
+  "exit_code": 0,
+  "stdout_path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/docs/trialtrace/commands/20261018T072153.999357Z-editable-install-e9f1f05d/stdout.log",
+  "stderr_path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/docs/trialtrace/commands/20261018T072153.999357Z-editable-install-e9f1f05d/stderr.log",
+  "stdout_sha256": "b9fb54c87cef888d91fd7a748e6b618630ae2ee168be27829a0076354f43e60e",
+  "stderr_sha256": "8f3f53aae84e23d6c56eef04ef0f2813c4fddfdf89fbe01867af37b8743e478f",
+  "gate_acceptance": "NOT_DETERMINED_BY_COMMAND_RECORDER",
+  "warning": "Logs are not tamper-proof; this does not establish test assertions, source review, or clinical validity."
+}

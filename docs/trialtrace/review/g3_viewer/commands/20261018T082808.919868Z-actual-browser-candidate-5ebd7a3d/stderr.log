@@ -1,0 +1,9 @@
+AssertionError [ERR_ASSERTION]: {"viewport":390,"scroll":643,"body":643}
+    at /Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/tools/g3_viewer/browser_check.cjs:121:10 {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '==',
+  diff: 'simple'
+}

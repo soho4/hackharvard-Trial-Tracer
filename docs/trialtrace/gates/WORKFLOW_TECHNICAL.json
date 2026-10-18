@@ -1,0 +1,22 @@
+{
+  "gate": "LOCAL_WORKFLOW_TECHNICAL",
+  "status": "PASS_LOCAL_SYNTHETIC_DRAFT",
+  "recorded_at": "2026-10-18T09:24:19.971137+00:00",
+  "app_sha256": "1068c0d08a744acbeef751873641003e495540a33e0addde0ec3feeed1b4a9d6",
+  "code_sha256": "5c3a04fc876cd946228433b156bfc78912b8c342011154288fda619fa08451d9",
+  "rule_sha256": "f36336df90a1793a80b92f48ce273488a091547110856bdcc602587ddad9e7f0",
+  "schema_sha256": "706c2b68086f1c9d38ac5ddbc37653e6f1da45d7d595eabff194c3e9737abee0",
+  "source_acceptance": "BLOCKED_PENDING_HUMAN_REVIEW",
+  "clinical_validation": false,
+  "application_tests": 424,
+  "records": {
+    "full_suite": "review/workflows/commands/20261018T092201.707696Z-workflow-restored-snapshot-full-suite-7611b4f8/record.json",
+    "browser_review": "review/workflows/BROWSER_REVIEW.md",
+    "browser_download_verification": "review/workflows/browser_final/result.json",
+    "actual_installed_file_challenge": "review/workflows/actual_run_final/result.json",
+    "same_machine_installed_probe": "review/workflows/clean_install_final/result.json",
+    "ai_review": "review/workflows/INTEGRATION_REVIEW.md"
+  },
+  "progress": "BUILD_PROGRESS.md",
+  "boundary": "Technical local synthetic acceptance only; no new human review, clinical validation, real participant pilot or public release."
+}

@@ -1,0 +1,17 @@
+{
+  "gate": "G0_SOURCE",
+  "state": "BLOCKED_PENDING_HUMAN_REVIEW",
+  "technical_acquisition": "PASS",
+  "pdf_sha256": "da946b1ae23d40c41b332f1d0cb3311f0634e57009b4a37b9c6d6c60ee8bf186",
+  "rule_sha256": "f36336df90a1793a80b92f48ce273488a091547110856bdcc602587ddad9e7f0",
+  "checked_at": "2026-10-18T07:37:52.737797+00:00",
+  "technical_evidence": "source_check/source_check_manifest.json",
+  "human_review_created": false,
+  "clinical_validation": false,
+  "blockers": [
+    "Independent human interpretation review bound to exact PDF and rule bytes",
+    "Integrator acceptance",
+    "Reconcile displayed source note numbering; review zero early allowance and inclusive bounds"
+  ],
+  "next_allowed_work": "Complete draft CORE_EXPORT; do not promote reviewed mode"
+}

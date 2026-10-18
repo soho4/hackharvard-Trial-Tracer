@@ -1,0 +1,8 @@
+assignment_id,study_id,participant_id,site_id,rule_version,schedule_code,mapping_status,mapping_note
+PREP-1,NCT04470427,=SYNTH-PREP-01,SYNTH-CLINIC,A10_DRAFT_2,TABLE21,DRAFT_SYNTHETIC,Synthetic user-declared preparation b8f21a9b373d928b935f59675926cfb023fc05761eb7f2c709091662a897f39e; source record 1; not human-reviewed.
+PREP-2,NCT04470427,SYNTH-PREP-02,SYNTH-CLINIC,A10_DRAFT_2,TABLE21,DRAFT_SYNTHETIC,Synthetic user-declared preparation b8f21a9b373d928b935f59675926cfb023fc05761eb7f2c709091662a897f39e; source record 2; not human-reviewed.
+PREP-3,NCT04470427,SYNTH-PREP-03,SYNTH-CLINIC,A10_DRAFT_2,TABLE21,DRAFT_SYNTHETIC,Synthetic user-declared preparation b8f21a9b373d928b935f59675926cfb023fc05761eb7f2c709091662a897f39e; source record 3; not human-reviewed.
+PREP-4,NCT04470427,SYNTH-PREP-04,SYNTH-CLINIC,A10_DRAFT_2,TABLE21,DRAFT_SYNTHETIC,Synthetic user-declared preparation b8f21a9b373d928b935f59675926cfb023fc05761eb7f2c709091662a897f39e; source record 4; not human-reviewed.
+PREP-5,SYNTH-OTHER-STUDY,SYNTH-PREP-05,SYNTH-CLINIC,A10_DRAFT_2,TABLE21,DRAFT_SYNTHETIC,Synthetic user-declared preparation b8f21a9b373d928b935f59675926cfb023fc05761eb7f2c709091662a897f39e; source record 5; not human-reviewed.
+PREP-6,NCT04470427,SYNTH-PREP-06,SYNTH-CLINIC,A10_DRAFT_2,TABLE21,DRAFT_SYNTHETIC,Synthetic user-declared preparation b8f21a9b373d928b935f59675926cfb023fc05761eb7f2c709091662a897f39e; source record 6; not human-reviewed.
+PREP-7,NCT04470427,SYNTH-PREP-07,SYNTH-CLINIC,A10_DRAFT_2,TABLE21,DRAFT_SYNTHETIC,Synthetic user-declared preparation b8f21a9b373d928b935f59675926cfb023fc05761eb7f2c709091662a897f39e; source record 7; not human-reviewed.

@@ -1,0 +1,24 @@
+{
+  "label": "preparation-package-install",
+  "command": [
+    ".venv/bin/python",
+    "-m",
+    "pip",
+    "install",
+    "--no-build-isolation",
+    "--no-deps",
+    "."
+  ],
+  "cwd": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace",
+  "started_at": "2026-10-18T10:07:47.778893+00:00",
+  "finished_at": "2026-10-18T10:07:48.620906+00:00",
+  "elapsed_seconds": 0.840393,
+  "status": "EXIT_ZERO",
+  "exit_code": 0,
+  "stdout_path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/docs/trialtrace/review/preparation/commands/20261018T100747.778893Z-preparation-package-install-526e75b1/stdout.log",
+  "stderr_path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/docs/trialtrace/review/preparation/commands/20261018T100747.778893Z-preparation-package-install-526e75b1/stderr.log",
+  "stdout_sha256": "854af104287d16c464d601862026571780ff5e80c72671de7710e17c71354ae7",
+  "stderr_sha256": "8f3f53aae84e23d6c56eef04ef0f2813c4fddfdf89fbe01867af37b8743e478f",
+  "gate_acceptance": "NOT_DETERMINED_BY_COMMAND_RECORDER",
+  "warning": "Logs are not tamper-proof; this does not establish test assertions, source review, or clinical validity."
+}

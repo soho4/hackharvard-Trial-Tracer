@@ -1,0 +1,106 @@
+{
+  "scope": "Selected public registry facts and independent technical review; no participant records or raw response/PDF",
+  "updated_at_utc": "2026-10-18T08:35:55.611378+00:00",
+  "files": [
+    {
+      "name": "REVIEW.md",
+      "sha256": "60fe29ab276349869caa35812b45ddf5138f443dcef1305a353d0f26ca70743e",
+      "bytes": 5516
+    },
+    {
+      "name": "app_review.md",
+      "sha256": "32097a8aacaf22f84caa25de4bd424e1ccaa57bf2f991063787fa384f2a5c210",
+      "bytes": 6898
+    },
+    {
+      "name": "configuration_fixed.record.json",
+      "sha256": "037790fb2031b3f916786a546e9ef9da2db64873f271416820bfc9a2a64cd881",
+      "bytes": 620
+    },
+    {
+      "name": "configuration_fixed.stderr",
+      "sha256": "139b6b3f2f329d26bd839afd091afe4ffed9a3f891c6d4af5e2fd4c92b02a853",
+      "bytes": 2269
+    },
+    {
+      "name": "configuration_fixed.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "name": "configuration_repaired.record.json",
+      "sha256": "82613fa4149bb3d8294db15eb2e3568c4f97a165e95275de80a0de92fdb410b8",
+      "bytes": 628
+    },
+    {
+      "name": "configuration_repaired.stderr",
+      "sha256": "1d1ca6376b45d685e73427ebd559405025e4707c9266f0e7a5f3fd08efad778e",
+      "bytes": 877
+    },
+    {
+      "name": "configuration_repaired.stdout",
+      "sha256": "ed3f97cfa59ab949be171691f64281775fd7f90b9b627ada68b40ce82d4d3442",
+      "bytes": 1449
+    },
+    {
+      "name": "core_review_state.json",
+      "sha256": "eba83d14b8571f7d31c0f06fe9b7ee8ec47289967d0f2356161176d68db1b472",
+      "bytes": 765
+    },
+    {
+      "name": "core_tests.record.json",
+      "sha256": "dadf271e96d57bf5464d2b5fb3034cbae962255591d4bbb1db17caea0a4fa2c8",
+      "bytes": 2589
+    },
+    {
+      "name": "core_tests.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "name": "core_tests.stdout",
+      "sha256": "c6e3dfc8e83617414807d15d90c468052aa7246bb95dc35d68f2224d96563875",
+      "bytes": 340
+    },
+    {
+      "name": "probe_configuration.py",
+      "sha256": "b0b3344f5e8306d8e50ba9cb4ec7f03be7621103e2870062d52f8de03fb6772a",
+      "bytes": 3719
+    },
+    {
+      "name": "probe_upload_lifecycle.py",
+      "sha256": "37737d5ae41cbdcaf4a4f9914c2504c383efbd87fb2dafe7dc3c6059666d72ef",
+      "bytes": 3643
+    },
+    {
+      "name": "registry_fetch_record.json",
+      "sha256": "cb5e1b51d719908a1bce8e0a2c003dad6c6fb9f8df2872b361bb6f3729b909c4",
+      "bytes": 1103
+    },
+    {
+      "name": "registry_snapshot.json",
+      "sha256": "1406d7f7451506be41d1056b201d3baf46e1055885282ca7495ae5df3899dd4d",
+      "bytes": 2838
+    },
+    {
+      "name": "research_log.json",
+      "sha256": "49e3028e45485b782e94d2ed2ef7d2f3706485f1994b1d701430558c431faa86",
+      "bytes": 1595
+    },
+    {
+      "name": "upload_lifecycle.record.json",
+      "sha256": "a16cd9499ae0a045044be03005586b81beff89bafbffce6beff2f82a9bd6f7e3",
+      "bytes": 620
+    },
+    {
+      "name": "upload_lifecycle.stderr",
+      "sha256": "ca354a68be8a882189fbef6d12ea438c510236566155898e2ed131381d29ac14",
+      "bytes": 2011
+    },
+    {
+      "name": "upload_lifecycle.stdout",
+      "sha256": "67c77c3df9e69cbc4f6c340e32e454eba4136bacb926e0329408e9957055f6a9",
+      "bytes": 1991
+    }
+  ]
+}

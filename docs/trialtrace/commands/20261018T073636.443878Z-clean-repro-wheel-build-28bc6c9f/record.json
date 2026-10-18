@@ -1,0 +1,26 @@
+{
+  "label": "clean-repro-wheel-build",
+  "command": [
+    ".venv/bin/python",
+    "-m",
+    "pip",
+    "wheel",
+    "--no-build-isolation",
+    "--no-deps",
+    ".",
+    "--wheel-dir",
+    "../wheelhouse"
+  ],
+  "cwd": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace",
+  "started_at": "2026-10-18T07:36:36.443878+00:00",
+  "finished_at": "2026-10-18T07:36:37.097396+00:00",
+  "elapsed_seconds": 0.653185,
+  "status": "EXIT_ZERO",
+  "exit_code": 0,
+  "stdout_path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/docs/trialtrace/commands/20261018T073636.443878Z-clean-repro-wheel-build-28bc6c9f/stdout.log",
+  "stderr_path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/docs/trialtrace/commands/20261018T073636.443878Z-clean-repro-wheel-build-28bc6c9f/stderr.log",
+  "stdout_sha256": "f44e2895693115dba0f902c199a13c0a6f544b8ab68a90d2cbbeccf3875ec462",
+  "stderr_sha256": "8f3f53aae84e23d6c56eef04ef0f2813c4fddfdf89fbe01867af37b8743e478f",
+  "gate_acceptance": "NOT_DETERMINED_BY_COMMAND_RECORDER",
+  "warning": "Logs are not tamper-proof; this does not establish test assertions, source review, or clinical validity."
+}

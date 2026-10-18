@@ -1,0 +1,22 @@
+{
+  "label": "core-first-full-suite",
+  "command": [
+    ".venv/bin/python",
+    "-m",
+    "pytest",
+    "tests",
+    "-q"
+  ],
+  "cwd": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace",
+  "started_at": "2026-10-18T07:27:27.104548+00:00",
+  "finished_at": "2026-10-18T07:27:29.500888+00:00",
+  "elapsed_seconds": 2.395743,
+  "status": "EXIT_ZERO",
+  "exit_code": 0,
+  "stdout_path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/docs/trialtrace/commands/20261018T072727.104548Z-core-first-full-suite-79a78a8a/stdout.log",
+  "stderr_path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/docs/trialtrace/commands/20261018T072727.104548Z-core-first-full-suite-79a78a8a/stderr.log",
+  "stdout_sha256": "6d1407f44d5a85a9a507479730798d8eb88715d2546430dcccfea95f0bb4c3d6",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "gate_acceptance": "NOT_DETERMINED_BY_COMMAND_RECORDER",
+  "warning": "Logs are not tamper-proof; this does not establish test assertions, source review, or clinical validity."
+}

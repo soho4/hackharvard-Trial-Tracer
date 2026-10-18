@@ -1,0 +1,100 @@
+{
+  "status": "PASS",
+  "scope": "Verification of actual retained browser downloads and recorded observations; not an automated browser replay.",
+  "app_sha256": "1068c0d08a744acbeef751873641003e495540a33e0addde0ec3feeed1b4a9d6",
+  "code_sha256": "5c3a04fc876cd946228433b156bfc78912b8c342011154288fda619fa08451d9",
+  "checks": [
+    {
+      "file": "before-browser.json",
+      "reference": "before.json",
+      "bytes": 20754,
+      "sha256": "7a402a5ad58cbf3b6dcf981814e6a4f490933af8fdbd0ea029838a7ff5244a36",
+      "equality": "EXACT_BYTES"
+    },
+    {
+      "file": "after-browser.json",
+      "reference": "after.json",
+      "bytes": 20771,
+      "sha256": "51db5c6548cf19324cfc08b198445be0eb7c52ae6e384b1d0a4c008794bb3c54",
+      "equality": "EXACT_BYTES"
+    },
+    {
+      "file": "before-review.csv",
+      "reference": "before-review.csv",
+      "bytes": 3438,
+      "sha256": "57bbc07c3595b06efbf837e5181c239b07562372af5028982372d5d7743ea38a",
+      "equality": "EXACT_BYTES"
+    },
+    {
+      "file": "after-review.csv",
+      "reference": "after-review.csv",
+      "bytes": 4273,
+      "sha256": "8d43b3c721554a2b6dab3c2e1baaf0f99b2199be8de6ed8972083cf33921fd90",
+      "equality": "EXACT_BYTES"
+    },
+    {
+      "file": "before-input-issues.csv",
+      "reference": "before-input-issues.csv",
+      "bytes": 4074,
+      "sha256": "9d0feae195b6a3b97bef806a001f66487508d0237d82cfb32a56a2a8ca7bea8d",
+      "equality": "EXACT_BYTES"
+    },
+    {
+      "file": "final-app-after.json",
+      "reference": "after.json",
+      "bytes": 20771,
+      "sha256": "51db5c6548cf19324cfc08b198445be0eb7c52ae6e384b1d0a4c008794bb3c54",
+      "equality": "EXACT_BYTES"
+    },
+    {
+      "file": "registry-unavailable-report.json",
+      "reference": "after.json",
+      "bytes": 20771,
+      "sha256": "51db5c6548cf19324cfc08b198445be0eb7c52ae6e384b1d0a4c008794bb3c54",
+      "equality": "EXACT_BYTES"
+    },
+    {
+      "file": "before-intake.json",
+      "reference": "before-intake.json",
+      "sha256": "8d880209b166b60b4fb3313b46b7b57670d71d7f95f242cfa1face0741fd67b8",
+      "equality": "EXACT_JSON_OBJECT; whitespace is not asserted"
+    },
+    {
+      "file": "after-intake.json",
+      "reference": "after-intake.json",
+      "sha256": "1c075e31b30c386ede8f83537b9f4510628fe0118084ac405fcab033b4a04104",
+      "equality": "EXACT_JSON_OBJECT; whitespace is not asserted"
+    },
+    {
+      "file": "comparison-browser.json",
+      "reference": "comparison.json",
+      "sha256": "5a2986059a4b1e5944fe2b9d8517de46d8683c7384747a4418d17b45885ec8fd",
+      "equality": "EXACT_JSON_OBJECT; whitespace is not asserted"
+    },
+    {
+      "file": "final-app-comparison.json",
+      "reference": "comparison.json",
+      "sha256": "5a2986059a4b1e5944fe2b9d8517de46d8683c7384747a4418d17b45885ec8fd",
+      "equality": "EXACT_JSON_OBJECT; whitespace is not asserted"
+    }
+  ],
+  "rejected_input_codes": [
+    "INVALID_HEADER",
+    "INVALID_UTF8"
+  ],
+  "comparison": {
+    "matched": 4,
+    "changed": 1,
+    "provenance_only": 3,
+    "unchanged": 0,
+    "added": 0,
+    "removed": 0,
+    "unmatched_before": 2,
+    "unmatched_after": 2
+  },
+  "limitations": [
+    "IAB embedded viewer file chooser timed out; no new embedded-viewer pass claimed.",
+    "Earlier upload interruption and null diagnostics browser errors are preserved in the review; repaired path has no later console errors.",
+    "All participant records are synthetic; no source approval or clinical validation."
+  ]
+}

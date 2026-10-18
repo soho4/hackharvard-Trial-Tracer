@@ -1,0 +1,21 @@
+{
+  "label": "g3-staged-whitespace-before-byte-preservation",
+  "command": [
+    "git",
+    "diff",
+    "--cached",
+    "--check"
+  ],
+  "cwd": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace",
+  "started_at": "2026-10-18T08:52:31.025814+00:00",
+  "finished_at": "2026-10-18T08:52:31.063509+00:00",
+  "elapsed_seconds": 0.037353,
+  "status": "EXIT_NONZERO",
+  "exit_code": 2,
+  "stdout_path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/docs/trialtrace/commands/20261018T085231.025814Z-g3-staged-whitespace-before-byte-preservation-ae7d57d5/stdout.log",
+  "stderr_path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/docs/trialtrace/commands/20261018T085231.025814Z-g3-staged-whitespace-before-byte-preservation-ae7d57d5/stderr.log",
+  "stdout_sha256": "ea0181cd0cd26a1db4879cca800da03f8f1fd0b7dd16cef9e0eb9b4f1b1d7add",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "gate_acceptance": "NOT_DETERMINED_BY_COMMAND_RECORDER",
+  "warning": "Logs are not tamper-proof; this does not establish test assertions, source review, or clinical validity."
+}

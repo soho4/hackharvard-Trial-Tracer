@@ -1,0 +1,28 @@
+{
+  "gate": "EXPLICIT_SPREADSHEET_PREPARATION_TECHNICAL",
+  "status": "PASS_BOUNDED_LOCAL_SYNTHETIC_WITH_BROWSER_TRANSPORT_LIMITATION",
+  "recorded_at": "2026-10-18T10:22:30.462253+00:00",
+  "code_sha256": "d20f8e50e3aafb80802847cef31bdee6b8c73b458bc0b718b413e3108426aebd",
+  "app_sha256": "1103ee12833069c2425652e2607735e74da00bbf1f7dd137fbf2a299269f24b5",
+  "rule_sha256": "f36336df90a1793a80b92f48ce273488a091547110856bdcc602587ddad9e7f0",
+  "schema_sha256": "706c2b68086f1c9d38ac5ddbc37653e6f1da45d7d595eabff194c3e9737abee0",
+  "application_tests": 447,
+  "source_acceptance": "BLOCKED_PENDING_HUMAN_REVIEW",
+  "clinical_validation": false,
+  "actual_vendor_export_tested": false,
+  "measured_user_savings": null,
+  "records": {
+    "full_suite": "review/preparation/commands/20261018T101446.211139Z-preparation-full-suite-4f02f7b2/record.json",
+    "browser_downloads": "review/preparation/browser/result.json",
+    "browser_actions": "review/preparation/BROWSER_REVIEW.md",
+    "fresh_install": "review/preparation/clean_install/result.json",
+    "actual_files": "review/preparation/actual_run/result.json",
+    "intentional_failure": "review/preparation/commands/20261018T100954.494463Z-preparation-deliberately-wrong-date-mapping-a014256d/record.json"
+  },
+  "limitations": [
+    "One wide-CSV preparation path; no repeating/longitudinal adapter or vendor certification.",
+    "Three actual upload transport failures preserved; later valid/malformed transfers succeeded; root cause unestablished.",
+    "No independent human source or case review, real participant pilot or measured workflow benefit.",
+    "Fresh install on same Mac only; no public deployment."
+  ]
+}

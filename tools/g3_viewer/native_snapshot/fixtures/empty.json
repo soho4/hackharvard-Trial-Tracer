@@ -1,0 +1,36 @@
+{
+  "schema_version": "trialtrace.evidence.v1",
+  "run_id": "fixture-empty-001",
+  "data_kind": "SYNTHETIC",
+  "clinical_validation": false,
+  "producer": {
+    "kind": "CONTRACT_FIXTURE",
+    "version": "1.0"
+  },
+  "review_status": "PENDING_TEAM_SOURCE_REVIEW",
+  "source": {
+    "url": "https://cdn.clinicaltrials.gov/large-docs/27/NCT04470427/Prot_000.pdf",
+    "locator": "Protocol amendment 10, Table 21, printed pages 150-152",
+    "pdf_sha256": null,
+    "retrieval_status": "BROWSER_INSPECTED_RUNTIME_FETCH_FAILED"
+  },
+  "ruleset": {
+    "id": "UI_CONTRACT_EXAMPLE",
+    "version": "FIXTURE_ONLY",
+    "sha256": "51bd8a44bfa83558c95e5259fd87eb284d5d6c3e307837998cd6bac0b12d9331"
+  },
+  "input_files": [
+    {
+      "name": "synthetic_example.csv",
+      "sha256": "59d86ebf409215d96e8a9f1f1da49d4dbf63699709a10b9a2e8a32cd4536e173"
+    }
+  ],
+  "limitations": [
+    "Manually authored report-format fixture. These are not computed detector results; declared fixture hashes do not refer to real patient files.",
+    "Synthetic records; not actual trial participants.",
+    "No independent human source approval; no local PDF hash.",
+    "A PASS refers only to a supported timing calculation; no safety assessment or whole-protocol compliance is established.",
+    "Declared provenance is displayed; this viewer does not verify original source-file bytes or re-evaluate clinical rules."
+  ],
+  "findings": []
+}

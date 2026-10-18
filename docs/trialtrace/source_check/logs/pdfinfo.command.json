@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/yisak/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override/pdfinfo",
+    ".sources/Prot_000.pdf"
+  ],
+  "cwd": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/source_check",
+  "started_at_utc": "2026-10-18T07:19:33.031902+00:00",
+  "finished_at_utc": "2026-10-18T07:19:43.088312+00:00",
+  "exit_code": 0,
+  "stdout_path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/source_check/logs/pdfinfo.stdout",
+  "stderr_path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/source_check/logs/pdfinfo.stderr"
+}

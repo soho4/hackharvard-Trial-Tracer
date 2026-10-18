@@ -1,0 +1,26 @@
+{
+  "authorship": "Literal expected results specified before executing the new mapper; synthetic engineering challenge, not clinician annotation.",
+  "statuses": [
+    "PASS",
+    "POTENTIAL_DEVIATION",
+    "DATA_QUERY",
+    "DATA_QUERY",
+    "NOT_EVALUABLE",
+    "DATA_QUERY",
+    "DATA_QUERY"
+  ],
+  "counts": {
+    "PASS": 1,
+    "POTENTIAL_DEVIATION": 1,
+    "DATA_QUERY": 4,
+    "NOT_EVALUABLE": 1
+  },
+  "records": 7,
+  "second_calculation": {
+    "target": "2028-02-29",
+    "earliest": "2028-02-29",
+    "latest": "2028-03-03",
+    "actual": "2028-03-04",
+    "days_outside": 1
+  }
+}

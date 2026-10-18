@@ -1,0 +1,14 @@
+{
+  "command": [
+    "python3",
+    "-m",
+    "venv",
+    ".venv"
+  ],
+  "cwd": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/source_check",
+  "started_at_utc": "2026-10-18T07:18:53.846828+00:00",
+  "finished_at_utc": "2026-10-18T07:18:55.319921+00:00",
+  "exit_code": 0,
+  "stdout_path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/source_check/logs/create_verifier_venv.stdout",
+  "stderr_path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/source_check/logs/create_verifier_venv.stderr"
+}

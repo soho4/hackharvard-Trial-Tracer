@@ -1,0 +1,19 @@
+{
+  "label": "g2-current-code-mutation",
+  "command": [
+    ".venv/bin/python",
+    "tools/check_mutation.py"
+  ],
+  "cwd": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace",
+  "started_at": "2026-10-18T07:32:48.968840+00:00",
+  "finished_at": "2026-10-18T07:32:49.283901+00:00",
+  "elapsed_seconds": 0.314687,
+  "status": "EXIT_ZERO",
+  "exit_code": 0,
+  "stdout_path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/docs/trialtrace/commands/20261018T073248.968840Z-g2-current-code-mutation-e90e1bc8/stdout.log",
+  "stderr_path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/docs/trialtrace/commands/20261018T073248.968840Z-g2-current-code-mutation-e90e1bc8/stderr.log",
+  "stdout_sha256": "8ea1d455cdfce2b71a1b609b27581e79e40c8a733b6241852bf441487ff8ccc6",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "gate_acceptance": "NOT_DETERMINED_BY_COMMAND_RECORDER",
+  "warning": "Logs are not tamper-proof; this does not establish test assertions, source review, or clinical validity."
+}

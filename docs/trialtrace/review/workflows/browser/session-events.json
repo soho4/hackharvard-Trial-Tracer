@@ -1,0 +1,43 @@
+[
+  {
+    "at": "2026-10-18T09:08:34.518Z",
+    "event": "actual_browser_download",
+    "label": "Download evidence JSON",
+    "file": "before-browser.json"
+  },
+  {
+    "at": "2026-10-18T09:08:35.980Z",
+    "event": "actual_browser_download",
+    "label": "Download review list CSV",
+    "file": "before-review.csv"
+  },
+  {
+    "at": "2026-10-18T09:08:37.846Z",
+    "event": "actual_browser_download",
+    "label": "Download input issues CSV",
+    "file": "before-input-issues.csv"
+  },
+  {
+    "at": "2026-10-18T09:08:38.121Z",
+    "event": "actual_browser_download",
+    "label": "Download input checks JSON",
+    "file": "before-intake.json"
+  },
+  {
+    "at": "2026-10-18T09:08:54.359Z",
+    "event": "actual_browser_download",
+    "label": "Download evidence JSON",
+    "file": "after-browser.json"
+  },
+  {
+    "at": "2026-10-18T09:08:54.632Z",
+    "event": "actual_browser_download",
+    "label": "Download review list CSV",
+    "file": "after-review.csv"
+  },
+  {
+    "at": "2026-10-18T09:08:54.632Z",
+    "event": "changed_visit_rerun",
+    "evidence": "actual after-browser.json and after-review.csv preserved"
+  }
+]

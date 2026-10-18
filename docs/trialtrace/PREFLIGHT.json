@@ -1,0 +1,22 @@
+{
+  "status": "READY_LOCAL_AND_VERIFIED_FEATURE_BRANCH_PUSH",
+  "checked_at": "2026-10-18T07:40:40.442394+00:00",
+  "repository": "https://github.com/soho4/hackharvard-Trial-Tracer",
+  "checkout": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace",
+  "initial_branch": "main",
+  "initial_head": "b173f377a866b5441a696a0281a98a9a5676a92c",
+  "initial_dirty": false,
+  "existing_instruction_files": [],
+  "feature_branch": "codex/trialtrace-core-v4",
+  "verified_remote_commit": "36660aa35b5a8684b4145b5f169a4b9c976bf9d5",
+  "python": "3.13.4 (v3.13.4:8a526ec7cbe, Jun  3 2025, 21:14:54) [Clang 16.0.0 (clang-1600.0.26.6)]",
+  "platform": "macOS-27.0-arm64-arm-64bit-Mach-O",
+  "dependency_lock": "requirements-dev.lock",
+  "installation": "regular wheel, current source digest confirmed in fresh isolated environment",
+  "package_verifier": {
+    "status": "PASS",
+    "files": 171
+  },
+  "source_gate": "BLOCKED_PENDING_HUMAN_REVIEW",
+  "user_action_for_core": "NONE"
+}

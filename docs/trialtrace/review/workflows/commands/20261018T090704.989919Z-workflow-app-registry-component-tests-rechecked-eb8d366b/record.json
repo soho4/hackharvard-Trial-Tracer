@@ -1,0 +1,23 @@
+{
+  "label": "workflow-app-registry-component-tests-rechecked",
+  "command": [
+    ".venv/bin/python",
+    "-m",
+    "pytest",
+    "tests/test_streamlit_app.py",
+    "tests/test_registry_metadata.py",
+    "-q"
+  ],
+  "cwd": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace",
+  "started_at": "2026-10-18T09:07:04.989919+00:00",
+  "finished_at": "2026-10-18T09:07:10.892958+00:00",
+  "elapsed_seconds": 5.902598,
+  "status": "EXIT_ZERO",
+  "exit_code": 0,
+  "stdout_path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/docs/trialtrace/review/workflows/commands/20261018T090704.989919Z-workflow-app-registry-component-tests-rechecked-eb8d366b/stdout.log",
+  "stderr_path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/docs/trialtrace/review/workflows/commands/20261018T090704.989919Z-workflow-app-registry-component-tests-rechecked-eb8d366b/stderr.log",
+  "stdout_sha256": "1123893a6e3b551bd5806fa3e38a53bc3257daeb2c4b85fd53e441f85c94539f",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "gate_acceptance": "NOT_DETERMINED_BY_COMMAND_RECORDER",
+  "warning": "Logs are not tamper-proof; this does not establish test assertions, source review, or clinical validity."
+}

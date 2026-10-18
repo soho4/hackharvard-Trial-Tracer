@@ -1,0 +1,4 @@
+# Keep report files byte-for-byte; their SHA-256 sums are listed in VERIFICATION.md.
+fixtures/*.json -text
+contracts/*.json -text
+tests/browser_inputs/*.json -text

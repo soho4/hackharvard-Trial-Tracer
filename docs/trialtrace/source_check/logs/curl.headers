@@ -1,0 +1,30 @@
+HTTP/2 200 
+x-guploader-uploadid: AP6rU83dSvmsUbV437X-TpEdIl1EVmwv9_3EQ8B5MfcSNuS9KLy0yaOoZ-ndk2WQuXzD_l_3jBAr-Bw
+x-goog-generation: 1707839092042507
+x-goog-metageneration: 1
+x-goog-stored-content-encoding: identity
+x-goog-stored-content-length: 2728675
+x-goog-meta-goog-reserved-file-mtime: 1703169238
+x-goog-hash: crc32c=EN0hWw==
+x-goog-hash: md5=lQ+3OwUQS7oBJlen2IygyQ==
+x-goog-storage-class: MULTI_REGIONAL
+accept-ranges: bytes
+access-control-allow-origin: *
+access-control-expose-headers: Content-Type
+server: UploadServer
+via: 1.1 google
+x-guploader-customer: cloud-storage
+x-guploader-request-result: success
+x-guploader-upload-result: success
+x-guploader-request-class: LATENCY_SENSITIVE
+date: Sun, 18 Oct 2026 07:18:42 GMT
+expires: Sun, 18 Oct 2026 08:18:42 GMT
+cache-control: public, max-age=3600
+age: 44
+last-modified: Tue, 13 Feb 2024 15:44:52 GMT
+etag: "950fb73b05104bba012657a7d88ca0c9"
+content-type: application/pdf
+content-length: 2728675
+strict-transport-security: max-age=31536000; includeSubDomains; preload
+alt-svc: h3=":443"; ma=2592000
+

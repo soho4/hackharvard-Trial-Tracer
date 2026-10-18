@@ -1,0 +1,33 @@
+{
+  "label": "g2-real-novel-cli-repaired-install",
+  "command": [
+    ".venv/bin/python",
+    "-m",
+    "trialtrace.cli",
+    "--anchors",
+    "examples/novel/anchors.csv",
+    "--visits",
+    "examples/novel/visits.csv",
+    "--assignments",
+    "examples/novel/assignments.csv",
+    "--rule",
+    "rules/candidate_rule.json",
+    "--draft-synthetic",
+    "--source-pdf",
+    "../source_check/.sources/Prot_000.pdf",
+    "--output",
+    "examples/novel/before.json"
+  ],
+  "cwd": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace",
+  "started_at": "2026-10-18T07:32:47.840380+00:00",
+  "finished_at": "2026-10-18T07:32:47.988672+00:00",
+  "elapsed_seconds": 0.14794,
+  "status": "EXIT_ZERO",
+  "exit_code": 0,
+  "stdout_path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/docs/trialtrace/commands/20261018T073247.840380Z-g2-real-novel-cli-repaired-install-b56445ab/stdout.log",
+  "stderr_path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/docs/trialtrace/commands/20261018T073247.840380Z-g2-real-novel-cli-repaired-install-b56445ab/stderr.log",
+  "stdout_sha256": "84bef0bb043768af54e2443143f2f2f1659309457a677de7a805e392da5e506d",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "gate_acceptance": "NOT_DETERMINED_BY_COMMAND_RECORDER",
+  "warning": "Logs are not tamper-proof; this does not establish test assertions, source review, or clinical validity."
+}

@@ -1,0 +1,19 @@
+{
+  "command": [
+    "work/TrialTrace/.venv/bin/python",
+    "work/g3_source/app_review/probe_configuration.py"
+  ],
+  "started_at_utc": "2026-10-18T08:32:54.383295+00:00",
+  "finished_at_utc": "2026-10-18T08:32:54.907564+00:00",
+  "exit_code": 1,
+  "stdout": {
+    "path": "work/g3_source/app_review/configuration_fixed.stdout",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "stderr": {
+    "path": "work/g3_source/app_review/configuration_fixed.stderr",
+    "sha256": "139b6b3f2f329d26bd839afd091afe4ffed9a3f891c6d4af5e2fd4c92b02a853",
+    "bytes": 2269
+  }
+}

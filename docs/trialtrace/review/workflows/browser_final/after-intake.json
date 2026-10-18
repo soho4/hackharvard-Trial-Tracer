@@ -1,0 +1,416 @@
+{
+  "ready_for_draft_check": true,
+  "missing_roles": [],
+  "unexpected_roles": [],
+  "configuration_problems": [],
+  "files": [
+    {
+      "role": "anchors.csv",
+      "state": "PARSED",
+      "display_name": "anchors.csv",
+      "byte_count": 567,
+      "sha256": "28b237bf7e7b4ed3117eca99f8321d1767bb260716f6a0869d1c0db5f39d0a0a",
+      "bom": false,
+      "record_count": 5,
+      "problems": []
+    },
+    {
+      "role": "visits.csv",
+      "state": "PARSED",
+      "display_name": "visits.csv",
+      "byte_count": 924,
+      "sha256": "4de08979496e62c1ff5580d2d5839695b5c65a8d48c9f91c02af405ab122ce84",
+      "bom": false,
+      "record_count": 6,
+      "problems": []
+    },
+    {
+      "role": "assignments.csv",
+      "state": "PARSED",
+      "display_name": "assignments.csv",
+      "byte_count": 1002,
+      "sha256": "ce0dd6b9a903f334908187929d30914c30d6a997daab090bc48109dd31b09be1",
+      "bom": false,
+      "record_count": 6,
+      "problems": []
+    }
+  ],
+  "input_accounting": {
+    "anchors.csv": {
+      "record_count": 5,
+      "issues": [
+        {
+          "code": "INVALID_DATE",
+          "status": "DATA_QUERY",
+          "record_ordinal": 5,
+          "field": "anchor_date",
+          "evidence": {
+            "source_file": "anchors.csv",
+            "sha256": "28b237bf7e7b4ed3117eca99f8321d1767bb260716f6a0869d1c0db5f39d0a0a",
+            "record_ordinal": 5,
+            "raw_record": {
+              "study_id": "NCT04470427",
+              "participant_id": "SYNTH-UNUSED",
+              "site_id": "SYNTH-FLOW-SITE-7",
+              "anchor_id": "SYNTH-UNUSED-A",
+              "anchor_code": "OL_D1",
+              "anchor_kind": "ACTUAL_VACCINATION",
+              "anchor_date": "2030-02-30"
+            },
+            "raw_csv": "NCT04470427,SYNTH-UNUSED,SYNTH-FLOW-SITE-7,SYNTH-UNUSED-A,OL_D1,ACTUAL_VACCINATION,2030-02-30\n"
+          }
+        }
+      ],
+      "referenced_record_count": 4,
+      "unreferenced_record_ordinals": [
+        5
+      ]
+    },
+    "visits.csv": {
+      "record_count": 6,
+      "issues": [
+        {
+          "code": "UNSUPPORTED_EVENT_KIND",
+          "status": "NOT_EVALUABLE",
+          "record_ordinal": 4,
+          "field": "event_kind",
+          "evidence": {
+            "source_file": "visits.csv",
+            "sha256": "4de08979496e62c1ff5580d2d5839695b5c65a8d48c9f91c02af405ab122ce84",
+            "record_ordinal": 4,
+            "raw_record": {
+              "study_id": "NCT04470427",
+              "participant_id": "SYNTH-UNSUPPORTED-EVENT",
+              "site_id": "SYNTH-FLOW-SITE-7",
+              "visit_id": "SYNTH-FLOW-V4",
+              "visit_code": "OL_D8",
+              "event_kind": "IN_PERSON_VISIT",
+              "actual_date": "2028-03-03",
+              "visit_status": "COMPLETED",
+              "anchor_id": "SYNTH-FLOW-A4",
+              "assignment_id": "SYNTH-FLOW-M4"
+            },
+            "raw_csv": "NCT04470427,SYNTH-UNSUPPORTED-EVENT,SYNTH-FLOW-SITE-7,SYNTH-FLOW-V4,OL_D8,IN_PERSON_VISIT,2028-03-03,COMPLETED,SYNTH-FLOW-A4,SYNTH-FLOW-M4\n"
+          }
+        },
+        {
+          "code": "DUPLICATE_KEY",
+          "status": "DATA_QUERY",
+          "record_ordinal": 5,
+          "field": "visit_id",
+          "evidence": {
+            "source_file": "visits.csv",
+            "sha256": "4de08979496e62c1ff5580d2d5839695b5c65a8d48c9f91c02af405ab122ce84",
+            "record_ordinal": 5,
+            "raw_record": {
+              "study_id": "NCT04470427",
+              "participant_id": "SYNTH-DUPLICATE",
+              "site_id": "SYNTH-FLOW-SITE-7",
+              "visit_id": "SYNTH-FLOW-V5",
+              "visit_code": "OL_D8",
+              "event_kind": "SAFETY_PHONE_CALL",
+              "actual_date": "2028-03-03",
+              "visit_status": "COMPLETED",
+              "anchor_id": "SYNTH-FLOW-A5",
+              "assignment_id": "SYNTH-FLOW-M5"
+            },
+            "raw_csv": "NCT04470427,SYNTH-DUPLICATE,SYNTH-FLOW-SITE-7,SYNTH-FLOW-V5,OL_D8,SAFETY_PHONE_CALL,2028-03-03,COMPLETED,SYNTH-FLOW-A5,SYNTH-FLOW-M5\n"
+          }
+        },
+        {
+          "code": "DUPLICATE_KEY",
+          "status": "DATA_QUERY",
+          "record_ordinal": 6,
+          "field": "visit_id",
+          "evidence": {
+            "source_file": "visits.csv",
+            "sha256": "4de08979496e62c1ff5580d2d5839695b5c65a8d48c9f91c02af405ab122ce84",
+            "record_ordinal": 6,
+            "raw_record": {
+              "study_id": "NCT04470427",
+              "participant_id": "SYNTH-DUPLICATE",
+              "site_id": "SYNTH-FLOW-SITE-7",
+              "visit_id": "SYNTH-FLOW-V5",
+              "visit_code": "OL_D8",
+              "event_kind": "SAFETY_PHONE_CALL",
+              "actual_date": "2028-03-03",
+              "visit_status": "COMPLETED",
+              "anchor_id": "SYNTH-FLOW-A5",
+              "assignment_id": "SYNTH-FLOW-M5"
+            },
+            "raw_csv": "NCT04470427,SYNTH-DUPLICATE,SYNTH-FLOW-SITE-7,SYNTH-FLOW-V5,OL_D8,SAFETY_PHONE_CALL,2028-03-03,COMPLETED,SYNTH-FLOW-A5,SYNTH-FLOW-M5\n"
+          }
+        },
+        {
+          "code": "MISSING_ANCHOR_ID",
+          "status": "DATA_QUERY",
+          "field": "anchor_id",
+          "record_ordinal": 3,
+          "evidence": {
+            "source_file": "visits.csv",
+            "sha256": "4de08979496e62c1ff5580d2d5839695b5c65a8d48c9f91c02af405ab122ce84",
+            "record_ordinal": 3,
+            "raw_record": {
+              "study_id": "NCT04470427",
+              "participant_id": "SYNTH-MISSING-ANCHOR",
+              "site_id": "SYNTH-FLOW-SITE-7",
+              "visit_id": "SYNTH-FLOW-V3",
+              "visit_code": "OL_D8",
+              "event_kind": "SAFETY_PHONE_CALL",
+              "actual_date": "2028-03-03",
+              "visit_status": "COMPLETED",
+              "anchor_id": "SYNTH-FLOW-A3",
+              "assignment_id": "SYNTH-FLOW-M3"
+            },
+            "raw_csv": "NCT04470427,SYNTH-MISSING-ANCHOR,SYNTH-FLOW-SITE-7,SYNTH-FLOW-V3,OL_D8,SAFETY_PHONE_CALL,2028-03-03,COMPLETED,SYNTH-FLOW-A3,SYNTH-FLOW-M3\n"
+          }
+        }
+      ],
+      "referenced_record_count": 6,
+      "unreferenced_record_ordinals": []
+    },
+    "assignments.csv": {
+      "record_count": 6,
+      "issues": [
+        {
+          "code": "MAPPING_NOT_DRAFT_APPROVED",
+          "status": "NOT_EVALUABLE",
+          "record_ordinal": 6,
+          "field": "mapping_status",
+          "evidence": {
+            "source_file": "assignments.csv",
+            "sha256": "ce0dd6b9a903f334908187929d30914c30d6a997daab090bc48109dd31b09be1",
+            "record_ordinal": 6,
+            "raw_record": {
+              "assignment_id": "SYNTH-UNUSED-M",
+              "study_id": "NCT04470427",
+              "participant_id": "SYNTH-UNUSED",
+              "site_id": "SYNTH-FLOW-SITE-7",
+              "rule_version": "A10_DRAFT_2",
+              "schedule_code": "TABLE21",
+              "mapping_status": "UNRESOLVED",
+              "mapping_note": ""
+            },
+            "raw_csv": "SYNTH-UNUSED-M,NCT04470427,SYNTH-UNUSED,SYNTH-FLOW-SITE-7,A10_DRAFT_2,TABLE21,UNRESOLVED,\n"
+          }
+        },
+        {
+          "code": "MISSING_MAPPING_NOTE",
+          "status": "DATA_QUERY",
+          "record_ordinal": 6,
+          "field": "mapping_note",
+          "evidence": {
+            "source_file": "assignments.csv",
+            "sha256": "ce0dd6b9a903f334908187929d30914c30d6a997daab090bc48109dd31b09be1",
+            "record_ordinal": 6,
+            "raw_record": {
+              "assignment_id": "SYNTH-UNUSED-M",
+              "study_id": "NCT04470427",
+              "participant_id": "SYNTH-UNUSED",
+              "site_id": "SYNTH-FLOW-SITE-7",
+              "rule_version": "A10_DRAFT_2",
+              "schedule_code": "TABLE21",
+              "mapping_status": "UNRESOLVED",
+              "mapping_note": ""
+            },
+            "raw_csv": "SYNTH-UNUSED-M,NCT04470427,SYNTH-UNUSED,SYNTH-FLOW-SITE-7,A10_DRAFT_2,TABLE21,UNRESOLVED,\n"
+          }
+        }
+      ],
+      "referenced_record_count": 5,
+      "unreferenced_record_ordinals": [
+        6
+      ]
+    }
+  },
+  "relationship_summary": {
+    "visit_records": 6,
+    "visits_with_issues": 4,
+    "issue_occurrences_by_code": {
+      "DUPLICATE_KEY": 2,
+      "MISSING_ANCHOR_ID": 1,
+      "UNSUPPORTED_EVENT_KIND": 1
+    },
+    "visits": [
+      {
+        "record_ordinal": 1,
+        "participant_id": "=SYNTH-FORMULA",
+        "site_id": "SYNTH-FLOW-SITE-7",
+        "visit_id": "SYNTH-FLOW-V1",
+        "issues": [],
+        "evidence_refs": [
+          {
+            "source_file": "visits.csv",
+            "record_ordinal": 1,
+            "sha256": "4de08979496e62c1ff5580d2d5839695b5c65a8d48c9f91c02af405ab122ce84"
+          },
+          {
+            "source_file": "anchors.csv",
+            "record_ordinal": 1,
+            "sha256": "28b237bf7e7b4ed3117eca99f8321d1767bb260716f6a0869d1c0db5f39d0a0a"
+          },
+          {
+            "source_file": "assignments.csv",
+            "record_ordinal": 1,
+            "sha256": "ce0dd6b9a903f334908187929d30914c30d6a997daab090bc48109dd31b09be1"
+          }
+        ]
+      },
+      {
+        "record_ordinal": 2,
+        "participant_id": "SYNTH-YEAR-CROSSING",
+        "site_id": "SYNTH-FLOW-SITE-7",
+        "visit_id": "SYNTH-FLOW-V2",
+        "issues": [],
+        "evidence_refs": [
+          {
+            "source_file": "visits.csv",
+            "record_ordinal": 2,
+            "sha256": "4de08979496e62c1ff5580d2d5839695b5c65a8d48c9f91c02af405ab122ce84"
+          },
+          {
+            "source_file": "anchors.csv",
+            "record_ordinal": 2,
+            "sha256": "28b237bf7e7b4ed3117eca99f8321d1767bb260716f6a0869d1c0db5f39d0a0a"
+          },
+          {
+            "source_file": "assignments.csv",
+            "record_ordinal": 2,
+            "sha256": "ce0dd6b9a903f334908187929d30914c30d6a997daab090bc48109dd31b09be1"
+          }
+        ]
+      },
+      {
+        "record_ordinal": 3,
+        "participant_id": "SYNTH-MISSING-ANCHOR",
+        "site_id": "SYNTH-FLOW-SITE-7",
+        "visit_id": "SYNTH-FLOW-V3",
+        "issues": [
+          {
+            "code": "MISSING_ANCHOR_ID",
+            "status": "DATA_QUERY",
+            "field": "anchor_id"
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_file": "visits.csv",
+            "record_ordinal": 3,
+            "sha256": "4de08979496e62c1ff5580d2d5839695b5c65a8d48c9f91c02af405ab122ce84"
+          },
+          {
+            "source_file": "assignments.csv",
+            "record_ordinal": 3,
+            "sha256": "ce0dd6b9a903f334908187929d30914c30d6a997daab090bc48109dd31b09be1"
+          }
+        ]
+      },
+      {
+        "record_ordinal": 4,
+        "participant_id": "SYNTH-UNSUPPORTED-EVENT",
+        "site_id": "SYNTH-FLOW-SITE-7",
+        "visit_id": "SYNTH-FLOW-V4",
+        "issues": [
+          {
+            "code": "UNSUPPORTED_EVENT_KIND",
+            "status": "NOT_EVALUABLE",
+            "record_ordinal": 4,
+            "field": "event_kind"
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_file": "visits.csv",
+            "record_ordinal": 4,
+            "sha256": "4de08979496e62c1ff5580d2d5839695b5c65a8d48c9f91c02af405ab122ce84"
+          },
+          {
+            "source_file": "anchors.csv",
+            "record_ordinal": 3,
+            "sha256": "28b237bf7e7b4ed3117eca99f8321d1767bb260716f6a0869d1c0db5f39d0a0a"
+          },
+          {
+            "source_file": "assignments.csv",
+            "record_ordinal": 4,
+            "sha256": "ce0dd6b9a903f334908187929d30914c30d6a997daab090bc48109dd31b09be1"
+          }
+        ]
+      },
+      {
+        "record_ordinal": 5,
+        "participant_id": "SYNTH-DUPLICATE",
+        "site_id": "SYNTH-FLOW-SITE-7",
+        "visit_id": "SYNTH-FLOW-V5",
+        "issues": [
+          {
+            "code": "DUPLICATE_KEY",
+            "status": "DATA_QUERY",
+            "record_ordinal": 5,
+            "field": "visit_id"
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_file": "visits.csv",
+            "record_ordinal": 5,
+            "sha256": "4de08979496e62c1ff5580d2d5839695b5c65a8d48c9f91c02af405ab122ce84"
+          },
+          {
+            "source_file": "visits.csv",
+            "record_ordinal": 6,
+            "sha256": "4de08979496e62c1ff5580d2d5839695b5c65a8d48c9f91c02af405ab122ce84"
+          },
+          {
+            "source_file": "anchors.csv",
+            "record_ordinal": 4,
+            "sha256": "28b237bf7e7b4ed3117eca99f8321d1767bb260716f6a0869d1c0db5f39d0a0a"
+          },
+          {
+            "source_file": "assignments.csv",
+            "record_ordinal": 5,
+            "sha256": "ce0dd6b9a903f334908187929d30914c30d6a997daab090bc48109dd31b09be1"
+          }
+        ]
+      },
+      {
+        "record_ordinal": 6,
+        "participant_id": "SYNTH-DUPLICATE",
+        "site_id": "SYNTH-FLOW-SITE-7",
+        "visit_id": "SYNTH-FLOW-V5",
+        "issues": [
+          {
+            "code": "DUPLICATE_KEY",
+            "status": "DATA_QUERY",
+            "record_ordinal": 6,
+            "field": "visit_id"
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_file": "visits.csv",
+            "record_ordinal": 6,
+            "sha256": "4de08979496e62c1ff5580d2d5839695b5c65a8d48c9f91c02af405ab122ce84"
+          },
+          {
+            "source_file": "visits.csv",
+            "record_ordinal": 5,
+            "sha256": "4de08979496e62c1ff5580d2d5839695b5c65a8d48c9f91c02af405ab122ce84"
+          },
+          {
+            "source_file": "anchors.csv",
+            "record_ordinal": 4,
+            "sha256": "28b237bf7e7b4ed3117eca99f8321d1767bb260716f6a0869d1c0db5f39d0a0a"
+          },
+          {
+            "source_file": "assignments.csv",
+            "record_ordinal": 5,
+            "sha256": "ce0dd6b9a903f334908187929d30914c30d6a997daab090bc48109dd31b09be1"
+          }
+        ]
+      }
+    ],
+    "note": "Identity, relationship and scope checks only; timing was not evaluated."
+  },
+  "inspection_problems": [],
+  "timing_evaluated": false
+}

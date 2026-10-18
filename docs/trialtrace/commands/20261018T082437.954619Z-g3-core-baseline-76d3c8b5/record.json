@@ -1,0 +1,21 @@
+{
+  "label": "g3-core-baseline",
+  "command": [
+    ".venv/bin/python",
+    "-m",
+    "pytest",
+    "-q"
+  ],
+  "cwd": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace",
+  "started_at": "2026-10-18T08:24:37.954619+00:00",
+  "finished_at": "2026-10-18T08:24:42.006050+00:00",
+  "elapsed_seconds": 4.051139,
+  "status": "EXIT_ZERO",
+  "exit_code": 0,
+  "stdout_path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/docs/trialtrace/commands/20261018T082437.954619Z-g3-core-baseline-76d3c8b5/stdout.log",
+  "stderr_path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/docs/trialtrace/commands/20261018T082437.954619Z-g3-core-baseline-76d3c8b5/stderr.log",
+  "stdout_sha256": "c92ffc847e8138108101c1c7fae915541777a6024f83aa0f97bf8ab3c6b4732f",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "gate_acceptance": "NOT_DETERMINED_BY_COMMAND_RECORDER",
+  "warning": "Logs are not tamper-proof; this does not establish test assertions, source review, or clinical validity."
+}

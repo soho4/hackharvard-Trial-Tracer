@@ -1,0 +1,33 @@
+{
+  "label": "core-stale-corrupt-after",
+  "command": [
+    "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/.venv/bin/python",
+    "-m",
+    "trialtrace.cli",
+    "--anchors",
+    "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/examples/execution/corrupt_replacement/anchors.csv",
+    "--visits",
+    "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/examples/execution/corrupt_replacement/visits.csv",
+    "--assignments",
+    "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/examples/execution/corrupt_replacement/assignments.csv",
+    "--rule",
+    "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/rules/candidate_rule.json",
+    "--output",
+    "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/examples/execution/corrupt_replacement/bundle.json",
+    "--draft-synthetic",
+    "--source-pdf",
+    "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/source_check/.sources/Prot_000.pdf"
+  ],
+  "cwd": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace",
+  "started_at": "2026-10-18T07:36:21.991501+00:00",
+  "finished_at": "2026-10-18T07:36:22.079321+00:00",
+  "elapsed_seconds": 0.087641,
+  "status": "EXIT_NONZERO",
+  "exit_code": 2,
+  "stdout_path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/docs/trialtrace/commands/20261018T073621.991501Z-core-stale-corrupt-after-84b78e6f/stdout.log",
+  "stderr_path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/docs/trialtrace/commands/20261018T073621.991501Z-core-stale-corrupt-after-84b78e6f/stderr.log",
+  "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr_sha256": "748a72d89f6abaa4937d6c25d727db17ebdb1e00e0643f552fb92a8ab36a5ace",
+  "gate_acceptance": "NOT_DETERMINED_BY_COMMAND_RECORDER",
+  "warning": "Logs are not tamper-proof; this does not establish test assertions, source review, or clinical validity."
+}

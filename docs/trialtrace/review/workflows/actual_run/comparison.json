@@ -1,0 +1,497 @@
+{
+  "schema_version": "trialtrace.comparison.v1",
+  "clinical_validation": false,
+  "before": {
+    "run_id": "b34c9dbf750c0a5371bd7dd1019558d66ecee0abf94bd5169226698db137556e",
+    "finding_count": 6
+  },
+  "after": {
+    "run_id": "7fd09231313184245192ee0a7f5e00d34072b659134aff71366fcadc1ef5b6d2",
+    "finding_count": 6
+  },
+  "context_changes": [
+    {
+      "field": "input_files",
+      "before": [
+        {
+          "bom": false,
+          "byte_count": 567,
+          "display_name": "anchors.csv",
+          "name": "anchors.csv",
+          "sha256": "28b237bf7e7b4ed3117eca99f8321d1767bb260716f6a0869d1c0db5f39d0a0a"
+        },
+        {
+          "bom": false,
+          "byte_count": 1002,
+          "display_name": "assignments.csv",
+          "name": "assignments.csv",
+          "sha256": "ce0dd6b9a903f334908187929d30914c30d6a997daab090bc48109dd31b09be1"
+        },
+        {
+          "bom": false,
+          "byte_count": 924,
+          "display_name": "visits.csv",
+          "name": "visits.csv",
+          "sha256": "1f4ed10dc2950b5196ea2645c912c2a41e67d10cb26483db89c8159fa474ddbc"
+        }
+      ],
+      "after": [
+        {
+          "bom": false,
+          "byte_count": 567,
+          "display_name": "anchors.csv",
+          "name": "anchors.csv",
+          "sha256": "28b237bf7e7b4ed3117eca99f8321d1767bb260716f6a0869d1c0db5f39d0a0a"
+        },
+        {
+          "bom": false,
+          "byte_count": 1002,
+          "display_name": "assignments.csv",
+          "name": "assignments.csv",
+          "sha256": "ce0dd6b9a903f334908187929d30914c30d6a997daab090bc48109dd31b09be1"
+        },
+        {
+          "bom": false,
+          "byte_count": 924,
+          "display_name": "visits.csv",
+          "name": "visits.csv",
+          "sha256": "4de08979496e62c1ff5580d2d5839695b5c65a8d48c9f91c02af405ab122ce84"
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "matched": 4,
+    "changed": 1,
+    "provenance_only": 3,
+    "unchanged": 0,
+    "added": 0,
+    "removed": 0,
+    "unmatched_before": 2,
+    "unmatched_after": 2
+  },
+  "matched": [
+    {
+      "identity": {
+        "study_id": "NCT04470427",
+        "participant_id": "=SYNTH-FORMULA",
+        "site_id": "SYNTH-FLOW-SITE-7",
+        "visit_id": "SYNTH-FLOW-V1"
+      },
+      "before_finding_id": "e3bcbe63fa7b115a4d98aac3299254bba5cb91cd8befbae72b3c001b26243db7",
+      "after_finding_id": "da107c7f83cff7798c14cfbe2268bc7aaac26cb4a0ada2b88fc0e77909dc51a4",
+      "before_record_ordinal": 1,
+      "after_record_ordinal": 1,
+      "change_kind": "changed",
+      "changed_fields": [
+        "status",
+        "calculation",
+        "reason",
+        "reason_codes",
+        "raw_evidence",
+        "evidence_provenance"
+      ],
+      "changes": {
+        "status": {
+          "before": "PASS",
+          "after": "POTENTIAL_DEVIATION"
+        },
+        "calculation": {
+          "before": {
+            "actual": "2028-03-03",
+            "days_outside": 0,
+            "earliest": "2028-02-29",
+            "latest": "2028-03-03",
+            "target": "2028-02-29"
+          },
+          "after": {
+            "actual": "2028-03-04",
+            "days_outside": 1,
+            "earliest": "2028-02-29",
+            "latest": "2028-03-03",
+            "target": "2028-02-29"
+          }
+        },
+        "reason": {
+          "before": "WITHIN_INCLUSIVE_WINDOW",
+          "after": "OUTSIDE_INCLUSIVE_WINDOW"
+        },
+        "reason_codes": {
+          "before": [
+            "WITHIN_INCLUSIVE_WINDOW"
+          ],
+          "after": [
+            "OUTSIDE_INCLUSIVE_WINDOW"
+          ]
+        },
+        "raw_evidence": {
+          "before": [
+            {
+              "source_file": "visits.csv",
+              "raw_record": {
+                "actual_date": "2028-03-03",
+                "anchor_id": "SYNTH-FLOW-A1",
+                "assignment_id": "SYNTH-FLOW-M1",
+                "event_kind": "SAFETY_PHONE_CALL",
+                "participant_id": "=SYNTH-FORMULA",
+                "site_id": "SYNTH-FLOW-SITE-7",
+                "study_id": "NCT04470427",
+                "visit_code": "OL_D8",
+                "visit_id": "SYNTH-FLOW-V1",
+                "visit_status": "COMPLETED"
+              }
+            },
+            {
+              "source_file": "anchors.csv",
+              "raw_record": {
+                "anchor_code": "OL_D1",
+                "anchor_date": "2028-02-22",
+                "anchor_id": "SYNTH-FLOW-A1",
+                "anchor_kind": "ACTUAL_VACCINATION",
+                "participant_id": "=SYNTH-FORMULA",
+                "site_id": "SYNTH-FLOW-SITE-7",
+                "study_id": "NCT04470427"
+              }
+            },
+            {
+              "source_file": "assignments.csv",
+              "raw_record": {
+                "assignment_id": "SYNTH-FLOW-M1",
+                "mapping_note": "New workflow engineering input; not reviewed participant data.",
+                "mapping_status": "DRAFT_SYNTHETIC",
+                "participant_id": "=SYNTH-FORMULA",
+                "rule_version": "A10_DRAFT_2",
+                "schedule_code": "TABLE21",
+                "site_id": "SYNTH-FLOW-SITE-7",
+                "study_id": "NCT04470427"
+              }
+            }
+          ],
+          "after": [
+            {
+              "source_file": "visits.csv",
+              "raw_record": {
+                "actual_date": "2028-03-04",
+                "anchor_id": "SYNTH-FLOW-A1",
+                "assignment_id": "SYNTH-FLOW-M1",
+                "event_kind": "SAFETY_PHONE_CALL",
+                "participant_id": "=SYNTH-FORMULA",
+                "site_id": "SYNTH-FLOW-SITE-7",
+                "study_id": "NCT04470427",
+                "visit_code": "OL_D8",
+                "visit_id": "SYNTH-FLOW-V1",
+                "visit_status": "COMPLETED"
+              }
+            },
+            {
+              "source_file": "anchors.csv",
+              "raw_record": {
+                "anchor_code": "OL_D1",
+                "anchor_date": "2028-02-22",
+                "anchor_id": "SYNTH-FLOW-A1",
+                "anchor_kind": "ACTUAL_VACCINATION",
+                "participant_id": "=SYNTH-FORMULA",
+                "site_id": "SYNTH-FLOW-SITE-7",
+                "study_id": "NCT04470427"
+              }
+            },
+            {
+              "source_file": "assignments.csv",
+              "raw_record": {
+                "assignment_id": "SYNTH-FLOW-M1",
+                "mapping_note": "New workflow engineering input; not reviewed participant data.",
+                "mapping_status": "DRAFT_SYNTHETIC",
+                "participant_id": "=SYNTH-FORMULA",
+                "rule_version": "A10_DRAFT_2",
+                "schedule_code": "TABLE21",
+                "site_id": "SYNTH-FLOW-SITE-7",
+                "study_id": "NCT04470427"
+              }
+            }
+          ]
+        },
+        "evidence_provenance": {
+          "before": [
+            {
+              "source_file": "anchors.csv",
+              "record_ordinal": 1,
+              "sha256": "28b237bf7e7b4ed3117eca99f8321d1767bb260716f6a0869d1c0db5f39d0a0a",
+              "raw_csv": "NCT04470427,=SYNTH-FORMULA,SYNTH-FLOW-SITE-7,SYNTH-FLOW-A1,OL_D1,ACTUAL_VACCINATION,2028-02-22\n"
+            },
+            {
+              "source_file": "visits.csv",
+              "record_ordinal": 1,
+              "sha256": "1f4ed10dc2950b5196ea2645c912c2a41e67d10cb26483db89c8159fa474ddbc",
+              "raw_csv": "NCT04470427,=SYNTH-FORMULA,SYNTH-FLOW-SITE-7,SYNTH-FLOW-V1,OL_D8,SAFETY_PHONE_CALL,2028-03-03,COMPLETED,SYNTH-FLOW-A1,SYNTH-FLOW-M1\n"
+            },
+            {
+              "source_file": "assignments.csv",
+              "record_ordinal": 1,
+              "sha256": "ce0dd6b9a903f334908187929d30914c30d6a997daab090bc48109dd31b09be1",
+              "raw_csv": "SYNTH-FLOW-M1,NCT04470427,=SYNTH-FORMULA,SYNTH-FLOW-SITE-7,A10_DRAFT_2,TABLE21,DRAFT_SYNTHETIC,New workflow engineering input; not reviewed participant data.\n"
+            }
+          ],
+          "after": [
+            {
+              "source_file": "anchors.csv",
+              "record_ordinal": 1,
+              "sha256": "28b237bf7e7b4ed3117eca99f8321d1767bb260716f6a0869d1c0db5f39d0a0a",
+              "raw_csv": "NCT04470427,=SYNTH-FORMULA,SYNTH-FLOW-SITE-7,SYNTH-FLOW-A1,OL_D1,ACTUAL_VACCINATION,2028-02-22\n"
+            },
+            {
+              "source_file": "visits.csv",
+              "record_ordinal": 1,
+              "sha256": "4de08979496e62c1ff5580d2d5839695b5c65a8d48c9f91c02af405ab122ce84",
+              "raw_csv": "NCT04470427,=SYNTH-FORMULA,SYNTH-FLOW-SITE-7,SYNTH-FLOW-V1,OL_D8,SAFETY_PHONE_CALL,2028-03-04,COMPLETED,SYNTH-FLOW-A1,SYNTH-FLOW-M1\n"
+            },
+            {
+              "source_file": "assignments.csv",
+              "record_ordinal": 1,
+              "sha256": "ce0dd6b9a903f334908187929d30914c30d6a997daab090bc48109dd31b09be1",
+              "raw_csv": "SYNTH-FLOW-M1,NCT04470427,=SYNTH-FORMULA,SYNTH-FLOW-SITE-7,A10_DRAFT_2,TABLE21,DRAFT_SYNTHETIC,New workflow engineering input; not reviewed participant data.\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "identity": {
+        "study_id": "NCT04470427",
+        "participant_id": "SYNTH-YEAR-CROSSING",
+        "site_id": "SYNTH-FLOW-SITE-7",
+        "visit_id": "SYNTH-FLOW-V2"
+      },
+      "before_finding_id": "a2835a7475241aa32c9496abe83f2418342daa6471e3baa29627b2ffc4723f22",
+      "after_finding_id": "06bee7b6dd9846d7c1ec3a279d37757557e18f336dad18687cb46e0e3e0b4632",
+      "before_record_ordinal": 2,
+      "after_record_ordinal": 2,
+      "change_kind": "provenance_only",
+      "changed_fields": [
+        "evidence_provenance"
+      ],
+      "changes": {
+        "evidence_provenance": {
+          "before": [
+            {
+              "source_file": "anchors.csv",
+              "record_ordinal": 2,
+              "sha256": "28b237bf7e7b4ed3117eca99f8321d1767bb260716f6a0869d1c0db5f39d0a0a",
+              "raw_csv": "NCT04470427,SYNTH-YEAR-CROSSING,SYNTH-FLOW-SITE-7,SYNTH-FLOW-A2,OL_D1,ACTUAL_VACCINATION,2028-12-25\n"
+            },
+            {
+              "source_file": "visits.csv",
+              "record_ordinal": 2,
+              "sha256": "1f4ed10dc2950b5196ea2645c912c2a41e67d10cb26483db89c8159fa474ddbc",
+              "raw_csv": "NCT04470427,SYNTH-YEAR-CROSSING,SYNTH-FLOW-SITE-7,SYNTH-FLOW-V2,OL_D8,SAFETY_PHONE_CALL,2029-01-02,COMPLETED,SYNTH-FLOW-A2,SYNTH-FLOW-M2\n"
+            },
+            {
+              "source_file": "assignments.csv",
+              "record_ordinal": 2,
+              "sha256": "ce0dd6b9a903f334908187929d30914c30d6a997daab090bc48109dd31b09be1",
+              "raw_csv": "SYNTH-FLOW-M2,NCT04470427,SYNTH-YEAR-CROSSING,SYNTH-FLOW-SITE-7,A10_DRAFT_2,TABLE21,DRAFT_SYNTHETIC,New workflow engineering input; not reviewed participant data.\n"
+            }
+          ],
+          "after": [
+            {
+              "source_file": "anchors.csv",
+              "record_ordinal": 2,
+              "sha256": "28b237bf7e7b4ed3117eca99f8321d1767bb260716f6a0869d1c0db5f39d0a0a",
+              "raw_csv": "NCT04470427,SYNTH-YEAR-CROSSING,SYNTH-FLOW-SITE-7,SYNTH-FLOW-A2,OL_D1,ACTUAL_VACCINATION,2028-12-25\n"
+            },
+            {
+              "source_file": "visits.csv",
+              "record_ordinal": 2,
+              "sha256": "4de08979496e62c1ff5580d2d5839695b5c65a8d48c9f91c02af405ab122ce84",
+              "raw_csv": "NCT04470427,SYNTH-YEAR-CROSSING,SYNTH-FLOW-SITE-7,SYNTH-FLOW-V2,OL_D8,SAFETY_PHONE_CALL,2029-01-02,COMPLETED,SYNTH-FLOW-A2,SYNTH-FLOW-M2\n"
+            },
+            {
+              "source_file": "assignments.csv",
+              "record_ordinal": 2,
+              "sha256": "ce0dd6b9a903f334908187929d30914c30d6a997daab090bc48109dd31b09be1",
+              "raw_csv": "SYNTH-FLOW-M2,NCT04470427,SYNTH-YEAR-CROSSING,SYNTH-FLOW-SITE-7,A10_DRAFT_2,TABLE21,DRAFT_SYNTHETIC,New workflow engineering input; not reviewed participant data.\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "identity": {
+        "study_id": "NCT04470427",
+        "participant_id": "SYNTH-MISSING-ANCHOR",
+        "site_id": "SYNTH-FLOW-SITE-7",
+        "visit_id": "SYNTH-FLOW-V3"
+      },
+      "before_finding_id": "8342e64b556f60a6b635131c8b9590d3bb5ee4c1b5e69d4987575ef4f1d730b8",
+      "after_finding_id": "469bc909ebac154312f4c34026eec03497629f48c32c057737f45c623f2e3301",
+      "before_record_ordinal": 3,
+      "after_record_ordinal": 3,
+      "change_kind": "provenance_only",
+      "changed_fields": [
+        "evidence_provenance"
+      ],
+      "changes": {
+        "evidence_provenance": {
+          "before": [
+            {
+              "source_file": "visits.csv",
+              "record_ordinal": 3,
+              "sha256": "1f4ed10dc2950b5196ea2645c912c2a41e67d10cb26483db89c8159fa474ddbc",
+              "raw_csv": "NCT04470427,SYNTH-MISSING-ANCHOR,SYNTH-FLOW-SITE-7,SYNTH-FLOW-V3,OL_D8,SAFETY_PHONE_CALL,2028-03-03,COMPLETED,SYNTH-FLOW-A3,SYNTH-FLOW-M3\n"
+            },
+            {
+              "source_file": "assignments.csv",
+              "record_ordinal": 3,
+              "sha256": "ce0dd6b9a903f334908187929d30914c30d6a997daab090bc48109dd31b09be1",
+              "raw_csv": "SYNTH-FLOW-M3,NCT04470427,SYNTH-MISSING-ANCHOR,SYNTH-FLOW-SITE-7,A10_DRAFT_2,TABLE21,DRAFT_SYNTHETIC,New workflow engineering input; not reviewed participant data.\n"
+            }
+          ],
+          "after": [
+            {
+              "source_file": "visits.csv",
+              "record_ordinal": 3,
+              "sha256": "4de08979496e62c1ff5580d2d5839695b5c65a8d48c9f91c02af405ab122ce84",
+              "raw_csv": "NCT04470427,SYNTH-MISSING-ANCHOR,SYNTH-FLOW-SITE-7,SYNTH-FLOW-V3,OL_D8,SAFETY_PHONE_CALL,2028-03-03,COMPLETED,SYNTH-FLOW-A3,SYNTH-FLOW-M3\n"
+            },
+            {
+              "source_file": "assignments.csv",
+              "record_ordinal": 3,
+              "sha256": "ce0dd6b9a903f334908187929d30914c30d6a997daab090bc48109dd31b09be1",
+              "raw_csv": "SYNTH-FLOW-M3,NCT04470427,SYNTH-MISSING-ANCHOR,SYNTH-FLOW-SITE-7,A10_DRAFT_2,TABLE21,DRAFT_SYNTHETIC,New workflow engineering input; not reviewed participant data.\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "identity": {
+        "study_id": "NCT04470427",
+        "participant_id": "SYNTH-UNSUPPORTED-EVENT",
+        "site_id": "SYNTH-FLOW-SITE-7",
+        "visit_id": "SYNTH-FLOW-V4"
+      },
+      "before_finding_id": "912a89ecda51b839dceeb18298e0ee883d97475af26f320cf4d20152b86a78c2",
+      "after_finding_id": "245156ef881d8bc0d90038a911b9a7be68ae8e55701b3de6444e5aef6d3213f8",
+      "before_record_ordinal": 4,
+      "after_record_ordinal": 4,
+      "change_kind": "provenance_only",
+      "changed_fields": [
+        "evidence_provenance"
+      ],
+      "changes": {
+        "evidence_provenance": {
+          "before": [
+            {
+              "source_file": "anchors.csv",
+              "record_ordinal": 3,
+              "sha256": "28b237bf7e7b4ed3117eca99f8321d1767bb260716f6a0869d1c0db5f39d0a0a",
+              "raw_csv": "NCT04470427,SYNTH-UNSUPPORTED-EVENT,SYNTH-FLOW-SITE-7,SYNTH-FLOW-A4,OL_D1,ACTUAL_VACCINATION,2028-02-22\n"
+            },
+            {
+              "source_file": "visits.csv",
+              "record_ordinal": 4,
+              "sha256": "1f4ed10dc2950b5196ea2645c912c2a41e67d10cb26483db89c8159fa474ddbc",
+              "raw_csv": "NCT04470427,SYNTH-UNSUPPORTED-EVENT,SYNTH-FLOW-SITE-7,SYNTH-FLOW-V4,OL_D8,IN_PERSON_VISIT,2028-03-03,COMPLETED,SYNTH-FLOW-A4,SYNTH-FLOW-M4\n"
+            },
+            {
+              "source_file": "assignments.csv",
+              "record_ordinal": 4,
+              "sha256": "ce0dd6b9a903f334908187929d30914c30d6a997daab090bc48109dd31b09be1",
+              "raw_csv": "SYNTH-FLOW-M4,NCT04470427,SYNTH-UNSUPPORTED-EVENT,SYNTH-FLOW-SITE-7,A10_DRAFT_2,TABLE21,DRAFT_SYNTHETIC,New workflow engineering input; not reviewed participant data.\n"
+            }
+          ],
+          "after": [
+            {
+              "source_file": "anchors.csv",
+              "record_ordinal": 3,
+              "sha256": "28b237bf7e7b4ed3117eca99f8321d1767bb260716f6a0869d1c0db5f39d0a0a",
+              "raw_csv": "NCT04470427,SYNTH-UNSUPPORTED-EVENT,SYNTH-FLOW-SITE-7,SYNTH-FLOW-A4,OL_D1,ACTUAL_VACCINATION,2028-02-22\n"
+            },
+            {
+              "source_file": "visits.csv",
+              "record_ordinal": 4,
+              "sha256": "4de08979496e62c1ff5580d2d5839695b5c65a8d48c9f91c02af405ab122ce84",
+              "raw_csv": "NCT04470427,SYNTH-UNSUPPORTED-EVENT,SYNTH-FLOW-SITE-7,SYNTH-FLOW-V4,OL_D8,IN_PERSON_VISIT,2028-03-03,COMPLETED,SYNTH-FLOW-A4,SYNTH-FLOW-M4\n"
+            },
+            {
+              "source_file": "assignments.csv",
+              "record_ordinal": 4,
+              "sha256": "ce0dd6b9a903f334908187929d30914c30d6a997daab090bc48109dd31b09be1",
+              "raw_csv": "SYNTH-FLOW-M4,NCT04470427,SYNTH-UNSUPPORTED-EVENT,SYNTH-FLOW-SITE-7,A10_DRAFT_2,TABLE21,DRAFT_SYNTHETIC,New workflow engineering input; not reviewed participant data.\n"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "unmatched_before": [
+    {
+      "finding_id": "09d65037253701ab7836cb92d8d6aece11266d49d1d5210fb5e224b29593cc24",
+      "record_ordinal": 5,
+      "identity": {
+        "study_id": "NCT04470427",
+        "participant_id": "SYNTH-DUPLICATE",
+        "site_id": "SYNTH-FLOW-SITE-7",
+        "visit_id": "SYNTH-FLOW-V5"
+      },
+      "reason": "DUPLICATE_IDENTITY"
+    },
+    {
+      "finding_id": "efe688f07c228bd704ddbb3c4436e7903c7bdb513632ea19e8f32dbf684b8a2b",
+      "record_ordinal": 6,
+      "identity": {
+        "study_id": "NCT04470427",
+        "participant_id": "SYNTH-DUPLICATE",
+        "site_id": "SYNTH-FLOW-SITE-7",
+        "visit_id": "SYNTH-FLOW-V5"
+      },
+      "reason": "DUPLICATE_IDENTITY"
+    }
+  ],
+  "unmatched_after": [
+    {
+      "finding_id": "27ed0ba7fe77186e6913c4adf44e694388a95374348bb895c0c37b32828a9101",
+      "record_ordinal": 5,
+      "identity": {
+        "study_id": "NCT04470427",
+        "participant_id": "SYNTH-DUPLICATE",
+        "site_id": "SYNTH-FLOW-SITE-7",
+        "visit_id": "SYNTH-FLOW-V5"
+      },
+      "reason": "DUPLICATE_IDENTITY"
+    },
+    {
+      "finding_id": "b8ce9af42c8477dd3a80b546a7d06e7f5681c4edc6d8ac1bd1acd99a368e08fd",
+      "record_ordinal": 6,
+      "identity": {
+        "study_id": "NCT04470427",
+        "participant_id": "SYNTH-DUPLICATE",
+        "site_id": "SYNTH-FLOW-SITE-7",
+        "visit_id": "SYNTH-FLOW-V5"
+      },
+      "reason": "DUPLICATE_IDENTITY"
+    }
+  ],
+  "ambiguous_groups": [
+    {
+      "visit_key": {
+        "study_id": "NCT04470427",
+        "visit_id": "SYNTH-FLOW-V5"
+      },
+      "before_finding_ids": [
+        "09d65037253701ab7836cb92d8d6aece11266d49d1d5210fb5e224b29593cc24",
+        "efe688f07c228bd704ddbb3c4436e7903c7bdb513632ea19e8f32dbf684b8a2b"
+      ],
+      "after_finding_ids": [
+        "27ed0ba7fe77186e6913c4adf44e694388a95374348bb895c0c37b32828a9101",
+        "b8ce9af42c8477dd3a80b546a7d06e7f5681c4edc6d8ac1bd1acd99a368e08fd"
+      ]
+    }
+  ],
+  "limitations": [
+    "Comparison of saved synthetic report content only. No clinical validation, improvement judgment, or source approval is implied.",
+    "Changed rule, source, execution mode, review status, or producer can affect comparability; inspect context changes before interpreting finding differences.",
+    "Only unique exact study/participant/site/visit identities are paired. Duplicate study/visit keys are ambiguous even if owner/site differs. Missing and conflicting identities remain unmatched.",
+    "Added and removed mean unique report identities present on one side; they do not prove new, missed, completed, or corrected activities.",
+    "Declared hashes are checked for internal consistency; the original input files and protocol are not authenticated by comparing saved reports."
+  ]
+}

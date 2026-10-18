@@ -1,0 +1,13 @@
+test_logs_do_not_overwrite (test_handoff_tools.HandoffToolsTests.test_logs_do_not_overwrite) ... ok
+test_manifest_detects_tamper_and_escape (test_handoff_tools.HandoffToolsTests.test_manifest_detects_tamper_and_escape) ... ok
+test_missing_executable_does_not_pass (test_handoff_tools.HandoffToolsTests.test_missing_executable_does_not_pass) ... ok
+test_preflight_does_not_claim_remote_access (test_handoff_tools.HandoffToolsTests.test_preflight_does_not_claim_remote_access) ... ok
+test_real_failure_preserved (test_handoff_tools.HandoffToolsTests.test_real_failure_preserved) ... ok
+test_real_success_output_recorded (test_handoff_tools.HandoffToolsTests.test_real_success_output_recorded) ... ok
+test_remote_credentials_redacted (test_handoff_tools.HandoffToolsTests.test_remote_credentials_redacted) ... ok
+test_timeout_is_not_success (test_handoff_tools.HandoffToolsTests.test_timeout_is_not_success) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.212s
+
+OK

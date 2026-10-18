@@ -1,0 +1,131 @@
+{
+  "schema_version": "trialtrace.preparation.v1",
+  "source_sha256": "6dca682520bf47cb6ce3eab8c6b184160697ef0614971c1b15abf2a32738fe75",
+  "columns": {
+    "study_id": "trial_ref",
+    "participant_id": "subject_ref",
+    "site_id": "clinic",
+    "visit_id": "contact_ref",
+    "anchor_id": "dose_ref",
+    "anchor_date": "phone_actual",
+    "actual_date": "dose_actual",
+    "visit_status": "contact_state"
+  },
+  "completed_value": "done",
+  "rule_sha256": "f36336df90a1793a80b92f48ce273488a091547110856bdcc602587ddad9e7f0",
+  "scope": "USER_DECLARED_SYNTHETIC_TABLE21_ONLY",
+  "preparation_id": "e6f6dc4c260ca57467fb8ac0531ac20972a5ed923ee3f4747943a33d380ef8d5",
+  "source_display_name": "synthetic-wide.csv",
+  "source_bytes": 848,
+  "source_record_count": 7,
+  "unmapped_columns": [
+    "operator_note"
+  ],
+  "generated_files": {
+    "anchors.csv": {
+      "sha256": "caf5769cc8566aba5c31649d56c2619802699ff408ba9d8ea37270c94d1670bd",
+      "records": 7
+    },
+    "visits.csv": {
+      "sha256": "38c41319362fcd298d366d35eebf2ca22a77fd81d0bd4a06b16fc7a0a33449a4",
+      "records": 7
+    },
+    "assignments.csv": {
+      "sha256": "6bf14c1e2bab5cdcb1b028764f52115191a1121fa164c9dac7e5bd27229ab432",
+      "records": 7
+    }
+  },
+  "lineage": [
+    {
+      "source_record_ordinal": 1,
+      "generated_record_ordinals": {
+        "anchors.csv": 1,
+        "visits.csv": 1,
+        "assignments.csv": 1
+      },
+      "source_completion_value": "done",
+      "generated_completion_value": "COMPLETED"
+    },
+    {
+      "source_record_ordinal": 2,
+      "generated_record_ordinals": {
+        "anchors.csv": 2,
+        "visits.csv": 2,
+        "assignments.csv": 2
+      },
+      "source_completion_value": "done",
+      "generated_completion_value": "COMPLETED"
+    },
+    {
+      "source_record_ordinal": 3,
+      "generated_record_ordinals": {
+        "anchors.csv": 3,
+        "visits.csv": 3,
+        "assignments.csv": 3
+      },
+      "source_completion_value": "done",
+      "generated_completion_value": "COMPLETED"
+    },
+    {
+      "source_record_ordinal": 4,
+      "generated_record_ordinals": {
+        "anchors.csv": 4,
+        "visits.csv": 4,
+        "assignments.csv": 4
+      },
+      "source_completion_value": "entered",
+      "generated_completion_value": "UNCONFIRMED"
+    },
+    {
+      "source_record_ordinal": 5,
+      "generated_record_ordinals": {
+        "anchors.csv": 5,
+        "visits.csv": 5,
+        "assignments.csv": 5
+      },
+      "source_completion_value": "done",
+      "generated_completion_value": "COMPLETED"
+    },
+    {
+      "source_record_ordinal": 6,
+      "generated_record_ordinals": {
+        "anchors.csv": 6,
+        "visits.csv": 6,
+        "assignments.csv": 6
+      },
+      "source_completion_value": "done",
+      "generated_completion_value": "COMPLETED"
+    },
+    {
+      "source_record_ordinal": 7,
+      "generated_record_ordinals": {
+        "anchors.csv": 7,
+        "visits.csv": 7,
+        "assignments.csv": 7
+      },
+      "source_completion_value": "done",
+      "generated_completion_value": "COMPLETED"
+    }
+  ],
+  "declared_constants": {
+    "anchor_code": "OL_D1",
+    "anchor_kind": "ACTUAL_VACCINATION",
+    "visit_code": "OL_D8",
+    "event_kind": "SAFETY_PHONE_CALL",
+    "rule_version": "A10_DRAFT_2",
+    "schedule_code": "TABLE21",
+    "mapping_status": "DRAFT_SYNTHETIC"
+  },
+  "derived_fields": {
+    "assignment_id": "PREP- plus logical source row ordinal",
+    "mapping_note": "Preparation ID and source ordinal"
+  },
+  "limitations": [
+    "Column meanings and rule applicability are user declarations, not independently verified facts.",
+    "One row must contain a recorded safety call and its actual vaccination reference; no cross-row joining.",
+    "No rows are dropped, dates parsed/coerced, identifiers trimmed, or duplicate references collapsed.",
+    "Repeated vaccination identifiers remain duplicate-key queries; repeating/longitudinal exports need a separately validated adapter.",
+    "Original source.csv and this manifest must accompany evidence.json to inspect upstream evidence.",
+    "Not a certified REDCap, OpenClinica or CDISC import. Synthetic data only; no clinical validation."
+  ]
+}

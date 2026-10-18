@@ -1,0 +1,23 @@
+{
+  "command": [
+    "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/preparation_clean_env/bin/python",
+    "-I",
+    "-m",
+    "trialtrace.cli",
+    "--draft-synthetic",
+    "--anchors",
+    "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/examples/browser/outside/anchors.csv",
+    "--visits",
+    "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/examples/browser/outside/visits.csv",
+    "--assignments",
+    "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/examples/browser/outside/assignments.csv",
+    "--rule",
+    "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/rules/candidate_rule.json",
+    "--output",
+    "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/docs/trialtrace/review/preparation/clean_install/runs/20261018T101655.778789Z-1cc25b8d/outside-cli.json"
+  ],
+  "cwd": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work",
+  "exit_code": 0,
+  "stdout_sha256": "f20bd4176ae531ce34d159678c03490a01c3e79f735043a2125b9fa32f6f808e",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

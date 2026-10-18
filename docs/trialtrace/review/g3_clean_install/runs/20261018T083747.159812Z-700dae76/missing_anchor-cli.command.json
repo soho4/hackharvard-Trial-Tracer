@@ -1,0 +1,25 @@
+{
+  "command": [
+    "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/g3_clean_env/bin/python",
+    "-I",
+    "-m",
+    "trialtrace.cli",
+    "--draft-synthetic",
+    "--anchors",
+    "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/examples/browser/missing_anchor/anchors.csv",
+    "--visits",
+    "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/examples/browser/missing_anchor/visits.csv",
+    "--assignments",
+    "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/examples/browser/missing_anchor/assignments.csv",
+    "--rule",
+    "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/rules/candidate_rule.json",
+    "--output",
+    "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/docs/trialtrace/review/g3_clean_install/runs/20261018T083747.159812Z-700dae76/missing_anchor-cli.json",
+    "--source-pdf",
+    "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/source_check/.sources/Prot_000.pdf"
+  ],
+  "cwd": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work",
+  "exit_code": 0,
+  "stdout_sha256": "315bb318222ae85a513e3dfea8ffbb130d7ac4990736118812f3a03865674436",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

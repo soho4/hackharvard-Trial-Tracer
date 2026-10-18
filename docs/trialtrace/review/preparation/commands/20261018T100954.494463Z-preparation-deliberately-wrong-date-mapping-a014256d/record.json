@@ -1,0 +1,23 @@
+{
+  "label": "preparation-deliberately-wrong-date-mapping",
+  "command": [
+    ".venv/bin/python",
+    "tools/run_preparation_acceptance.py",
+    "--mapping",
+    "docs/trialtrace/review/preparation/mutation/swapped-dates-mapping.json",
+    "--out",
+    "docs/trialtrace/review/preparation/mutation/actual_run"
+  ],
+  "cwd": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace",
+  "started_at": "2026-10-18T10:09:54.494463+00:00",
+  "finished_at": "2026-10-18T10:09:54.621090+00:00",
+  "elapsed_seconds": 0.126307,
+  "status": "EXIT_NONZERO",
+  "exit_code": 1,
+  "stdout_path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/docs/trialtrace/review/preparation/commands/20261018T100954.494463Z-preparation-deliberately-wrong-date-mapping-a014256d/stdout.log",
+  "stderr_path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/docs/trialtrace/review/preparation/commands/20261018T100954.494463Z-preparation-deliberately-wrong-date-mapping-a014256d/stderr.log",
+  "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr_sha256": "501750050bed8f4eaf0e1be6bcd1205ec0241268b7c1071dc5452432f2e833e9",
+  "gate_acceptance": "NOT_DETERMINED_BY_COMMAND_RECORDER",
+  "warning": "Logs are not tamper-proof; this does not establish test assertions, source review, or clinical validity."
+}

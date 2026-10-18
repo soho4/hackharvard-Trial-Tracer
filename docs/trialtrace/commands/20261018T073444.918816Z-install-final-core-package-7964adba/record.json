@@ -1,0 +1,25 @@
+{
+  "label": "install-final-core-package",
+  "command": [
+    ".venv/bin/python",
+    "-m",
+    "pip",
+    "install",
+    "--no-build-isolation",
+    "--no-deps",
+    "--force-reinstall",
+    "."
+  ],
+  "cwd": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace",
+  "started_at": "2026-10-18T07:34:44.918816+00:00",
+  "finished_at": "2026-10-18T07:34:45.633372+00:00",
+  "elapsed_seconds": 0.714055,
+  "status": "EXIT_ZERO",
+  "exit_code": 0,
+  "stdout_path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/docs/trialtrace/commands/20261018T073444.918816Z-install-final-core-package-7964adba/stdout.log",
+  "stderr_path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/docs/trialtrace/commands/20261018T073444.918816Z-install-final-core-package-7964adba/stderr.log",
+  "stdout_sha256": "20afb7af02cc69899ca70877f5d31628aeffb1e02cc9141afd324d7d8dca4990",
+  "stderr_sha256": "8f3f53aae84e23d6c56eef04ef0f2813c4fddfdf89fbe01867af37b8743e478f",
+  "gate_acceptance": "NOT_DETERMINED_BY_COMMAND_RECORDER",
+  "warning": "Logs are not tamper-proof; this does not establish test assertions, source review, or clinical validity."
+}

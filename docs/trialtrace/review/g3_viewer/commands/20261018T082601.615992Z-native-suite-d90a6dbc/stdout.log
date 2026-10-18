@@ -1,0 +1,35 @@
+✔ mixed.json is valid and has one finding of each outcome (4.095584ms)
+✔ empty.json is valid with zero counts (0.600208ms)
+✔ invalid_status.json is rejected for CONFIRMED_SAFE (1.126458ms)
+✔ invalid_duplicate_id.json is rejected for the repeated finding_id (0.811458ms)
+✔ invalid_evidence_hash.json is rejected for mismatched declared provenance (0.588958ms)
+✔ markup.json is a valid report whose source link is unsafe (2.651708ms)
+✔ a null source PDF hash is valid (0.560583ms)
+✔ adding a fifth PASS finding gives total 5 and PASS 2 (0.737542ms)
+✔ a missing required report field is rejected (0.346917ms)
+✔ a missing required finding field is rejected (null is allowed, absent is not) (0.966625ms)
+✔ an unknown schema version is rejected (0.109041ms)
+✔ non-synthetic data and clinical-validation claims are rejected (0.645125ms)
+✔ an impossible calendar date is rejected (0.142125ms)
+✔ an outcome that disagrees with its calculation is rejected (0.515333ms)
+✔ evidence from a file not listed in input_files is rejected (0.415333ms)
+✔ duplicate input file names are rejected (0.16825ms)
+✔ a malformed hash is rejected (0.235166ms)
+✔ non-object input is rejected (0.063042ms)
+✔ more than 10,000 findings is rejected (1.364917ms)
+✔ broken JSON is rejected (0.156041ms)
+✔ a file over 2,000,000 bytes is rejected before parsing (0.864333ms)
+✔ parsing the mixed fixture text succeeds (2.148875ms)
+✔ filtering to DATA_QUERY lists one finding, fixture-f-3 (0.205791ms)
+✔ searching demo-p002 finds fixture-f-2, case-insensitively (0.617916ms)
+✔ search also matches reason text, and status and search combine (0.872291ms)
+✔ safeSourceURL allows only plain HTTPS (0.570375ms)
+✔ no function modifies its input (1.200333ms)
+ℹ tests 27
+ℹ suites 0
+ℹ pass 27
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 102.721958

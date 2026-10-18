@@ -1,0 +1,33 @@
+{
+  "label": "g3-browser-boundary-cli",
+  "command": [
+    ".venv/bin/python",
+    "-m",
+    "trialtrace.cli",
+    "--anchors",
+    "examples/browser/boundary/anchors.csv",
+    "--visits",
+    "examples/browser/boundary/visits.csv",
+    "--assignments",
+    "examples/browser/boundary/assignments.csv",
+    "--rule",
+    "rules/candidate_rule.json",
+    "--draft-synthetic",
+    "--source-pdf",
+    "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/source_check/.sources/Prot_000.pdf",
+    "--output",
+    "docs/trialtrace/review/g3_browser/boundary_cli.json"
+  ],
+  "cwd": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace",
+  "started_at": "2026-10-18T08:29:18.498104+00:00",
+  "finished_at": "2026-10-18T08:29:18.628359+00:00",
+  "elapsed_seconds": 0.129746,
+  "status": "EXIT_ZERO",
+  "exit_code": 0,
+  "stdout_path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/docs/trialtrace/commands/20261018T082918.498104Z-g3-browser-boundary-cli-69fba8c9/stdout.log",
+  "stderr_path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/docs/trialtrace/commands/20261018T082918.498104Z-g3-browser-boundary-cli-69fba8c9/stderr.log",
+  "stdout_sha256": "6e8210ea96275d9135ba4a8290e1a9bb51d89592685559d5fce111993130a060",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "gate_acceptance": "NOT_DETERMINED_BY_COMMAND_RECORDER",
+  "warning": "Logs are not tamper-proof; this does not establish test assertions, source review, or clinical validity."
+}

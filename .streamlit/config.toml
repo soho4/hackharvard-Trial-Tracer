@@ -1,0 +1,18 @@
+[server]
+address = "127.0.0.1"
+headless = true
+maxUploadSize = 1
+
+[browser]
+gatherUsageStats = false
+
+[client]
+# Use the explicit formula-safe review CSV and original evidence JSON downloads.
+disableDataExport = true
+
+[theme]
+primaryColor = "#086859"
+backgroundColor = "#fcfcf9"
+secondaryBackgroundColor = "#eef2ef"
+textColor = "#182b2a"
+font = "sans serif"

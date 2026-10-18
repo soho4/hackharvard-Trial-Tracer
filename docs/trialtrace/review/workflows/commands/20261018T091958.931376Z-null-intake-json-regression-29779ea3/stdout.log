@@ -1,0 +1,43 @@
+app.py SHA256=1068c0d08a744acbeef751873641003e495540a33e0addde0ec3feeed1b4a9d6
+F                                                                        [100%]
+=================================== FAILURES ===================================
+_ test_multiple_rejected_uploads_show_diagnostics_without_null_json_components _
+
+app = AppTest(
+    _script_path='/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTr...                11: Info()
+            }
+        ),
+        2: SpecialBlock(
+            type='event'
+        )
+    }
+)
+records = {'anchors.csv': [{'study_id': 'NCT04470427', 'participant_id': 'synthetic-never-bundled-817', 'site_id': 'synthetic-si...pant_id': 'synthetic-never-bundled-817', 'site_id': 'synthetic-site-new', 'assignment_id': 'assignment-new-817', ...}]}
+write_inputs = <function write_inputs.<locals>.write at 0x10bee1440>
+
+    def test_multiple_rejected_uploads_show_diagnostics_without_null_json_components(app, records, write_inputs):
+        paths = write_inputs(records)
+        uploader(app, "anchors.csv").set_value(("invalid-anchors.csv", b"incorrect,header\nwrong,row\n", "text/csv"))
+        uploader(app, "visits.csv").set_value(("invalid-visits.csv", b"\xff", "text/csv"))
+        uploader(app, "assignments.csv").set_value((paths["assignments.csv"].name, paths["assignments.csv"].read_bytes(), "text/csv"))
+        app.run()
+        app.checkbox(key="draft_confirmed").check().run()
+        assert_no_report(app)
+        assert run_button(app).disabled
+        assert {item["code"] for item in diagnostics(app)} >= {"INVALID_HEADER", "INVALID_UTF8"}
+        assert any("File rejected: anchors.csv" in item.value for item in app.error)
+        assert any("File rejected: visits.csv" in item.value for item in app.error)
+        assert all(json.loads(item.value) is not None for item in app.json), "st.json(None) creates an invalid react-json-view source"
+        messages = [item.value.lower() for category in (app.markdown, app.caption, app.info, app.text) for item in category]
+>       assert any("relationship" in message and "unavailable" in message for message in messages)
+E       assert False
+E        +  where False = any(<generator object test_multiple_rejected_uploads_show_diagnostics_without_null_json_components.<locals>.<genexpr> at 0x1111020c0>)
+
+tests/test_streamlit_app.py:102: AssertionError
+---------------------------- Captured stderr setup -----------------------------
+2026-10-18 05:19:59.473 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+------------------------------ Captured log setup ------------------------------
+WARNING  streamlit.runtime.scriptrunner_utils.script_run_context:script_run_context.py:508 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+=========================== short test summary info ============================
+FAILED tests/test_streamlit_app.py::test_multiple_rejected_uploads_show_diagnostics_without_null_json_components
+1 failed, 18 deselected in 1.11s

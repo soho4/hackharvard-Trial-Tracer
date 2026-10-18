@@ -1,0 +1,47 @@
+{
+  "source_hashes": {
+    "importer.py": "95eda30b1a7e8fe6240c3d394c9b1c15b745b3c757cb7bdc7aacf2dc81a6aaab",
+    "relationships.py": "ee024fb3cfe44cff8feea813f907420996cf112e5905b1cc4a30492ebb546fef",
+    "import_cli.py": "fc29843ac0d43c6295ae64d61f7a72e497e0878a934c1ce05c6e7307e0a44afc"
+  },
+  "amplification": [
+    {
+      "records_per_table": 10,
+      "input_bytes_per_table": {
+        "anchors.csv": 1158,
+        "visits.csv": 1592,
+        "assignments.csv": 91231
+      },
+      "inspection_seconds": 0.00296812504529953,
+      "inspection_peak_traced_bytes": 144376,
+      "visit_entries": 10,
+      "evidence_entries": 300,
+      "problem_entries": 230,
+      "serialized_inspection_bytes": 2204732
+    },
+    {
+      "records_per_table": 50,
+      "input_bytes_per_table": {
+        "anchors.csv": 5478,
+        "visits.csv": 7512,
+        "assignments.csv": 455751
+      },
+      "inspection_seconds": 0.04397983313538134,
+      "inspection_peak_traced_bytes": 2620408,
+      "visit_entries": 50,
+      "evidence_entries": 7500,
+      "problem_entries": 5150,
+      "serialized_inspection_bytes": 50692652
+    }
+  ],
+  "oversized_cell": {
+    "cell_characters": 140000,
+    "file_bytes": 140214,
+    "diagnostic": {
+      "code": "CSV_PARSE",
+      "message": "Malformed CSV record",
+      "file": "assignments.csv",
+      "record_ordinal": 1
+    }
+  }
+}

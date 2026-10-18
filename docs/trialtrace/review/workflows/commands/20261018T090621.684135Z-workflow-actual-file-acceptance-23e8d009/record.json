@@ -1,0 +1,23 @@
+{
+  "label": "workflow-actual-file-acceptance",
+  "command": [
+    ".venv/bin/python",
+    "tools/run_workflow_acceptance.py",
+    "--out",
+    "docs/trialtrace/review/workflows/actual_run",
+    "--source-pdf",
+    "../source_check/.sources/Prot_000.pdf"
+  ],
+  "cwd": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace",
+  "started_at": "2026-10-18T09:06:21.684135+00:00",
+  "finished_at": "2026-10-18T09:06:22.135829+00:00",
+  "elapsed_seconds": 0.451289,
+  "status": "EXIT_ZERO",
+  "exit_code": 0,
+  "stdout_path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/docs/trialtrace/review/workflows/commands/20261018T090621.684135Z-workflow-actual-file-acceptance-23e8d009/stdout.log",
+  "stderr_path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/docs/trialtrace/review/workflows/commands/20261018T090621.684135Z-workflow-actual-file-acceptance-23e8d009/stderr.log",
+  "stdout_sha256": "b30b4ce2e256a3017d216741547a9209f9cb19d882d7df66cb176ca0015e8fdb",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "gate_acceptance": "NOT_DETERMINED_BY_COMMAND_RECORDER",
+  "warning": "Logs are not tamper-proof; this does not establish test assertions, source review, or clinical validity."
+}

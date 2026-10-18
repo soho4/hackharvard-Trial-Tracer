@@ -1,0 +1,8 @@
+{
+  "purpose": "Read-only validation snapshots; no frontend changes or merge",
+  "teammate_ref": "1b216519e93866bca3fc36be174ec0f5bf05f793",
+  "teammate_path": "features/evidence_viewer/contract.js",
+  "teammate_contract_sha256": "e79299e71aa0a84f33299070af8cc596cf2a7740f9a71a3416b768ae3ae6ebc6",
+  "handoff_reference_sha256": "1c11eda80196f95132a7f7bd9ad235376fec013843bc2e68ac76ffc86a64b1c6",
+  "schema_and_six_viewer_fixtures_exact": true
+}

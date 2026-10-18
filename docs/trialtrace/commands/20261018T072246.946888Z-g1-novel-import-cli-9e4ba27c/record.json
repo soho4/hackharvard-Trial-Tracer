@@ -1,0 +1,26 @@
+{
+  "label": "g1-novel-import-cli",
+  "command": [
+    ".venv/bin/python",
+    "-m",
+    "trialtrace.import_cli",
+    "--anchors",
+    "examples/novel/anchors.csv",
+    "--visits",
+    "examples/novel/visits.csv",
+    "--assignments",
+    "examples/novel/assignments.csv"
+  ],
+  "cwd": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace",
+  "started_at": "2026-10-18T07:22:46.946888+00:00",
+  "finished_at": "2026-10-18T07:22:46.986340+00:00",
+  "elapsed_seconds": 0.039154,
+  "status": "EXIT_ZERO",
+  "exit_code": 0,
+  "stdout_path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/docs/trialtrace/commands/20261018T072246.946888Z-g1-novel-import-cli-9e4ba27c/stdout.log",
+  "stderr_path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/docs/trialtrace/commands/20261018T072246.946888Z-g1-novel-import-cli-9e4ba27c/stderr.log",
+  "stdout_sha256": "09f040f0bc8403128cbe0210798c55d2f02245e2fe35c64ed133369c9a1576df",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "gate_acceptance": "NOT_DETERMINED_BY_COMMAND_RECORDER",
+  "warning": "Logs are not tamper-proof; this does not establish test assertions, source review, or clinical validity."
+}

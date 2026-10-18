@@ -1,0 +1,67 @@
+{
+  "gate": "G2_TECHNICAL",
+  "state": "PASS_DRAFT_ENGINEERING",
+  "updated_at": "2026-10-18T07:37:52.737797+00:00",
+  "requirements": [
+    "I06-I10",
+    "D01-D05",
+    "C01-C02",
+    "E01-E02",
+    "E06",
+    "X02-X05"
+  ],
+  "code_commit_before_checkpoint": "22819663b5b12f9d32d90f45e8edba30a171cd13",
+  "dirty": true,
+  "code_sha256": "58a1a80115a5409160529739efe27163a81af1d1184433a20900721e57a90a9f",
+  "rule_sha256": "f36336df90a1793a80b92f48ce273488a091547110856bdcc602587ddad9e7f0",
+  "commands": [
+    {
+      "path": "docs/trialtrace/commands/20261018T072623.585031Z-g2-computed-results-tests-03232197/record.json",
+      "exit_code": 0
+    },
+    {
+      "path": "docs/trialtrace/commands/20261018T073519.572528Z-final-cli-safety-and-core-tests-68311646/record.json",
+      "exit_code": 0
+    },
+    {
+      "path": "docs/trialtrace/commands/20261018T073248.968840Z-g2-current-code-mutation-e90e1bc8/record.json",
+      "exit_code": 0
+    },
+    {
+      "path": "docs/trialtrace/commands/20261018T072927.320953Z-g2-arithmetic-mutation-33337224/record.json",
+      "exit_code": 1
+    },
+    {
+      "path": "docs/trialtrace/commands/20261018T073249.019327Z-g2-arithmetic-mutation-68242e27/record.json",
+      "exit_code": 1
+    },
+    {
+      "path": "docs/trialtrace/commands/20261018T073620.629417Z-core-current-code-actual-acceptance-4ab5c8a6/record.json",
+      "exit_code": 0
+    }
+  ],
+  "expected_vs_observed": {
+    "frozen_counts": {
+      "PASS": 4,
+      "POTENTIAL_DEVIATION": 2,
+      "DATA_QUERY": 2,
+      "NOT_EVALUABLE": 2
+    },
+    "new_file_date_change": "2032-01-06 PASS -> 2032-01-07 POTENTIAL_DEVIATION, 1 day outside",
+    "current_application_suite": "236 passed, no skips",
+    "mutation": "Temporary upper-bound +1 caused five assertion failures, exit 1; source unchanged"
+  },
+  "source_gate": "BLOCKED_PENDING_REAL_HUMAN_REVIEW",
+  "reviewed_mode": "FAIL_CLOSED; approved-mode enabling mechanism not delivered",
+  "next_allowed_work": "Finish CORE_EXPORT compatibility/reproduction and hand-back",
+  "input_hashes": {
+    "examples/novel/anchors.csv": "5e61be512e024f2abc02355186f995c481fe366136d31668481c3af15f731337",
+    "examples/novel/assignments.csv": "972ab8ff63b14b27b4d962d3ad78dfd5575284481938d019529b5ad9d1b26fe7",
+    "examples/novel/visits.csv": "bf9282afa71bc6480a9d62b24a5925ea39deb7c280dba2de3c1bb17bfeafc97d",
+    "examples/novel/visits_changed.csv": "30e22c63dec0bf2a911142318acea00b05708d00734d166de1d0cd2e80f78af9",
+    "examples/novel/visits_corrupt.csv": "c9e192db253a0add47aa3662fa5191abbb8140d7e1b1c5f23702aae17a8f480e",
+    "fixtures/core_draft/anchors.csv": "000ec9ada84e19e86145578acf0488837f1adbf88c9371a2974c096ad4646a52",
+    "fixtures/core_draft/assignments.csv": "c2ca800261ccffa28fd4df92a23e2f87a95b183b6a9c8ed2c5a237d5657a87ab",
+    "fixtures/core_draft/visits.csv": "f0a2729d3250e518f831c5786c984b62517b929a5a262ea66b42d62c88c31b64"
+  }
+}

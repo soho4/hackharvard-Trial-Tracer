@@ -1,0 +1,20 @@
+{
+  "label": "final-app-lifecycle-repair-tests",
+  "command": [
+    ".venv/bin/python",
+    "-c",
+    "import hashlib,pathlib,pytest; print(\"app.py SHA256=\"+hashlib.sha256(pathlib.Path(\"app.py\").read_bytes()).hexdigest(),flush=True); raise SystemExit(pytest.main([\"tests/test_upload_workflow.py\",\"tests/test_streamlit_app.py\",\"-q\"]))"
+  ],
+  "cwd": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace",
+  "started_at": "2026-10-18T08:42:25.269050+00:00",
+  "finished_at": "2026-10-18T08:42:28.850823+00:00",
+  "elapsed_seconds": 3.581275,
+  "status": "EXIT_ZERO",
+  "exit_code": 0,
+  "stdout_path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/docs/trialtrace/review/g3_challenge/commands/20261018T084225.269050Z-final-app-lifecycle-repair-tests-715a6bc4/stdout.log",
+  "stderr_path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/docs/trialtrace/review/g3_challenge/commands/20261018T084225.269050Z-final-app-lifecycle-repair-tests-715a6bc4/stderr.log",
+  "stdout_sha256": "ea8c91e27120fd1b9e140c28103cbc5811be403f8e0acda57d0b112b4c85789c",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "gate_acceptance": "NOT_DETERMINED_BY_COMMAND_RECORDER",
+  "warning": "Logs are not tamper-proof; this does not establish test assertions, source review, or clinical validity."
+}

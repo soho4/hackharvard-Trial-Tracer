@@ -1,0 +1,71 @@
+Browser tab: 8, Title: "TrialTrace — every finding, explained", URL: "http://127.0.0.1:8504/".
+1 AXWebArea TrialTrace — every finding, explained, URL: 127.0.0.1:8504/
+	2 link Description: Skip to workspace, Value: 127.0.0.1:8504/#content
+	3 container
+		4 link Description: TrialTrace home, Value: 127.0.0.1:8504/#workspace
+		5 text REVIEW WORKSPACE
+		6 container Main navigation
+			7 button Timing review
+			8 button How it works
+			9 button Evidence & scope
+		10 text ✦ Every finding.
+		11 text A clear reason. From a source record to a reviewable answer.
+		12 text  Hackathon demonstration
+		13 text Synthetic participant records only
+	14 container content
+		15 container
+			16 text Clinical trial review /
+			239 text Evidence & scope
+			18 text  Engine ready · runs in your browser
+		240 container
+			241 text EVIDENCE, WITHOUT THE OVERCLAIMS
+			242 heading Know what stands behind the answer., Value: 1
+				243 text Know what stands
+				244 text behind the answer.
+			245 text The source document is real. The example participant records are synthetic. The rule interpretation is still awaiting independent human review.
+			246 heading Public protocol, Value: 3
+				247 text Public protocol
+			248 text Moderna mRNA-1273-P301 · NCT04470427 · amendment 10, April 7, 2022 · Table 21. The candidate check concerns a recorded OL-D8 safety phone call anchored to actual OL-D1 vaccination.
+			249 link Description: Read the public protocol ↗, Value: cdn.clinicaltrials.gov/large-docs/27/NCT04470427/Prot_000.pdf
+			250 text  · 
+			251 link Description: Trial registry ↗, Value: clinicaltrials.gov/study/NCT04470427
+			252 heading Why study this problem?, Value: 3
+				253 text Why study this problem?
+			254 text A 2022 study of 187 protocols reported substantial protocol deviations across multiple categories. It supports investigating the review problem; it does not measure TrialTrace, isolate timing errors, or show how many deviations this app could prevent.
+			255 link Description: Read the original research ↗, Value: doi.org/10.1007/s43441-022-00401-4
+			256 heading Existing tools already perform checks, Value: 3
+				257 text Existing tools already perform checks
+			258 text OpenClinica, for example, supports configurable event scheduling. Our hypothesis is that portable source-to-finding evidence can help a specific exported-data workflow. No improvement or time saving has been measured.
+			259 link Description: OpenClinica scheduling documentation ↗, Value: servicedesk.openclinica.com/support/solutions/articles/158000442542-calendar-introduction
+			260 heading What the checker can establish, Value: 2
+				261 text What the checker can establish
+			262 content list
+				263 container
+					264 AXListMarker • 
+					265 text Whether a documented date is inside this supported candidate window.
+				266 container
+					267 AXListMarker • 
+					268 text Which required values, identities or relationships are missing or conflicting.
+				269 container
+					270 AXListMarker • 
+					271 text Which original records and mapping choices produced the result.
+			272 heading What it cannot establish, Value: 2
+				273 text What it cannot establish
+			274 content list
+				275 container
+					276 AXListMarker • 
+					277 text Whether this rule really applies to a participant without independently verified context.
+				278 container
+					279 AXListMarker • 
+					280 text Clinical safety, eligibility, seriousness of a deviation, or whether a missing record means a missed activity.
+				281 container
+					282 AXListMarker • 
+					283 text Compatibility with every trial-system export, validated usefulness or quantified time savings.
+			284 heading Data and operating limits, Value: 2
+				285 text Data and operating limits
+			286 text Use synthetic records only. This interface cannot detect or de-identify patient information. It keeps the file in browser memory and creates downloads locally. It has no shared storage, user-review audit trail or production clinical workflow. Closing or reloading clears the current session; download evidence before leaving. The Python runtime loads from this site; fonts load from Google Fonts. An internet connection is needed for initial loading. Hashes identify bytes; they do not prove that a source record is true or that a human approved it.
+			287 button Return to timing review →
+		237 container
+			238 text Real public protocol. Synthetic participant data. One draft timing rule · Human source review pending
+
+The focused UI element is 9 button Evidence & scope

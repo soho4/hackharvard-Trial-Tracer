@@ -1,0 +1,2 @@
+study_id,participant_id,site_id,visit_id,visit_code,event_kind,actual_date,visit_status,anchor_id,assignment_id
+NCT04470427,SYNTH-RIVER-41,SYNTH-SITE-8,SYNTH-CALL-41,OL_D8,CLINIC_VISIT,2032-01-06,COMPLETED,SYNTH-DOSE-41,SYNTH-MAP-41

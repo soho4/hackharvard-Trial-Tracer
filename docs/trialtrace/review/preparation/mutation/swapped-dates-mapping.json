@@ -1,0 +1,13 @@
+{
+  "columns": {
+    "study_id": "trial_ref",
+    "participant_id": "subject_ref",
+    "site_id": "clinic",
+    "visit_id": "contact_ref",
+    "anchor_id": "dose_ref",
+    "anchor_date": "phone_actual",
+    "actual_date": "dose_actual",
+    "visit_status": "contact_state"
+  },
+  "completed_value": "done"
+}

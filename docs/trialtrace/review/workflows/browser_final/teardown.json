@@ -1,0 +1,7 @@
+{
+  "checked_at": "2026-10-18T09:24:28.470782+00:00",
+  "owned_preview_port": 8501,
+  "connect_ex": 61,
+  "listener_closed": true,
+  "server_stop": "Owned exec session84852 stopped with Ctrl-C; process exit0 observed."
+}

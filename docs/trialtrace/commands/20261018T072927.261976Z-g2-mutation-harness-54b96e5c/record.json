@@ -1,0 +1,19 @@
+{
+  "label": "g2-mutation-harness",
+  "command": [
+    ".venv/bin/python",
+    "tools/check_mutation.py"
+  ],
+  "cwd": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace",
+  "started_at": "2026-10-18T07:29:27.261976+00:00",
+  "finished_at": "2026-10-18T07:29:27.631420+00:00",
+  "elapsed_seconds": 0.369086,
+  "status": "EXIT_ZERO",
+  "exit_code": 0,
+  "stdout_path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/docs/trialtrace/commands/20261018T072927.261976Z-g2-mutation-harness-54b96e5c/stdout.log",
+  "stderr_path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/docs/trialtrace/commands/20261018T072927.261976Z-g2-mutation-harness-54b96e5c/stderr.log",
+  "stdout_sha256": "c7800cd484e935a3d0a7b399585132ce632ebd7280807812edb55b54aedf825e",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "gate_acceptance": "NOT_DETERMINED_BY_COMMAND_RECORDER",
+  "warning": "Logs are not tamper-proof; this does not establish test assertions, source review, or clinical validity."
+}

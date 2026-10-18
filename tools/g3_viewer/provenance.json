@@ -1,0 +1,33 @@
+{
+  "upstream_commit": "1b216519e93866bca3fc36be174ec0f5bf05f793",
+  "upstream_path": "features/evidence_viewer/",
+  "native_files_sha256": {
+    ".gitattributes": "60157a4bd64a18b6ad9991e22c7b7cb2c99c47cdc9e9398685d705360e7c444b",
+    "README.md": "ef5fc5fbde00acb96907fff4ad252b481e490cf857172d8a5f27a65fd4e0add2",
+    "VERIFICATION.md": "968ce772d6315efd6628059f957dfe99f6b10dd32056cbad7ffdd96a4800571e",
+    "app.js": "d0de61cc945f510a27322a87135b2613d5e6a3e9645d511777f59fd951207694",
+    "contract.js": "e79299e71aa0a84f33299070af8cc596cf2a7740f9a71a3416b768ae3ae6ebc6",
+    "contracts/evidence_bundle.schema.json": "706c2b68086f1c9d38ac5ddbc37653e6f1da45d7d595eabff194c3e9737abee0",
+    "fixtures/empty.json": "6662c5de59443e32f4b910eaced0c65898ea41aae6754b898ea940d7ce628adc",
+    "fixtures/invalid_duplicate_id.json": "aac8646b460bab7785748307d6c5f6ca20444f1186887a751e316a71e5bf2981",
+    "fixtures/invalid_evidence_hash.json": "eb6782246cb37364a23c2d3847c40fdb37d4515ccbc2c8a30ff46af968ad104a",
+    "fixtures/invalid_status.json": "7895fd597aec9b715022f70d6bbea23c1059b5229397ffb742a4725b676a9bfc",
+    "fixtures/markup.json": "6e162b64d162b637469fe6d91751900bc838ee169a55c5fd71e2e8ad56d8a478",
+    "fixtures/mixed.json": "d180d1ba1a94de93519f5aa2d23f6b531a53a725620d31aa5f420041d7ae083c",
+    "index.html": "9a09e746af3b2fe83fe1868ecd3c0fc1dc1ee4235dda85628fafd80d2d1e8a68",
+    "style.css": "19786bf0709c16f2aab7e414d60f03465ccea8dd7d10af56f201892461e39c3b",
+    "tests/ACCEPTANCE_CASES.md": "e3b1fe81e24e840171bf786fd37d7ae57dbbd787e76cf42927df830f55a2eb7e",
+    "tests/browser_inputs/added_fifth_pass.json": "486c4f1ac95f41620ab6bc771fa2b4fdeaca2a44ab93ca1d202e6a1b3aec5528",
+    "tests/browser_inputs/broken.json": "44e9538e8e2906f7eb2c9a7d282fee370739ef06cff75d2cab4484c629313d2e",
+    "tests/contract.test.js": "320bfe1b0f6a5de4f3b9d611bc87e3df5454b576342df400584beb830fdc6ef0"
+  },
+  "candidate_changes": [
+    "contract.js:isCalendarDate only",
+    "style.css:wrap long run/finding IDs and filenames"
+  ],
+  "candidate_contract_sha256": "331c4e428eb27facd82020221eda3a48621344e46e7bd3d315a68349c2fe1bc6",
+  "patch_sha256": "c66aeaaeab514a6f23d692e64554709824bac54d3b5af06b20c6967f9cf95087",
+  "candidate_style_sha256": "ac6606a1eabe74cdff023ddb7655526b09d0540a69545472c5913abdd02c2f91",
+  "layout_patch_sha256": "464658f9de220c651c4a538ebdb0fc50aa6b0eb7f0e787ffe0cf61700c8c9285",
+  "scope": "Isolated review copies; no teammate file was modified by prepare.py."
+}

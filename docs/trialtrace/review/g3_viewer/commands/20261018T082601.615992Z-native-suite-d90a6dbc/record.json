@@ -1,0 +1,20 @@
+{
+  "label": "native-suite",
+  "command": [
+    "/Users/yisak/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+    "--test",
+    "tools/g3_viewer/native_snapshot/tests/contract.test.js"
+  ],
+  "cwd": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace",
+  "started_at": "2026-10-18T08:26:01.615992+00:00",
+  "finished_at": "2026-10-18T08:26:01.912828+00:00",
+  "elapsed_seconds": 0.296389,
+  "status": "EXIT_ZERO",
+  "exit_code": 0,
+  "stdout_path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/docs/trialtrace/review/g3_viewer/commands/20261018T082601.615992Z-native-suite-d90a6dbc/stdout.log",
+  "stderr_path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/docs/trialtrace/review/g3_viewer/commands/20261018T082601.615992Z-native-suite-d90a6dbc/stderr.log",
+  "stdout_sha256": "1775d6aff5ab4f5382fc029acbaf7483335ae4e0ded8e98280e24eb4a2f8c1c9",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "gate_acceptance": "NOT_DETERMINED_BY_COMMAND_RECORDER",
+  "warning": "Logs are not tamper-proof; this does not establish test assertions, source review, or clinical validity."
+}

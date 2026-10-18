@@ -1,0 +1,15 @@
+{
+  "reviewed_at_utc": "2026-10-18T08:26:40.387338+00:00",
+  "repository_commit": "27f825450212d14269ee04bfdf494fe5245f481b",
+  "test_result": "236 passed; exit 0 at the recorded reviewed file hashes, not validation of later edits",
+  "new_material_core_bug_reproduced": false,
+  "human_source_acceptance": "BLOCKED_PENDING_HUMAN_REVIEW",
+  "production_source_modified_by_reviewer": false,
+  "reviewed_core_code_sha256": "fb920bb5aca68dc3b827334bf3c430abf1455ed290877ca1d6a9a91645f9b679",
+  "package_digest_observed_after_test": "eb7350f8c7adef275604cfc03b2c27fe8d1c0dd0b4a794f9bf39e41bbc80ebc2",
+  "post_test_changes_require_new_validation": true,
+  "source_files_changed_since_tests": [
+    "cli.py"
+  ],
+  "tested_file_hashes_record": "core_tests.record.json"
+}

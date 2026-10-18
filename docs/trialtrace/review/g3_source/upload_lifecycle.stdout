@@ -1,0 +1,44 @@
+{
+  "kind": "READ_ONLY_COMPONENT_AND_DIRECT_API_PROBE_NOT_BROWSER_E2E",
+  "started_at_utc": "2026-10-18T08:34:50.592375+00:00",
+  "files_start": {
+    "app.py": "dadd4092cc9b16709ee2a9594fc36f855223767aed5f2a7d9ea1886c24a431cd",
+    "src/trialtrace/importer.py": "3ef4772201bf25bd7481780961783b2d660d3e3629da4080ec25ff08ca655b55",
+    "src/trialtrace/workflow.py": "19c2104bbccda448c64e8ee0331e5d346a4c214f090438fd2acfc6a76062a9fc",
+    "src/trialtrace/source.py": "b1713f49c318e00474a3a60993e88410dcd28b3377b722ad5bcc2b0462f41c35",
+    "src/trialtrace/cli.py": "d63ad325e6831900fc49c3267ffa1642696a1ef96cd32b259b32a411c98513a5"
+  },
+  "checks": [
+    {
+      "check": "first uploads persist; explicit run publishes original computed bytes",
+      "outcome": "PASS"
+    },
+    {
+      "check": "clear removes report and download before a replacement chooser exists",
+      "outcome": "PASS"
+    },
+    {
+      "check": "INVALID_UTF8 replacement; persistent error without old report or download",
+      "outcome": "PASS",
+      "bytes": 1
+    },
+    {
+      "check": "INPUT_SIZE_LIMIT replacement; persistent error without old report or download",
+      "outcome": "PASS",
+      "bytes": 1000001
+    },
+    {
+      "check": "untrusted display filename remains metadata only, canonical evidence role retained, controls removed",
+      "outcome": "PASS",
+      "display_name": "../../<script>alert(1)</script>\\fake.csv"
+    }
+  ],
+  "files_end": {
+    "app.py": "dadd4092cc9b16709ee2a9594fc36f855223767aed5f2a7d9ea1886c24a431cd",
+    "src/trialtrace/importer.py": "3ef4772201bf25bd7481780961783b2d660d3e3629da4080ec25ff08ca655b55",
+    "src/trialtrace/workflow.py": "19c2104bbccda448c64e8ee0331e5d346a4c214f090438fd2acfc6a76062a9fc",
+    "src/trialtrace/source.py": "b1713f49c318e00474a3a60993e88410dcd28b3377b722ad5bcc2b0462f41c35",
+    "src/trialtrace/cli.py": "d63ad325e6831900fc49c3267ffa1642696a1ef96cd32b259b32a411c98513a5"
+  },
+  "finished_at_utc": "2026-10-18T08:34:50.936726+00:00"
+}

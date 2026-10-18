@@ -1,0 +1,54 @@
+{
+  "gate": "G1_TECHNICAL",
+  "state": "PASS",
+  "updated_at": "2026-10-18T07:23:21.419663+00:00",
+  "requirements": [
+    "P01-P09",
+    "I01-I05",
+    "I06-I10: diagnostics only; timing applicability next"
+  ],
+  "code_commit_before_checkpoint": "b173f377a866b5441a696a0281a98a9a5676a92c",
+  "dirty": true,
+  "source_digest": "3fa007b9f43b0854a0b570448b7f69e1bb98028232383921947f0905345c6572",
+  "commands": [
+    {
+      "record": "docs/trialtrace/commands/20261018T072219.340618Z-g1-parser-tests-08d51b76/record.json",
+      "exit_code": 0
+    },
+    {
+      "record": "docs/trialtrace/commands/20261018T072246.946888Z-g1-novel-import-cli-9e4ba27c/record.json",
+      "exit_code": 0
+    },
+    {
+      "record": "docs/trialtrace/commands/20261018T072247.074589Z-g1-corrupt-import-cli-861f4219/record.json",
+      "exit_code": 2
+    },
+    {
+      "record": "docs/trialtrace/commands/20261018T072320.979339Z-g1-required-tests-f7aff91a/record.json",
+      "exit_code": 0
+    }
+  ],
+  "expected_vs_observed": "55 required parser/relationship tests pass; actual novel CLI input has 1 visit and 1 record per role, exact hashes/ordinals and no issues; malformed header exits 2 with structured error.",
+  "source_review": "PENDING; G0 not passed",
+  "next_allowed_work": "G2_TECHNICAL draft arithmetic and applicability",
+  "limitations": [
+    "No main calculation/export implemented at this checkpoint.",
+    "No human source interpretation review."
+  ],
+  "input_hashes": {
+    "examples/novel/anchors.csv": "5e61be512e024f2abc02355186f995c481fe366136d31668481c3af15f731337",
+    "examples/novel/assignments.csv": "972ab8ff63b14b27b4d962d3ad78dfd5575284481938d019529b5ad9d1b26fe7",
+    "examples/novel/visits.csv": "bf9282afa71bc6480a9d62b24a5925ea39deb7c280dba2de3c1bb17bfeafc97d",
+    "examples/novel/visits_changed.csv": "30e22c63dec0bf2a911142318acea00b05708d00734d166de1d0cd2e80f78af9",
+    "examples/novel/visits_corrupt.csv": "c9e192db253a0add47aa3662fa5191abbb8140d7e1b1c5f23702aae17a8f480e",
+    "fixtures/core_draft/anchors.csv": "000ec9ada84e19e86145578acf0488837f1adbf88c9371a2974c096ad4646a52",
+    "fixtures/core_draft/assignments.csv": "c2ca800261ccffa28fd4df92a23e2f87a95b183b6a9c8ed2c5a237d5657a87ab",
+    "fixtures/core_draft/visits.csv": "f0a2729d3250e518f831c5786c984b62517b929a5a262ea66b42d62c88c31b64"
+  },
+  "rule_sha256": "f36336df90a1793a80b92f48ce273488a091547110856bdcc602587ddad9e7f0",
+  "revalidated_after_changes": {
+    "suite": "236 passed",
+    "record": "docs/trialtrace/commands/20261018T073519.572528Z-final-cli-safety-and-core-tests-68311646/record.json",
+    "code_sha256": "58a1a80115a5409160529739efe27163a81af1d1184433a20900721e57a90a9f"
+  }
+}

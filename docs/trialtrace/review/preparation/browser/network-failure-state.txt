@@ -1,0 +1,62 @@
+Browser tab: 6, Title: "TrialTrace · Timing evidence", URL: "http://127.0.0.1:8503/".
+0 AXWebArea TrialTrace · Timing evidence, URL: 127.0.0.1:8503/
+	1 container
+		4 container
+			5 link Description: Skip to main content, Value: 127.0.0.1:8503/#stMain
+			6 container Description: Sidebar, ID: stSidebar
+				7 container
+					8 heading Public source · draft interpretation, Value: 3
+						9 text Public source · draft interpretation
+					10 text NCT04470427 · Moderna mRNA-1273-P301
+					11 text Supported check: documented OL-D8 safety phone call, anchored to an explicitly mapped actual OL-D1 vaccination.
+					12 text Candidate window: vaccination date +7 through +10 calendar days, inclusive. Table 21, amendment 10, 2022-04-07.
+					13 link Description: Open public protocol, Value: cdn.clinicaltrials.gov/large-docs/27/NCT04470427/Prot_000.pdf
+					14 link Description: Open trial registry, Value: clinicaltrials.gov/study/NCT04470427
+					15 text Registry: COMPLETED · ModernaTX, Inc.
+					16 text Public metadata fetched 2026-10-18; registry updated 2024-03-21. Snapshot, not a live feed.
+					17 text The registry contains aggregate results, not the participant visit dates used in this check.
+					18 button (collapsed) Fetched public registry metadata, Secondary Actions: Expand
+						19 text Fetched public registry metadata
+					20 button (collapsed) Rule and source provenance, Secondary Actions: Expand
+						21 text Rule and source provenance
+					22 text Human source review is pending. This app cannot infer eligibility, applicable amendment, missing activities, or the adequacy of a safety assessment.
+			23 container
+				24 button Deploy
+				25 pop up button (collapsed) Description: Main menu, Secondary Actions: Expand
+			26 container stMain
+				27 text TRIALTRACE / LOCAL WORKSPACE
+				28 heading TrialTrace timing checks, Value: 1, ID: trial-trace-timing-checks
+					29 text TrialTrace timing checks
+					30 link Description: Link to heading, Value: 127.0.0.1:8503/#trial-trace-timing-checks
+				31 text Check recorded safety-call timing against one supported draft rule. Map a spreadsheet or supply prepared tables, then inspect the evidence behind each result.
+				32 text DRAFT · Synthetic inputs only. Public protocol data is real; participant examples are synthetic. Source interpretation awaits human review. No clinical validation.
+				33 tab group react-aria9130738062-:r4:
+					34 tab (selected, settable, boolean) Map one spreadsheet, ID: react-aria9130738062-:r4:-tab-0, Value: 1
+Map one spreadsheet
+					35 tab (selectable, settable, boolean) Check uploaded data, ID: react-aria9130738062-:r4:-tab-1, Value: 0
+Check uploaded data
+					36 tab (selectable, settable, boolean) Open saved evidence report, ID: react-aria9130738062-:r4:-tab-2, Value: 0
+Open saved evidence report
+					37 tab (selectable, settable, boolean) Compare saved reports, ID: react-aria9130738062-:r4:-tab-3, Value: 0
+Compare saved reports
+				38 container Description: Map one spreadsheet, ID: react-aria9130738062-:r4:-tabpanel-0
+					39 heading Check one spreadsheet, Value: 3, ID: check-one-spreadsheet
+						40 text Check one spreadsheet
+						41 link Description: Link to heading, Value: 127.0.0.1:8503/#check-one-spreadsheet
+					42 text Use a CSV with one safety-call record per row, including its vaccination reference. Choose which columns mean what; preview the mapping before running.
+					43 text This is a limited import path, not a direct REDCap, OpenClinica or CDISC connector. A CSV must contain both actual dates, identifiers and call completion status. Multi-event rows, partial dates and missing columns are not inferred.
+					44 button (collapsed) What this import can and cannot establish, Secondary Actions: Expand
+						45 text What this import can and cannot establish
+					48 container
+						49 container Source spreadsheet CSV
+							50 button file upload
+							55 container prep-malformed.csv, 9.0B
+								58 text prep-malformed.csv
+								59 text 9.0B
+								56 button Remove prep-malformed.csv
+								60 container :rkk:
+									61 text Error:  AxiosError: Network Error
+							57 button Add files
+					54 text Choose your CSV to inspect its columns. The three-table route remains available in Check uploaded data.
+
+The focused UI element is 0 AXWebArea TrialTrace · Timing evidence, URL: 127.0.0.1:8503/

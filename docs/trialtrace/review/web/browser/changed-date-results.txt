@@ -1,0 +1,107 @@
+Browser tab: 8, Title: "TrialTrace — every finding, explained", URL: "http://127.0.0.1:8504/".
+1 AXWebArea TrialTrace — every finding, explained, URL: 127.0.0.1:8504/
+	2 link Description: Skip to workspace, Value: 127.0.0.1:8504/#content
+	3 container
+		4 link Description: TrialTrace home, Value: 127.0.0.1:8504/#workspace
+		5 text REVIEW WORKSPACE
+		6 container Main navigation
+			7 button Timing review
+			8 button How it works
+			9 button Evidence & scope
+		10 text ✦ Every finding.
+		11 text A clear reason. From a source record to a reviewable answer.
+		12 text  Hackathon demonstration
+		13 text Synthetic participant records only
+	14 container content
+		15 container
+			16 text Clinical trial review /
+			59 text Timing workspace
+			58 text  Engine ready · runs in your browser
+		19 container app
+			60 text TIMING REVIEW / changed-date.csv
+			61 heading Your records, explained., Value: 1
+				62 text Your records, explained.
+			63 text Select a finding to see the reason, evidence and next check.
+			64 button Edit mapping, ID: edit
+			65 button New file, ID: clear
+			66 text Within window
+			67 text 1
+			68 text Potential deviation
+			69 text 1
+			70 text Data query
+			71 text 4
+			72 text Not supported
+			73 text 1
+			74 container Finding list
+				75 heading Recorded activities / 7, Value: 2
+					76 text Recorded activities  / 7
+				77 container Filter findings
+					78 checkbox All, Value: 1
+					79 checkbox Timing flags, Value: 0
+					80 checkbox Data queries, Value: 0
+					81 checkbox Unsupported, Value: 0
+					82 checkbox Within window, Value: 0
+				83 checkbox Description: Record 1: =SYNTH-PREP-01, Within window, Value: 0
+					84 text =SYNTH-PREP-01
+					85 text Within window
+					86 text Inside the allowed window
+				87 checkbox Description: Record 2: SYNTH-PREP-02, Potential deviation, Value: 1
+					88 text SYNTH-PREP-02
+					89 text Potential deviation
+					90 text 2 days after the window
+				91 checkbox Description: Record 3: SYNTH-PREP-03, Data query, Value: 0
+					92 text SYNTH-PREP-03
+					93 text Data query
+					94 text Actual vaccination date is missing
+				95 checkbox Description: Record 4: SYNTH-PREP-04, Data query, Value: 0
+					96 text SYNTH-PREP-04
+					97 text Data query
+					98 text Call completion is unconfirmed
+				99 checkbox Description: Record 5: SYNTH-PREP-05, Not supported, Value: 0
+					100 text SYNTH-PREP-05
+					101 text Not supported
+					102 text Outside this supported check
+				103 checkbox Description: Record 6: SYNTH-PREP-06, Data query, Value: 0
+					104 text SYNTH-PREP-06
+					105 text Data query
+					106 text Conflicting record identifiers
+				107 checkbox Description: Record 7: SYNTH-PREP-07, Data query, Value: 0
+					108 text SYNTH-PREP-07
+					109 text Data query
+					110 text Conflicting record identifiers
+			111 container Selected finding
+				112 text SOURCE RECORD 2 Potential deviation
+				113 text SYNTH-PREP-02
+				114 heading 2 days after the window, Value: 2
+					115 text 2 days after the window
+				116 text The recorded call was Mar 5, 2028. The allowed window was Feb 29, 2028 through Mar 3, 2028, including both endpoints.
+				117 text Actual vaccination
+				118 text Feb 22, 2028
+				119 text Allowed call window
+				120 container
+					121 text Feb 29, 2028
+					122 text through Mar 3, 2028
+				123 text Recorded call
+				124 text Mar 5, 2028
+				125 heading What to check next, Value: 3
+					126 text What to check next
+				127 text Check the original vaccination and call records. Confirm the applicable protocol and any relevant context before treating this flag as a confirmed deviation.
+				128 button (collapsed) Original source record · all columns, Secondary Actions: Expand
+					129 text Original source record 
+					130 text · all columns
+				131 button (collapsed) Rule & calculation details, Secondary Actions: Expand
+					132 text Rule & calculation details
+			133 text Take the evidence with you.
+			134 text Original CSV + chosen mapping + generated records + calculated findings.
+			135 button Download evidence package ↓
+			136 button Review list CSV
+			137 button Evidence JSON
+			138 text Downloads include the complete run, regardless of the selected filter. The review list escapes formula-like cells; raw source CSVs preserve original values.
+			139 text DEMONSTRATION ONLY
+			140 text Synthetic records · one draft timing rule · independent source review pending
+			141 button (collapsed) Demonstrate a changed date, Secondary Actions: Expand
+				142 text Demonstrate a changed date
+		55 container
+			56 text Real public protocol. Synthetic participant data. One draft timing rule · Human source review pending
+
+The focused UI element is 1 AXWebArea TrialTrace — every finding, explained, URL: 127.0.0.1:8504/

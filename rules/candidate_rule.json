@@ -1,0 +1,43 @@
+{
+  "schema_version": "trialtrace.rulecard.v0.3",
+  "rule_id": "TABLE21_OL_D8_WINDOW",
+  "rule_version": "A10_DRAFT_2",
+  "source_id": "NCT04470427_A10",
+  "source_url": "https://cdn.clinicaltrials.gov/large-docs/27/NCT04470427/Prot_000.pdf",
+  "source_locator": {
+    "table": "21",
+    "printed_pages": [
+      150,
+      151,
+      152
+    ],
+    "pdf_pages_one_indexed": [
+      150,
+      151,
+      152
+    ]
+  },
+  "study_id": "NCT04470427",
+  "protocol_id": "mRNA-1273-P301",
+  "amendment": 10,
+  "document_date": "2022-04-07",
+  "scope": "Table 21: Part A placebo recipients requesting open-label mRNA-1273; synthetic explicitly mapped cases only.",
+  "supported_visit_code": "OL_D8",
+  "event_kind": "SAFETY_PHONE_CALL",
+  "anchor_code": "OL_D1",
+  "anchor_kind": "ACTUAL_VACCINATION",
+  "offset_days": 7,
+  "lower_days": 0,
+  "upper_days": 3,
+  "bounds": "inclusive",
+  "units": "calendar_days",
+  "interpretation_notes": [
+    "Table cells give seven days after OL-D1 and +3 days. Zero early allowance and inclusive date boundaries are the candidate software interpretation requiring team review.",
+    "OL-D1 and participant-decision visit may occur separately; never use the decision/consent/booking date instead of actual mapped vaccination.",
+    "This checks timing of a documented safety phone call, not completion or adequacy of its safety assessments.",
+    "No inference of eligibility, historical amendment applicability, missed events, clinical importance or exceptions."
+  ],
+  "review_status": "PENDING_TEAM_SOURCE_REVIEW",
+  "data_kind": "SYNTHETIC_ONLY",
+  "clinical_validation": false
+}

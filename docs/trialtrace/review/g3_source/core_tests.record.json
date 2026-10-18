@@ -1,0 +1,44 @@
+{
+  "command": [
+    "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/.venv/bin/python",
+    "-m",
+    "pytest",
+    "tests",
+    "-q",
+    "-p",
+    "no:cacheprovider",
+    "--basetemp=/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/g3_source/pytest-temp"
+  ],
+  "started_at_utc": "2026-10-18T08:25:19.300387+00:00",
+  "finished_at_utc": "2026-10-18T08:25:23.449464+00:00",
+  "exit_code": 0,
+  "source_hashes_before": {
+    "importer.py": "3ef4772201bf25bd7481780961783b2d660d3e3629da4080ec25ff08ca655b55",
+    "exporter.py": "3838904ba69f09097d257dea2b84880930b51e833de449de50d0b8aa1c738a34",
+    "__init__.py": "f73c7fc3426695231fe9fc8ddc89dfcd53b8c211d2d8f1b1ff4eb511c701542c",
+    "import_cli.py": "fc29843ac0d43c6295ae64d61f7a72e497e0878a934c1ce05c6e7307e0a44afc",
+    "engine.py": "3afaee41f511a31c4fe03586ba7f0f5fb541661b6139439046bbf72d19159f6f",
+    "cli.py": "cd7bd3322ca250a2c8171f9425100e6bf34e19a3bcbc4a316dd2599fdd63a823",
+    "errors.py": "21751b169405f8f79486ab57ea226c88ba3d1f416ec1560b2ce4f5a198744ae3",
+    "workflow.py": "19c2104bbccda448c64e8ee0331e5d346a4c214f090438fd2acfc6a76062a9fc",
+    "source.py": "b1713f49c318e00474a3a60993e88410dcd28b3377b722ad5bcc2b0462f41c35",
+    "relationships.py": "23a46a43723158334bbaa7406dcc695a08eea9a4265029d2ff495380e3318ef2",
+    "evidence_bundle.schema.json": "706c2b68086f1c9d38ac5ddbc37653e6f1da45d7d595eabff194c3e9737abee0"
+  },
+  "source_hashes_after": {
+    "importer.py": "3ef4772201bf25bd7481780961783b2d660d3e3629da4080ec25ff08ca655b55",
+    "exporter.py": "3838904ba69f09097d257dea2b84880930b51e833de449de50d0b8aa1c738a34",
+    "__init__.py": "f73c7fc3426695231fe9fc8ddc89dfcd53b8c211d2d8f1b1ff4eb511c701542c",
+    "import_cli.py": "fc29843ac0d43c6295ae64d61f7a72e497e0878a934c1ce05c6e7307e0a44afc",
+    "engine.py": "3afaee41f511a31c4fe03586ba7f0f5fb541661b6139439046bbf72d19159f6f",
+    "cli.py": "cd7bd3322ca250a2c8171f9425100e6bf34e19a3bcbc4a316dd2599fdd63a823",
+    "errors.py": "21751b169405f8f79486ab57ea226c88ba3d1f416ec1560b2ce4f5a198744ae3",
+    "workflow.py": "19c2104bbccda448c64e8ee0331e5d346a4c214f090438fd2acfc6a76062a9fc",
+    "source.py": "b1713f49c318e00474a3a60993e88410dcd28b3377b722ad5bcc2b0462f41c35",
+    "relationships.py": "23a46a43723158334bbaa7406dcc695a08eea9a4265029d2ff495380e3318ef2",
+    "evidence_bundle.schema.json": "706c2b68086f1c9d38ac5ddbc37653e6f1da45d7d595eabff194c3e9737abee0"
+  },
+  "reviewed_core_unchanged": true,
+  "stdout_file": "core_tests.stdout",
+  "stderr_file": "core_tests.stderr"
+}

@@ -1,0 +1,20 @@
+{
+  "command": [
+    "/Users/yisak/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override/pdftoppm",
+    "-f",
+    "1",
+    "-l",
+    "1",
+    "-r",
+    "120",
+    "-png",
+    ".sources/Prot_000.pdf",
+    ".sources/rendered/page"
+  ],
+  "cwd": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/source_check",
+  "started_at_utc": "2026-10-18T07:19:54.395489+00:00",
+  "finished_at_utc": "2026-10-18T07:19:55.268153+00:00",
+  "exit_code": 0,
+  "stdout_path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/source_check/logs/render_cover.stdout",
+  "stderr_path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/source_check/logs/render_cover.stderr"
+}

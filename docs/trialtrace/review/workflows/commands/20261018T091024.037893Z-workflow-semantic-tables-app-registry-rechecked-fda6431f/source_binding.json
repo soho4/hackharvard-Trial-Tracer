@@ -1,0 +1,47 @@
+{
+  "command_record": "record.json",
+  "before": {
+    "app_and_component_file_sha256": {
+      "app.py": "a90a5695a105d5e89a45da41514f049726edaa3db7c1ab21c6e6f2c15c279f23",
+      "tests/test_streamlit_app.py": "f2c038d668aa12b3dbb05c9962d41b56418fb00e7f233e4450b153adc7b95972",
+      "tests/test_registry_metadata.py": "22c6ad5be13cb905109fcfe31564e0cd6435e496c90d95c6d155d9fbcb2e9d93",
+      "src/trialtrace/__init__.py": "f73c7fc3426695231fe9fc8ddc89dfcd53b8c211d2d8f1b1ff4eb511c701542c",
+      "src/trialtrace/cli.py": "d63ad325e6831900fc49c3267ffa1642696a1ef96cd32b259b32a411c98513a5",
+      "src/trialtrace/comparison.py": "dd90947afb0b4da6fc99bf61779b8efa094e9303fb97fa887b4a9e415c253255",
+      "src/trialtrace/engine.py": "3afaee41f511a31c4fe03586ba7f0f5fb541661b6139439046bbf72d19159f6f",
+      "src/trialtrace/errors.py": "21751b169405f8f79486ab57ea226c88ba3d1f416ec1560b2ce4f5a198744ae3",
+      "src/trialtrace/exporter.py": "3838904ba69f09097d257dea2b84880930b51e833de449de50d0b8aa1c738a34",
+      "src/trialtrace/import_cli.py": "fc29843ac0d43c6295ae64d61f7a72e497e0878a934c1ce05c6e7307e0a44afc",
+      "src/trialtrace/importer.py": "3ef4772201bf25bd7481780961783b2d660d3e3629da4080ec25ff08ca655b55",
+      "src/trialtrace/inspection.py": "4d546e6cd24de12bb56fa43d7459694429016f4a677618b645096860e640143d",
+      "src/trialtrace/registry_metadata.py": "422816c2a141246dcb2f4688a1713c16ad4f4624d6769b732c4f6a448586eddb",
+      "src/trialtrace/relationships.py": "23a46a43723158334bbaa7406dcc695a08eea9a4265029d2ff495380e3318ef2",
+      "src/trialtrace/source.py": "b1713f49c318e00474a3a60993e88410dcd28b3377b722ad5bcc2b0462f41c35",
+      "src/trialtrace/workflow.py": "19c2104bbccda448c64e8ee0331e5d346a4c214f090438fd2acfc6a76062a9fc"
+    },
+    "code_schema_sha256": "bbf5f2b516a018173cea063c2e07167a0d52d551fc9c43917e4b5d8e6ca6cb11"
+  },
+  "after": {
+    "app_and_component_file_sha256": {
+      "app.py": "a90a5695a105d5e89a45da41514f049726edaa3db7c1ab21c6e6f2c15c279f23",
+      "tests/test_streamlit_app.py": "f2c038d668aa12b3dbb05c9962d41b56418fb00e7f233e4450b153adc7b95972",
+      "tests/test_registry_metadata.py": "22c6ad5be13cb905109fcfe31564e0cd6435e496c90d95c6d155d9fbcb2e9d93",
+      "src/trialtrace/__init__.py": "f73c7fc3426695231fe9fc8ddc89dfcd53b8c211d2d8f1b1ff4eb511c701542c",
+      "src/trialtrace/cli.py": "d63ad325e6831900fc49c3267ffa1642696a1ef96cd32b259b32a411c98513a5",
+      "src/trialtrace/comparison.py": "dd90947afb0b4da6fc99bf61779b8efa094e9303fb97fa887b4a9e415c253255",
+      "src/trialtrace/engine.py": "3afaee41f511a31c4fe03586ba7f0f5fb541661b6139439046bbf72d19159f6f",
+      "src/trialtrace/errors.py": "21751b169405f8f79486ab57ea226c88ba3d1f416ec1560b2ce4f5a198744ae3",
+      "src/trialtrace/exporter.py": "3838904ba69f09097d257dea2b84880930b51e833de449de50d0b8aa1c738a34",
+      "src/trialtrace/import_cli.py": "fc29843ac0d43c6295ae64d61f7a72e497e0878a934c1ce05c6e7307e0a44afc",
+      "src/trialtrace/importer.py": "3ef4772201bf25bd7481780961783b2d660d3e3629da4080ec25ff08ca655b55",
+      "src/trialtrace/inspection.py": "4d546e6cd24de12bb56fa43d7459694429016f4a677618b645096860e640143d",
+      "src/trialtrace/registry_metadata.py": "422816c2a141246dcb2f4688a1713c16ad4f4624d6769b732c4f6a448586eddb",
+      "src/trialtrace/relationships.py": "23a46a43723158334bbaa7406dcc695a08eea9a4265029d2ff495380e3318ef2",
+      "src/trialtrace/source.py": "b1713f49c318e00474a3a60993e88410dcd28b3377b722ad5bcc2b0462f41c35",
+      "src/trialtrace/workflow.py": "19c2104bbccda448c64e8ee0331e5d346a4c214f090438fd2acfc6a76062a9fc"
+    },
+    "code_schema_sha256": "bbf5f2b516a018173cea063c2e07167a0d52d551fc9c43917e4b5d8e6ca6cb11"
+  },
+  "unchanged_during_run": true,
+  "description": "Actual hashes around this recorded command; component/API tests, not browser evidence or source review."
+}

@@ -1,0 +1,25 @@
+{
+  "status": "PASS_ARTIFACT_PARITY",
+  "code_sha256": "d20f8e50e3aafb80802847cef31bdee6b8c73b458bc0b718b413e3108426aebd",
+  "app_sha256": "1103ee12833069c2425652e2607735e74da00bbf1f7dd137fbf2a299269f24b5",
+  "browser_report_matches_installed_cli_bytes": true,
+  "browser_package_matches_actual_file_bytes": true,
+  "browser_review_matches_full_derived_csv_bytes": true,
+  "original_source_bytes_preserved": true,
+  "fresh_environment_matches_report": true,
+  "counts": {
+    "PASS": 1,
+    "POTENTIAL_DEVIATION": 1,
+    "DATA_QUERY": 4,
+    "NOT_EVALUABLE": 1
+  },
+  "download_sha256": {
+    "browser-evidence.json": "2758951f4329194dfbe047212573dc6f6448982701e798d2c9162a82e26681ae",
+    "browser-package.zip": "63ea2c723aac8877df812e8c29029971e0479d16b8be300eca8ca30042ff3a3c",
+    "browser-review.csv": "748ec54b3ded5099cc1d9aedead8d0730d5356190d1125d1462596e16e9a426c"
+  },
+  "limitations": [
+    "Actual UI actions and upload failures are separately recorded in events.json and console.json.",
+    "Synthetic example, no actual vendor-export or participant-data validation."
+  ]
+}

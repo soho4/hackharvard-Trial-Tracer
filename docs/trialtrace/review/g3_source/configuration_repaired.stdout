@@ -1,0 +1,37 @@
+{
+  "started_at_utc": "2026-10-18T08:34:04.785381+00:00",
+  "kind": "READ_ONLY_COMPONENT_PROBE_NOT_BROWSER_E2E",
+  "source_files_at_start": {
+    "app.py": "dadd4092cc9b16709ee2a9594fc36f855223767aed5f2a7d9ea1886c24a431cd",
+    "src/trialtrace/engine.py": "3afaee41f511a31c4fe03586ba7f0f5fb541661b6139439046bbf72d19159f6f",
+    "src/trialtrace/workflow.py": "19c2104bbccda448c64e8ee0331e5d346a4c214f090438fd2acfc6a76062a9fc"
+  },
+  "missing_fields": {
+    "exceptions": [],
+    "errors": [
+      "The configured rule or source file is invalid or unavailable. No report is available."
+    ],
+    "has_result": false
+  },
+  "accepted_changed_offsets": {
+    "exceptions": [],
+    "window_text": [
+      "Candidate window: vaccination date +0 through +0 calendar days, inclusive. Table 21, amendment 10, 2022-04-07."
+    ],
+    "calculation": {
+      "target": "2026-11-01",
+      "earliest": "2026-11-01",
+      "latest": "2026-11-01",
+      "actual": "2026-11-10",
+      "days_outside": 9
+    },
+    "status": "POTENTIAL_DEVIATION"
+  },
+  "finished_at_utc": "2026-10-18T08:34:05.652851+00:00",
+  "source_files_at_end": {
+    "app.py": "dadd4092cc9b16709ee2a9594fc36f855223767aed5f2a7d9ea1886c24a431cd",
+    "src/trialtrace/engine.py": "3afaee41f511a31c4fe03586ba7f0f5fb541661b6139439046bbf72d19159f6f",
+    "src/trialtrace/workflow.py": "19c2104bbccda448c64e8ee0331e5d346a4c214f090438fd2acfc6a76062a9fc"
+  },
+  "source_changed_during_probe": false
+}

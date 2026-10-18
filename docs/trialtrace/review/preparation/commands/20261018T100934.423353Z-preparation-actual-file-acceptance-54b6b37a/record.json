@@ -1,0 +1,21 @@
+{
+  "label": "preparation-actual-file-acceptance",
+  "command": [
+    ".venv/bin/python",
+    "tools/run_preparation_acceptance.py",
+    "--out",
+    "docs/trialtrace/review/preparation/actual_run"
+  ],
+  "cwd": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace",
+  "started_at": "2026-10-18T10:09:34.423353+00:00",
+  "finished_at": "2026-10-18T10:09:34.711769+00:00",
+  "elapsed_seconds": 0.288078,
+  "status": "EXIT_ZERO",
+  "exit_code": 0,
+  "stdout_path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/docs/trialtrace/review/preparation/commands/20261018T100934.423353Z-preparation-actual-file-acceptance-54b6b37a/stdout.log",
+  "stderr_path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/docs/trialtrace/review/preparation/commands/20261018T100934.423353Z-preparation-actual-file-acceptance-54b6b37a/stderr.log",
+  "stdout_sha256": "c6cb8d8987f238c6d91bb3a48708e9267206961e1959621579f7505ad9f8b513",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "gate_acceptance": "NOT_DETERMINED_BY_COMMAND_RECORDER",
+  "warning": "Logs are not tamper-proof; this does not establish test assertions, source review, or clinical validity."
+}

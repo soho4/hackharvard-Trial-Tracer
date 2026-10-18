@@ -1,0 +1,25 @@
+{
+  "command": [
+    "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/.venv/bin/python",
+    "-m",
+    "trialtrace.cli",
+    "--anc",
+    "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/review_core/abbrev_inputs/anchors.csv",
+    "--visits",
+    "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/review_core/abbrev_inputs/visits.csv",
+    "--assignments",
+    "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/review_core/abbrev_inputs/assignments.csv",
+    "--rule",
+    "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/review_core/inputs/candidate_rule.json",
+    "--draft-synthetic",
+    "--output",
+    "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/review_core/abbrev_inputs/anchors.csv"
+  ],
+  "exit_code": 2,
+  "input_exists_after": false,
+  "preserved_names": [
+    "anchors.csv.20261018T073132.042093Z.b6e1ae32f7714e28b24ab79c7cb525eb.json"
+  ],
+  "stderr": "{\"status\": \"FAILED\", \"diagnostic\": {\"code\": \"FILE_ACCESS\", \"message\": \"Cannot read anchors.csv: No such file or directory\", \"file\": \"anchors.csv\"}, \"previous_output\": \"/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/review_core/abbrev_inputs/.previous/anchors.csv.20261018T073132.042093Z.b6e1ae32f7714e28b24ab79c7cb525eb.json\", \"success_bundle_written\": false}\n",
+  "source_cli_hash": "217c2dc476cb6476a9d907b42e8697a28f771acd8e7f4d9e431203c94a7a7023"
+}

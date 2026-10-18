@@ -1,0 +1,72 @@
+- link "Skip to workspace":
+  - /url: "#content"
+- complementary:
+  - link "TrialTrace home":
+    - /url: "#workspace"
+    - generic: TrialTrace.
+  - generic: REVIEW WORKSPACE
+  - navigation "Main navigation":
+    - button "Timing review":
+      - generic: ▦
+      - text: Timing review
+    - button "How it works":
+      - generic: ↗
+      - text: How it works
+    - button "Evidence & scope":
+      - generic: ◎
+      - text: Evidence & scope
+  - generic: ✦
+  - strong:
+    - text: Every finding.
+    - text: A clear reason.
+  - paragraph: From a source record to a reviewable answer.
+  - text: Hackathon demonstration
+  - text: Synthetic participant records only
+- main:
+  - generic: Clinical trial review/Timing workspace
+  - status: Engine ready · runs in your browser
+  - alert: "ROW_WIDTH: Row width does not match header (source record 1)"
+  - generic: FROM RECORDS TO REASONS
+  - heading "Every finding. A clear reason." [level=1]:
+    - text: Every finding.
+    - emphasis: A clear reason.
+  - paragraph: Check when a trial activity happened. See what falls outside the window, what information is missing, and exactly where to look next.
+  - generic: ✦
+  - strong: DEMONSTRATION ONLY
+  - generic: Synthetic records · one draft timing rule · independent source review pending
+  - generic "Review progress":
+    - generic: "1"
+    - text: Choose a file
+    - generic: "2"
+    - text: Confirm the mapping
+    - generic: "3"
+    - text: Review findings
+  - heading "Start with your records" [level=2]
+  - text: One CSV. One recorded safety call per row.
+  - generic: ↥
+  - button "Choose a CSV":
+    - text: Choose a CSV
+    - generic: ↗
+  - paragraph: UTF-8 CSV · up to 500 records · 1 MB
+  - paragraph: Synthetic data only. Files are processed in your browser.
+  - strong: Just exploring?
+  - paragraph: Try seven synthetic records with different outcomes.
+  - button "Load demo file":
+    - text: Load demo file
+    - generic: →
+  - paragraph: Nothing is calculated until you review the mapping and confirm the scope.
+  - generic: CURRENT SUPPORTED CHECK
+  - heading "Was the safety call within its timing window?" [level=2]:
+    - text: Was the safety call
+    - text: within its timing window?
+  - strong: 7–10
+  - generic: calendar days after the actual vaccination
+  - term: Public study
+  - definition: Moderna · mRNA-1273-P301
+  - term: Candidate rule
+  - definition: Amendment 10 · Table 21 · OL-D8
+  - term: What this checks
+  - definition: Timing of a recorded call, not medical safety.
+  - button "Read the source & limitations ↗"
+  - generic: Real public protocol. Synthetic participant data.
+  - generic: One draft timing rule · Human source review pending

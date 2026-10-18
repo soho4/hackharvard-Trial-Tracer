@@ -1,0 +1,26 @@
+{
+  "label": "build-regular-core-wheel",
+  "command": [
+    "../g3_clean_env/bin/python",
+    "-m",
+    "pip",
+    "wheel",
+    "--no-build-isolation",
+    "--no-deps",
+    "--wheel-dir",
+    "docs/trialtrace/review/g3_clean_install/wheel",
+    "."
+  ],
+  "cwd": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace",
+  "started_at": "2026-10-18T08:37:24.482993+00:00",
+  "finished_at": "2026-10-18T08:37:25.199874+00:00",
+  "elapsed_seconds": 0.716398,
+  "status": "EXIT_ZERO",
+  "exit_code": 0,
+  "stdout_path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/docs/trialtrace/review/g3_clean_install/commands/20261018T083724.482993Z-build-regular-core-wheel-a36f4134/stdout.log",
+  "stderr_path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/docs/trialtrace/review/g3_clean_install/commands/20261018T083724.482993Z-build-regular-core-wheel-a36f4134/stderr.log",
+  "stdout_sha256": "0b52b9c9fae2034562d8f472c7371974d1d0f3ea34a7d045b97d8f6a67ed7dfc",
+  "stderr_sha256": "4e077e0484c6a88d5872943356747eab9a7f8c6a5c8f92c1202b4a68bfcebfcb",
+  "gate_acceptance": "NOT_DETERMINED_BY_COMMAND_RECORDER",
+  "warning": "Logs are not tamper-proof; this does not establish test assertions, source review, or clinical validity."
+}

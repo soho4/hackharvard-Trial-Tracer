@@ -1,0 +1,96 @@
+{
+  "teammate_validator": {
+    "ref": "origin/abinet/evidence-viewer",
+    "commit": "1b216519e93866bca3fc36be174ec0f5bf05f793",
+    "path": "features/evidence_viewer/contract.js",
+    "sha256": "e79299e71aa0a84f33299070af8cc596cf2a7740f9a71a3416b768ae3ae6ebc6"
+  },
+  "cases": [
+    {
+      "year": "0001",
+      "core_status": "PASS",
+      "calculation": {
+        "target": "0001-01-08",
+        "earliest": "0001-01-08",
+        "latest": "0001-01-11",
+        "actual": "0001-01-08",
+        "days_outside": 0
+      },
+      "core_code_sha256": "4bd7bea47c68f243b3f5754a878d28ddf10e577dbb91907c399d0e481b14e9f1",
+      "bundle_sha256": "c0d3b5c4e5f5a7f2018688c0cc12bcbd7327468fec8da72fa5fc18a25e79c870",
+      "validator_exit_code": 0,
+      "validator": {
+        "ok": false,
+        "errors": [
+          "findings[0].calculation.target: must be a valid YYYY-MM-DD date",
+          "findings[0].calculation.earliest: must be a valid YYYY-MM-DD date",
+          "findings[0].calculation.latest: must be a valid YYYY-MM-DD date",
+          "findings[0].calculation.actual: must be a valid YYYY-MM-DD date"
+        ]
+      },
+      "stderr": ""
+    },
+    {
+      "year": "0099",
+      "core_status": "PASS",
+      "calculation": {
+        "target": "0099-01-08",
+        "earliest": "0099-01-08",
+        "latest": "0099-01-11",
+        "actual": "0099-01-08",
+        "days_outside": 0
+      },
+      "core_code_sha256": "4bd7bea47c68f243b3f5754a878d28ddf10e577dbb91907c399d0e481b14e9f1",
+      "bundle_sha256": "e63b4957d84e965012f3de21ebb4e877817123d0f34c0f6e717078ec6f241210",
+      "validator_exit_code": 0,
+      "validator": {
+        "ok": false,
+        "errors": [
+          "findings[0].calculation.target: must be a valid YYYY-MM-DD date",
+          "findings[0].calculation.earliest: must be a valid YYYY-MM-DD date",
+          "findings[0].calculation.latest: must be a valid YYYY-MM-DD date",
+          "findings[0].calculation.actual: must be a valid YYYY-MM-DD date"
+        ]
+      },
+      "stderr": ""
+    },
+    {
+      "year": "0100",
+      "core_status": "PASS",
+      "calculation": {
+        "target": "0100-01-08",
+        "earliest": "0100-01-08",
+        "latest": "0100-01-11",
+        "actual": "0100-01-08",
+        "days_outside": 0
+      },
+      "core_code_sha256": "4bd7bea47c68f243b3f5754a878d28ddf10e577dbb91907c399d0e481b14e9f1",
+      "bundle_sha256": "26e68cee7ce1612f064eb23d5087c7d882351e01759263d8d0b4b1aba55336c4",
+      "validator_exit_code": 0,
+      "validator": {
+        "ok": true,
+        "errors": []
+      },
+      "stderr": ""
+    },
+    {
+      "year": "2026",
+      "core_status": "PASS",
+      "calculation": {
+        "target": "2026-01-08",
+        "earliest": "2026-01-08",
+        "latest": "2026-01-11",
+        "actual": "2026-01-08",
+        "days_outside": 0
+      },
+      "core_code_sha256": "4bd7bea47c68f243b3f5754a878d28ddf10e577dbb91907c399d0e481b14e9f1",
+      "bundle_sha256": "75103c4c75c9db7f639e2c1068d7572e5a9784002901f420e856b98f7928ec6e",
+      "validator_exit_code": 0,
+      "validator": {
+        "ok": true,
+        "errors": []
+      },
+      "stderr": ""
+    }
+  ]
+}

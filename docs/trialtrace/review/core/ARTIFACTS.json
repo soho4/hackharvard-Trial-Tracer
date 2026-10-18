@@ -1,0 +1,101 @@
+{
+  "copied_at_utc": "2026-10-18T07:37:07.250689+00:00",
+  "scope": "Technical review probes and red/fix execution evidence; no source PDFs or teammate source copies",
+  "files": [
+    {
+      "path": "REVIEW.md",
+      "sha256": "137138940dd23d694c14776c6e00319fb187766d1cac6dec727b2b616517f104",
+      "byte_count": 6019
+    },
+    {
+      "path": "probe.py",
+      "sha256": "b87734df7ca6793ae9cc483823c4b6a6333653c90b8a7b96c7c3a07125cba448",
+      "byte_count": 3673
+    },
+    {
+      "path": "probe_results.json",
+      "sha256": "e1daade95fe675c867269e640d9786eab8935b1fe6147ebc36d084844b0505bf",
+      "byte_count": 7272
+    },
+    {
+      "path": "dangling_option.stderr",
+      "sha256": "a41046c47da19daacaa9cd63faa134d8058ffc82423f892edbfdd161a963a3fa",
+      "byte_count": 176
+    },
+    {
+      "path": "diagnostic_directory.stderr",
+      "sha256": "5ef4364e4b54ef65a41ec45bd73228b997176f8cc6bb97fcaa439ea0044ddec4",
+      "byte_count": 624
+    },
+    {
+      "path": "surrogate_rule.stderr",
+      "sha256": "77d1a10dd81b4fe6d72c1f88d196190d5c1836331470428e0d25ed3c3d7dabee",
+      "byte_count": 931
+    },
+    {
+      "path": "abbrev_collision.json",
+      "sha256": "03d5a9f440d9cd1587391f5fb16985434abc6a64ff76d737aa936802312757a4",
+      "byte_count": 1611
+    },
+    {
+      "path": "abbrev_recheck.json",
+      "sha256": "a0a8b517e17049ccf96f2e65c4817893fa2f44891d29f0f2792dc785429576d3",
+      "byte_count": 1582
+    },
+    {
+      "path": "abbrev_fixed.json",
+      "sha256": "9bcfcd2d2706bf4e43192a91d1e9df02c5b24be29838cb672274f5ceed409440",
+      "byte_count": 2012
+    },
+    {
+      "path": "case_collision_results.json",
+      "sha256": "354010cef3b152e579fafec037f07f79beccac16fb2537e63fb620924978197d",
+      "byte_count": 4124
+    },
+    {
+      "path": "verify_fixes.py",
+      "sha256": "a7acfd2d9994a23d7fdcb053e0f18cf8ae503b42b4b5a39264177bc3915d309e",
+      "byte_count": 5369
+    },
+    {
+      "path": "fix_verification.json",
+      "sha256": "eda8572c112370dbc9d383795608a2f4081f6ac32110d6d4e4e0af9e094cdc0e",
+      "byte_count": 15157
+    },
+    {
+      "path": "check_viewer_years.py",
+      "sha256": "3a13767014607169cf5e3bb7a70ba9056ee9e15267ad0a25250da323be97a7e4",
+      "byte_count": 3646
+    },
+    {
+      "path": "viewer_year_results.json",
+      "sha256": "f303262b2cabb2b3e0e831eef5e2bcfe9385c8cbe83efae346bfd1fdc39aabe1",
+      "byte_count": 3934
+    },
+    {
+      "path": "viewer_year_results.pre_final_cli.json",
+      "sha256": "2872adeeeec8d7750674689f6074e7fdc6c64214a4edc97ff6b83680626f40d3",
+      "byte_count": 3160
+    },
+    {
+      "path": "viewer_boundary/0001.json",
+      "sha256": "745210ba214cd87f8507e4d5fb285c59878638f41773b36419567f38b21b224d",
+      "byte_count": 4940
+    },
+    {
+      "path": "viewer_boundary/0099.json",
+      "sha256": "0638e7f20f16d254cb7de117633219330af7f2505c71417b7d3608257d83c4e2",
+      "byte_count": 4940
+    },
+    {
+      "path": "viewer_boundary/0100.json",
+      "sha256": "93806ba1d16be42446d23683191e2d912209be65d37e1150aeff807c4a9abb41",
+      "byte_count": 4940
+    },
+    {
+      "path": "viewer_boundary/2026.json",
+      "sha256": "5961066ec159fbd4be4029bf2cd58a91bd8e7710ce64896a69fb7c42b931311a",
+      "byte_count": 4940
+    }
+  ]
+}

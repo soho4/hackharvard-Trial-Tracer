@@ -1,0 +1,24 @@
+{
+  "label": "independent-cli-repair-green",
+  "command": [
+    ".venv/bin/python",
+    "-m",
+    "pytest",
+    "tests/integration/test_cli.py",
+    "-q",
+    "-k",
+    "diagnostics_directory or malformed_cli_replacement or collision"
+  ],
+  "cwd": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace",
+  "started_at": "2026-10-18T07:30:26.119970+00:00",
+  "finished_at": "2026-10-18T07:30:27.317564+00:00",
+  "elapsed_seconds": 1.197075,
+  "status": "EXIT_ZERO",
+  "exit_code": 0,
+  "stdout_path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/docs/trialtrace/review_tests/20261018T073026.119970Z-independent-cli-repair-green-7f9965be/stdout.log",
+  "stderr_path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/docs/trialtrace/review_tests/20261018T073026.119970Z-independent-cli-repair-green-7f9965be/stderr.log",
+  "stdout_sha256": "af25addf133544affae7ea57ce51dd7fb573c28d17fc3a32eaf1a1fbed6bd741",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "gate_acceptance": "NOT_DETERMINED_BY_COMMAND_RECORDER",
+  "warning": "Logs are not tamper-proof; this does not establish test assertions, source review, or clinical validity."
+}

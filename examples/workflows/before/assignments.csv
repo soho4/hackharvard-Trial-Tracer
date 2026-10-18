@@ -1,0 +1,7 @@
+assignment_id,study_id,participant_id,site_id,rule_version,schedule_code,mapping_status,mapping_note
+SYNTH-FLOW-M1,NCT04470427,=SYNTH-FORMULA,SYNTH-FLOW-SITE-7,A10_DRAFT_2,TABLE21,DRAFT_SYNTHETIC,New workflow engineering input; not reviewed participant data.
+SYNTH-FLOW-M2,NCT04470427,SYNTH-YEAR-CROSSING,SYNTH-FLOW-SITE-7,A10_DRAFT_2,TABLE21,DRAFT_SYNTHETIC,New workflow engineering input; not reviewed participant data.
+SYNTH-FLOW-M3,NCT04470427,SYNTH-MISSING-ANCHOR,SYNTH-FLOW-SITE-7,A10_DRAFT_2,TABLE21,DRAFT_SYNTHETIC,New workflow engineering input; not reviewed participant data.
+SYNTH-FLOW-M4,NCT04470427,SYNTH-UNSUPPORTED-EVENT,SYNTH-FLOW-SITE-7,A10_DRAFT_2,TABLE21,DRAFT_SYNTHETIC,New workflow engineering input; not reviewed participant data.
+SYNTH-FLOW-M5,NCT04470427,SYNTH-DUPLICATE,SYNTH-FLOW-SITE-7,A10_DRAFT_2,TABLE21,DRAFT_SYNTHETIC,New workflow engineering input; not reviewed participant data.
+SYNTH-UNUSED-M,NCT04470427,SYNTH-UNUSED,SYNTH-FLOW-SITE-7,A10_DRAFT_2,TABLE21,UNRESOLVED,

@@ -1,0 +1,8 @@
+trial_ref,subject_ref,clinic,contact_ref,dose_ref,dose_actual,phone_actual,contact_state,operator_note
+NCT04470427,=SYNTH-PREP-01,SYNTH-CLINIC,CALL-01,DOSE-01,2028-02-22,2028-03-03,done,Synthetic boundary
+NCT04470427,SYNTH-PREP-02,SYNTH-CLINIC,CALL-02,DOSE-02,2028-02-22,2028-03-04,done,Synthetic late
+NCT04470427,SYNTH-PREP-03,SYNTH-CLINIC,CALL-03,DOSE-03,,2028-03-01,done,Reference date unavailable
+NCT04470427,SYNTH-PREP-04,SYNTH-CLINIC,CALL-04,DOSE-04,2028-02-22,2028-03-01,entered,Data entry is not call completion
+SYNTH-OTHER-STUDY,SYNTH-PREP-05,SYNTH-CLINIC,CALL-05,DOSE-05,2028-02-22,2028-03-01,done,Wrong study stays visible
+NCT04470427,SYNTH-PREP-06,SYNTH-CLINIC,CALL-DUP,DOSE-06,2028-02-22,2028-03-01,done,Duplicate call identity
+NCT04470427,SYNTH-PREP-07,SYNTH-CLINIC,CALL-DUP,DOSE-07,2028-02-22,2028-03-01,done,Duplicate call identity

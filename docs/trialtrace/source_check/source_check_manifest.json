@@ -1,0 +1,294 @@
+{
+  "schema_version": "trialtrace.technical_source_check.v1",
+  "finalized_at_utc": "2026-10-18T07:21:07.760398+00:00",
+  "scope": "Technical acquisition, byte identity, parsing and model visual inspection only",
+  "source_url": "https://cdn.clinicaltrials.gov/large-docs/27/NCT04470427/Prot_000.pdf",
+  "source_file": {
+    "path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/source_check/.sources/Prot_000.pdf",
+    "sha256": "da946b1ae23d40c41b332f1d0cb3311f0634e57009b4a37b9c6d6c60ee8bf186",
+    "byte_count": 2728675
+  },
+  "acquisition": {
+    "method": "PINNED_URL_NATIVE_CURL_FETCH",
+    "command_record": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/source_check/logs/curl_acquire.command.json",
+    "http_status": 200,
+    "content_type": "application/pdf",
+    "resolved_url": "https://cdn.clinicaltrials.gov/large-docs/27/NCT04470427/Prot_000.pdf",
+    "redirect_count": 0,
+    "tls_verification_result": 0,
+    "headers_path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/source_check/logs/curl.headers",
+    "headers_sha256": "4b3213a8a48759964b5ae2ae190e37d40eef709173ce810ea4f65dfeb9adc056",
+    "note": "No TLS bypass was used. The supplied verifier's generic --pdf origin label is preserved unchanged in its raw manifest; curl logs establish this run's acquisition provenance."
+  },
+  "candidate_read_only": {
+    "path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/trialtrace_handoff/source_review/candidate_rule.json",
+    "sha256": "f36336df90a1793a80b92f48ce273488a091547110856bdcc602587ddad9e7f0",
+    "rule_id": "TABLE21_OL_D8_WINDOW",
+    "rule_version": "A10_DRAFT_2",
+    "modified": false
+  },
+  "verifier": {
+    "path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/trialtrace_handoff/reference/v3/tools/verify_source.py",
+    "sha256": "f29db48045d7a4788be931f6f8ac693b9b9d69e2fa43a142da45d90d51c18bc1",
+    "inspected_before_execution": true,
+    "modified": false,
+    "dependency": "PyMuPDF==1.26.7 in work/source_check/.venv",
+    "raw_result_path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/source_check/verifier_local_manifest.json",
+    "result": {
+      "url": "https://cdn.clinicaltrials.gov/large-docs/27/NCT04470427/Prot_000.pdf",
+      "checked_at": "2026-10-18T07:19:33.095798+00:00",
+      "acquisition": "USER_SUPPLIED_LOCAL_COPY_REQUIRES_ORIGIN_REVIEW",
+      "status": "LOCAL_PDF_IDENTITY_CHECKED",
+      "sha256": "da946b1ae23d40c41b332f1d0cb3311f0634e57009b4a37b9c6d6c60ee8bf186",
+      "byte_count": 2728675,
+      "page_count": 193,
+      "checks": {
+        "study_identity": true,
+        "protocol_identity": true,
+        "amendment_identity": true,
+        "document_date": true,
+        "table21_present": true,
+        "anchor_and_event_present": true,
+        "allowance_present": true,
+        "phone_call_context": true
+      },
+      "semantic_review": "PENDING_HUMAN_REVIEW",
+      "limitation": "Identity tokens are not proof of table interpretation, document authenticity, or clinical validity.",
+      "pdf_path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/source_check/.sources/Prot_000.pdf"
+    }
+  },
+  "commands": [
+    {
+      "command": [
+        "/Users/yisak/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/trialtrace_handoff/reference/v3/tools/verify_source.py",
+        "--out",
+        "verifier_initial_manifest.json"
+      ],
+      "cwd": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/source_check",
+      "started_at_utc": "2026-10-18T07:18:42.408106+00:00",
+      "finished_at_utc": "2026-10-18T07:18:50.402874+00:00",
+      "exit_code": 2,
+      "stdout_path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/source_check/logs/verifier_initial.stdout",
+      "stderr_path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/source_check/logs/verifier_initial.stderr",
+      "stdout_sha256": "fc0db6f4393f588fe9cb6c08face46d98e6f8b47ad6b95c1160c16e4d3a76418",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "python3",
+        "-m",
+        "venv",
+        ".venv"
+      ],
+      "cwd": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/source_check",
+      "started_at_utc": "2026-10-18T07:18:53.846828+00:00",
+      "finished_at_utc": "2026-10-18T07:18:55.319921+00:00",
+      "exit_code": 0,
+      "stdout_path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/source_check/logs/create_verifier_venv.stdout",
+      "stderr_path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/source_check/logs/create_verifier_venv.stderr",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "pip",
+        "install",
+        "PyMuPDF==1.26.7"
+      ],
+      "cwd": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/source_check",
+      "started_at_utc": "2026-10-18T07:19:02.785854+00:00",
+      "finished_at_utc": "2026-10-18T07:19:08.743602+00:00",
+      "exit_code": 0,
+      "stdout_path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/source_check/logs/install_verifier_dependency.stdout",
+      "stderr_path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/source_check/logs/install_verifier_dependency.stderr",
+      "stdout_sha256": "c4b699aed8525aaea219f5afa4c7a470e945e7c77a9aca747af966a89da4fcec",
+      "stderr_sha256": "680f347db0e354ee0164b8d168531844fe35ccf29af2b566b7121fca27bafb1b"
+    },
+    {
+      "command": [
+        ".venv/bin/python",
+        "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/trialtrace_handoff/reference/v3/tools/verify_source.py",
+        "--out",
+        "verifier_retry_manifest.json"
+      ],
+      "cwd": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/source_check",
+      "started_at_utc": "2026-10-18T07:19:11.493233+00:00",
+      "finished_at_utc": "2026-10-18T07:19:11.620243+00:00",
+      "exit_code": 2,
+      "stdout_path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/source_check/logs/verifier_retry.stdout",
+      "stderr_path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/source_check/logs/verifier_retry.stderr",
+      "stdout_sha256": "3b45d84b030703ccf137b4ba71f73e09575aa8f42c2db3a734e219abe1d4a8df",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "/usr/bin/curl",
+        "--fail",
+        "--location",
+        "--proto",
+        "=https",
+        "--tlsv1.2",
+        "--connect-timeout",
+        "15",
+        "--max-time",
+        "60",
+        "--dump-header",
+        "logs/curl.headers",
+        "--output",
+        ".sources/Prot_000.pdf",
+        "--write-out",
+        "%{json}",
+        "https://cdn.clinicaltrials.gov/large-docs/27/NCT04470427/Prot_000.pdf"
+      ],
+      "cwd": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/source_check",
+      "started_at_utc": "2026-10-18T07:19:26.152214+00:00",
+      "finished_at_utc": "2026-10-18T07:19:26.506238+00:00",
+      "exit_code": 0,
+      "stdout_path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/source_check/logs/curl_acquire.stdout",
+      "stderr_path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/source_check/logs/curl_acquire.stderr",
+      "stdout_sha256": "c9c851ebe4ba1718cd71352a408283ae98488b3a8d846ba07c92ac4c35a19589",
+      "stderr_sha256": "bb0e2f1a1a2f68acc44fd45fb2eb7c24f30b5099b2443a0127cf50b7b48a30c1"
+    },
+    {
+      "command": [
+        "/Users/yisak/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override/pdfinfo",
+        ".sources/Prot_000.pdf"
+      ],
+      "cwd": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/source_check",
+      "started_at_utc": "2026-10-18T07:19:33.031902+00:00",
+      "finished_at_utc": "2026-10-18T07:19:43.088312+00:00",
+      "exit_code": 0,
+      "stdout_path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/source_check/logs/pdfinfo.stdout",
+      "stderr_path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/source_check/logs/pdfinfo.stderr",
+      "stdout_sha256": "60efa1f2b0d15882da32651472a88b67e488235cc412733d392592555bd35bd0",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        ".venv/bin/python",
+        "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/trialtrace_handoff/reference/v3/tools/verify_source.py",
+        "--pdf",
+        ".sources/Prot_000.pdf",
+        "--out",
+        "verifier_local_manifest.json"
+      ],
+      "cwd": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/source_check",
+      "started_at_utc": "2026-10-18T07:19:33.031905+00:00",
+      "finished_at_utc": "2026-10-18T07:19:35.197058+00:00",
+      "exit_code": 0,
+      "stdout_path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/source_check/logs/verifier_local.stdout",
+      "stderr_path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/source_check/logs/verifier_local.stderr",
+      "stdout_sha256": "5be89e954de3a54383e93c577ca1a2263a7572dd5ea4ccf660fab5181fa8accc",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "/Users/yisak/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override/pdftoppm",
+        "-f",
+        "1",
+        "-l",
+        "1",
+        "-r",
+        "120",
+        "-png",
+        ".sources/Prot_000.pdf",
+        ".sources/rendered/page"
+      ],
+      "cwd": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/source_check",
+      "started_at_utc": "2026-10-18T07:19:54.395489+00:00",
+      "finished_at_utc": "2026-10-18T07:19:55.268153+00:00",
+      "exit_code": 0,
+      "stdout_path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/source_check/logs/render_cover.stdout",
+      "stderr_path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/source_check/logs/render_cover.stderr",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "/Users/yisak/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override/pdftoppm",
+        "-f",
+        "150",
+        "-l",
+        "152",
+        "-r",
+        "140",
+        "-png",
+        ".sources/Prot_000.pdf",
+        ".sources/rendered/page"
+      ],
+      "cwd": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/source_check",
+      "started_at_utc": "2026-10-18T07:19:54.395491+00:00",
+      "finished_at_utc": "2026-10-18T07:19:55.840725+00:00",
+      "exit_code": 0,
+      "stdout_path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/source_check/logs/render_table21.stdout",
+      "stderr_path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/source_check/logs/render_table21.stderr",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "model_visual_inspection": {
+    "performed": true,
+    "pdf_pages_one_indexed": [
+      1,
+      150,
+      151,
+      152
+    ],
+    "printed_page_numbers": [
+      1,
+      150,
+      151,
+      152
+    ],
+    "renderer": "bundled Poppler pdftoppm",
+    "images": [
+      {
+        "path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/source_check/.sources/rendered/page-001.png",
+        "sha256": "14037bfa802f9c67f8461975f9289e27e23021ba820874a6d1211b35b9ae6628"
+      },
+      {
+        "path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/source_check/.sources/rendered/page-150.png",
+        "sha256": "cf5ab106f5a644d4e67011cc35956ce9ba4bce23ea53f55bf4243c77e1d56bb9"
+      },
+      {
+        "path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/source_check/.sources/rendered/page-151.png",
+        "sha256": "21ba731a9b67cbcc4e719338b8a9e485054f1d0593a7a354935f135422a1a787"
+      },
+      {
+        "path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/source_check/.sources/rendered/page-152.png",
+        "sha256": "5074ad98a68701761582172641ab5da3e30385a0c24dbbaf7f2bfd5403682262"
+      }
+    ],
+    "observations": [
+      "Cover visually shows NCT04470427, mRNA-1273-P301, Amendment 10, 07 Apr 2022.",
+      "Table 21 on page 150 restricts the schedule to Part A placebo recipients requesting mRNA-1273; its OL-D8 column shows SC, 7 days after OL-D1, and +3 days.",
+      "Page 151 expands SC as a safety phone call and continues safety assessments and pandemic remote-visit context.",
+      "Page 152 includes a note allowing Day 0 and OL-D1 on separate visits, as well as safety-call collection context.",
+      "Rendered page 152 note labels run 4 through 11, while table superscripts on pages 150-151 run 1 through 8. Do not silently relabel; human reviewer should reconcile the source's displayed numbering."
+    ],
+    "is_independent_human_review": false,
+    "approves_candidate_interval": false
+  },
+  "additional_web_check": {
+    "url": "https://cdn.clinicaltrials.gov/large-docs/27/NCT04470427/Prot_000.pdf",
+    "observed": "Web open returned a 193-page PDF with matching cover identity text during this run.",
+    "limitation": "Web extraction is separate corroboration; no claim of byte equality with local download."
+  },
+  "resolved_technical_obstacles": [
+    "Initial verifier using bundled Python fetched HTTP 200 but exited 2 because PyMuPDF was absent; it did not retain PDF bytes.",
+    "PyMuPDF was installed in an isolated work/source_check/.venv. The system-Python-backed venv's URL fetch exited 2 due to missing local issuer trust. No certificate verification was disabled.",
+    "Native curl acquired the exact pinned URL successfully; the unmodified verifier inspected those local bytes and exited 0."
+  ],
+  "blockers": [
+    "G0 remains blocked pending actual independent human source-interpretation review bound to exact PDF and candidate hashes.",
+    "Zero early allowance and inclusive endpoints remain candidate software interpretation; this technical check does not approve them.",
+    "Source note numbering observed above requires explicit human reconciliation when recording locators."
+  ],
+  "human_review_created": false,
+  "clinical_validation": false,
+  "repository_mutations": false,
+  "public_distribution": false
+}

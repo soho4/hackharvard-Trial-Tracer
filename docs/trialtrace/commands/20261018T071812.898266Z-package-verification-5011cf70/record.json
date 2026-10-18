@@ -1,0 +1,19 @@
+{
+  "label": "package-verification",
+  "command": [
+    "python3",
+    "work/trialtrace_handoff/tools/verify_package.py"
+  ],
+  "cwd": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace",
+  "started_at": "2026-10-18T07:18:12.898266+00:00",
+  "finished_at": "2026-10-18T07:18:13.024168+00:00",
+  "elapsed_seconds": 0.12494,
+  "status": "EXIT_ZERO",
+  "exit_code": 0,
+  "stdout_path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/preflight/commands/20261018T071812.898266Z-package-verification-5011cf70/stdout.log",
+  "stderr_path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/preflight/commands/20261018T071812.898266Z-package-verification-5011cf70/stderr.log",
+  "stdout_sha256": "af559afc037ebd558fabd6c35550450f6c735580cd1cf79469712a4a398623a3",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "gate_acceptance": "NOT_DETERMINED_BY_COMMAND_RECORDER",
+  "warning": "Logs are not tamper-proof; this does not establish test assertions, source review, or clinical validity."
+}

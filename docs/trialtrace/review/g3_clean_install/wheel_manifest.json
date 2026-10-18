@@ -1,0 +1,7 @@
+{
+  "wheel": "docs/trialtrace/review/g3_clean_install/wheel/trialtrace_core-0.1.0-py3-none-any.whl",
+  "sha256": "5fc205f57901a03b8cca51b902d7d457da1ac85764340c026dfcbda9433b6e80",
+  "bytes": 17914,
+  "installation": "regular noneditable wheel; direct_url.json archive hash independently inspected",
+  "wheel_packages": "trialtrace core and pinned schema; app.py and viewer assets remain repository files"
+}

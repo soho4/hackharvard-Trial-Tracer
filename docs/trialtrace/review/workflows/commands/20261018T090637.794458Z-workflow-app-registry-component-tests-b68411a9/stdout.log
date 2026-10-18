@@ -1,0 +1,38 @@
+...............F.......................................................  [100%]
+=================================== FAILURES ===================================
+_______ test_context_change_is_visible_without_relabeling_same_outcomes ________
+
+app = AppTest(
+    _script_path='/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTr...                11: Info()
+            }
+        ),
+        2: SpecialBlock(
+            type='event'
+        )
+    }
+)
+records = {'anchors.csv': [{'study_id': 'NCT04470427', 'participant_id': 'synthetic-never-bundled-817', 'site_id': 'synthetic-si...pant_id': 'synthetic-never-bundled-817', 'site_id': 'synthetic-site-new', 'assignment_id': 'assignment-new-817', ...}]}
+make_bundle = <function make_bundle.<locals>.make at 0x10c5f07c0>
+
+    def test_context_change_is_visible_without_relabeling_same_outcomes(app, records, make_bundle):
+        before = make_bundle(records)
+        after = deepcopy(before)
+        after["producer"]["code_sha256"] = "f" * 64
+        after["ruleset"]["sha256"] = "e" * 64
+        select_saved_reports(app, serialize_bundle(before), serialize_bundle(after))
+        result = app.session_state["comparison_result"]
+        assert {change["field"] for change in result["context_changes"]} == {"producer", "ruleset"}
+        assert result["summary"]["unchanged"] == 1
+        assert result["summary"]["changed"] == 0
+>       assert any("Report context differs" in item.value for item in app.warning)
+E       assert False
+E        +  where False = any(<generator object test_context_change_is_visible_without_relabeling_same_outcomes.<locals>.<genexpr> at 0x10c98b370>)
+
+tests/test_streamlit_app.py:393: AssertionError
+---------------------------- Captured stderr setup -----------------------------
+2026-10-18 05:06:42.052 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+------------------------------ Captured log setup ------------------------------
+WARNING  streamlit.runtime.scriptrunner_utils.script_run_context:script_run_context.py:508 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+=========================== short test summary info ============================
+FAILED tests/test_streamlit_app.py::test_context_change_is_visible_without_relabeling_same_outcomes
+1 failed, 70 passed in 4.85s

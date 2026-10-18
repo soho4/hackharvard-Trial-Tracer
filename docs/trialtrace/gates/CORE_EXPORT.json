@@ -1,0 +1,62 @@
+{
+  "gate": "CORE_EXPORT",
+  "state": "PASS_DRAFT_ENGINEERING",
+  "updated_at": "2026-10-18T07:40:40.442394+00:00",
+  "requirements": [
+    "E01-E08",
+    "X01-X05",
+    "frozen and novel actual CLI runs",
+    "JSON Schema plus semantic checks",
+    "reference viewer compatibility"
+  ],
+  "code_commit": "36660aa35b5a8684b4145b5f169a4b9c976bf9d5",
+  "code_sha256": "58a1a80115a5409160529739efe27163a81af1d1184433a20900721e57a90a9f",
+  "rule_sha256": "f36336df90a1793a80b92f48ce273488a091547110856bdcc602587ddad9e7f0",
+  "commands": [
+    {
+      "record": "docs/trialtrace/commands/20261018T073519.572528Z-final-cli-safety-and-core-tests-68311646/record.json",
+      "exit_code": 0
+    },
+    {
+      "record": "docs/trialtrace/commands/20261018T073620.629417Z-core-current-code-actual-acceptance-4ab5c8a6/record.json",
+      "exit_code": 0
+    },
+    {
+      "record": "docs/trialtrace/commands/20261018T073622.431757Z-core-viewer-compatibility-23301ee0/record.json",
+      "exit_code": 0
+    },
+    {
+      "record": "docs/trialtrace/commands/20261018T073848.735345Z-clean-installed-cli-outside-checkout-54b2df50/record.json",
+      "exit_code": 0
+    }
+  ],
+  "expected_vs_observed": {
+    "current_application_tests": "236 passed; no skips",
+    "reference_and_teammate_normal_date_reports": "8 actual reports accepted by each; duplicate-ID and hash-mismatch negative controls rejected",
+    "reproducibility": "same-input repeat and fresh-wheel isolated CLI output byte-identical",
+    "stale_output": "bad replacement exits 2, no success at target, prior bytes separately preserved",
+    "export_size": "exact limit accepted, limit+1 and duplicate-heavy expansion fail explicitly",
+    "source_pending": "every report draft; reviewed invocation exits 2"
+  },
+  "remaining_blockers": [
+    "G0 real human source review and integrator acceptance",
+    "G3 teammate viewer rejects valid years 0001-0099; recorded separately, immutable reference accepts them"
+  ],
+  "not_claimed": [
+    "frontend/browser integration",
+    "clinical validation",
+    "deployment",
+    "another-machine reproduction"
+  ],
+  "stop_condition": "Bounded first-session CORE_EXPORT completed; return review bundle",
+  "input_hashes": {
+    "examples/novel/anchors.csv": "5e61be512e024f2abc02355186f995c481fe366136d31668481c3af15f731337",
+    "examples/novel/assignments.csv": "972ab8ff63b14b27b4d962d3ad78dfd5575284481938d019529b5ad9d1b26fe7",
+    "examples/novel/visits.csv": "bf9282afa71bc6480a9d62b24a5925ea39deb7c280dba2de3c1bb17bfeafc97d",
+    "examples/novel/visits_changed.csv": "30e22c63dec0bf2a911142318acea00b05708d00734d166de1d0cd2e80f78af9",
+    "examples/novel/visits_corrupt.csv": "c9e192db253a0add47aa3662fa5191abbb8140d7e1b1c5f23702aae17a8f480e",
+    "fixtures/core_draft/anchors.csv": "000ec9ada84e19e86145578acf0488837f1adbf88c9371a2974c096ad4646a52",
+    "fixtures/core_draft/assignments.csv": "c2ca800261ccffa28fd4df92a23e2f87a95b183b6a9c8ed2c5a237d5657a87ab",
+    "fixtures/core_draft/visits.csv": "f0a2729d3250e518f831c5786c984b62517b929a5a262ea66b42d62c88c31b64"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "label": "clean-installed-cli-outside-checkout",
+  "command": [
+    "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/clean_core_env/bin/python",
+    "-I",
+    "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/tools/check_clean_install.py",
+    "--repo",
+    "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace",
+    "--source-pdf",
+    "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/source_check/.sources/Prot_000.pdf"
+  ],
+  "cwd": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/clean_smoke",
+  "started_at": "2026-10-18T07:38:48.735345+00:00",
+  "finished_at": "2026-10-18T07:38:49.617823+00:00",
+  "elapsed_seconds": 0.881653,
+  "status": "EXIT_ZERO",
+  "exit_code": 0,
+  "stdout_path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/docs/trialtrace/commands/20261018T073848.735345Z-clean-installed-cli-outside-checkout-54b2df50/stdout.log",
+  "stderr_path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/docs/trialtrace/commands/20261018T073848.735345Z-clean-installed-cli-outside-checkout-54b2df50/stderr.log",
+  "stdout_sha256": "7f4c6e3a93e45d2c108ae34d31eeaa87ad7501bcbe4721ff3133928566eb5637",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "gate_acceptance": "NOT_DETERMINED_BY_COMMAND_RECORDER",
+  "warning": "Logs are not tamper-proof; this does not establish test assertions, source review, or clinical validity."
+}

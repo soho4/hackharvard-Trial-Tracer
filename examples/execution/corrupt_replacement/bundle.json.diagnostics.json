@@ -1,0 +1,10 @@
+{
+  "status": "FAILED",
+  "diagnostic": {
+    "code": "INVALID_HEADER",
+    "message": "Headers must contain each required name exactly once",
+    "file": "visits.csv"
+  },
+  "previous_output": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/examples/execution/corrupt_replacement/.previous/bundle.json.20261018T084253.920037Z.f3d49ac070ad4786ac1e8e29b0db7a53.json",
+  "success_bundle_written": false
+}

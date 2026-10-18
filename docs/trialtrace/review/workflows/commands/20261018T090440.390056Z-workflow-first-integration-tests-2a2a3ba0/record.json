@@ -1,0 +1,25 @@
+{
+  "label": "workflow-first-integration-tests",
+  "command": [
+    ".venv/bin/python",
+    "-m",
+    "pytest",
+    "tests/test_inspection.py",
+    "tests/test_comparison.py",
+    "tests/test_registry_metadata.py",
+    "tests/test_streamlit_app.py",
+    "-q"
+  ],
+  "cwd": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace",
+  "started_at": "2026-10-18T09:04:40.390056+00:00",
+  "finished_at": "2026-10-18T09:04:40.630185+00:00",
+  "elapsed_seconds": 0.239116,
+  "status": "EXIT_NONZERO",
+  "exit_code": 4,
+  "stdout_path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/docs/trialtrace/review/workflows/commands/20261018T090440.390056Z-workflow-first-integration-tests-2a2a3ba0/stdout.log",
+  "stderr_path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/docs/trialtrace/review/workflows/commands/20261018T090440.390056Z-workflow-first-integration-tests-2a2a3ba0/stderr.log",
+  "stdout_sha256": "a76c54a6ccf0d022c4f7feadf6e0a911f73f0276a7817c6a558120bd024ee0d2",
+  "stderr_sha256": "70647f1b13508afee2168ba60a226fdd66727d77ddc1acc9f95cb51c3a71d15e",
+  "gate_acceptance": "NOT_DETERMINED_BY_COMMAND_RECORDER",
+  "warning": "Logs are not tamper-proof; this does not establish test assertions, source review, or clinical validity."
+}

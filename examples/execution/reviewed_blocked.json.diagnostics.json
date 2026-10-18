@@ -1,0 +1,9 @@
+{
+  "status": "FAILED",
+  "diagnostic": {
+    "code": "SOURCE_REVIEW_REQUIRED",
+    "message": "Reviewed mode is blocked pending independent source review and integrator acceptance; use --draft-synthetic only for explicit draft engineering"
+  },
+  "previous_output": null,
+  "success_bundle_written": false
+}
