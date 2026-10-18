@@ -1,0 +1,1 @@
+{"status": "SUCCESS_DRAFT_ENGINEERING", "output": "docs/trialtrace/review/g3_challenge/actual_run/actual_bundle.json", "run_id": "31fc959c7adaec9e464a9bd0f43fef0a3495d0f078adc73c384ad53583d383f8", "summary": {"visit_evaluations": 24, "statuses": {"PASS": 9, "POTENTIAL_DEVIATION": 5, "DATA_QUERY": 7, "NOT_EVALUABLE": 3}}, "previous_output": null}

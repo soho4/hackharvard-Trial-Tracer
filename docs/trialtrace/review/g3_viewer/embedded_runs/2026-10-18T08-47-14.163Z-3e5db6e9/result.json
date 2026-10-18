@@ -1,0 +1,82 @@
+{
+  "status": "PASS",
+  "run_id": "2026-10-18T08-47-14.163Z-3e5db6e9",
+  "url": "http://127.0.0.1:8501/",
+  "browser": "155.0.8059.80",
+  "browser_mode": "Separate headless Chrome context, actual served main app and real uploads/downloads",
+  "source_sha256": {
+    "app.py": "6ab33e3e3f7253b16e2226ab4037fba904e958b9f2ced15de18d34cb9f092a9e",
+    "features/evidence_viewer/app.js": "d0de61cc945f510a27322a87135b2613d5e6a3e9645d511777f59fd951207694",
+    "features/evidence_viewer/contract.js": "331c4e428eb27facd82020221eda3a48621344e46e7bd3d315a68349c2fe1bc6",
+    "features/evidence_viewer/style.css": "ac6606a1eabe74cdff023ddb7655526b09d0540a69545472c5913abdd02c2f91"
+  },
+  "cases": [
+    {
+      "case": "Main app uploads 24 synthetic records from actual CSV files, computes and downloads exact CLI bytes",
+      "pass": true,
+      "counts": [
+        9,
+        5,
+        7,
+        3
+      ],
+      "output_sha256": "133c65689a864a9c7f9971cee38f096ac4e7117075aba2de1a19bdaafc002acd",
+      "bytes": 77329
+    },
+    {
+      "case": "Embedded native viewer uploads actual downloaded report and displays all 24 findings",
+      "pass": true,
+      "sandbox": "allow-forms allow-modals allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-downloads"
+    },
+    {
+      "case": "Embedded original File download byte matches main app and CLI",
+      "pass": true,
+      "output_sha256": "133c65689a864a9c7f9971cee38f096ac4e7117075aba2de1a19bdaafc002acd",
+      "bytes": 77329
+    },
+    {
+      "case": "Embedded iframe at narrow main-app viewport",
+      "pass": true,
+      "viewport": 358,
+      "scroll": 358,
+      "body": 358
+    },
+    {
+      "case": "Embedded print media applies one-column layout and hides controls",
+      "pass": true,
+      "columns": "326px",
+      "controls": "none",
+      "printMedia": true,
+      "limitation": "OS/native print dialog not exercised; no claim iframe PDF pagination is complete"
+    },
+    {
+      "case": "Embedded invalid replacement invalid_status.json",
+      "pass": true,
+      "error": "findings[0].status: \"CONFIRMED_SAFE\" is not one of PASS, POTENTIAL_DEVIATION, DATA_QUERY, NOT_EVALUABLE"
+    },
+    {
+      "case": "Embedded invalid replacement invalid_duplicate_id.json",
+      "pass": true,
+      "error": "findings[1].finding_id: duplicate finding_id \"fixture-f-1\""
+    },
+    {
+      "case": "Embedded invalid replacement invalid_evidence_hash.json",
+      "pass": true,
+      "error": "findings[0].evidence[0].sha256: does not match the declared sha256 of input file \"synthetic_example.csv\""
+    }
+  ],
+  "download_events": [
+    {
+      "url": "http://127.0.0.1:8501/media/f0a80dd1e0430763f64a07e1fd8d32f9.json",
+      "suggested_filename": "trialtrace-evidence.json"
+    },
+    {
+      "url": "blob:http://127.0.0.1:8501/a3f7d03b-b40c-426b-a240-324aa381cc57",
+      "suggested_filename": "main-downloaded.json"
+    }
+  ],
+  "page_errors": [],
+  "console_errors": [],
+  "scope": "Standard installed Chrome only; IAB platform behavior is separately recorded by root.",
+  "artifacts": "docs/trialtrace/review/g3_viewer/embedded_runs/2026-10-18T08-47-14.163Z-3e5db6e9"
+}

@@ -1,0 +1,21 @@
+{
+  "label": "candidate-suite",
+  "command": [
+    "/Users/yisak/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+    "--test",
+    "tools/g3_viewer/candidate/tests/contract.test.js",
+    "tools/g3_viewer/challenge.test.cjs"
+  ],
+  "cwd": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace",
+  "started_at": "2026-10-18T08:26:01.615711+00:00",
+  "finished_at": "2026-10-18T08:26:01.904059+00:00",
+  "elapsed_seconds": 0.287813,
+  "status": "EXIT_ZERO",
+  "exit_code": 0,
+  "stdout_path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/docs/trialtrace/review/g3_viewer/commands/20261018T082601.615711Z-candidate-suite-d5a43c38/stdout.log",
+  "stderr_path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/docs/trialtrace/review/g3_viewer/commands/20261018T082601.615711Z-candidate-suite-d5a43c38/stderr.log",
+  "stdout_sha256": "194fe8b8090e4dc9adf4a8dd527cdadb8929018f9740951f0aee19df21db4217",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "gate_acceptance": "NOT_DETERMINED_BY_COMMAND_RECORDER",
+  "warning": "Logs are not tamper-proof; this does not establish test assertions, source review, or clinical validity."
+}

@@ -1,0 +1,19 @@
+{
+  "command": [
+    "work/TrialTrace/.venv/bin/python",
+    "work/g3_source/app_review/probe_upload_lifecycle.py"
+  ],
+  "started_at_utc": "2026-10-18T08:34:50.319294+00:00",
+  "finished_at_utc": "2026-10-18T08:34:50.971494+00:00",
+  "exit_code": 0,
+  "stdout": {
+    "path": "work/g3_source/app_review/upload_lifecycle.stdout",
+    "sha256": "67c77c3df9e69cbc4f6c340e32e454eba4136bacb926e0329408e9957055f6a9",
+    "bytes": 1991
+  },
+  "stderr": {
+    "path": "work/g3_source/app_review/upload_lifecycle.stderr",
+    "sha256": "ca354a68be8a882189fbef6d12ea438c510236566155898e2ed131381d29ac14",
+    "bytes": 2011
+  }
+}

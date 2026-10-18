@@ -1,4 +1,4 @@
-# TrialTrace core — draft synthetic demonstration
+# TrialTrace — local draft timing checks
 
 TrialTrace reads three actual CSV files, checks their identities and relationships,
 and applies one deterministic timing rule to explicitly mapped synthetic visits.
@@ -6,13 +6,43 @@ It exports the original evidence and uncertain cases in the existing viewer form
 
 **Source interpretation is pending independent human review. Clinical validation is
 false. Only explicit `DRAFT_ENGINEERING` execution is enabled.** A potential deviation
-is a flag for human review; PASS covers only this timing check. No patient data is accepted.
+is a flag for human review; PASS covers only this timing check. Only synthetic inputs
+are in scope; the app cannot detect or de-identify real participant data.
 
 The public example protocol is Moderna's NCT04470427 / mRNA-1273-P301 amendment 10,
 [Table 21](https://cdn.clinicaltrials.gov/large-docs/27/NCT04470427/Prot_000.pdf).
 It is not Regeneron data. All operational CSV examples here are newly authored synthetic records.
 
-## Install and run
+## Launch the local upload app
+
+The app processes uploaded bytes through the same importer, timing engine and exporter
+as the CLI. It contains no canned-result or fixture fallback. Use Python 3.13 for the
+fully pinned environment verified on macOS; other machines remain unverified.
+
+```sh
+python3.13 -m venv .venv
+.venv/bin/python -m pip install -r requirements-ui.lock
+.venv/bin/python -m pip install --no-build-isolation --no-deps .
+.venv/bin/python -m streamlit run app.py
+```
+
+Open the printed local URL. Select the three files in `examples/browser/boundary/`,
+confirm synthetic draft mode, then run the check. Use **Clear visits.csv** before
+selecting `examples/browser/outside/visits.csv`: PASS becomes a potential deviation,
+one day outside. Clearing removes the current result before a replacement chooser
+can reject a file. No old report or download remains under new inputs.
+
+Use the saved-report tab to inspect exported evidence in the teammate viewer.
+The local server binds to `127.0.0.1`; this does not deploy publicly. Stop it with Ctrl-C.
+For optional local PDF provenance, append `-- --source-pdf /path/to/Prot_000.pdf` to
+the Streamlit command. The app can also run without those bytes and labels that absence.
+
+The source sidebar displays a dated snapshot fetched from the actual public
+ClinicalTrials.gov API. It is study metadata and aggregate results, not participant
+visit data. Every operational example is synthetic. The runtime does not fetch
+registry data or send uploaded CSV records to external services.
+
+## CLI install and run
 
 Python 3.11 or later is required. Python 3.13.4 was tested. Use a regular package
 installation; the tested dependency versions, including the build backend, are pinned.
@@ -77,7 +107,7 @@ prevent cleanup; such errors are reported rather than labeled successful.
 node tools/check_viewers.cjs
 ```
 
-The recorded application suite has 236 passing tests. The deliberate upper-bound
+The current test count and executed results are recorded in `docs/trialtrace/HAND_BACK.md`. The deliberate upper-bound
 mutation causes five mathematical assertion failures. Saved real input/output evidence
 is in `examples/execution/`; command logs, failures and exit codes are in
 `docs/trialtrace/commands/`. Node is used only for optional viewer compatibility checks.
@@ -88,12 +118,15 @@ and schema. Canonical JSON is UTF-8 with sorted keys, compact separators and one
 newline. There are no volatile timestamps in bundle content, so identical inputs,
 configuration and code produce identical output bytes.
 
-Both isolated viewer validators accept the eight saved normal-date reports. The
-teammate validator has a documented valid-year 0001–0099 defect; the core and unchanged
-handoff reference validator accept these dates. Fix and retest that integration in G3.
-The teammate branch was not merged or modified.
+The integrated viewer preserves its upstream schema, fixtures and layout. Focused
+fixes correct early-year calendar parsing and wrapping of actual engine IDs. Native
+contract tests and actual served browser checks cover these repairs. The original
+branch snapshot is retained under `tools/g3_viewer/native_snapshot/`; provenance and
+patches are recorded beside it.
 
-There is no main upload UI, browser integration, deployment, clinical validation or
-reviewed-mode promotion in this first session. A fresh local venv/wheel reproduction
+The main upload app was launched locally and exercised with newly authored files,
+changed dates, missing evidence, malformed and oversized replacements, filters,
+and actual downloads compared byte-for-byte with the CLI. Component tests are
+recorded separately from browser evidence. A fresh local venv/wheel reproduction
 was tested; another machine was not. See [HAND_BACK](docs/trialtrace/HAND_BACK.md) for
-gate state, commits, pending source review and the next action.
+current gates, exact commits, review evidence, limitations, and the next action.

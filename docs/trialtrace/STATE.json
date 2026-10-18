@@ -1,24 +1,42 @@
 {
   "spec_version": "4.0",
-  "status": "CORE_EXPORT_COMPLETE_DRAFT_ONLY",
+  "status": "G3_LOCAL_DRAFT_TECHNICAL_COMPLETE",
   "repo": "https://github.com/soho4/hackharvard-Trial-Tracer",
   "branch": "codex/trialtrace-core-v4",
-  "commit": "36660aa35b5a8684b4145b5f169a4b9c976bf9d5",
-  "dirty_source_digest": "58a1a80115a5409160529739efe27163a81af1d1184433a20900721e57a90a9f",
+  "preceding_delivery_commit": "27f825450212d14269ee04bfdf494fe5245f481b",
+  "commit_locator": "Final HEAD and post-push remote SHA are in the external DELIVERY_MANIFEST.json; this commit cannot embed its own hash.",
+  "code_sha256": "eb7350f8c7adef275604cfc03b2c27fe8d1c0dd0b4a794f9bf39e41bbc80ebc2",
+  "app_sha256": "6ab33e3e3f7253b16e2226ab4037fba904e958b9f2ced15de18d34cb9f092a9e",
+  "rule_sha256": "f36336df90a1793a80b92f48ce273488a091547110856bdcc602587ddad9e7f0",
+  "schema_sha256": "706c2b68086f1c9d38ac5ddbc37653e6f1da45d7d595eabff194c3e9737abee0",
   "source_acceptance": "BLOCKED_PENDING_HUMAN_REVIEW",
+  "clinical_validation": false,
   "engineering": {
     "G1_TECHNICAL": "PASS",
     "G2_TECHNICAL": "PASS_DRAFT_ENGINEERING",
-    "CORE_EXPORT": "PASS_DRAFT_ENGINEERING",
-    "G3": "NOT_AUTHORIZED_THIS_SESSION"
+    "CORE_EXPORT": "PASS_DRAFT_ENGINEERING_RECHECKED",
+    "G3_TECHNICAL": "PASS_LOCAL_DRAFT_CHROME",
+    "G4_HUMAN_REVIEW": "PENDING_AI_TECHNICAL_CHALLENGE_COMPLETE",
+    "G5_REPRODUCTION": "PASS_SAME_MACHINE_FRESH_ENVIRONMENT_ONLY",
+    "REVIEWED_PRODUCT_PROMOTION": "BLOCKED_SOURCE_REVIEW"
   },
-  "next_action": "Human reviews core and exact source interpretation; reconcile notes and bounds. G3 is not authorized by this session.",
-  "last_command_record": null,
-  "updated_at": "2026-10-18T07:40:40.442394+00:00",
-  "push": {
-    "status": "IMPLEMENTATION_REMOTE_SHA_VERIFIED",
-    "sha": "36660aa35b5a8684b4145b5f169a4b9c976bf9d5",
-    "documentation_checkpoint": "Final delivery HEAD is recorded outside this commit in the delivered manifest"
+  "real_data_scope": "Actual public protocol and registry metadata; all operational records synthetic.",
+  "next_action": "Independent human source/rule review and hand-worked challenge; an actual participant-data pilot requires explicitly authorized data and agreed handling scope.",
+  "last_command_record": "docs/trialtrace/commands/20261018T084350.963706Z-g3-final-application-tests-repaired-5b811e23/record.json",
+  "updated_at": "2026-10-18T08:51:44.703885+00:00",
+  "evidence": {
+    "gate": "gates/G3_TECHNICAL.json",
+    "application_tests": 264,
+    "viewer_tests": 58,
+    "standalone_browser_cases": 21,
+    "embedded_chrome_cases": 8,
+    "independent_synthetic_visits": 24
   },
-  "implementation_commit": "36660aa35b5a8684b4145b5f169a4b9c976bf9d5"
+  "limitations": [
+    "One candidate timing rule only",
+    "No real participant dataset tested",
+    "In-app browser iframe download event unverified; actual Chrome download passes",
+    "OS print and complete embedded PDF pagination not established",
+    "No public deployment or another-machine installation"
+  ]
 }

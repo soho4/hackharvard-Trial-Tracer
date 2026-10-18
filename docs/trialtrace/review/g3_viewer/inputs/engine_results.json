@@ -1,0 +1,62 @@
+[
+  {
+    "case": "early0001",
+    "expected_status": "PASS",
+    "actual_status": "PASS",
+    "expected_calculation": {
+      "target": "0001-01-08",
+      "earliest": "0001-01-08",
+      "latest": "0001-01-11",
+      "actual": "0001-01-11",
+      "days_outside": 0
+    },
+    "actual_calculation": {
+      "actual": "0001-01-11",
+      "days_outside": 0,
+      "earliest": "0001-01-08",
+      "latest": "0001-01-11",
+      "target": "0001-01-08"
+    },
+    "command_record": "docs/trialtrace/review/g3_viewer/commands/20261018T082757.946354Z-early0001-188035f2/record.json"
+  },
+  {
+    "case": "leap0004",
+    "expected_status": "PASS",
+    "actual_status": "PASS",
+    "expected_calculation": {
+      "target": "0004-02-26",
+      "earliest": "0004-02-26",
+      "latest": "0004-02-29",
+      "actual": "0004-02-29",
+      "days_outside": 0
+    },
+    "actual_calculation": {
+      "actual": "0004-02-29",
+      "days_outside": 0,
+      "earliest": "0004-02-26",
+      "latest": "0004-02-29",
+      "target": "0004-02-26"
+    },
+    "command_record": "docs/trialtrace/review/g3_viewer/commands/20261018T082758.080297Z-leap0004-6083fa3f/record.json"
+  },
+  {
+    "case": "early0099",
+    "expected_status": "POTENTIAL_DEVIATION",
+    "actual_status": "POTENTIAL_DEVIATION",
+    "expected_calculation": {
+      "target": "0099-12-27",
+      "earliest": "0099-12-27",
+      "latest": "0099-12-30",
+      "actual": "0099-12-31",
+      "days_outside": 1
+    },
+    "actual_calculation": {
+      "actual": "0099-12-31",
+      "days_outside": 1,
+      "earliest": "0099-12-27",
+      "latest": "0099-12-30",
+      "target": "0099-12-27"
+    },
+    "command_record": "docs/trialtrace/review/g3_viewer/commands/20261018T082758.209279Z-early0099-54913bb4/record.json"
+  }
+]

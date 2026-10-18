@@ -1,0 +1,25 @@
+{
+  "question": "What actual public data can support an honest TrialTrace app without inventing patient timelines?",
+  "accessed_date_utc": "2026-10-18",
+  "sources": [
+    {
+      "url": "https://clinicaltrials.gov/api/v2/studies/NCT04470427",
+      "method": "Native curl HTTP GET, exact response retained in local scratch",
+      "result": "HTTP 200; study/protocol identity, sponsor, status, enrollment, aggregate-result modules and protocol document metadata retrieved",
+      "response_sha256": "c351b22aaebc03899673e14b1af2e3cd6c4d3740af3935ef4920502fd255260c"
+    },
+    {
+      "url": "https://www.nlm.nih.gov/pubs/techbull/ja25/ja25_clinical_trials_screen-scraping.html",
+      "method": "Web primary-source read",
+      "result": "NLM recommends the official single-study API for JSON study data and describes API content as metadata/statistics"
+    },
+    {
+      "url": "https://clinicaltrials.gov/data-api/api",
+      "method": "Web read",
+      "result": "JavaScript application shell was returned; API method was corroborated using NLM guidance and actual endpoint execution"
+    }
+  ],
+  "implementation_effect": "Use a real-source registry card and linked protocol while labeling all participant-style CSVs and timing results synthetic draft engineering. Do not infer or fabricate real participant events from aggregate registry results.",
+  "uncertainty": "Registry and PDF identity agreement does not independently approve clinical/source interpretation or demonstrate that synthetic mappings apply to real people.",
+  "human_source_review": "BLOCKED_PENDING_HUMAN_REVIEW"
+}

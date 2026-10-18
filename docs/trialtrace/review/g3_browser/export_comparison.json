@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "comparison": "actual served main app download while filtered to one result vs actual installed CLI",
+  "bytes_equal": true,
+  "byte_count": 77329,
+  "sha256": "133c65689a864a9c7f9971cee38f096ac4e7117075aba2de1a19bdaafc002acd",
+  "full_report_count": 24,
+  "filtered_visible_count": 1,
+  "code_sha256": "eb7350f8c7adef275604cfc03b2c27fe8d1c0dd0b4a794f9bf39e41bbc80ebc2",
+  "app_sha256": "6ab33e3e3f7253b16e2226ab4037fba904e958b9f2ced15de18d34cb9f092a9e",
+  "final_build_download_byte_equal": true,
+  "filtered_and_unfiltered_byte_equal": true
+}

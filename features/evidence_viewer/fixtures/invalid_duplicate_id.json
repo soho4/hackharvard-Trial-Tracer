@@ -1,0 +1,149 @@
+{
+  "schema_version": "trialtrace.evidence.v1",
+  "run_id": "fixture-mixed-001",
+  "data_kind": "SYNTHETIC",
+  "clinical_validation": false,
+  "producer": {
+    "kind": "CONTRACT_FIXTURE",
+    "version": "1.0"
+  },
+  "review_status": "PENDING_TEAM_SOURCE_REVIEW",
+  "source": {
+    "url": "https://cdn.clinicaltrials.gov/large-docs/27/NCT04470427/Prot_000.pdf",
+    "locator": "Protocol amendment 10, Table 21, printed pages 150-152",
+    "pdf_sha256": null,
+    "retrieval_status": "BROWSER_INSPECTED_RUNTIME_FETCH_FAILED"
+  },
+  "ruleset": {
+    "id": "UI_CONTRACT_EXAMPLE",
+    "version": "FIXTURE_ONLY",
+    "sha256": "51bd8a44bfa83558c95e5259fd87eb284d5d6c3e307837998cd6bac0b12d9331"
+  },
+  "input_files": [
+    {
+      "name": "synthetic_example.csv",
+      "sha256": "59d86ebf409215d96e8a9f1f1da49d4dbf63699709a10b9a2e8a32cd4536e173"
+    }
+  ],
+  "limitations": [
+    "Manually authored report-format fixture. These are not computed detector results; declared fixture hashes do not refer to real patient files.",
+    "Synthetic records; not actual trial participants.",
+    "No independent human source approval; no local PDF hash.",
+    "A PASS refers only to a supported timing calculation; no safety assessment or whole-protocol compliance is established.",
+    "Declared provenance is displayed; this viewer does not verify original source-file bytes or re-evaluate clinical rules."
+  ],
+  "findings": [
+    {
+      "finding_id": "fixture-f-1",
+      "record_ordinal": 1,
+      "participant_id": "DEMO-P001",
+      "site_id": "DEMO-SITE-A",
+      "visit_id": "DEMO-V001",
+      "visit_code": "OL_D8",
+      "status": "PASS",
+      "reason": "The supported timing check passed.",
+      "calculation": {
+        "target": "2026-05-08",
+        "earliest": "2026-05-08",
+        "latest": "2026-05-11",
+        "actual": "2026-05-08",
+        "days_outside": 0
+      },
+      "evidence": [
+        {
+          "source_file": "synthetic_example.csv",
+          "record_ordinal": 1,
+          "sha256": "59d86ebf409215d96e8a9f1f1da49d4dbf63699709a10b9a2e8a32cd4536e173",
+          "raw_record": {
+            "participant_id": "DEMO-P001",
+            "site_id": "DEMO-SITE-A",
+            "visit_id": "DEMO-V001",
+            "actual_date": "2026-05-08",
+            "note": "Contract fixture, not real clinical records."
+          }
+        }
+      ]
+    },
+    {
+      "finding_id": "fixture-f-1",
+      "record_ordinal": 2,
+      "participant_id": "DEMO-P002",
+      "site_id": "DEMO-SITE-A",
+      "visit_id": "DEMO-V002",
+      "visit_code": "OL_D8",
+      "status": "POTENTIAL_DEVIATION",
+      "reason": "Observed date is one calendar day after the configured latest date. Human review is required.",
+      "calculation": {
+        "target": "2026-05-08",
+        "earliest": "2026-05-08",
+        "latest": "2026-05-11",
+        "actual": "2026-05-12",
+        "days_outside": 1
+      },
+      "evidence": [
+        {
+          "source_file": "synthetic_example.csv",
+          "record_ordinal": 2,
+          "sha256": "59d86ebf409215d96e8a9f1f1da49d4dbf63699709a10b9a2e8a32cd4536e173",
+          "raw_record": {
+            "participant_id": "DEMO-P002",
+            "site_id": "DEMO-SITE-A",
+            "visit_id": "DEMO-V002",
+            "actual_date": "2026-05-12",
+            "note": "Contract fixture, not real clinical records."
+          }
+        }
+      ]
+    },
+    {
+      "finding_id": "fixture-f-3",
+      "record_ordinal": 3,
+      "participant_id": "DEMO-P003",
+      "site_id": "DEMO-SITE-A",
+      "visit_id": "DEMO-V003",
+      "visit_code": "OL_D8",
+      "status": "DATA_QUERY",
+      "reason": "Anchor date was not supplied; no timing conclusion.",
+      "calculation": null,
+      "evidence": [
+        {
+          "source_file": "synthetic_example.csv",
+          "record_ordinal": 3,
+          "sha256": "59d86ebf409215d96e8a9f1f1da49d4dbf63699709a10b9a2e8a32cd4536e173",
+          "raw_record": {
+            "participant_id": "DEMO-P003",
+            "site_id": "DEMO-SITE-A",
+            "visit_id": "DEMO-V003",
+            "actual_date": null,
+            "note": "Contract fixture, not real clinical records."
+          }
+        }
+      ]
+    },
+    {
+      "finding_id": "fixture-f-4",
+      "record_ordinal": 4,
+      "participant_id": "DEMO-P004",
+      "site_id": "DEMO-SITE-A",
+      "visit_id": "DEMO-V004",
+      "visit_code": "OL_D8",
+      "status": "NOT_EVALUABLE",
+      "reason": "Scope assignment is unresolved; the rule was not applied.",
+      "calculation": null,
+      "evidence": [
+        {
+          "source_file": "synthetic_example.csv",
+          "record_ordinal": 4,
+          "sha256": "59d86ebf409215d96e8a9f1f1da49d4dbf63699709a10b9a2e8a32cd4536e173",
+          "raw_record": {
+            "participant_id": "DEMO-P004",
+            "site_id": "DEMO-SITE-A",
+            "visit_id": "DEMO-V004",
+            "actual_date": null,
+            "note": "Contract fixture, not real clinical records."
+          }
+        }
+      ]
+    }
+  ]
+}

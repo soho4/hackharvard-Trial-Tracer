@@ -1,0 +1,2 @@
+study_id,participant_id,site_id,visit_id,visit_code,event_kind,actual_date,visit_status,anchor_id,assignment_id
+NCT04470427,SYNTH-ELM-2040,SYNTH-NORTH,SYNTH-CALL-95,OL_D8,SAFETY_PHONE_CALL,2040-03-04,COMPLETED,SYNTH-VAX-62,SYNTH-MAP-81

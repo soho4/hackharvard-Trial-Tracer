@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-10-18T08:52:12.877204+00:00",
+  "owned_exec_session": 64719,
+  "stop_signal": "Ctrl-C",
+  "process_exit_code": 0,
+  "post_stop_socket_connect_ex": 61,
+  "preview_running": false,
+  "relaunch": "Follow README; .venv/bin/python -m streamlit run app.py",
+  "scope": "No public deployment"
+}

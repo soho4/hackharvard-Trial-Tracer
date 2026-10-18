@@ -1,0 +1,24 @@
+{
+  "label": "isolated-installed-g3-probe",
+  "command": [
+    "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/g3_clean_env/bin/python",
+    "-I",
+    "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/tools/check_g3_clean_install.py",
+    "--repo",
+    "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace",
+    "--source-pdf",
+    "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/source_check/.sources/Prot_000.pdf"
+  ],
+  "cwd": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work",
+  "started_at": "2026-10-18T08:37:47.109133+00:00",
+  "finished_at": "2026-10-18T08:38:02.815188+00:00",
+  "elapsed_seconds": 15.705681,
+  "status": "EXIT_ZERO",
+  "exit_code": 0,
+  "stdout_path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/docs/trialtrace/review/g3_clean_install/commands/20261018T083747.109133Z-isolated-installed-g3-probe-daa39890/stdout.log",
+  "stderr_path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/docs/trialtrace/review/g3_clean_install/commands/20261018T083747.109133Z-isolated-installed-g3-probe-daa39890/stderr.log",
+  "stdout_sha256": "8f0b4597d5e2d8f4d4188295b9a288998c92c011fcab170b52faa5d8173746a5",
+  "stderr_sha256": "8ae53d8503c89538477c1544108b00b2aa3b81d25550a6914b45e114b9add6cb",
+  "gate_acceptance": "NOT_DETERMINED_BY_COMMAND_RECORDER",
+  "warning": "Logs are not tamper-proof; this does not establish test assertions, source review, or clinical validity."
+}

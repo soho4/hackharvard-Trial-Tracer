@@ -13,6 +13,7 @@ import uuid
 from .errors import InputError
 from .exporter import build_bundle, serialize_bundle
 from .importer import load_inputs
+from .source import hash_source_pdf
 
 
 class Parser(argparse.ArgumentParser):
@@ -143,14 +144,7 @@ def main(argv=None):
         tables = load_inputs({name + ".csv": getattr(args, name) for name in ("anchors", "visits", "assignments")})
         source = None
         if args.source_pdf is not None:
-            with args.source_pdf.open("rb") as stream:
-                prefix = stream.read(5)
-                if prefix != b"%PDF-":
-                    raise InputError("SOURCE_PDF", "Supplied source bytes do not have a PDF header")
-                sha = hashlib.sha256(prefix)
-                for block in iter(lambda: stream.read(65_536), b""):
-                    sha.update(block)
-            source = {"pdf_sha256": sha.hexdigest(), "retrieval_status": "LOCAL_PDF_BYTES_HASHED_IDENTITY_NOT_CHECKED_BY_RUNTIME"}
+            source = hash_source_pdf(args.source_pdf)
         bundle = build_bundle(tables, rule, digest, mode="DRAFT_ENGINEERING", source_metadata=source)
         encoded = serialize_bundle(bundle)
         if diagnostics_path.exists():

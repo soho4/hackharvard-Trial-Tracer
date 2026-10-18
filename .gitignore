@@ -36,3 +36,6 @@ dist/
 # Original curl telemetry stays local (host network details).
 docs/trialtrace/source_check/logs/curl_acquire.stdout
 !docs/trialtrace/review_tests/**/*.log
+
+# Reviewed G3 execution logs (public/synthetic data only).
+!docs/trialtrace/review/g3_*/**/*.log

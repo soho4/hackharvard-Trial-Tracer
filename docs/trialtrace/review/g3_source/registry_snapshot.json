@@ -1,0 +1,71 @@
+{
+  "schema_version": "trialtrace.public_registry_snapshot.v1",
+  "data_kind": "PUBLIC_STUDY_METADATA",
+  "is_participant_event_data": false,
+  "source": {
+    "provider": "ClinicalTrials.gov",
+    "api_url": "https://clinicaltrials.gov/api/v2/studies/NCT04470427",
+    "study_url": "https://clinicaltrials.gov/study/NCT04470427",
+    "fetched_at_utc": "2026-10-18T08:24:23.752134+00:00",
+    "http_status": 200,
+    "content_type": "application/json",
+    "response_sha256": "c351b22aaebc03899673e14b1af2e3cd6c4d3740af3935ef4920502fd255260c",
+    "response_byte_count": 556931,
+    "transport_tls_verified": true,
+    "snapshot_not_live_feed": true
+  },
+  "study": {
+    "nct_id": "NCT04470427",
+    "protocol_id": "mRNA-1273-P301",
+    "brief_title": "A Study to Evaluate Efficacy, Safety, and Immunogenicity of mRNA-1273 Vaccine in Adults Aged 18 Years and Older to Prevent COVID-19",
+    "lead_sponsor": "ModernaTX, Inc.",
+    "study_type": "INTERVENTIONAL",
+    "phases": [
+      "PHASE3"
+    ],
+    "overall_status": "COMPLETED",
+    "last_update_posted": "2024-03-21",
+    "registry_enrollment": {
+      "count": 30415,
+      "type": "ACTUAL"
+    },
+    "ipd_sharing_statement": "NO",
+    "has_posted_aggregate_results": true
+  },
+  "protocol_document": {
+    "url": "https://cdn.clinicaltrials.gov/large-docs/27/NCT04470427/Prot_000.pdf",
+    "filename": "Prot_000.pdf",
+    "registry_document_date": "2022-04-07",
+    "registry_document_bytes": 2728675,
+    "prior_local_pdf_sha256": "da946b1ae23d40c41b332f1d0cb3311f0634e57009b4a37b9c6d6c60ee8bf186",
+    "prior_local_pdf_identity_status": "LOCAL_PDF_IDENTITY_CHECKED",
+    "candidate_sha256": "f36336df90a1793a80b92f48ce273488a091547110856bdcc602587ddad9e7f0",
+    "identity_comparison": {
+      "nct_id_matches_candidate": true,
+      "protocol_id_matches_candidate": true,
+      "document_date_matches_candidate": true,
+      "document_size_matches_prior_local_pdf": true
+    },
+    "registry_does_not_supply_pdf_hash": true,
+    "source_interpretation_review": "BLOCKED_PENDING_HUMAN_REVIEW",
+    "clinical_validation": false
+  },
+  "available_content": [
+    "study registration metadata",
+    "aggregate study results",
+    "public protocol document metadata"
+  ],
+  "not_available_for_trialtrace_from_this_response": [
+    "participant-level vaccination dates",
+    "participant-level safety phone call dates or completion",
+    "participant-level Table 21 assignments",
+    "real protocol deviation findings"
+  ],
+  "app_usage": {
+    "source_card_label": "Real public study source",
+    "operational_records_label": "Synthetic demonstration records",
+    "analysis_label": "Draft timing check; source interpretation pending human review",
+    "registry_enrollment_is_not_analyzed_record_count": true,
+    "do_not_join_aggregate_results_to_synthetic_people": true
+  }
+}

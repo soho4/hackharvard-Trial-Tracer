@@ -1,0 +1,47 @@
+{
+  "gate": "G3_TECHNICAL",
+  "state": "PASS_LOCAL_DRAFT_CHROME",
+  "updated_at": "2026-10-18T08:51:44.703885+00:00",
+  "authorization": "Direct user continuation to review, build, iterate, launch and test actual behavior after core delivery.",
+  "source_review": "BLOCKED_PENDING_HUMAN_REVIEW",
+  "reviewed_product_promotion": false,
+  "code_sha256": "eb7350f8c7adef275604cfc03b2c27fe8d1c0dd0b4a794f9bf39e41bbc80ebc2",
+  "app_sha256": "6ab33e3e3f7253b16e2226ab4037fba904e958b9f2ced15de18d34cb9f092a9e",
+  "rule_sha256": "f36336df90a1793a80b92f48ce273488a091547110856bdcc602587ddad9e7f0",
+  "schema_sha256": "706c2b68086f1c9d38ac5ddbc37653e6f1da45d7d595eabff194c3e9737abee0",
+  "prerequisites": {
+    "core_tests": "264 passed; no skips",
+    "core_acceptance": "Re-executed with current core; command exit 0",
+    "source_acceptance": "Not passed; explicit draft only"
+  },
+  "expected_vs_observed": {
+    "shared_computation": "UI calls same parser/engine/exporter as CLI",
+    "changed_date": "2040-03-03 PASS; replacing actual date with 2040-03-04 gives POTENTIAL_DEVIATION, days_outside=1",
+    "invalid_replacement": "Malformed or oversized files leave no current report/download; Clear removes previous accepted bytes before chooser",
+    "missing_evidence": "Missing anchor gives DATA_QUERY and null calculation",
+    "selection": "Filtered label and displayed evidence agree after widget-identity repair",
+    "downloads": "Actual main filtered/unfiltered and embedded Chrome downloads byte-equal installed CLI",
+    "native_viewer": "Unchanged schema/fixtures; focused early-year parsing and wrapping fixes; 58 tests and 21 standalone browser checks",
+    "embedded_browser": "8 actual served Chrome checks passed, zero console/page errors",
+    "clean_reproduction": "Fresh same-machine Python -I regular wheel and UI component probe passed at final fingerprints"
+  },
+  "evidence": [
+    "docs/trialtrace/commands/20261018T084350.963706Z-g3-final-application-tests-repaired-5b811e23/record.json",
+    "docs/trialtrace/commands/20261018T084119.193239Z-g3-integrated-viewer-tests-3b7e72ad/record.json",
+    "docs/trialtrace/commands/20261018T084252.472637Z-g3-recompute-core-acceptance-e35bea16/record.json",
+    "docs/trialtrace/review/g3_browser/export_comparison.json",
+    "docs/trialtrace/review/g3_browser/REVIEW.md",
+    "docs/trialtrace/review/g3_viewer/browser_results.json",
+    "docs/trialtrace/review/g3_viewer/embedded_result.json",
+    "docs/trialtrace/review/g3_clean_install/result.json",
+    "docs/trialtrace/review/g3_challenge/REPORT.md"
+  ],
+  "remaining_limits": [
+    "One candidate timing rule only",
+    "No real participant dataset tested",
+    "In-app browser iframe download event unverified; actual Chrome download passes",
+    "OS print and complete embedded PDF pagination not established",
+    "No public deployment or another-machine installation"
+  ],
+  "historical_gates": "G0/G1/G2/CORE_EXPORT files preserve their dated first-session checkpoints; this gate and STATE record current continuation."
+}

@@ -1,0 +1,19 @@
+{
+  "label": "actual-main-embedded-mobile-closed-sidebar",
+  "command": [
+    "/Users/yisak/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+    "tools/g3_viewer/embedded_check.cjs"
+  ],
+  "cwd": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace",
+  "started_at": "2026-10-18T08:47:13.797378+00:00",
+  "finished_at": "2026-10-18T08:47:17.755650+00:00",
+  "elapsed_seconds": 3.957824,
+  "status": "EXIT_ZERO",
+  "exit_code": 0,
+  "stdout_path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/docs/trialtrace/review/g3_viewer/embedded_commands/20261018T084713.797378Z-actual-main-embedded-mobile-closed-sidebar-a573efd4/stdout.log",
+  "stderr_path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/docs/trialtrace/review/g3_viewer/embedded_commands/20261018T084713.797378Z-actual-main-embedded-mobile-closed-sidebar-a573efd4/stderr.log",
+  "stdout_sha256": "b322cf63071a58d52b6093ac70eafe8eea27420bb3494d22903a2f1a31e9bf89",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "gate_acceptance": "NOT_DETERMINED_BY_COMMAND_RECORDER",
+  "warning": "Logs are not tamper-proof; this does not establish test assertions, source review, or clinical validity."
+}

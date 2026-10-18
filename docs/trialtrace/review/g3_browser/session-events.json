@@ -1,0 +1,35 @@
+[
+  {
+    "case": "boundary",
+    "expected": "PASS; target/earliest 2040-02-29; latest/actual 2040-03-03; outside0",
+    "time": "2026-10-18T08:29:00.899Z",
+    "download": "/Users/yisak/Downloads/trialtrace-evidence.json"
+  },
+  {
+    "case": "replacement_invalidation",
+    "download_count": 0,
+    "time": "2026-10-18T08:29:35.500Z"
+  },
+  {
+    "case": "outside",
+    "expected": "POTENTIAL_DEVIATION; actual2040-03-04; days_outside1",
+    "time": "2026-10-18T08:29:41.652Z",
+    "download": "/Users/yisak/Downloads/trialtrace-evidence (1).json"
+  },
+  {
+    "case": "missing_anchor",
+    "observed": "DATA_QUERY; no timing conclusion",
+    "time": "2026-10-18T08:29:49.010Z"
+  },
+  {
+    "case": "corrupt_replacement",
+    "observed": "INVALID_HEADER; no current report or evidence download",
+    "time": "2026-10-18T08:30:18.148Z"
+  },
+  {
+    "case": "oversize_replacement_before_fix",
+    "status": "FAIL",
+    "observed": "1.1 MB replacement rejected by widget while prior PASS and evidence download remained",
+    "time": "2026-10-18T08:31:17.171Z"
+  }
+]

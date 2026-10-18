@@ -1,0 +1,21 @@
+{
+  "label": "g3-recompute-core-acceptance",
+  "command": [
+    ".venv/bin/python",
+    "tools/run_acceptance.py",
+    "--source-pdf",
+    "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/source_check/.sources/Prot_000.pdf"
+  ],
+  "cwd": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace",
+  "started_at": "2026-10-18T08:42:52.472637+00:00",
+  "finished_at": "2026-10-18T08:42:54.332042+00:00",
+  "elapsed_seconds": 1.859023,
+  "status": "EXIT_ZERO",
+  "exit_code": 0,
+  "stdout_path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/docs/trialtrace/commands/20261018T084252.472637Z-g3-recompute-core-acceptance-e35bea16/stdout.log",
+  "stderr_path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/docs/trialtrace/commands/20261018T084252.472637Z-g3-recompute-core-acceptance-e35bea16/stderr.log",
+  "stdout_sha256": "d136cbd04c6c4ee49e77003a912ae3398f238d7656ebeb3eb536d3e6b24e6d72",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "gate_acceptance": "NOT_DETERMINED_BY_COMMAND_RECORDER",
+  "warning": "Logs are not tamper-proof; this does not establish test assertions, source review, or clinical validity."
+}

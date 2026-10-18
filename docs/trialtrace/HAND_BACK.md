@@ -1,124 +1,133 @@
-# TrialTrace core hand-back — draft engineering
+# TrialTrace hand-back — working local draft application
 
-The three-table importer, deterministic timing engine and compatible evidence export
-are implemented and executable. **G1_TECHNICAL, G2_TECHNICAL and CORE_EXPORT passed
-their technical checks in DRAFT_ENGINEERING mode. G0 remains blocked.** No human
-approval, clinical validation, frontend, merge or deployment is claimed.
+TrialTrace now processes three uploaded CSV files, calculates the supported timing
+check, exposes the original evidence and uncertainty, and downloads an actual
+report that the integrated viewer can reopen. The app was launched and exercised
+through real browser file inputs and downloads. **G3 technical checks passed for
+the local draft app in Chrome. G0 human source acceptance remains blocked.**
 
-## Execute now
+## Run it
 
-Follow the regular-package installation in the root README, then run:
+From the repository root, with Python 3.13:
 
 ```sh
-.venv/bin/python -m trialtrace.cli \
-  --anchors examples/novel/anchors.csv \
-  --visits examples/novel/visits.csv \
-  --assignments examples/novel/assignments.csv \
-  --rule rules/candidate_rule.json \
-  --draft-synthetic --output run.json
+python3.13 -m venv .venv
+.venv/bin/python -m pip install -r requirements-ui.lock
+.venv/bin/python -m pip install --no-build-isolation --no-deps .
+.venv/bin/python -m streamlit run app.py
 ```
 
-The saved current-code demonstrations are under `examples/execution/`. Inputs are
-real synthetic CSV files, and outputs came from the installed CLI without mocks or
-answer-key reads. `before/bundle.json` is PASS for actual date 2032-01-06; changing
-only that date to 2032-01-07 in `after/visits.csv` produces POTENTIAL_DEVIATION with
-one day outside the inclusive January 3–6 interval. Each contains the source rows,
-logical ordinals and actual hashes. Source bytes were supplied to these saved runs
-for hashing; the example command above leaves that optional source hash null.
+Open the printed local URL. Upload the three files in `examples/browser/boundary/`,
+confirm synthetic draft mode and run. Vaccination 2040-02-22 produces target/earliest
+2040-02-29 and latest 2040-03-03. The March 3 call passes. Clear visits.csv and choose
+`examples/browser/outside/visits.csv`: the March 4 call becomes a potential deviation,
+one day outside. Clearing immediately retires the old report and download.
 
-Missing and wrong-person anchors produce DATA_QUERY. Unresolved mapping and unknown
-event produce NOT_EVALUABLE, all with null calculation. Empty visits produce zero
-evaluations with accounting. A valid run followed by malformed CSV exits 2, removes
-the success from the requested target, writes diagnostics, and preserves prior bytes
-separately (`corrupt_replacement/previous_accepted.json`).
+For the broader challenge, upload the three files in
+`review/g3_challenge/actual_run/inputs/` relative to this document's directory:
+31 is anchors, 32 is visits and 33 is assignments. Expected counts are 9 PASS,
+5 POTENTIAL_DEVIATION, 7 DATA_QUERY and 3 NOT_EVALUABLE. Inspect selected source rows,
+filter/search, download the JSON and reopen it in the saved-report tab.
 
-## Verification and evidence
+The source-PDF hash is optional: append `-- --source-pdf /path/to/Prot_000.pdf` to the
+launch command. Without local bytes the app explicitly shows no PDF hash. The PDF
+is not redistributed in this repository. A hash is not an approval.
 
-- Current application suite: **236 passed**, no skipped tests. Includes exact input
-  and output limits, CSV/UTF-8 failures, identities/joins/duplicates, missing evidence,
-  date shapes/leap days/overflow, inclusive boundaries, configuration refusal,
-  byte-sensitive provenance, semantic corruption, stable output and real subprocess CLI.
-- Ten frozen draft cases: 4 PASS, 2 POTENTIAL_DEVIATION, 2 DATA_QUERY, 2 NOT_EVALUABLE.
-  These are pre-authored engineering expectations, not clinical accuracy measurements.
-- Mutation: changing the upper bound to `upper_days + 1` in an isolated code copy
-  caused **five mathematical assertion failures**, subprocess exit 1. The harness
-  exited 0 only after confirming that failure and unchanged original source.
-- JSON Schema and semantic validation reject duplicate finding IDs, undeclared or
-  inconsistent evidence hashes, unknown engine roles, invalid dates and inconsistent
-  calculations. Both viewer validator snapshots accepted **eight actual reports**;
-  duplicate-ID/hash-mismatch negative controls were rejected.
-- A fresh local venv and wheel, run with Python `-I` outside the checkout, contained
-  the exact schema and source digest and reproduced the CLI report byte-for-byte.
-  This is same-machine reproduction, not an installation tested elsewhere.
-- Technical review found and repaired evidence amplification, cell-limit diagnostics,
-  stale-output/diagnostics failures, Unicode configuration errors, abbreviated flags,
-  and case/hardlink input collisions. Earlier failing logs are preserved alongside
-  passing regression evidence. AI technical review is not human source review.
+## What “real data” means here
 
-Read `acceptance_results.json`, `viewer_compatibility.json`, `clean_install.json`,
-`mutation/result.json`, `review/core/REVIEW.md`, `gates/`, and `commands/` for exact
-commands, timestamps, stdout/stderr, exit codes, digests and expected/observed results.
-`requirements-dev.lock` records installed dependencies; Python 3.13.4 and the bundled
-Node runtime were used. Node is not needed to calculate dates.
+The original public protocol and the fetched ClinicalTrials.gov study metadata are
+real. The API snapshot was fetched on 18 October 2026 with HTTP 200 and verified
+TLS. It identifies NCT04470427 / mRNA-1273-P301, its sponsor and protocol document.
+It contains aggregate results, not participant vaccination/call dates or assignments.
+All operational records used in this application are explicitly synthetic.
 
-## Repository and source changes
+There is no live participant feed, generalized PDF interpreter, clinical decision
+system or validated real-patient workflow. The app enforces draft opt-in but cannot
+detect or de-identify real patient data. Only synthetic inputs are in scope.
+See [FEATURE_STATUS.md](FEATURE_STATUS.md) for the capability-by-capability account.
+
+## Executed verification
+
+| Check | Actual result |
+|---|---|
+| Final Python application suite | 264 passed, no skips; importer, joins, arithmetic, provenance, CLI and UI lifecycle |
+| Integrated viewer tests | 58 passed, including years 0001/0004/0099 and malformed reports |
+| Independent synthetic challenge | 24 newly authored visits, 14 literal calendar cases plus 10 identity/scope uncertainties; all expected results matched |
+| Actual main browser | Raw uploads, changed date, missing anchor, malformed/oversized replacement, selected evidence, filters, full downloads, narrow layout |
+| Standalone served viewer browser | 21 checks passed |
+| Embedded Chrome workflow | 8 checks passed; main upload → compute → download → viewer upload → original download; no page/console errors |
+| Download versus installed CLI | Both browser paths preserved exactly 77,329 bytes, including when the main screen showed only one filtered finding |
+| Clean installation | Fresh pinned venv and regular wheel, Python -I outside checkout, exact installed core/schema, CLI/adapter/UI lifecycle pass on this Mac |
+| Current core acceptance | Re-executed successfully, including changed dates, uncertain joins, empty input, stale output and reviewed-mode refusal |
+
+The exact download SHA-256 is
+`133c65689a864a9c7f9971cee38f096ac4e7117075aba2de1a19bdaafc002acd`.
+Literal expected answers were authored independently of the engine. Runtime code
+does not read answer keys or substitute canned results. The earlier isolated
+upper-bound mutation produced five mathematical assertion failures; its evidence
+is retained under `mutation/` and the timing implementation is unchanged.
+
+Key evidence:
+
+- `gates/G3_TECHNICAL.json` and `STATE.json`: current technical and source states.
+- `commands/20261018T084350.963706Z-g3-final-application-tests-repaired-5b811e23/`:
+  final 264-test command, stdout/stderr and exit code.
+- `review/g3_browser/REVIEW.md`: actual in-app browser observations and failure/fix evidence.
+- `review/g3_viewer/REVIEW.md` and `embedded_REVIEW.md`: native and integrated browser checks.
+- `review/g3_challenge/REPORT.md`: new files, literal expectations, provenance and corrupt replacements.
+- `review/g3_clean_install/REPRODUCTION.md` and `result.json`: final clean environment.
+- `review/g3_source/`: actual public metadata fetch and technical review.
+
+AppTest component checks are labeled separately from browser tests. Historical
+failures and earlier-code green results remain dated evidence, not current claims.
+
+## Defects found and fixed
+
+Browser testing found that a client-rejected oversized replacement could leave an
+old success visible. Explicit selected-file slots now require Clear before replacement,
+retiring both stored bytes and report. An initial disabled-widget repair discarded
+uploads; independent review caught it and the final implementation passed retesting.
+Filtering could also leave the selected label on a different finding than its evidence;
+the widget identity now follows the available finding IDs, verified in the browser.
+
+The teammate viewer was imported from commit
+`1b216519e93866bca3fc36be174ec0f5bf05f793`. Two focused fixes correct JavaScript's
+early-year remapping and narrow-screen wrapping of engine IDs. Original schema,
+fixtures, layout and upstream snapshot are preserved; its branch was not changed.
+
+## Remaining limits and the next meaningful step
+
+This is one working draft timing rule: Table 21's documented OL-D8 safety phone call,
+anchored to an explicitly mapped actual OL-D1 vaccination, using candidate +7 through
++10 calendar days inclusive. It does not establish eligibility, complete safety
+assessment, missing activities, other trial rules, or accepted protocol deviations.
+
+Human review must independently inspect the exact public protocol and candidate,
+verify the cohort, event/anchor meaning, zero early allowance and inclusive endpoints,
+and resolve the table/note-number discrepancy recorded in `source_check/`.
+No human identity, timestamp, checkbox, signature or approval was invented.
+
+- Source PDF SHA-256: `da946b1ae23d40c41b332f1d0cb3311f0634e57009b4a37b9c6d6c60ee8bf186`
+- Unchanged candidate SHA-256: `f36336df90a1793a80b92f48ce273488a091547110856bdcc602587ddad9e7f0`
+- Core/schema digest: `eb7350f8c7adef275604cfc03b2c27fe8d1c0dd0b4a794f9bf39e41bbc80ebc2`
+- Final app SHA-256: `6ab33e3e3f7253b16e2226ab4037fba904e958b9f2ced15de18d34cb9f092a9e`
+
+A real-data pilot would additionally require an explicitly authorized dataset,
+reviewed mappings and an agreed data-handling scope. The AI engineering challenge
+does not satisfy G4 human review. Clean reproduction was on this Mac, not a second
+machine. The in-app browser did not expose an iframe download event; standard Chrome
+verified that download's exact bytes. Its cause remains unverified. Print CSS passed,
+but OS printing and complete embedded PDF pagination were not tested.
+
+## Delivery and repository
 
 Verified origin: `https://github.com/soho4/hackharvard-Trial-Tracer`.
-Dedicated branch: `codex/trialtrace-core-v4`.
+Feature branch: `codex/trialtrace-core-v4`. The preceding core delivery was
+`27f825450212d14269ee04bfdf494fe5245f481b`.
 
-- G1 checkpoint `22819663b5b12f9d32d90f45e8edba30a171cd13`: pushed; remote SHA verified.
-- Implementation checkpoint `36660aa35b5a8684b4145b5f169a4b9c976bf9d5`: pushed; remote SHA verified.
-- Code/schema digest: `58a1a80115a5409160529739efe27163a81af1d1184433a20900721e57a90a9f`.
-
-The final documentation/evidence checkpoint follows the implementation checkpoint.
-The delivered hand-back copy and delivery manifest record that exact final HEAD and
-post-push verification; a commit cannot embed its own hash. No default-branch merge,
-force-push, visibility change or public deployment was performed.
-
-`src/trialtrace/` contains importer, relationships, engine, exporter and CLI modules.
-`tests/` contains the independent behavior assertions; `tools/` contains evidence,
-mutation, acceptance and compatibility checks. The contract, candidate and frozen
-fixtures retain their original bytes. Project instructions were added because main
-had none. Original personal/history material, PDF/renderings, credentials, virtual
-environments and raw curl network telemetry were excluded from commits.
-
-The teammate branch `abinet/evidence-viewer` was preserved. Its schema and six
-fixtures exactly match the handoff. Only isolated validator snapshots were used for
-compatibility checks; no frontend was built or changed.
-
-## Pending review and limits
-
-Technical source acquisition succeeded: original PDF, 2,728,675 bytes, 193 pages,
-SHA-256 `da946b1ae23d40c41b332f1d0cb3311f0634e57009b4a37b9c6d6c60ee8bf186`.
-The unchanged verifier passed eight identity/context checks; cover and relevant pages
-were rendered and inspected by an agent. Source logs include initial dependency/TLS
-failures and the successful native-curl acquisition without a TLS bypass.
-
-Candidate hash: `f36336df90a1793a80b92f48ce273488a091547110856bdcc602587ddad9e7f0`.
-No reviewer identity, approval checkbox or signature was completed. A real reviewer
-must independently check cohort, safety-phone-call meaning, actual vaccination
-anchor, zero early allowance, inclusive endpoints and hand cases. Also reconcile the
-displayed note-number discrepancy: page 152 labels 4–11 while table superscripts are
-1–8. Read the original [public protocol](https://cdn.clinicaltrials.gov/large-docs/27/NCT04470427/Prot_000.pdf),
-not only this summary. Local source-byte location is in `source_check/source_check_manifest.json`.
-
-Reviewed execution deliberately fails closed. An approved-mode enabling mechanism
-is not delivered by this first session; a CSV label cannot unlock it.
-
-**Known separate viewer defect:** the teammate validator rejects valid years
-0001–0099 because of JavaScript `Date.UTC` year remapping. Core arithmetic and the
-unchanged reference validator accept those dates; years 0100 and 2026 also passed
-the teammate probes. This is a G3 integration blocker, documented in
-`review/core/viewer_year_results.json`. No bounds, candidate meaning or core output
-was changed to conceal it.
-
-There was no main UI/browser test, independent human source review, another-machine
-installation, deployment or clinical validation. This bounded session stops at the
-draft core export; no continuing background work is scheduled.
-
-## Smallest next action
-
-Review this core evidence and have an independent teammate review the exact protocol
-and candidate hashes. Record a real decision without editing the immutable candidate.
-Then explicitly authorize the next session; resolve the viewer year defect and test
-the real upload/export flow before promoting any G3 claim.
+The delivery manifest outside the commit records the exact final HEAD, push result,
+remote SHA and archive hashes; a commit cannot embed its own hash. Raw protocol PDF,
+raw API response, personal/historical handoff, credentials and environments stay out
+of commits. No default-branch merge, public deployment, spending, real-patient use,
+clinical validation or ongoing background work is claimed. The local browser test
+server is stopped during delivery teardown; use the command above to relaunch it.

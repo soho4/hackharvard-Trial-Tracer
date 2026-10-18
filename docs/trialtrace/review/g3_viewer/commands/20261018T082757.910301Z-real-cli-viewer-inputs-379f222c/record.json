@@ -1,0 +1,19 @@
+{
+  "label": "real-cli-viewer-inputs",
+  "command": [
+    ".venv/bin/python",
+    "tools/g3_viewer/make_inputs.py"
+  ],
+  "cwd": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace",
+  "started_at": "2026-10-18T08:27:57.910301+00:00",
+  "finished_at": "2026-10-18T08:27:58.361634+00:00",
+  "elapsed_seconds": 0.45081,
+  "status": "EXIT_ZERO",
+  "exit_code": 0,
+  "stdout_path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/docs/trialtrace/review/g3_viewer/commands/20261018T082757.910301Z-real-cli-viewer-inputs-379f222c/stdout.log",
+  "stderr_path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/docs/trialtrace/review/g3_viewer/commands/20261018T082757.910301Z-real-cli-viewer-inputs-379f222c/stderr.log",
+  "stdout_sha256": "749de5030ea9ac025f36664f4464754f0137f6db9a2dce816435319d252c32ba",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "gate_acceptance": "NOT_DETERMINED_BY_COMMAND_RECORDER",
+  "warning": "Logs are not tamper-proof; this does not establish test assertions, source review, or clinical validity."
+}

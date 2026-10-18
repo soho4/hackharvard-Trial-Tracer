@@ -67,6 +67,13 @@ def load_table(path, name):
             raw = stream.read(MAX_BYTES + 1)
     except OSError as exc:
         raise InputError("FILE_ACCESS", f"Cannot read {name}: {exc.strerror}", file=name) from exc
+    return parse_table(raw, name, path.name)
+
+
+def parse_table(raw, name, display_name):
+    """Parse exact uploaded bytes through the same checks as filesystem inputs."""
+    if name not in HEADERS:
+        raise InputError("INPUT_ROLES", "Unknown logical input role", file=name)
     if len(raw) > MAX_BYTES:
         raise InputError("INPUT_SIZE_LIMIT", "Input exceeds 1,000,000 bytes", file=name)
     if b"\x00" in raw:
@@ -97,7 +104,7 @@ def load_table(path, name):
         records.append({"record_ordinal": ordinal, "raw_record": dict(zip(header, values)), "raw_csv": raw_csv})
     return {
         "name": name,
-        "display_name": "".join(c for c in path.name if c.isprintable())[:200] or name,
+        "display_name": "".join(c for c in display_name if c.isprintable())[:200] or name,
         "sha256": hashlib.sha256(raw).hexdigest(),
         "bom": raw.startswith(b"\xef\xbb\xbf"),
         "byte_count": len(raw),

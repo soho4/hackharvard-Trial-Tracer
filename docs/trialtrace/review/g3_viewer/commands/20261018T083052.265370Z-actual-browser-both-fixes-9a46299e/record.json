@@ -1,0 +1,19 @@
+{
+  "label": "actual-browser-both-fixes",
+  "command": [
+    "/Users/yisak/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+    "tools/g3_viewer/browser_check.cjs"
+  ],
+  "cwd": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace",
+  "started_at": "2026-10-18T08:30:52.265370+00:00",
+  "finished_at": "2026-10-18T08:31:31.547964+00:00",
+  "elapsed_seconds": 39.282083,
+  "status": "EXIT_ZERO",
+  "exit_code": 0,
+  "stdout_path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/docs/trialtrace/review/g3_viewer/commands/20261018T083052.265370Z-actual-browser-both-fixes-9a46299e/stdout.log",
+  "stderr_path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/docs/trialtrace/review/g3_viewer/commands/20261018T083052.265370Z-actual-browser-both-fixes-9a46299e/stderr.log",
+  "stdout_sha256": "02dd171604d7307c08fab0f0c86de326d46d7260976f14f84aea7869cae5ebd4",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "gate_acceptance": "NOT_DETERMINED_BY_COMMAND_RECORDER",
+  "warning": "Logs are not tamper-proof; this does not establish test assertions, source review, or clinical validity."
+}

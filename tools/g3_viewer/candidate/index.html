@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TrialTrace Evidence Viewer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <div>
+      <h1>TrialTrace <span class="muted">Evidence Report Viewer</span></h1>
+      <p class="notice">Synthetic data only. This read-only viewer displays a saved report as supplied. It does not re-run checks, verify source files or make clinical judgements.</p>
+    </div>
+    <div class="actions no-print">
+      <label class="file-button">
+        Open evidence report
+        <input id="fileInput" type="file" accept=".json,application/json">
+      </label>
+      <button id="downloadButton" type="button" disabled>Download original report</button>
+      <button id="printButton" type="button" disabled>Print view</button>
+    </div>
+  </header>
+
+  <main>
+    <p id="status" class="status" role="status">No report loaded. Open a trialtrace.evidence.v1 JSON file.</p>
+    <div id="errorBox" class="error-box" role="alert" hidden>
+      <h2>Report rejected</h2>
+      <p id="errorFile"></p>
+      <ul id="errorList"></ul>
+    </div>
+
+    <div id="report" hidden>
+      <section class="card">
+        <h2>Run <span id="runId" class="mono"></span></h2>
+        <dl class="facts" id="runFacts"></dl>
+        <div class="counts" id="counts"></div>
+      </section>
+
+      <div class="columns">
+        <section class="card list-pane">
+          <h2>Findings</h2>
+          <div class="filters no-print">
+            <label>Outcome
+              <select id="statusFilter">
+                <option value="ALL">All outcomes</option>
+                <option value="PASS">PASS</option>
+                <option value="POTENTIAL_DEVIATION">POTENTIAL_DEVIATION</option>
+                <option value="DATA_QUERY">DATA_QUERY</option>
+                <option value="NOT_EVALUABLE">NOT_EVALUABLE</option>
+              </select>
+            </label>
+            <label>Search
+              <input id="searchInput" type="search" placeholder="ID or reason text">
+            </label>
+          </div>
+          <p id="shownLine" class="muted"></p>
+          <ul id="findingList" class="finding-list"></ul>
+        </section>
+
+        <section class="card detail-pane" aria-live="polite">
+          <h2>Selected finding</h2>
+          <div id="detail"><p class="muted">Select a finding to see its evidence.</p></div>
+        </section>
+      </div>
+
+      <section class="card">
+        <h2>Source and ruleset</h2>
+        <dl class="facts" id="provenance"></dl>
+        <h3>Input files (declared)</h3>
+        <ul id="inputFiles" class="plain"></ul>
+        <h3>Limitations</h3>
+        <ul id="limitations"></ul>
+      </section>
+    </div>
+  </main>
+
+  <script src="contract.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

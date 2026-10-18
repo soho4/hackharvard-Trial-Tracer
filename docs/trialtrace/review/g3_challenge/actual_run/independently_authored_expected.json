@@ -1,0 +1,206 @@
+[
+  {
+    "visit_id": "g3-synthetic-minimum-year-visit",
+    "status": "PASS",
+    "calculation": {
+      "target": "0001-01-08",
+      "earliest": "0001-01-08",
+      "latest": "0001-01-11",
+      "actual": "0001-01-08",
+      "days_outside": 0
+    }
+  },
+  {
+    "visit_id": "g3-synthetic-nineteenth-century-visit",
+    "status": "PASS",
+    "calculation": {
+      "target": "1900-01-01",
+      "earliest": "1900-01-01",
+      "latest": "1900-01-04",
+      "actual": "1900-01-01",
+      "days_outside": 0
+    }
+  },
+  {
+    "visit_id": "g3-synthetic-1900-not-leap-visit",
+    "status": "PASS",
+    "calculation": {
+      "target": "1900-03-01",
+      "earliest": "1900-03-01",
+      "latest": "1900-03-04",
+      "actual": "1900-03-01",
+      "days_outside": 0
+    }
+  },
+  {
+    "visit_id": "g3-synthetic-1900-one-early-visit",
+    "status": "POTENTIAL_DEVIATION",
+    "calculation": {
+      "target": "1900-03-01",
+      "earliest": "1900-03-01",
+      "latest": "1900-03-04",
+      "actual": "1900-02-28",
+      "days_outside": 1
+    }
+  },
+  {
+    "visit_id": "g3-synthetic-millennium-visit",
+    "status": "POTENTIAL_DEVIATION",
+    "calculation": {
+      "target": "2000-01-01",
+      "earliest": "2000-01-01",
+      "latest": "2000-01-04",
+      "actual": "2000-01-05",
+      "days_outside": 1
+    }
+  },
+  {
+    "visit_id": "g3-synthetic-2000-is-leap-visit",
+    "status": "PASS",
+    "calculation": {
+      "target": "2000-02-29",
+      "earliest": "2000-02-29",
+      "latest": "2000-03-03",
+      "actual": "2000-02-29",
+      "days_outside": 0
+    }
+  },
+  {
+    "visit_id": "g3-synthetic-2000-upper-bound-visit",
+    "status": "PASS",
+    "calculation": {
+      "target": "2000-02-29",
+      "earliest": "2000-02-29",
+      "latest": "2000-03-03",
+      "actual": "2000-03-03",
+      "days_outside": 0
+    }
+  },
+  {
+    "visit_id": "g3-synthetic-2000-two-late-visit",
+    "status": "POTENTIAL_DEVIATION",
+    "calculation": {
+      "target": "2000-02-29",
+      "earliest": "2000-02-29",
+      "latest": "2000-03-03",
+      "actual": "2000-03-05",
+      "days_outside": 2
+    }
+  },
+  {
+    "visit_id": "g3-synthetic-2024-leap-crossing-visit",
+    "status": "PASS",
+    "calculation": {
+      "target": "2024-03-01",
+      "earliest": "2024-03-01",
+      "latest": "2024-03-04",
+      "actual": "2024-03-04",
+      "days_outside": 0
+    }
+  },
+  {
+    "visit_id": "g3-synthetic-2024-before-leap-visit",
+    "status": "POTENTIAL_DEVIATION",
+    "calculation": {
+      "target": "2024-02-27",
+      "earliest": "2024-02-27",
+      "latest": "2024-03-01",
+      "actual": "2024-02-26",
+      "days_outside": 1
+    }
+  },
+  {
+    "visit_id": "g3-synthetic-april-month-boundary-visit",
+    "status": "PASS",
+    "calculation": {
+      "target": "2047-05-03",
+      "earliest": "2047-05-03",
+      "latest": "2047-05-06",
+      "actual": "2047-05-06",
+      "days_outside": 0
+    }
+  },
+  {
+    "visit_id": "g3-synthetic-2100-not-leap-visit",
+    "status": "POTENTIAL_DEVIATION",
+    "calculation": {
+      "target": "2100-03-01",
+      "earliest": "2100-03-01",
+      "latest": "2100-03-04",
+      "actual": "2100-03-05",
+      "days_outside": 1
+    }
+  },
+  {
+    "visit_id": "g3-synthetic-2400-is-leap-visit",
+    "status": "PASS",
+    "calculation": {
+      "target": "2400-02-29",
+      "earliest": "2400-02-29",
+      "latest": "2400-03-03",
+      "actual": "2400-02-29",
+      "days_outside": 0
+    }
+  },
+  {
+    "visit_id": "g3-synthetic-maximum-year-safe-visit",
+    "status": "PASS",
+    "calculation": {
+      "target": "9999-12-28",
+      "earliest": "9999-12-28",
+      "latest": "9999-12-31",
+      "actual": "9999-12-31",
+      "days_outside": 0
+    }
+  },
+  {
+    "visit_id": "g3-synthetic-missing-anchor-visit",
+    "status": "DATA_QUERY",
+    "calculation": null
+  },
+  {
+    "visit_id": "g3-synthetic-wrong-person-visit",
+    "status": "DATA_QUERY",
+    "calculation": null
+  },
+  {
+    "visit_id": "g3-synthetic-unresolved-scope-visit",
+    "status": "NOT_EVALUABLE",
+    "calculation": null
+  },
+  {
+    "visit_id": "g3-synthetic-unknown-completion-visit",
+    "status": "DATA_QUERY",
+    "calculation": null
+  },
+  {
+    "visit_id": "g3-synthetic-duplicate-anchor-visit",
+    "status": "DATA_QUERY",
+    "calculation": null
+  },
+  {
+    "visit_id": "g3-synthetic-decision-anchor-visit",
+    "status": "NOT_EVALUABLE",
+    "calculation": null
+  },
+  {
+    "visit_id": "g3-synthetic-wrong-event-visit",
+    "status": "NOT_EVALUABLE",
+    "calculation": null
+  },
+  {
+    "visit_id": "g3-synthetic-derived-overflow-visit",
+    "status": "DATA_QUERY",
+    "calculation": null
+  },
+  {
+    "visit_id": "g3-synthetic-invalid-nonleap-date-visit",
+    "status": "DATA_QUERY",
+    "calculation": null
+  },
+  {
+    "visit_id": "g3-synthetic-case-sensitive-id-visit",
+    "status": "DATA_QUERY",
+    "calculation": null
+  }
+]

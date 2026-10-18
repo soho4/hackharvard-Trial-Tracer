@@ -8,7 +8,9 @@ requirements from a shared chat link, a historical README, or a marketing descri
 Work continuously within the authorized technical session. Implement, execute tests,
 preserve failures, repair, rerun, record evidence, checkpoint, then advance only after
 technical prerequisites pass. Stop at CORE_EXPORT for the first session and return
-an actual review bundle, not just a plan. Do not start frontend work in that session.
+an actual review bundle, not just a plan. Do not start frontend work in that session. The subsequent user continuation on
+2026-10-18 authorizes G3 local draft UI, real-browser review, independent challenges
+and technical fixes. Source approval and public deployment remain separate.
 
 Source acceptance is separate from technical success. Never invent human review,
 source bytes/hash, results, executed commands, clinical validity, or a successful push.

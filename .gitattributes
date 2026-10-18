@@ -4,3 +4,16 @@ docs/trialtrace/review_tests/**/*.log -whitespace
 docs/trialtrace/review/**/*.stdout -whitespace
 docs/trialtrace/review/**/*.stderr -whitespace
 docs/trialtrace/source_check/logs/** -whitespace
+docs/trialtrace/review/g3_*/**/*.log -whitespace
+
+# Provenance depends on exact uploaded bytes, including intentional CRLF.
+docs/trialtrace/review/g3_challenge/actual_run/inputs/*.csv -text whitespace=cr-at-eol
+docs/trialtrace/review/g3_viewer/inputs/**/*.csv -text whitespace=cr-at-eol
+
+# Preserve upstream snapshot bytes and deliberately truncated JSON unchanged.
+features/evidence_viewer/tests/ACCEPTANCE_CASES.md -whitespace
+features/evidence_viewer/tests/browser_inputs/broken.json -text -whitespace
+tools/g3_viewer/*/tests/ACCEPTANCE_CASES.md -whitespace
+tools/g3_viewer/*/tests/browser_inputs/broken.json -text -whitespace
+# Unified diff context lines intentionally contain a leading space.
+tools/g3_viewer/*.patch -text -whitespace

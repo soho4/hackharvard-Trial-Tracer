@@ -1,0 +1,132 @@
+✖ accepts Gregorian date 0001-01-08 without 1900 remapping (5.259042ms)
+✖ accepts Gregorian date 0004-02-29 without 1900 remapping (0.347042ms)
+✖ accepts Gregorian date 0099-12-31 without 1900 remapping (0.316875ms)
+✔ accepts Gregorian date 0100-03-01 without 1900 remapping (0.21725ms)
+✔ accepts Gregorian date 0400-02-29 without 1900 remapping (0.164875ms)
+✔ accepts Gregorian date 2000-02-29 without 1900 remapping (0.747458ms)
+✔ accepts Gregorian date 9999-12-31 without 1900 remapping (0.146167ms)
+✔ rejects impossible date 0000-01-01 (0.204417ms)
+✔ rejects impossible date 0001-02-29 (0.124208ms)
+✔ rejects impossible date 0100-02-29 (1.576875ms)
+✔ rejects impossible date 1900-02-29 (0.12275ms)
+✔ rejects impossible date 2100-02-29 (0.298125ms)
+✔ rejects impossible date 2026-04-31 (0.532375ms)
+✔ rejects impossible date 2026-00-01 (0.159084ms)
+✔ rejects impossible date 2026-13-01 (0.483875ms)
+✔ rejects impossible date 2026-01-00 (0.520958ms)
+✔ rejects impossible date 2026-01-32 (0.117ms)
+✔ unknown version is rejected before treating findings as v1 (0.123333ms)
+✔ unknown clinical conclusion cannot be counted as a valid finding (0.113292ms)
+✔ internal evidence provenance rejects a changed hash and unknown source role (0.422917ms)
+✔ markup fixture parses unchanged but javascript source is not a link (0.228167ms)
+✔ actual CLI export before passes this viewer (0.796958ms)
+✔ actual CLI export after passes this viewer (0.498917ms)
+✔ actual CLI export missing_anchor passes this viewer (0.385709ms)
+✔ actual CLI export wrong_person passes this viewer (0.538583ms)
+✔ actual CLI export unresolved passes this viewer (0.566375ms)
+✔ actual CLI export unknown_event passes this viewer (0.309708ms)
+✔ actual CLI export empty_visits passes this viewer (0.230792ms)
+ℹ tests 28
+ℹ suites 0
+ℹ pass 25
+ℹ fail 3
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 100.803791
+
+✖ failing tests:
+
+test at tools/g3_viewer/challenge.test.cjs:11:3
+✖ accepts Gregorian date 0001-01-08 without 1900 remapping (5.259042ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
+  + actual - expected
+  
+    {
+  +   errors: [
+  +     'findings[0].calculation.target: must be a valid YYYY-MM-DD date',
+  +     'findings[0].calculation.earliest: must be a valid YYYY-MM-DD date',
+  +     'findings[0].calculation.latest: must be a valid YYYY-MM-DD date',
+  +     'findings[0].calculation.actual: must be a valid YYYY-MM-DD date'
+  +   ],
+  +   ok: false
+  -   errors: [],
+  -   ok: true
+    }
+  
+      at TestContext.<anonymous> (/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/tools/g3_viewer/challenge.test.cjs:14:12)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.start (node:internal/test_runner/test:1242:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:387:17) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: { ok: false, errors: [ 'findings[0].calculation.target: must be a valid YYYY-MM-DD date', 'findings[0].calculation.earliest: must be a valid YYYY-MM-DD date', 'findings[0].calculation.latest: must be a valid YYYY-MM-DD date', 'findings[0].calculation.actual: must be a valid YYYY-MM-DD date' ] },
+    expected: { ok: true, errors: [] },
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }
+
+test at tools/g3_viewer/challenge.test.cjs:11:3
+✖ accepts Gregorian date 0004-02-29 without 1900 remapping (0.347042ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
+  + actual - expected
+  
+    {
+  +   errors: [
+  +     'findings[0].calculation.target: must be a valid YYYY-MM-DD date',
+  +     'findings[0].calculation.earliest: must be a valid YYYY-MM-DD date',
+  +     'findings[0].calculation.latest: must be a valid YYYY-MM-DD date',
+  +     'findings[0].calculation.actual: must be a valid YYYY-MM-DD date'
+  +   ],
+  +   ok: false
+  -   errors: [],
+  -   ok: true
+    }
+  
+      at TestContext.<anonymous> (/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/tools/g3_viewer/challenge.test.cjs:14:12)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: { ok: false, errors: [ 'findings[0].calculation.target: must be a valid YYYY-MM-DD date', 'findings[0].calculation.earliest: must be a valid YYYY-MM-DD date', 'findings[0].calculation.latest: must be a valid YYYY-MM-DD date', 'findings[0].calculation.actual: must be a valid YYYY-MM-DD date' ] },
+    expected: { ok: true, errors: [] },
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }
+
+test at tools/g3_viewer/challenge.test.cjs:11:3
+✖ accepts Gregorian date 0099-12-31 without 1900 remapping (0.316875ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
+  + actual - expected
+  
+    {
+  +   errors: [
+  +     'findings[0].calculation.target: must be a valid YYYY-MM-DD date',
+  +     'findings[0].calculation.earliest: must be a valid YYYY-MM-DD date',
+  +     'findings[0].calculation.latest: must be a valid YYYY-MM-DD date',
+  +     'findings[0].calculation.actual: must be a valid YYYY-MM-DD date'
+  +   ],
+  +   ok: false
+  -   errors: [],
+  -   ok: true
+    }
+  
+      at TestContext.<anonymous> (/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/tools/g3_viewer/challenge.test.cjs:14:12)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: { ok: false, errors: [ 'findings[0].calculation.target: must be a valid YYYY-MM-DD date', 'findings[0].calculation.earliest: must be a valid YYYY-MM-DD date', 'findings[0].calculation.latest: must be a valid YYYY-MM-DD date', 'findings[0].calculation.actual: must be a valid YYYY-MM-DD date' ] },
+    expected: { ok: true, errors: [] },
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }

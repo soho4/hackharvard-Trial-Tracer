@@ -1,0 +1,25 @@
+{
+  "label": "g3-install-upload-adapter",
+  "command": [
+    ".venv/bin/python",
+    "-m",
+    "pip",
+    "install",
+    "--no-build-isolation",
+    "--no-deps",
+    "--force-reinstall",
+    "."
+  ],
+  "cwd": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace",
+  "started_at": "2026-10-18T08:27:23.545683+00:00",
+  "finished_at": "2026-10-18T08:27:24.274137+00:00",
+  "elapsed_seconds": 0.728124,
+  "status": "EXIT_ZERO",
+  "exit_code": 0,
+  "stdout_path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/docs/trialtrace/commands/20261018T082723.545683Z-g3-install-upload-adapter-6ccbc766/stdout.log",
+  "stderr_path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/docs/trialtrace/commands/20261018T082723.545683Z-g3-install-upload-adapter-6ccbc766/stderr.log",
+  "stdout_sha256": "70498e0c3037c13405a68f14ba2363e0b84468a15b7f3c1510bdca34677d1356",
+  "stderr_sha256": "8f3f53aae84e23d6c56eef04ef0f2813c4fddfdf89fbe01867af37b8743e478f",
+  "gate_acceptance": "NOT_DETERMINED_BY_COMMAND_RECORDER",
+  "warning": "Logs are not tamper-proof; this does not establish test assertions, source review, or clinical validity."
+}

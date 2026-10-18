@@ -1,0 +1,33 @@
+{
+  "label": "g3-final-challenge-cli",
+  "command": [
+    ".venv/bin/python",
+    "-m",
+    "trialtrace.cli",
+    "--anchors",
+    "docs/trialtrace/review/g3_challenge/actual_run/inputs/unfamiliar-upload-31.csv",
+    "--visits",
+    "docs/trialtrace/review/g3_challenge/actual_run/inputs/unfamiliar-upload-32.csv",
+    "--assignments",
+    "docs/trialtrace/review/g3_challenge/actual_run/inputs/unfamiliar-upload-33.csv",
+    "--rule",
+    "rules/candidate_rule.json",
+    "--draft-synthetic",
+    "--source-pdf",
+    "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/source_check/.sources/Prot_000.pdf",
+    "--output",
+    "docs/trialtrace/review/g3_browser/challenge_cli.json"
+  ],
+  "cwd": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace",
+  "started_at": "2026-10-18T08:41:11.458790+00:00",
+  "finished_at": "2026-10-18T08:41:11.649564+00:00",
+  "elapsed_seconds": 0.190129,
+  "status": "EXIT_ZERO",
+  "exit_code": 0,
+  "stdout_path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/docs/trialtrace/commands/20261018T084111.458790Z-g3-final-challenge-cli-5f4b6ab2/stdout.log",
+  "stderr_path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/docs/trialtrace/commands/20261018T084111.458790Z-g3-final-challenge-cli-5f4b6ab2/stderr.log",
+  "stdout_sha256": "d2630f5d4f9970b33f51d2e9248d6fbe196711918aa69c4f21a568c6d360ce80",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "gate_acceptance": "NOT_DETERMINED_BY_COMMAND_RECORDER",
+  "warning": "Logs are not tamper-proof; this does not establish test assertions, source review, or clinical validity."
+}

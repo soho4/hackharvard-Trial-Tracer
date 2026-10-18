@@ -1,0 +1,115 @@
+- link "Skip to main content":
+  - /url: "#stMain"
+- region "Sidebar":
+  - heading "Public source · draft interpretation" [level=3]
+  - paragraph: NCT04470427 · Moderna mRNA-1273-P301
+  - paragraph: "Supported check: documented OL-D8 safety phone call, anchored to an explicitly mapped actual OL-D1 vaccination."
+  - paragraph: "Candidate window: vaccination date +7 through +10 calendar days, inclusive. Table 21, amendment 10, 7 April 2022."
+  - link "Open public protocol":
+    - /url: https://cdn.clinicaltrials.gov/large-docs/27/NCT04470427/Prot_000.pdf
+    - paragraph: Open public protocol
+  - link "Open trial registry":
+    - /url: https://clinicaltrials.gov/study/NCT04470427
+    - paragraph: Open trial registry
+  - generic "Fetched public registry metadata":
+    - generic: keyboard_arrow_right
+    - paragraph: Fetched public registry metadata
+  - generic "Rule and source provenance":
+    - generic: keyboard_arrow_right
+    - paragraph: Rule and source provenance
+  - status:
+    - paragraph: Human source review is pending. This app cannot infer eligibility, applicable amendment, missing activities, or the adequacy of a safety assessment.
+- banner:
+  - button "Expand sidebar":
+    - generic: keyboard_double_arrow_right
+  - button "Deploy":
+    - generic: Deploy
+  - button "Main menu":
+- main:
+  - paragraph: TRIALTRACE / LOCAL WORKSPACE
+  - heading "TrialTrace timing checks" [level=1]:
+    - text: TrialTrace timing checks
+    - link "Link to heading":
+      - /url: "#trial-trace-timing-checks"
+  - paragraph: Upload three tables, check the supported timing rule, and inspect every result against the original records.
+  - alert:
+    - paragraph: DRAFT · Synthetic inputs only. Public protocol data is real; participant examples are synthetic. Source interpretation awaits human review. No clinical validation.
+  - tablist:
+    - tab "Check uploaded data" [selected]:
+      - paragraph: Check uploaded data
+    - tab "Open saved evidence report":
+      - paragraph: Open saved evidence report
+  - tabpanel "Check uploaded data":
+    - heading "1. Supply the three source tables" [level=3]:
+      - text: 1. Supply the three source tables
+      - link "Link to heading":
+        - /url: "#1-supply-the-three-source-tables"
+    - paragraph: UTF-8 CSV · up to 1,000,000 bytes and 500 rows per table · dates YYYY-MM-DD. Files stay in this local app session; no database or model service is used.
+    - paragraph: anchors.csv
+    - button "Help for anchors.csv":
+    - region "anchors.csv":
+      - button "file upload"
+      - generic "anchors.csv, 78.0B":
+        - generic "anchors.csv"
+        - generic: 78.0B
+        - button "Remove anchors.csv":
+      - button "Add files":
+        - generic: add icon
+        - generic: add
+    - button "Download anchors.csv template":
+      - generic "Download anchors.csv template":
+        - paragraph: Download anchors.csv template
+    - paragraph: visits.csv
+    - button "Help for visits.csv":
+    - region "visits.csv":
+      - button "file upload"
+      - generic "visits.csv, 31.0B":
+        - generic "visits.csv"
+        - generic: 31.0B
+        - button "Remove visits.csv":
+      - button "Add files":
+        - generic: add icon
+        - generic: add
+    - button "Download visits.csv template":
+      - paragraph: Download visits.csv template
+    - paragraph: assignments.csv
+    - button "Help for assignments.csv":
+    - region "assignments.csv":
+      - button "file upload"
+      - generic "assignments.csv, 241.0B":
+        - generic "assignments.csv"
+        - generic: 241.0B
+        - button "Remove assignments.csv":
+      - button "Add files":
+        - generic: add icon
+        - generic: add
+    - button "Download assignments.csv template":
+      - generic "Download assignments.csv template":
+        - paragraph: Download assignments.csv template
+    - checkbox "These are synthetic records; run the unreviewed draft timing check." [checked]
+    - paragraph: These are synthetic records; run the unreviewed draft timing check.
+    - heading "2. Run the timing check" [level=3]:
+      - text: 2. Run the timing check
+      - link "Link to heading":
+        - /url: "#2-run-the-timing-check"
+    - button "Run timing check" [active]:
+      - paragraph: Run timing check
+    - alert:
+      - paragraph: Input rejected. No current findings or evidence download are available.
+    - generic: "{"
+    - text: "\""
+    - generic: code
+    - text: "\""
+    - generic: ":"
+    - generic: "\"INVALID_HEADER\""
+    - text: "\""
+    - generic: message
+    - text: "\""
+    - generic: ":"
+    - generic: "\"Headers must contain each required name exactly once\""
+    - text: "\""
+    - generic: file
+    - text: "\""
+    - generic: ":"
+    - generic: "\"visits.csv\""
+    - generic: "}"

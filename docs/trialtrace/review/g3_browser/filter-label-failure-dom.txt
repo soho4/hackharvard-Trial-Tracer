@@ -1,0 +1,271 @@
+- log
+- log
+- link "Skip to main content":
+  - /url: "#stMain"
+- region "Sidebar":
+  - heading "Public source · draft interpretation" [level=3]
+  - paragraph: NCT04470427 · Moderna mRNA-1273-P301
+  - paragraph: "Supported check: documented OL-D8 safety phone call, anchored to an explicitly mapped actual OL-D1 vaccination."
+  - paragraph: "Candidate window: vaccination date +7 through +10 calendar days, inclusive. Table 21, amendment 10, 2022-04-07."
+  - link "Open public protocol":
+    - /url: https://cdn.clinicaltrials.gov/large-docs/27/NCT04470427/Prot_000.pdf
+    - paragraph: Open public protocol
+  - link "Open trial registry":
+    - /url: https://clinicaltrials.gov/study/NCT04470427
+    - paragraph: Open trial registry
+  - generic: "Registry: COMPLETED · ModernaTX, Inc."
+  - paragraph: Public metadata fetched 2026-10-18; registry updated 2024-03-21. Snapshot, not a live feed.
+  - paragraph: The registry contains aggregate results, not the participant visit dates used in this check.
+  - generic "Fetched public registry metadata":
+    - generic: keyboard_arrow_right
+    - paragraph: Fetched public registry metadata
+  - generic "Rule and source provenance":
+    - generic: keyboard_arrow_right
+    - paragraph: Rule and source provenance
+  - status:
+    - paragraph: Human source review is pending. This app cannot infer eligibility, applicable amendment, missing activities, or the adequacy of a safety assessment.
+- banner:
+  - button "Expand sidebar":
+    - generic: keyboard_double_arrow_right
+  - button "Deploy":
+    - generic: Deploy
+  - button "Main menu":
+- main:
+  - paragraph: TRIALTRACE / LOCAL WORKSPACE
+  - heading "TrialTrace timing checks" [level=1]:
+    - text: TrialTrace timing checks
+    - link "Link to heading":
+      - /url: "#trial-trace-timing-checks"
+  - paragraph: Upload three tables, check the supported timing rule, and inspect every result against the original records.
+  - alert:
+    - paragraph: DRAFT · Synthetic inputs only. Public protocol data is real; participant examples are synthetic. Source interpretation awaits human review. No clinical validation.
+  - tablist:
+    - tab "Check uploaded data" [selected]:
+      - paragraph: Check uploaded data
+    - tab "Open saved evidence report":
+      - paragraph: Open saved evidence report
+  - tabpanel "Check uploaded data":
+    - heading "1. Supply the three source tables" [level=3]:
+      - text: 1. Supply the three source tables
+      - link "Link to heading":
+        - /url: "#1-supply-the-three-source-tables"
+    - paragraph: UTF-8 CSV · up to 1,000,000 bytes and 500 rows per table · dates YYYY-MM-DD. Files stay in this local app session; no database or model service is used.
+    - paragraph: To replace or remove a selected file, clear it first. This also clears the current report before another file is chosen.
+    - generic: anchors.csv
+    - generic: unfamiliar-upload-31.csv
+    - paragraph: 3,618 bytes selected
+    - button "Clear anchors.csv":
+      - paragraph: Clear anchors.csv
+    - button "Download anchors.csv template":
+      - generic "Download anchors.csv template":
+        - paragraph: Download anchors.csv template
+    - generic: visits.csv
+    - generic: unfamiliar-upload-32.csv
+    - paragraph: 5,457 bytes selected
+    - button "Clear visits.csv":
+      - paragraph: Clear visits.csv
+    - button "Download visits.csv template":
+      - paragraph: Download visits.csv template
+    - generic: assignments.csv
+    - generic: unfamiliar-upload-33.csv
+    - paragraph: 6,907 bytes selected
+    - button "Clear assignments.csv":
+      - paragraph: Clear assignments.csv
+    - button "Download assignments.csv template":
+      - generic "Download assignments.csv template":
+        - paragraph: Download assignments.csv template
+    - checkbox "These are synthetic records; run the unreviewed draft timing check." [checked]
+    - paragraph: These are synthetic records; run the unreviewed draft timing check.
+    - heading "2. Run the timing check" [level=3]:
+      - text: 2. Run the timing check
+      - link "Link to heading":
+        - /url: "#2-run-the-timing-check"
+    - button "Run timing check":
+      - paragraph: Run timing check
+    - heading "Results from your uploaded files" [level=3]:
+      - text: Results from your uploaded files
+      - link "Link to heading":
+        - /url: "#results-from-your-uploaded-files"
+    - paragraph: Draft engineering · synthetic records · source interpretation pending review
+    - paragraph: Pass
+    - paragraph: "9"
+    - paragraph: Potential Deviation
+    - paragraph: "5"
+    - paragraph: Data Query
+    - paragraph: "7"
+    - paragraph: Not Evaluable
+    - paragraph: "3"
+    - paragraph: 24 documented visit record(s) checked. Counts always describe the whole report.
+    - button "Download evidence JSON":
+      - paragraph: Download evidence JSON
+    - paragraph: The download contains the full report, including original evidence and unresolved records. Filters do not change it.
+    - paragraph: Outcome filter
+    - combobox "Outcome filter": DATA_QUERY
+    - button "Open":
+    - paragraph: Search participant, visit, site or reason
+    - textbox "Search participant, visit, site or reason" [active]:
+      - /placeholder: ""
+      - text: WRONG-PERSON
+    - paragraph: Showing 1 of 24 findings
+    - paragraph: Select finding
+    - combobox "Select finding": g3-synthetic-minimum-year-Δ · g3-synthetic-minimum-year-visit · PASS
+    - button "Open":
+    - heading "Selected finding" [level=3]:
+      - text: Selected finding
+      - link "Link to heading":
+        - /url: "#selected-finding"
+    - generic: DATA_QUERY · MISMATCH_PARTICIPANT_ID
+    - paragraph: No timing conclusion. Resolve the listed evidence or applicability issues first.
+    - paragraph: Original records used for this finding
+    - generic "visits.csv · record 16":
+      - generic: keyboard_arrow_down
+      - paragraph: visits.csv · record 16
+    - generic: "{"
+    - text: "\""
+    - generic: assignment_id
+    - text: "\""
+    - generic: ":"
+    - generic: "\"g3-synthetic-wrong-person-mapping\""
+    - text: "\""
+    - generic: anchor_id
+    - text: "\""
+    - generic: ":"
+    - generic: "\"g3-synthetic-wrong-person-anchor\""
+    - text: "\""
+    - generic: visit_status
+    - text: "\""
+    - generic: ":"
+    - generic: "\"COMPLETED\""
+    - text: "\""
+    - generic: actual_date
+    - text: "\""
+    - generic: ":"
+    - generic: "\"2077-08-31\""
+    - text: "\""
+    - generic: event_kind
+    - text: "\""
+    - generic: ":"
+    - generic: "\"SAFETY_PHONE_CALL\""
+    - text: "\""
+    - generic: visit_code
+    - text: "\""
+    - generic: ":"
+    - generic: "\"OL_D8\""
+    - text: "\""
+    - generic: visit_id
+    - text: "\""
+    - generic: ":"
+    - generic: "\"g3-synthetic-wrong-person-visit\""
+    - text: "\""
+    - generic: site_id
+    - text: "\""
+    - generic: ":"
+    - generic: "\"g3-synthetic-site-東京\""
+    - text: "\""
+    - generic: participant_id
+    - text: "\""
+    - generic: ":"
+    - generic: "\"g3-synthetic-wrong-person-Δ\""
+    - text: "\""
+    - generic: study_id
+    - text: "\""
+    - generic: ":"
+    - generic: "\"NCT04470427\""
+    - generic: "}"
+    - paragraph: Exact source file SHA-256
+    - code: b867eb58e467b35c61dbf852b8c7e485f9829368e0496b979d8467fabf8566ba
+    - generic "anchors.csv · record 15":
+      - generic: keyboard_arrow_down
+      - paragraph: anchors.csv · record 15
+    - generic: "{"
+    - text: "\""
+    - generic: anchor_date
+    - text: "\""
+    - generic: ":"
+    - generic: "\"2077-08-24\""
+    - text: "\""
+    - generic: anchor_kind
+    - text: "\""
+    - generic: ":"
+    - generic: "\"ACTUAL_VACCINATION\""
+    - text: "\""
+    - generic: anchor_code
+    - text: "\""
+    - generic: ":"
+    - generic: "\"OL_D1\""
+    - text: "\""
+    - generic: anchor_id
+    - text: "\""
+    - generic: ":"
+    - generic: "\"g3-synthetic-wrong-person-anchor\""
+    - text: "\""
+    - generic: site_id
+    - text: "\""
+    - generic: ":"
+    - generic: "\"g3-synthetic-site-東京\""
+    - text: "\""
+    - generic: participant_id
+    - text: "\""
+    - generic: ":"
+    - generic: "\"another-synthetic-person\""
+    - text: "\""
+    - generic: study_id
+    - text: "\""
+    - generic: ":"
+    - generic: "\"NCT04470427\""
+    - generic: "}"
+    - paragraph: Exact source file SHA-256
+    - code: 6921a601c073e7cce3d048eb539217d4b9d1262d29e4e26e6770e620e43e2c0d
+    - generic "assignments.csv · record 16":
+      - generic: keyboard_arrow_down
+      - paragraph: assignments.csv · record 16
+    - generic: "{"
+    - text: "\""
+    - generic: mapping_note
+    - text: "\""
+    - generic: ":"
+    - generic: "\"Independent authored synthetic record, not human review.\\r\\nQuoted \"cell\"; literal <script>alert(\"no execution\")</script> 🧪\""
+    - text: "\""
+    - generic: mapping_status
+    - text: "\""
+    - generic: ":"
+    - generic: "\"DRAFT_SYNTHETIC\""
+    - text: "\""
+    - generic: schedule_code
+    - text: "\""
+    - generic: ":"
+    - generic: "\"TABLE21\""
+    - text: "\""
+    - generic: rule_version
+    - text: "\""
+    - generic: ":"
+    - generic: "\"A10_DRAFT_2\""
+    - text: "\""
+    - generic: site_id
+    - text: "\""
+    - generic: ":"
+    - generic: "\"g3-synthetic-site-東京\""
+    - text: "\""
+    - generic: participant_id
+    - text: "\""
+    - generic: ":"
+    - generic: "\"g3-synthetic-wrong-person-Δ\""
+    - text: "\""
+    - generic: study_id
+    - text: "\""
+    - generic: ":"
+    - generic: "\"NCT04470427\""
+    - text: "\""
+    - generic: assignment_id
+    - text: "\""
+    - generic: ":"
+    - generic: "\"g3-synthetic-wrong-person-mapping\""
+    - generic: "}"
+    - paragraph: Exact source file SHA-256
+    - code: 91ef6bee7456eef3fa99db4c66c5a4905553c7816c8e5a90ed2fb80d1e039156
+    - generic "Input accounting, including unused or problematic rows":
+      - generic: keyboard_arrow_right
+      - paragraph: Input accounting, including unused or problematic rows
+    - generic "Report identity and input fingerprints":
+      - generic: keyboard_arrow_right
+      - paragraph: Report identity and input fingerprints

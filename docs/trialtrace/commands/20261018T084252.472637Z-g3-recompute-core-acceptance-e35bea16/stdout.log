@@ -1,0 +1,82 @@
+{
+  "state": "PASS",
+  "run_mode": "DRAFT_ENGINEERING",
+  "source_review": "PENDING",
+  "code_sha256": "eb7350f8c7adef275604cfc03b2c27fe8d1c0dd0b4a794f9bf39e41bbc80ebc2",
+  "results": {
+    "date_change": {
+      "before": "PASS",
+      "after": "POTENTIAL_DEVIATION",
+      "days_outside_after": 1,
+      "byte_identical_repeat": true
+    },
+    "missing_anchor": "DATA_QUERY",
+    "wrong_person": "DATA_QUERY",
+    "unresolved": "NOT_EVALUABLE",
+    "unknown_event": "NOT_EVALUABLE",
+    "empty_visits": 0,
+    "corrupt_replacement": "EXIT_2_NO_SUCCESS_TARGET_PREVIOUS_BYTES_PRESERVED"
+  },
+  "commands": [
+    {
+      "label": "novel-before",
+      "record": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/docs/trialtrace/commands/20261018T084252.575279Z-core-novel-before-8a6ba719/record.json",
+      "exit_code": 0
+    },
+    {
+      "label": "novel-repeat",
+      "record": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/docs/trialtrace/commands/20261018T084252.715995Z-core-novel-repeat-9f44e318/record.json",
+      "exit_code": 0
+    },
+    {
+      "label": "novel-changed-date",
+      "record": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/docs/trialtrace/commands/20261018T084252.858394Z-core-novel-changed-date-feeaa9f8/record.json",
+      "exit_code": 0
+    },
+    {
+      "label": "missing_anchor",
+      "record": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/docs/trialtrace/commands/20261018T084253.000343Z-core-missing_anchor-abc61634/record.json",
+      "exit_code": 0
+    },
+    {
+      "label": "wrong_person",
+      "record": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/docs/trialtrace/commands/20261018T084253.151527Z-core-wrong_person-9bea3a47/record.json",
+      "exit_code": 0
+    },
+    {
+      "label": "unresolved",
+      "record": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/docs/trialtrace/commands/20261018T084253.299683Z-core-unresolved-c243daba/record.json",
+      "exit_code": 0
+    },
+    {
+      "label": "unknown_event",
+      "record": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/docs/trialtrace/commands/20261018T084253.433052Z-core-unknown_event-9611119a/record.json",
+      "exit_code": 0
+    },
+    {
+      "label": "empty-visits",
+      "record": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/docs/trialtrace/commands/20261018T084253.566503Z-core-empty-visits-a4f56b59/record.json",
+      "exit_code": 0
+    },
+    {
+      "label": "stale-before",
+      "record": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/docs/trialtrace/commands/20261018T084253.700149Z-core-stale-before-0668265f/record.json",
+      "exit_code": 0
+    },
+    {
+      "label": "stale-corrupt-after",
+      "record": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/docs/trialtrace/commands/20261018T084253.841023Z-core-stale-corrupt-after-be438489/record.json",
+      "exit_code": 2
+    },
+    {
+      "label": "reviewed-default-blocked",
+      "record": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/docs/trialtrace/commands/20261018T084253.981905Z-core-reviewed-default-blocked-861b8972/record.json",
+      "exit_code": 2
+    },
+    {
+      "label": "frozen-real-files",
+      "record": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/docs/trialtrace/commands/20261018T084254.122736Z-core-frozen-real-files-cbf7ebe1/record.json",
+      "exit_code": 0
+    }
+  ]
+}

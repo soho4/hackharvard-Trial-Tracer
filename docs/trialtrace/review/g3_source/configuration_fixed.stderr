@@ -1,0 +1,29 @@
+2026-10-18 04:32:54.677 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-10-18 04:32:54.790 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-10-18 04:32:54.850 Please replace `st.components.v1.html` with `st.iframe`.
+
+`st.components.v1.html` will be removed after 2026-06-01.
+2026-10-18 04:32:54.862 Please replace `st.components.v1.html` with `st.iframe`.
+
+`st.components.v1.html` will be removed after 2026-06-01.
+2026-10-18 04:32:54.873 Please replace `st.components.v1.html` with `st.iframe`.
+
+`st.components.v1.html` will be removed after 2026-06-01.
+Traceback (most recent call last):
+  File "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/g3_source/app_review/probe_configuration.py", line 39, in <module>
+    next(b for b in app.button if b.label == 'Run timing check').click().run()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/.venv/lib/python3.13/site-packages/streamlit/testing/v1/element_tree.py", line 739, in click
+    return self.set_value(True)
+           ~~~~~~~~~~~~~~^^^^^^
+  File "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/.venv/lib/python3.13/site-packages/streamlit/testing/v1/element_tree.py", line 735, in set_value
+    return super().set_value(v)
+           ~~~~~~~~~~~~~~~~~^^^
+  File "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/.venv/lib/python3.13/site-packages/streamlit/testing/v1/element_tree.py", line 532, in set_value
+    self._assert_can_interact()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/.venv/lib/python3.13/site-packages/streamlit/testing/v1/element_tree.py", line 525, in _assert_can_interact
+    raise AppTestError(
+    ...<2 lines>...
+    )
+streamlit.testing.v1.errors.AppTestError: Cannot update a disabled button widget. A browser user cannot interact with a disabled widget.
