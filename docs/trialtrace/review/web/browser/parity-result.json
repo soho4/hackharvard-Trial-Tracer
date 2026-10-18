@@ -15,5 +15,6 @@
   "core_sha256": "d20f8e50e3aafb80802847cef31bdee6b8c73b458bc0b718b413e3108426aebd",
   "scope": "Synthetic engineering behavior, not clinical validation",
   "manual_file_selection_and_mapping_json_byte_equal": true,
-  "portable_package_browser_json_byte_equal": true
+  "portable_package_browser_json_byte_equal": true,
+  "private_hosted_browser_json_byte_equal": true
 }

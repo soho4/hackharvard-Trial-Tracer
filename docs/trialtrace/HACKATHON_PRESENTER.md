@@ -39,7 +39,7 @@ Use `examples/preparation/synthetic-wide.csv`. It contains seven fabricated reco
 7. Select **Download evidence package**. Show that it includes the original file, column mapping, generated internal tables and result. The result is computed from the input, not a canned dashboard.
 8. Open **Demonstrate a changed date** and select **Load changed-date demo**. Confirm the mapping and run again. Record 2 now has a call date of **2028-03-05**, and the flag becomes **2 days outside the window**. This behavior was exercised in the actual browser.
 
-The demo loader processes supplied fixture bytes through the real checker. It does not prove compatibility with an arbitrary trial-system export. Rehearse against the final presentation build. Public hosting is a separate step and is not established by this briefing.
+The demo loader processes supplied fixture bytes through the real checker. It does not prove compatibility with an arbitrary trial-system export. Rehearse against the final presentation build. The private hosted demo was opened under the owner account and produced evidence JSON matching the local Python report. Public access was not enabled; the owner explicitly requested private access.
 
 ## Architecture in ordinary language
 

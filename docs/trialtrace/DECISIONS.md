@@ -109,7 +109,8 @@
 - All calculations use supplied bytes; actual downloads match native Python on the
   tested case. Changing one source date changes the computed days outside.
 - The user explicitly chose owner-private hosted access. Deployment success is
-  separate from owner authentication, which failed in the in-app browser. No
-  access widening or authentication bypass is authorized.
+  separate from owner authentication. An initial in-app sign-in error recovered
+  after automatic security verification; the hosted demo then passed JSON parity.
+  No access widening or authentication bypass is authorized.
 - Research establishes relevance of the underlying issues, not TrialTrace's savings,
   customer demand or clinical validation. Retain independent review as pending.

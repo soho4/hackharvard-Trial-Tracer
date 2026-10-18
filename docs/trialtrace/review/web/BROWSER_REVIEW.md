@@ -20,7 +20,7 @@ This records actual Codex in-app-browser actions against the static application 
 
 ## Deployment and access
 
-The private deployment succeeded through Sites. The owner sign-in attempt in the in-app browser failed with an OpenAI route error (`400 Invalid content type: text/html; charset=UTF-8`), then automatic security verification appeared on retry. No authentication bypass, audience change or claim of a successful hosted calculation was made. The user explicitly requested that access remain private. The deployment receipt establishes hosting; local-browser checks establish the application behavior. These are separate claims.
+The private deployment succeeded through Sites. The owner sign-in attempt in the in-app browser failed with an OpenAI route error (`400 Invalid content type: text/html; charset=UTF-8`), then automatic security verification appeared on retry. The automatic security verification subsequently completed. Selecting the same owner account then succeeded. The private hosted app reached Engine ready, calculated the seven-record demo, and downloaded evidence JSON byte-identical to the local Python report. Complete hosted output and screenshot are in `browser/hosted-results.txt` and `browser/hosted-results.png`; the actual download is `browser/hosted-evidence.json`. No authentication bypass or audience change occurred. The user explicitly requested that access remain private.
 
 ## Other execution details
 

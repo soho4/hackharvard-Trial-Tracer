@@ -19,7 +19,7 @@ It is not Regeneron data. All operational CSV examples here are newly authored s
 
 The redesigned browser interface supports the one-spreadsheet workflow, clear reasons and next checks, source details, and downloadable evidence. It runs the unchanged Python engine through Pyodide, with no participant database or runtime language model. See [browser setup](web/README.md), [presenter briefing](docs/trialtrace/HACKATHON_PRESENTER.md), [research claims](docs/trialtrace/HACKATHON_CLAIMS.md), and [actual browser checks](docs/trialtrace/review/web/BROWSER_REVIEW.md).
 
-The hosted demo is private to its owner by explicit request. Deployment and owner-browser authentication are tracked separately in the browser review. The older Streamlit interface below retains three-table intake, saved-viewer and comparison features that are not in the narrow browser presentation interface.
+The hosted demo is private to its owner by explicit request. Deployment, owner sign-in and a hosted demo calculation were verified; the initial sign-in failure and recovery are recorded in the browser review. The older Streamlit interface below retains three-table intake, saved-viewer and comparison features that are not in the narrow browser presentation interface.
 
 ## Launch the local upload app
 

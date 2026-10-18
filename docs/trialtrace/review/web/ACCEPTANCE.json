@@ -22,6 +22,6 @@
   "source_acceptance": "PENDING_INDEPENDENT_HUMAN_REVIEW",
   "clinical_validation": false,
   "measured_usefulness": false,
-  "hosted_calculation": "NOT_VERIFIED_BEHIND_OWNER_AUTHENTICATION",
+  "hosted_calculation": "PASS_OWNER_AUTHENTICATED_DEMO_AND_CANONICAL_JSON_PARITY",
   "scope": "One wide-CSV mapping path; synthetic data; same Python rule engine. Earlier local Streamlit retains the broader local workflows."
 }

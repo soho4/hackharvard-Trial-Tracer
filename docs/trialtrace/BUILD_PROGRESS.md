@@ -7,7 +7,7 @@ The narrow demonstration is built and checked. A complete clinical operations pr
 | Deterministic engine, evidence and local workflows | Implemented; unchanged in this continuation |
 | One-spreadsheet browser UI and clear explanations | Implemented; actual browser tested |
 | Genuine changed-input behavior and evidence downloads | Verified on synthetic cases; canonical JSON and ZIP-member parity |
-| Private hosting | Deployment succeeded; owner sign-in failed in the in-app browser, so hosted calculation is not yet verified |
+| Private hosting | Deployment, owner sign-in, actual demo calculation and canonical JSON parity verified after an initial sign-in error |
 | Presentation, demo files and local backup | Prepared; see presenter guide and delivery outputs |
 | Independent source/rule review | Pending |
 | Representative configured-workflow trial and measured usefulness | Pending |

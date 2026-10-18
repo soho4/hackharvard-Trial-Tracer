@@ -1,6 +1,6 @@
 {
   "spec_version": "4.0",
-  "status": "PRIVATE_BROWSER_DEMO_TECHNICAL_COMPLETE_HOSTED_SIGNIN_UNVERIFIED",
+  "status": "PRIVATE_BROWSER_DEMO_TECHNICAL_COMPLETE",
   "repo": "https://github.com/soho4/hackharvard-Trial-Tracer",
   "branch": "codex/trialtrace-core-v4",
   "preceding_delivery_commit": "a668e6ef81376887bddbf338cb0f358e7ce71b54",
@@ -22,12 +22,12 @@
     "LOCAL_WORKFLOWS": "PASS_LOCAL_SYNTHETIC_DRAFT",
     "EXPLICIT_SPREADSHEET_PREPARATION": "PASS_BOUNDED_LOCAL_SYNTHETIC_WITH_BROWSER_TRANSPORT_LIMITATION",
     "BROWSER_PRESENTATION": "PASS_LOCAL_SYNTHETIC_WITH_CANONICAL_DOWNLOAD_PARITY",
-    "PRIVATE_HOSTING": "DEPLOYED_OWNER_SIGNIN_FAILED_IN_APP_BROWSER"
+    "PRIVATE_HOSTING": "PASS_OWNER_AUTHENTICATED_DEMO_AND_CANONICAL_JSON_PARITY"
   },
   "real_data_scope": "Actual public protocol and registry metadata; all operational records synthetic.",
   "next_action": "Obtain a reviewer-verified synthetic export and dictionary from an actual configured workflow; independent source/rule review and known-answer challenge; measure total preparation plus review burden. Do not accept real patient data under current scope.",
   "last_command_record": "review/web/commands/20261018T110257.304516Z-runtime-integrity-rebuild-e5ebcf3d/record.json",
-  "updated_at": "2026-10-18T11:05:04.555349+00:00",
+  "updated_at": "2026-10-18T11:09:40.515041+00:00",
   "evidence": {
     "gate": "gates/PREPARATION_TECHNICAL.json",
     "application_tests": 457,
@@ -46,17 +46,17 @@
     "One wide-CSV preparation path; no repeating/longitudinal adapter or vendor certification.",
     "Three actual upload transport failures preserved; later valid/malformed transfers succeeded; root cause unestablished.",
     "No independent human source or case review, real participant pilot or measured workflow benefit.",
-    "Fresh install and local browser verification on same Mac only. Private deployment exists; hosted calculation remains unverified behind owner sign-in.",
+    "Fresh install and local browser verification on same Mac only. Private deployment and owner-authenticated browser calculation verified on the demonstrated case.",
     "Existing saved-viewer/OS-print browser limitations retained; no new viewer browser acceptance.",
     "Browser presentation covers one-spreadsheet workflow only; three-table intake and saved comparison remain in local Streamlit.",
     "No patient-data database or operational clinical service; user explicitly chose owner-private access."
   ],
   "continuation": {
-    "status": "PRIVATE_BROWSER_DEMO_TECHNICAL_COMPLETE_HOSTED_SIGNIN_UNVERIFIED",
+    "status": "PRIVATE_BROWSER_DEMO_TECHNICAL_COMPLETE",
     "basis": "Direct final-hour request for useful honest demonstration, improved UI, research, hosting and presentation; explicit private access choice.",
     "baseline_commit": "a668e6ef81376887bddbf338cb0f358e7ce71b54",
     "overall_percentage": null,
-    "stage": "Working narrow synthetic demonstration; private deployment with owner-authentication limitation",
+    "stage": "Working narrow synthetic demonstration, privately hosted and browser verified",
     "work": [
       "Browser interface using unchanged Python engine",
       "Actual browser input/output checks and changed-date challenge",

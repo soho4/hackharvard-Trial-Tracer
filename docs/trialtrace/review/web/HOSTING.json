@@ -1,7 +1,7 @@
 {
   "id": "appgdep_6ad4a698b9548191b9168e274f689e8f",
   "project_id": "appgprj_6ad4a284498881919c757fe8c335289c",
-  "title": "TrialTrace — every finding, explained",
+  "title": "TrialTrace \u2014 every finding, explained",
   "version_id": "appgprj_6ad4a284498881919c757fe8c335289c~appgver_715855d352108191bdef10e25ef54ad9",
   "type": "publish",
   "status": "succeeded",
@@ -15,6 +15,8 @@
   "audience": "owner-private",
   "audience_basis": "User explicitly selected Keep it private to my account",
   "source_commit": "a8c9f3c90542368664dc0bf991679814c6deeacf",
-  "hosted_runtime_browser_verification": "NOT_COMPLETED_OWNER_SIGNIN_ROUTE_ERROR",
-  "local_browser_verification": "PASS_BOUNDED_SYNTHETIC_CASES"
+  "hosted_runtime_browser_verification": "PASS_OWNER_AUTHENTICATED_DEMO_AND_CANONICAL_JSON_PARITY",
+  "local_browser_verification": "PASS_BOUNDED_SYNTHETIC_CASES",
+  "authentication_history": "Initial route error; automatic security verification completed; subsequent owner account selection succeeded. No audience change or bypass.",
+  "verified_at": "2026-10-18T11:09:40.510262+00:00"
 }
