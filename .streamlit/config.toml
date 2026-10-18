@@ -6,6 +6,10 @@ maxUploadSize = 1
 [browser]
 gatherUsageStats = false
 
+[client]
+# Use the explicit formula-safe review CSV and original evidence JSON downloads.
+disableDataExport = true
+
 [theme]
 primaryColor = "#086859"
 backgroundColor = "#fcfcf9"

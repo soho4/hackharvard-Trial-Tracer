@@ -1,8 +1,9 @@
 # TrialTrace — local draft timing checks
 
-TrialTrace reads three actual CSV files, checks their identities and relationships,
-and applies one deterministic timing rule to explicitly mapped synthetic visits.
-It exports the original evidence and uncertain cases in the existing viewer format.
+TrialTrace checks three uploaded CSV files before calculation, applies one
+deterministic timing rule to explicitly mapped synthetic visits, and makes uncertain
+records available for review. It exports original evidence, separate finding and
+input-issue lists, and a conservative comparison of two saved reports.
 
 **Source interpretation is pending independent human review. Clinical validation is
 false. Only explicit `DRAFT_ENGINEERING` execution is enabled.** A potential deviation
@@ -33,6 +34,8 @@ one day outside. Clearing removes the current result before a replacement choose
 can reject a file. No old report or download remains under new inputs.
 
 Use the saved-report tab to inspect exported evidence in the teammate viewer.
+The **Compare saved reports** tab compares two exported JSON files without changing
+either report or rerunning the timing rule.
 The local server binds to `127.0.0.1`; this does not deploy publicly. Stop it with Ctrl-C.
 For optional local PDF provenance, append `-- --source-pdf /path/to/Prot_000.pdf` to
 the Streamlit command. The app can also run without those bytes and labels that absence.
@@ -41,6 +44,35 @@ The source sidebar displays a dated snapshot fetched from the actual public
 ClinicalTrials.gov API. It is study metadata and aggregate results, not participant
 visit data. Every operational example is synthetic. The runtime does not fetch
 registry data or send uploaded CSV records to external services.
+If this optional metadata snapshot is unavailable or malformed, the sidebar says
+so; a valid configured rule and the upload workflow remain usable.
+
+## Prepare, review and compare
+
+Follow the [synthetic workflow exercise](examples/workflows/README.md) for a fuller
+example with six visits, unused invalid rows and duplicate identities.
+
+1. Upload the three files in `examples/workflows/before/`. **File checks**
+   shows missing, parsed or rejected files, record counts and diagnostics before
+   calculation. Download header templates or the intake JSON when useful.
+   Readable CSVs do not establish valid relationships or timing compliance.
+2. Confirm synthetic draft mode and run. **Findings to review** lists non-PASS
+   findings with reasons and suggested next checks. **Input rows to review** is
+   separate and includes issues on unused anchors and assignments. Its count is
+   issues, not visits or participants. Download either CSV list; display filters
+   do not change those exports or the full evidence JSON.
+3. Clear visits.csv, choose `examples/workflows/after/visits.csv`, and rerun. Save
+   both evidence reports. **Compare saved reports** shows changed values and
+   evidence fingerprints separately. Only complete, unambiguous identities pair;
+   duplicate or incomplete identities remain unpaired. Changes in rule, source or
+   producer context are visible. No missing activity or clinical resolution is inferred.
+4. **Start a new check** clears the current CSVs, findings, filters and draft opt-in.
+   Saved-report comparison has its own Clear controls and remains independent.
+
+Derived CSV exports escape formula-like cells for spreadsheet use; the evidence
+JSON retains exact original values. Suggested next checks are requests to inspect
+evidence, not clinical decisions or completed reviews. Each saved report is limited
+to 2,000,000 bytes and must pass strict validation before comparison.
 
 ## CLI install and run
 
@@ -105,9 +137,27 @@ prevent cleanup; such errors are reported rather than labeled successful.
 .venv/bin/python tools/check_mutation.py
 .venv/bin/python tools/run_acceptance.py
 node tools/check_viewers.cjs
+.venv/bin/python tools/run_workflow_acceptance.py --out .local-evidence/workflow-run
 ```
 
-The current test count and executed results are recorded in `docs/trialtrace/HAND_BACK.md`. The deliberate upper-bound
+Use a new output directory for each workflow acceptance run. Reinstall the local
+package after source changes before using the installed CLI or acceptance runner.
+The workflow runner checks the literal expectations in the synthetic exercise;
+the application never reads those expectations.
+
+The current Python suite passed **424 tests**; the final focused app regression run
+passed 19. Recorded commands, the actual installed-CLI workflow and fresh-wheel
+reproduction are linked from [HAND_BACK](docs/trialtrace/HAND_BACK.md).
+The served browser produced before/after evidence JSON and review/input-issue CSVs
+byte-identical to the installed-CLI exercise. Its comparison download has equal
+JSON content, with different whitespace. Malformed and oversized replacements,
+recovery, independent reset and multiple rejected input roles were exercised; see
+[the browser review](docs/trialtrace/review/workflows/BROWSER_REVIEW.md).
+The browser also calculated and downloaded a report while optional registry metadata
+was deliberately malformed, then confirmed the exact snapshot's restoration.
+The embedded saved-viewer chooser timed out in this continuation, so no new viewer
+browser pass is claimed; its earlier G3 Chrome evidence remains historical.
+The deliberate upper-bound
 mutation causes five mathematical assertion failures. Saved real input/output evidence
 is in `examples/execution/`; command logs, failures and exit codes are in
 `docs/trialtrace/commands/`. Node is used only for optional viewer compatibility checks.
@@ -124,9 +174,11 @@ contract tests and actual served browser checks cover these repairs. The origina
 branch snapshot is retained under `tools/g3_viewer/native_snapshot/`; provenance and
 patches are recorded beside it.
 
-The main upload app was launched locally and exercised with newly authored files,
+At the earlier G3 checkpoint, the main upload app was launched locally and exercised with newly authored files,
 changed dates, missing evidence, malformed and oversized replacements, filters,
 and actual downloads compared byte-for-byte with the CLI. Component tests are
 recorded separately from browser evidence. A fresh local venv/wheel reproduction
 was tested; another machine was not. See [HAND_BACK](docs/trialtrace/HAND_BACK.md) for
 current gates, exact commits, review evidence, limitations, and the next action.
+
+Current bounded workflow progress: [100/100 local checklist](docs/trialtrace/BUILD_PROGRESS.md). This is not overall clinical or production readiness.

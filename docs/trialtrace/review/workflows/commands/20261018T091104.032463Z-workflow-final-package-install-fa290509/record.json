@@ -1,0 +1,24 @@
+{
+  "label": "workflow-final-package-install",
+  "command": [
+    ".venv/bin/python",
+    "-m",
+    "pip",
+    "install",
+    "--no-build-isolation",
+    "--no-deps",
+    "."
+  ],
+  "cwd": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace",
+  "started_at": "2026-10-18T09:11:04.032463+00:00",
+  "finished_at": "2026-10-18T09:11:04.749241+00:00",
+  "elapsed_seconds": 0.71645,
+  "status": "EXIT_ZERO",
+  "exit_code": 0,
+  "stdout_path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/docs/trialtrace/review/workflows/commands/20261018T091104.032463Z-workflow-final-package-install-fa290509/stdout.log",
+  "stderr_path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/docs/trialtrace/review/workflows/commands/20261018T091104.032463Z-workflow-final-package-install-fa290509/stderr.log",
+  "stdout_sha256": "2e03cde19e01faa6fd712d6d36edfe6d2846e180bd8741613b7defb6dba8eace",
+  "stderr_sha256": "8f3f53aae84e23d6c56eef04ef0f2813c4fddfdf89fbe01867af37b8743e478f",
+  "gate_acceptance": "NOT_DETERMINED_BY_COMMAND_RECORDER",
+  "warning": "Logs are not tamper-proof; this does not establish test assertions, source review, or clinical validity."
+}

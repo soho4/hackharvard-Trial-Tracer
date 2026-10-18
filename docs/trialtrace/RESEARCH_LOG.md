@@ -39,3 +39,88 @@ Technical observations only; no human source approval.
 - The final app was verified against the installed CLI and a fresh Python -I wheel
   installation. New evidence lives under review/g3_clean_install; the earlier
   clean_install.json is retained as its original core-only checkpoint.
+
+## Local workflow continuation, 18 October 2026
+
+- Inspected the current specification, app and parser/accounting contract before
+  extending the local engineering workflow. Intake uses the same strict parser as
+  calculation and reports independently rejected files before draft execution.
+  Record links and accounting do not establish timing outcomes. The read-only
+  baseline and acceptance risks are preserved in
+  [review/workflows/BASELINE_REVIEW.md](review/workflows/BASELINE_REVIEW.md).
+- A findings-only list misses invalid unused anchors and assignments. The workflow
+  therefore exposes a separate input-issue list, with one row per issue and explicit
+  unused-row context. Full exports preserve finding/record references independently
+  of UI filters. Formula-like identifiers are escaped only in derived CSVs; original
+  JSON evidence is unchanged. Newly authored synthetic CSVs and independently
+  worked expectations are in [examples/workflows](../../examples/workflows/README.md).
+- Cross-run finding IDs include the input snapshot and cannot identify the same
+  activity after an input change. Comparison instead requires unique, complete
+  study/participant/site/visit identities, leaves duplicate visit keys unpaired,
+  and distinguishes changed values from evidence-only changes. Missing identity
+  is not recovered from registry metadata; an unpaired record does not establish
+  a missed activity. Saved reports are read without recalculating timing.
+- Adversarial saved-report checks found that structurally plausible accounting
+  could contradict source evidence already present in findings. The shared
+  validator now checks that consistency. The actual reproduction, intermediate
+  failed test edit and final **97-pass** accounting/comparison run are preserved
+  under `review/workflows/commands/`; these are technical tests, not source approval.
+- Read-only component fault injection showed that malformed optional registry
+  metadata could stop the whole upload UI. A bounded strict loader now validates
+  declared NCT/API identity, types and date shapes, rejects malformed/deep/duplicate
+  JSON and invalid Unicode, and returns structured errors. The app reports metadata
+  unavailable while retaining a valid draft workflow. This does not authenticate
+  the snapshot's declaration or replace human review of the protocol.
+- The pre-null-summary-repair full Python command passed **423 tests in 11.10 s**, exit 0, at
+  [the recorded full-suite run](review/workflows/commands/20261018T091034.290277Z-workflow-final-all-tests-f717f286/record.json).
+  The later focused app/registry run passed **71 tests in 5.13 s** with explicit
+  `PYTHONPATH=src` and stable before/after hashes. Its
+  [source binding](review/workflows/commands/20261018T091111.330862Z-workflow-current-source-app-registry-final-e561cc58/source_binding.json)
+  records app `a90a5695...` and code/schema `5c3a04fc...`.
+- A standalone review wrapper initially imported an older installed package even
+  though pytest selected repository `src` through its configuration. Those two
+  intermediate bindings are retained and explicitly qualified in the baseline
+  review. The final binding hashes repository files directly. The current
+  [installed-CLI exercise](review/workflows/actual_run_final/result.json) and
+  [fresh regular-wheel reproduction](review/workflows/clean_install/result.json)
+  independently record exact current package/app hashes and expected results.
+  Reinstall after source changes before using a previously installed package.
+- No new public-source fetch, patient dataset or human review was added in this
+  continuation. The actual public protocol and dated registry snapshot remain
+  distinct from synthetic operational examples.
+- The final served-browser workflow downloaded before/after evidence JSON and
+  finding/input-issue CSVs that match the installed-CLI exercise byte-for-byte.
+  Comparison JSON objects are equal while whitespace differs. Malformed saved
+  JSON produced structured REPORT_JSON with no stale download; a report above
+  2 MiB was rejected without comparison/download and valid replacement recovered.
+  Resetting current CSV checking retained the independent comparison. Two invalid
+  input roles displayed their own diagnostics and blocked calculation with draft
+  mode confirmed. See [BROWSER_REVIEW.md](review/workflows/BROWSER_REVIEW.md) and
+  [the result record](review/workflows/browser_final/result.json).
+- Occasional computer-use locator/timeouts and recovered upload errors were
+  recovered and remain recorded. The in-app browser's embedded saved-viewer
+  chooser timed out in this continuation. That adds no new viewer-browser pass;
+  earlier G3 Chrome viewer evidence remains associated with its historical version.
+- Final browser console inspection found JSON-viewer errors when malformed inputs
+  left relationship/accounting summaries unavailable. Rendering an explicit caption
+  instead of JSON null repairs that display path. The final app fingerprint is
+  `1068c0d08a744acbeef751873641003e495540a33e0addde0ec3feeed1b4a9d6`;
+  core/schema remains `5c3a04fc...`. The
+  [final 19-test app regression](review/workflows/commands/20261018T092020.059769Z-null-intake-json-regression-verified-fbdac420/record.json)
+  passed in 5.80 seconds, and the
+  [fresh-install probe rerun](review/workflows/clean_install_final/result.json)
+  passed with that exact app hash. Earlier `a90a5695...` evidence retains its original
+  fingerprint rather than being relabeled as the final revision.
+- A deliberate served-browser registry fault replaced the optional snapshot with
+  malformed JSON at 09:21:33 UTC. The sidebar reported metadata unavailable while
+  valid synthetic CSV calculation and an actual report download succeeded. The
+  original bytes were restored at 09:21:57 UTC with identical SHA-256
+  `1406d7f7451506be41d1056b201d3baf46e1055885282ca7495ae5df3899dd4d`.
+  At 09:22:11 UTC the browser showed the source label again and no errors since
+  the null-summary repair. The [fault record](review/workflows/browser_final/registry-fault-injection.json)
+  and adjacent downloaded report/session events preserve that observation.
+- The first final 424-test run overlapped the deliberate optional-metadata fault
+  and remains preserved. After exact snapshot restoration, the
+  [normal-state final suite](review/workflows/commands/20261018T092201.707696Z-workflow-restored-snapshot-full-suite-7611b4f8/record.json)
+  passed **424 tests in 11.26 seconds**, exit 0. This is the final full-suite claim,
+  separate from the earlier 423-test and focused component checkpoints.

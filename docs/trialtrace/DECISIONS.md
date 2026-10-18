@@ -1,7 +1,7 @@
 # Decisions
 
 - User explicitly identified existing GitHub repository; clone is work/TrialTrace. Main was clean with only README and ignore file. No repository AGENTS instructions existed. New feature branch codex/trialtrace-core-v4. Separate origin/abinet/evidence-viewer branch is preserved and not merged.
-- Python src package, pytest, jsonschema; no runtime model, frontend, database or service.
+- Initial core selection: Python src package, pytest, jsonschema; no runtime model, frontend, database or service in that first session.
 - Retain exact candidate/schema/fixtures. Source review remains pending. Reviewed execution fails closed; explicit draft CLI mode is required.
 - Requirement and expected outcomes are frozen in CORE_ACCEPTANCE.md before implementation; separate test author owns application tests.
 - Canonical JSON: UTF-8, sorted keys, compact separators, ensure_ascii=False, allow_nan=False, final newline. No generated timestamp in result content.
@@ -41,3 +41,47 @@
   event remains a documented platform observation, not a claimed fix.
 - Technical AI challenges and fresh same-machine installation improve engineering
   confidence; they do not satisfy independent human source review or a real-data pilot.
+
+## 18 October 2026: authorized local workflow continuation
+
+- Add intake, findings/input-issue exports and saved-report comparison within the
+  existing synthetic draft scope. The candidate rule, arithmetic, outcome meanings,
+  viewer contract and human-review requirements are unchanged.
+- Use the shared parser for preflight. Expose missing/rejected roles, byte and
+  record counts, relationship/accounting information and a downloadable intake
+  report before calculation. Structural readability is not a PASS outcome and
+  does not bypass explicit synthetic draft opt-in.
+- Keep **Findings to review** and **Input rows to review** separate. The latter
+  includes unused invalid/conflicting rows and counts issues, not participants.
+  Suggestions request evidence inspection; they do not resolve clinical findings.
+  Display filters never narrow these full exports or canonical report bytes.
+- Escape formula-like cells in derived spreadsheet CSVs and disclose that behavior.
+  Keep exact values in evidence JSON, including deliberately adversarial synthetic
+  identifiers. Put readable outcome/identity/reason/action fields first in the UI;
+  retain exact run, finding and source references in exports/details.
+- Compare saved reports without rerunning the engine or mutating either input.
+  Require complete, unique identities and reject ambiguous canonical visit keys,
+  even if duplicate rows name different participants/sites. Keep changed values,
+  evidence fingerprints and rule/source/producer context distinct. Neither
+  disappearance nor a status transition establishes missed activity, resolution
+  or clinical improvement.
+- Treat saved reports as untrusted bounded JSON. Validate optional accounting
+  before accessing it, including consistency with evidence actually present in
+  findings. Missing optional accounting remains unavailable, not zero issues.
+- Apply Clear-before-replacement to both comparison slots. Current CSV checking
+  and saved comparison have independent state; **Start a new check** resets the
+  current CSV workflow, filters and draft opt-in without discarding saved comparison.
+- Treat registry metadata as optional display context. A strict 100,000-byte
+  loader rejects malformed/invalid declared metadata; the UI reports unavailability
+  without invented facts or blocking an otherwise valid pinned draft rule.
+- Reproduce current workflows through actual installed CLI output and a fresh
+  regular wheel. Preserve earlier failures and their original source fingerprints.
+  Keep component/CLI results separate from the final served-browser record for
+  the added workflows. Report evidence/CSV byte equality separately from comparison
+  JSON content equality. Preserve recovered tool/upload failures; the embedded
+  saved-viewer chooser timeout does not become a new viewer pass. No human source
+  approval or public deployment is added.
+- Render unavailable preflight summaries as an explanation, not JSON null. Verify
+  the display repair and optional-metadata failure path in the served browser;
+  restore exact metadata bytes after deliberate fault injection and use a separate
+  normal-state full-suite run for the final result.

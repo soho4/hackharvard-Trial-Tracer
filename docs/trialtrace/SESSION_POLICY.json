@@ -1,6 +1,6 @@
 {
   "version": "4.0",
-  "session_mode": "G3_DRAFT_LOCAL_CONTINUATION",
+  "session_mode": "LOCAL_WORKFLOW_CONTINUATION",
   "primary_builder": "Codex",
   "allowed_technical_units": [
     "PREFLIGHT",
@@ -10,7 +10,10 @@
     "CORE_EXPORT",
     "G3_DRAFT_UI",
     "SERVED_BROWSER_CHECKS",
-    "INDEPENDENT_CHALLENGE"
+    "INDEPENDENT_CHALLENGE",
+    "INTAKE_PREFLIGHT",
+    "EVIDENCE_WORKLISTS",
+    "SAVED_REPORT_COMPARISON"
   ],
   "routine_technical_confirmation_required": false,
   "advance_only_after_executed_required_checks": true,
@@ -30,7 +33,7 @@
     "change_repo_visibility": false
   },
   "stop_when": [
-    "G3 technical checks, independent challenge and updated review bundle complete; report external source-review blockers",
+    "Current local workflow increment built, actual browser behavior verified, progress and evidence handed back; report external review limitations",
     "no permitted independent work remains",
     "nondelegated interpretation/scope/security decision required",
     "environment or platform needs intervention"
@@ -38,5 +41,5 @@
   "source_acceptance_initial": "BLOCKED_PENDING_RETRIEVAL_AND_HUMAN_REVIEW",
   "do_not_reuse_old_timetable": true,
   "sanitization": "Personal schedule fields omitted; original retained in local handoff.",
-  "continuation_basis": "Direct user request to review, build, iterate and launch locally on 2026-10-18; no human source approval inferred."
+  "continuation_basis": "Direct user request to continue building application processes and report progress percentages on 2026-10-18. Source review/data scope/public deployment safeguards remain."
 }

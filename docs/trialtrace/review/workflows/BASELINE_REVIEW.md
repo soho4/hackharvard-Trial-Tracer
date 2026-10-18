@@ -1,0 +1,80 @@
+# Local workflow baseline and progress rubric
+
+This is an independent AI product/engineering review of the existing scoped local draft demo. The original v4 G3 technical target is complete at the recorded baseline. The broader workflow target below is approximately **75% complete**; this is a weighted acceptance estimate, not a measurement of clinical readiness, percent of the original spec completed, or remaining engineering effort.
+
+Baseline: commit `7bcf96a461815ed907902d7373f056810b0d178a`, app SHA-256 `6ab33e3e3f7253b16e2226ab4037fba904e958b9f2ced15de18d34cb9f092a9e`, package/schema SHA-256 `eb7350f8c7adef275604cfc03b2c27fe8d1c0dd0b4a794f9bf39e41bbc80ebc2`. Reviewed the master spec, FEATURE_STATUS, current app, shared upload adapter, relationship accounting, G3 gate and its cited evidence on 2026-10-18. The existing 264 application tests, 58 viewer tests, actual browser checks and fresh same-machine installation are recorded prior evidence, not tests rerun by this review.
+
+## What the existing app establishes
+
+A user can supply three actual synthetic CSV files, explicitly select draft mode, compute the supported candidate rule, inspect selected evidence and uncertainty, filter/search results, download the full JSON, and reopen it in the separate viewer. Clear-before-replacement protects against the known browser-side oversized-file rejection. Counts describe the entire report while filters affect display. Header-only visits produce an honest zero-finding result. All raw input hashes and original rows remain available.
+
+The next useful work is helping the user understand inputs before evaluation, find specific records needing attention, and compare two saved runs after correction. These are extensions to a working G3 demo, not repairs to an unimplemented engine. No new rule, real participant dataset, clinical priority or source approval is implied.
+
+## Weighted local-workflow target
+
+The weights are product judgment, made explicit to prevent a changing denominator. Award points only after the described behavior is implemented and checked; UI lifecycle/download claims also need actual served-browser evidence. Test counts alone do not earn points.
+
+| Workflow | Weight | Baseline earned | Evidence already present | Remaining acceptance |
+|---|---:|---:|---|---|
+| Trustworthy draft computation | 30 | 30 | Bounded strict CSV (8), exact identity/relationship checks (8), calendar math and draft-only gating (6), deterministic full evidence/provenance and contract compatibility (8) | Preserve these invariants through new features |
+| Understand and prepare inputs | 15 | 10 | Role/header templates (4), selected filename/size and safe replacement (3), explicit structural errors with no stale report (3) | Per-role preflight with logical record counts/BOM/hash (3); independent per-role diagnostics so all invalid files can be identified together (2) |
+| Inspect findings and plan corrections | 20 | 14 | Whole-report counts/filter/search (5), selected original evidence and hashes (5), complete accounting available as JSON (4) | Navigable findings/input-issue worklists (3); clearly scoped, portable issue exports (3) |
+| Correct and compare saved runs | 15 | 3 | Clear, replace and recompute changed data safely (3) | Bounded validation of both reports (3); conservative identity matching (4); outcome/evidence/provenance differences (3); deterministic comparison export and stale-result rejection (2) |
+| Reproduce and hand off the local workflow | 20 | 18 | Actual JSON/browser/CLI byte parity and saved viewer (6), fresh same-machine installation (4), real browser failure/repair evidence (6), runnable onboarding examples (2) | One documented combined prepare → review → correct → compare scenario, plus optional-metadata failure recovery (2) |
+| **Total** | **100** | **75** | **Working local engineering demo** | **25 points of stated workflow extensions and acceptance** |
+
+This estimate should be communicated as “about three quarters of the defined local workflow target,” with uncertainty roughly 70–80%. It is not a statement that the new work takes one quarter of the time already spent. Keep the weights fixed for this continuation; document any scope change separately. A score of 100 still means only the bounded, locally verified synthetic draft workflow. Human source review, clinical validation, real-data handling authorization, deployment and another-machine reproduction are separate gates, not percentage points to infer from UI work.
+
+## 1. Intake preflight
+
+Useful: after selecting each role, show structural validity, supplied filename, exact byte count/hash, BOM status and logical data-record count. A user should discover a bad header or encoding before pressing Run, and see which other files are valid. Header-only tables are valid and must be distinguished from unreadable or absent files. Display a bounded preview using the parser's actual rows, without normalizing values.
+
+Use the same strict parser as computation. Do not infer delimiters, trim identifiers, coerce dates, substitute sample data, or silently repair bytes. Report all independently discoverable file-level failures across the three roles, while stopping within an invalid file at the parser's first reliable error. Preflight is structural inspection, not a timing finding or proof of applicability. Preserve the existing record/byte/cell/export limits and explicit synthetic confirmation for evaluation. A changed file must clear findings, preflight-dependent exports and any prior success before replacement rejection can leave them visible.
+
+Acceptance: valid BOM/CRLF/multiline data; header-only table; two different bad roles at once; invalid UTF-8; 1,000,001 bytes; long cell; 501 rows; selected-file Clear; recover by replacing only the invalid role; exact raw-byte hashes unchanged.
+
+## 2. Findings and input rows to review
+
+Useful: make DATA_QUERY, NOT_EVALUABLE and POTENTIAL_DEVIATION findings navigable without requiring a user to read a large JSON object. Show a plain-language next inspection step alongside the original reason code, exact source role/ordinal and linked evidence. Keep PASS available; do not imply that excluded or unsupported records passed.
+
+A findings worklist alone is incomplete: invalid unreferenced anchors/assignments can appear only in input accounting. Provide a separate input-row issue list/export or a clearly identified combined list. Label finding count, affected record count and issue count separately. Multiple reasons on one row must survive; a shared bad anchor can affect several visits. Grouping must retain the list of affected visits and all conflicting evidence. Merely unreferenced valid rows are not automatically bad data or missed activities.
+
+Next steps should be evidence requests such as checking the supplied date or resolving an ambiguous reference. Do not suggest changing a date to fit the window, choosing an arbitrary duplicate, inferring a missing vaccination, or upgrading DRAFT_SYNTHETIC to reviewed approval. No clinical priority or severity ranking is justified by these engineering categories.
+
+Exports should be derived worklists, explicitly distinct from the canonical full evidence JSON. State whether the download is the full queue or a filtered subset and include run/rule/file identifiers needed to find the source. Spreadsheet CSV outputs must neutralize formula interpretation of untrusted text beginning with `=`, `+`, `-`, `@`, tab or carriage return; CSV quoting alone is insufficient. Keep exact originals in the canonical evidence, and disclose any spreadsheet-safe presentation escaping. Retain evidence and size limits rather than silently truncating rows.
+
+Acceptance: multiple issues on one record; a duplicate relationship affecting several visits; unreferenced invalid anchor/assignment; valid unreferenced row; null calculations; no findings; no actionable findings; filtered view versus full export; literal markup and formula-like identifiers; new run removing the previous queue/download.
+
+## 3. Conservative comparison of saved reports
+
+Useful: inspect what changed after a user corrected their synthetic files, and distinguish changed data from changed code/rule/source provenance. It should remain a read-only comparison of declared reports, not a rerun or approval mechanism.
+
+The finding ID is derived from the entire input snapshot and row ordinal. One input-byte change can change every finding ID. Never use it as the cross-run identity key, and never match on participant ID alone. First verify uniqueness of the contract visit key `(study_id, visit_id)` in each report. Pair only exact, nonblank, unambiguous identities with matching study, participant and site; if claiming the same activity, also require matching visit code. Duplicate keys, blank identities, conflicting owner evidence or missing identity fields stay ambiguous/unpaired. Do not recover identity from an arbitrary first evidence row. Reordering or line-ending changes must not invent added or resolved events.
+
+Compare source/rule/code/mode and file provenance prominently. A changed rule or producer must not be described as a data correction causing an improvement. Mark unmatched records as “present only in this report,” never “missed,” “completed,” “resolved deviation,” or “clinically improved.” Status transitions describe these supplied reports only. Keep original IDs/ordinals and raw evidence available on each side, including provenance-only changes.
+
+Both saved files are untrusted input: enforce the 2,000,000-byte bound before parsing, strict UTF-8/JSON, duplicate-key and nonfinite-number rejection, safe depth/Unicode handling, schema and semantic checks, and validation of optional accounting structures before using them. The current exporter validator assumes internally constructed accounting shapes; do not call it on arbitrary additional fields and assume every failure becomes InputError. Absent accounting means unavailable, not zero issues. A declared file hash does not authenticate an original CSV that was not supplied. A valid saved viewer fixture is not necessarily a comparable computed engine run.
+
+Use the same clear-before-choose principle for both comparison slots. Invalid or oversized replacement of either side must clear the old diff and its download. Matching must be bounded and deterministic, with no all-to-all evidence expansion. Preserve a full machine-readable comparison and explain any human-facing filter.
+
+Acceptance: identical bytes; same records reordered; line-ending-only changes; one changed date; one changed anchor affecting multiple visits; added/removed row; repeated participant with distinct visits; duplicate visit ID; missing study; changed person/site; changed rule hash despite same version; different code/source/mode; absent or malformed accounting; invalid status/date/hash; malformed/oversized second replacement. A change from DATA_QUERY to PASS must be labeled as a status transition under the supplied draft reports, not human resolution.
+
+## Current robustness finding
+
+**P2 — optional registry metadata corruption blocks the entire upload UI (`app.py:59–64` at baseline).** The source sidebar decodes and indexes the optional snapshot outside the guarded rule/source configuration path. A read-only in-memory fault injection replacing only that file read with `{` caused an uncaught JSONDecodeError and zero upload controls. The original metadata file and app bytes were unchanged. Observed 2026-10-18 08:57:48.939726 through 08:57:49.120460 UTC; command/process exit 0 because AppTest captured the app exception; `app.exception` contained “Expecting property name enclosed in double quotes: line 1 column 2 (char 1)”, with zero rendered controlled errors. This is component fault injection, not a served-browser result.
+
+Recommended repair: a bounded strict loader with validated identity/provenance/date fields and structured failure, caught by the sidebar. Show public metadata unavailable while preserving the valid pinned rule, source-review notices and upload workflow; never substitute fabricated facts. The parent authorized a focused follow-up fix after this baseline finding. Its later implementation/tests do not retroactively alter this recorded baseline.
+
+No additional material engine defect was reproduced during this bounded workflow audit. The core's mathematical/source interpretation is not re-approved by this review. Human source review and integrator acceptance remain blocked, clinical_validation remains false, and actual participant data remains outside scope.
+
+## Follow-up repair and component checks
+
+After this baseline was recorded, the parent authorized a focused optional-metadata loader and workflow component tests. `registry_metadata.py` now bounds reads to 100,000 bytes, rejects excessive depth, duplicate keys, nonfinite numbers and invalid Unicode, and validates the consumed fields, UTC/calendar date shapes and declared NCT/API identity. The app catches its structured InputError and retains the pinned rule and upload flow without inventing substitute metadata. An in-memory corrupt-file component test now executes a valid draft run while the sidebar explicitly reports metadata unavailable.
+
+The recorded combined registry/app component command at `commands/20261018T090704.989919Z-workflow-app-registry-component-tests-rechecked-eb8d366b/record.json` exited 0: **71 passed in 5.57 seconds**. Checks cover multi-file preflight rejection and recovery, logical multiline record counts, unreferenced invalid-row visibility, filter-independent worklists, read-only comparison with the timing function forbidden, corrupt/oversized comparison replacement, changed context warnings, and resetting the current check independently of saved comparison. This is component/API coverage, not new browser evidence or a retrospective change to the baseline score.
+
+The prior recorded command at `commands/20261018T090637.794458Z-workflow-app-registry-component-tests-b68411a9/record.json` preserved 70 passes and one failure: a test expected the pre-edit capitalization/wording of the context warning while the implementation owner revised that copy. The corrected assertion still requires the explicit context warning, exact changed-context JSON and unchanged result classifications. No requirement was removed to obtain the pass.
+
+After the worklist display was changed to show readable action columns first, the AppTest assertions were updated to require the exact displayed columns, record ordinal, participant, outcome and suggested next check. Full-report bytes and download references must still remain unchanged under display filters. The final focused run at `commands/20261018T091111.330862Z-workflow-current-source-app-registry-final-e561cc58/record.json` passed **71 tests in 5.13 seconds**, with explicit `PYTHONPATH=src`. Its adjacent `source_binding.json` directly hashes the repository before and after the command and records no changes: app SHA-256 `a90a5695a105d5e89a45da41514f049726edaa3db7c1ab21c6e6f2c15c279f23`; production code/schema SHA-256 `5c3a04fc876cd946228433b156bfc78912b8c342011154288fda619fa08451d9`.
+
+Two intermediate records are retained with their limitations. `commands/20261018T090956.894533Z-workflow-semantic-tables-component-tests-65c8e830/record.json` ran the inspection tests during an edit, preserving 117 passes and three IndexError failures; its binding detects that the inspection test file changed during execution. `commands/20261018T091024.037893Z-workflow-semantic-tables-app-registry-rechecked-fda6431f/record.json` passed 71 focused tests with stable repository file hashes. In both intermediate bindings, the field named `code_schema_sha256` came from the standalone wrapper's older installed package, not the current repository; it must not be used as the tested source digest. Pytest itself selected repository `src` through its committed configuration. The final record above removes that ambiguity by hashing repository files directly and explicitly selecting `src` for the subprocess.

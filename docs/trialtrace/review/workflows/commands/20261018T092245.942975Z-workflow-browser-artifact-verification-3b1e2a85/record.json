@@ -1,0 +1,19 @@
+{
+  "label": "workflow-browser-artifact-verification",
+  "command": [
+    ".venv/bin/python",
+    "tools/verify_workflow_browser_artifacts.py"
+  ],
+  "cwd": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace",
+  "started_at": "2026-10-18T09:22:45.942975+00:00",
+  "finished_at": "2026-10-18T09:22:46.079976+00:00",
+  "elapsed_seconds": 0.136543,
+  "status": "EXIT_ZERO",
+  "exit_code": 0,
+  "stdout_path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/docs/trialtrace/review/workflows/commands/20261018T092245.942975Z-workflow-browser-artifact-verification-3b1e2a85/stdout.log",
+  "stderr_path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/docs/trialtrace/review/workflows/commands/20261018T092245.942975Z-workflow-browser-artifact-verification-3b1e2a85/stderr.log",
+  "stdout_sha256": "39bf2cfbfa956abe474779c87b48d98c88a27ddad48bfe3cfb459c9376b16787",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "gate_acceptance": "NOT_DETERMINED_BY_COMMAND_RECORDER",
+  "warning": "Logs are not tamper-proof; this does not establish test assertions, source review, or clinical validity."
+}

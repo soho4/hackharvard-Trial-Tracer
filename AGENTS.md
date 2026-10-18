@@ -11,6 +11,8 @@ technical prerequisites pass. Stop at CORE_EXPORT for the first session and retu
 an actual review bundle, not just a plan. Do not start frontend work in that session. The subsequent user continuation on
 2026-10-18 authorizes G3 local draft UI, real-browser review, independent challenges
 and technical fixes. Source approval and public deployment remain separate.
+The next direct continuation authorizes local intake, review-list, comparison and
+reproduction workflows, with progress estimates tied to explicit acceptance criteria.
 
 Source acceptance is separate from technical success. Never invent human review,
 source bytes/hash, results, executed commands, clinical validity, or a successful push.

@@ -1,0 +1,39 @@
+{
+  "scope": "Literal expected workflow observations authored before execution; synthetic only",
+  "before_statuses": {
+    "PASS": 2,
+    "POTENTIAL_DEVIATION": 0,
+    "DATA_QUERY": 3,
+    "NOT_EVALUABLE": 1
+  },
+  "after_statuses": {
+    "PASS": 1,
+    "POTENTIAL_DEVIATION": 1,
+    "DATA_QUERY": 3,
+    "NOT_EVALUABLE": 1
+  },
+  "changed_visit": "SYNTH-FLOW-V1",
+  "changed_calculation": {
+    "target": "2028-02-29",
+    "earliest": "2028-02-29",
+    "latest": "2028-03-03",
+    "actual": "2028-03-04",
+    "days_outside": 1
+  },
+  "comparison": {
+    "matched": 4,
+    "changed": 1,
+    "provenance_only": 3,
+    "unchanged": 0,
+    "added": 0,
+    "removed": 0,
+    "unmatched_before": 2,
+    "unmatched_after": 2
+  },
+  "before_review_findings": 4,
+  "after_review_findings": 5,
+  "input_issue_count": 7,
+  "unreferenced_issues": 3,
+  "csv_escape_expected": "'=SYNTH-FORMULA",
+  "json_identity_unchanged": "=SYNTH-FORMULA"
+}

@@ -1,0 +1,173 @@
+[
+  {
+    "at": "2026-10-18T09:14:52.438Z",
+    "event": "clear_visits",
+    "reportDownloadVisible": false,
+    "runEnabled": false
+  },
+  {
+    "at": "2026-10-18T09:14:59.996Z",
+    "event": "clear_visits_settled",
+    "reportDownloadVisible": false,
+    "runEnabled": false
+  },
+  {
+    "at": "2026-10-18T09:15:31.416Z",
+    "event": "after_actual_download"
+  },
+  {
+    "at": "2026-10-18T09:15:49.090Z",
+    "event": "actual_browser_download",
+    "file": "after-review.csv"
+  },
+  {
+    "at": "2026-10-18T09:15:49.487Z",
+    "event": "actual_browser_download",
+    "file": "after-intake.json"
+  },
+  {
+    "at": "2026-10-18T09:15:51.799Z",
+    "event": "actual_browser_download",
+    "file": "before-browser.json"
+  },
+  {
+    "at": "2026-10-18T09:15:52.142Z",
+    "event": "actual_browser_download",
+    "file": "before-review.csv"
+  },
+  {
+    "at": "2026-10-18T09:15:52.414Z",
+    "event": "actual_browser_download",
+    "file": "before-intake.json"
+  },
+  {
+    "at": "2026-10-18T09:16:25.046Z",
+    "event": "actual_browser_download",
+    "file": "before-input-issues.csv"
+  },
+  {
+    "at": "2026-10-18T09:16:50.735Z",
+    "event": "actual_comparison_download"
+  },
+  {
+    "at": "2026-10-18T09:17:15.387Z",
+    "event": "comparison_clear",
+    "downloadVisible": false,
+    "compareEnabled": false
+  },
+  {
+    "at": "2026-10-18T09:17:24.698Z",
+    "event": "invalid_json_rejected",
+    "downloadVisible": false
+  },
+  {
+    "at": "2026-10-18T09:17:34.928Z",
+    "event": "oversized_json_rejected",
+    "downloadVisible": false,
+    "compareEnabled": false
+  },
+  {
+    "at": "2026-10-18T09:17:36.626Z",
+    "event": "comparison_recovery",
+    "downloadVisible": true
+  },
+  {
+    "at": "2026-10-18T09:18:35.853Z",
+    "event": "multiple_invalid_inputs_with_draft_confirmed",
+    "invalidHeaderVisible": false,
+    "invalidUtf8Visible": false,
+    "runEnabled": false,
+    "downloadVisible": false
+  },
+  {
+    "at": "2026-10-18T09:18:36.623Z",
+    "event": "new_check_does_not_clear_saved_comparison",
+    "comparisonVisible": true
+  },
+  {
+    "at": "2026-10-18T09:20:22.232Z",
+    "event": "null_diagnostics_repair",
+    "explanationVisible": true,
+    "browserLogs": [
+      {
+        "level": "error",
+        "message": "Client Error: File uploader error on file upload - AxiosError: Network Error",
+        "timestamp": "2026-10-18T09:18:01.084Z",
+        "url": "http://127.0.0.1:8501/static/js/index.DucWPHXi.js"
+      },
+      {
+        "level": "error",
+        "message": "react-json-view error: src property must be a valid json object",
+        "timestamp": "2026-10-18T09:18:20.323Z",
+        "url": "http://127.0.0.1:8501/static/js/reactJsonViewCompat.CMMhomkZ.js"
+      },
+      {
+        "level": "error",
+        "message": "react-json-view error: src property must be a valid json object",
+        "timestamp": "2026-10-18T09:18:20.323Z",
+        "url": "http://127.0.0.1:8501/static/js/reactJsonViewCompat.CMMhomkZ.js"
+      },
+      {
+        "level": "error",
+        "message": "react-json-view error: src property must be a valid json object",
+        "timestamp": "2026-10-18T09:18:26.021Z",
+        "url": "http://127.0.0.1:8501/static/js/reactJsonViewCompat.CMMhomkZ.js"
+      },
+      {
+        "level": "error",
+        "message": "react-json-view error: src property must be a valid json object",
+        "timestamp": "2026-10-18T09:18:26.021Z",
+        "url": "http://127.0.0.1:8501/static/js/reactJsonViewCompat.CMMhomkZ.js"
+      }
+    ]
+  },
+  {
+    "at": "2026-10-18T09:20:45.122Z",
+    "event": "final_app_valid_calculation_comparison_rechecked",
+    "appSha256": "1068c0d08a744acbeef751873641003e495540a33e0addde0ec3feeed1b4a9d6",
+    "browserLogs": [
+      {
+        "level": "error",
+        "message": "Client Error: File uploader error on file upload - AxiosError: Network Error",
+        "timestamp": "2026-10-18T09:18:01.084Z",
+        "url": "http://127.0.0.1:8501/static/js/index.DucWPHXi.js"
+      },
+      {
+        "level": "error",
+        "message": "react-json-view error: src property must be a valid json object",
+        "timestamp": "2026-10-18T09:18:20.323Z",
+        "url": "http://127.0.0.1:8501/static/js/reactJsonViewCompat.CMMhomkZ.js"
+      },
+      {
+        "level": "error",
+        "message": "react-json-view error: src property must be a valid json object",
+        "timestamp": "2026-10-18T09:18:20.323Z",
+        "url": "http://127.0.0.1:8501/static/js/reactJsonViewCompat.CMMhomkZ.js"
+      },
+      {
+        "level": "error",
+        "message": "react-json-view error: src property must be a valid json object",
+        "timestamp": "2026-10-18T09:18:26.021Z",
+        "url": "http://127.0.0.1:8501/static/js/reactJsonViewCompat.CMMhomkZ.js"
+      },
+      {
+        "level": "error",
+        "message": "react-json-view error: src property must be a valid json object",
+        "timestamp": "2026-10-18T09:18:26.021Z",
+        "url": "http://127.0.0.1:8501/static/js/reactJsonViewCompat.CMMhomkZ.js"
+      }
+    ]
+  },
+  {
+    "at": "2026-10-18T09:21:51.337Z",
+    "event": "corrupt_optional_registry_browser_run_succeeds",
+    "metadataNoticeAttached": 1,
+    "downloadVisible": true
+  },
+  {
+    "at": "2026-10-18T09:22:11.410Z",
+    "event": "optional_registry_restored",
+    "registryLabelPresent": 1,
+    "errorsSinceRepair": []
+  }
+]

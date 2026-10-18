@@ -17,3 +17,7 @@ tools/g3_viewer/*/tests/ACCEPTANCE_CASES.md -whitespace
 tools/g3_viewer/*/tests/browser_inputs/broken.json -text -whitespace
 # Unified diff context lines intentionally contain a leading space.
 tools/g3_viewer/*.patch -text -whitespace
+
+# Preserve actual continuation evidence and uploaded CSV byte fingerprints.
+docs/trialtrace/review/workflows/**/*.log -whitespace
+docs/trialtrace/review/workflows/**/*.csv -text whitespace=cr-at-eol

@@ -1,0 +1,24 @@
+{
+  "label": "workflow-semantic-tables-component-tests",
+  "command": [
+    ".venv/bin/python",
+    "-m",
+    "pytest",
+    "tests/test_streamlit_app.py",
+    "tests/test_registry_metadata.py",
+    "tests/test_inspection.py",
+    "-q"
+  ],
+  "cwd": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace",
+  "started_at": "2026-10-18T09:09:56.894533+00:00",
+  "finished_at": "2026-10-18T09:10:02.407886+00:00",
+  "elapsed_seconds": 5.51307,
+  "status": "EXIT_NONZERO",
+  "exit_code": 1,
+  "stdout_path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/docs/trialtrace/review/workflows/commands/20261018T090956.894533Z-workflow-semantic-tables-component-tests-65c8e830/stdout.log",
+  "stderr_path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/docs/trialtrace/review/workflows/commands/20261018T090956.894533Z-workflow-semantic-tables-component-tests-65c8e830/stderr.log",
+  "stdout_sha256": "a866bd032803c8a2450ada625c88bbe46b78da840f4a2573fbaba829a9029adb",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "gate_acceptance": "NOT_DETERMINED_BY_COMMAND_RECORDER",
+  "warning": "Logs are not tamper-proof; this does not establish test assertions, source review, or clinical validity."
+}

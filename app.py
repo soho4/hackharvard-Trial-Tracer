@@ -13,6 +13,9 @@ from trialtrace.engine import validate_rule
 from trialtrace.importer import HEADERS
 from trialtrace.source import hash_source_pdf
 from trialtrace.workflow import check_uploads
+from trialtrace.inspection import inspect_uploads, build_worklist, worklist_csv, build_input_issue_list, input_issues_csv
+from trialtrace.comparison import load_report, compare_reports
+from trialtrace.registry_metadata import load_registry_snapshot
 
 
 ROOT = Path(__file__).resolve().parent
@@ -47,6 +50,191 @@ def capture_upload(role, widget_key):
         st.session_state["selected_upload_" + role] = (uploaded.name, uploaded.getvalue())
 
 
+def reset_check():
+    for role in HEADERS:
+        clear_upload(role)
+    st.session_state["draft_confirmed"] = False
+    st.session_state["outcome_filter"] = "ALL"
+    st.session_state["finding_search"] = ""
+
+
+def render_intake(uploads, rule, rule_hash):
+    report = inspect_uploads(uploads, rule, rule_hash)
+    st.subheader("File checks")
+    if all(value is None for value in uploads.values()):
+        st.caption("Select the three tables to check their format and record links before calculating dates.")
+    else:
+        st.dataframe([{ "Table": item["role"], "State": item["state"],
+                        "Records": item.get("record_count"), "Bytes": item.get("byte_count") }
+                      for item in report["files"]], hide_index=True, width="stretch")
+        for item in report["files"]:
+            for problem in item["problems"]:
+                st.error("File rejected: " + item["role"])
+                st.json(problem)
+        for problem in report["configuration_problems"] + report["inspection_problems"]:
+            st.error("The input check could not complete.")
+            st.json(problem)
+        if report["ready_for_draft_check"]:
+            st.success("File formats are readable. The draft check can run.")
+            st.caption("Readable files may still contain missing, conflicting or unsupported records. This does not approve data or source interpretation.")
+        elif report["missing_roles"]:
+            st.info("Still needed: " + ", ".join(report["missing_roles"]))
+        with st.expander("Record links and input issues before calculation"):
+            st.write("These checks do not calculate timing outcomes. Unused records remain accounted for.")
+            if report["relationship_summary"] is None or report["input_accounting"] is None:
+                st.caption("Record-link checks are unavailable until all three files have readable formats.")
+            else:
+                st.json(report["relationship_summary"])
+                st.json(report["input_accounting"])
+        st.download_button("Download input checks JSON", json.dumps(report, ensure_ascii=False, indent=2).encode("utf-8"),
+                           file_name="trialtrace-input-checks.json", mime="application/json", key="intake_download", on_click="ignore")
+    return report
+
+
+def render_worklist(bundle):
+    rows = build_worklist(bundle)
+    with st.expander(f"Findings to review · {len(rows)}", expanded=bool(rows)):
+        st.caption("Potential deviations, data queries and unsupported records from the whole report. Suggestions are next checks, not clinical decisions or completed reviews.")
+        if rows:
+            st.dataframe([{"Outcome": row["status"], "Participant": row["participant_id"], "Visit": row["visit_id"],
+                           "Reason": row["reason"], "Next check": row["suggested_action"], "Visit record": row["record_ordinal"]}
+                          for row in rows], hide_index=True, width="stretch", height=280)
+            st.caption("Use the outcome filter and finding selector below to open any listed record's original evidence. The CSV also includes exact run, finding and evidence references.")
+        else:
+            st.write("No non-PASS findings in this report. This does not establish complete records or clinical compliance.")
+        st.download_button("Download review list CSV", worklist_csv(bundle), file_name="trialtrace-review-list.csv",
+                           mime="text/csv", key="worklist_download", on_click="ignore")
+        st.caption("CSV cells that could be read as spreadsheet formulas are escaped. The evidence JSON retains the exact original values. Display filters do not change this list.")
+    input_issues = build_input_issue_list(bundle)
+    with st.expander(f"Input rows to review · {len(input_issues)} issues"):
+        st.caption("One row per recorded input issue, including unused anchors and assignments. A record may have several issues; this is not a count of visits or participants.")
+        if input_issues:
+            st.dataframe([{"Table": row["source_file"], "Record": row["record_ordinal"], "Issue": row["code"],
+                           "Unused row": row["is_unreferenced"], "Participant": row["participant_id"],
+                           "Next check": row["suggested_action"]} for row in input_issues], hide_index=True, width="stretch", height=280)
+        else:
+            st.write("No row-level input issues recorded.")
+        st.download_button("Download input issues CSV", input_issues_csv(bundle), file_name="trialtrace-input-issues.csv",
+                           mime="text/csv", key="input_issues_download", on_click="ignore")
+
+
+def invalidate_comparison():
+    for key in ("comparison_result", "comparison_error", "comparison_snapshot"):
+        st.session_state.pop(key, None)
+    for key in list(st.session_state):
+        if key.startswith("compared_finding_"):
+            st.session_state.pop(key, None)
+
+
+def capture_comparison(side, widget_key):
+    invalidate_comparison()
+    uploaded = st.session_state.get(widget_key)
+    if uploaded is not None:
+        st.session_state["comparison_upload_" + side] = (uploaded.name, uploaded.getvalue())
+
+
+def clear_comparison(side):
+    invalidate_comparison()
+    st.session_state.pop("comparison_upload_" + side, None)
+    revision = "comparison_revision_" + side
+    st.session_state[revision] = st.session_state.get(revision, 0) + 1
+
+
+def render_comparison():
+    st.subheader("Compare two saved reports")
+    st.write("Choose an earlier and a later evidence JSON to inspect changed dates, outcomes and source records. Reports are read as saved; this does not rerun or approve the timing rule.")
+    slots = {}
+    for column, side, label in zip(st.columns(2), ("before", "after"), ("Earlier report", "Later report")):
+        with column:
+            selected = st.session_state.get("comparison_upload_" + side)
+            if selected is None:
+                key = f"comparison_{side}_{st.session_state.get('comparison_revision_' + side, 0)}"
+                st.file_uploader(label, key=key, max_upload_size=2, on_change=capture_comparison, args=(side, key))
+            else:
+                st.text(label)
+                st.text(selected[0])
+                st.caption(f"{len(selected[1]):,} bytes selected")
+                st.button("Clear " + label.lower(), key="clear_comparison_" + side, on_click=clear_comparison, args=(side,))
+            slots[side] = selected
+    snapshot = tuple((side, None if item is None else hashlib.sha256(item[1]).hexdigest()) for side, item in slots.items())
+    if st.session_state.get("comparison_snapshot") != snapshot:
+        invalidate_comparison()
+    if st.button("Compare reports", disabled=not all(slots.values()), key="compare_reports"):
+        invalidate_comparison()
+        try:
+            before, after = (load_report(slots[side][1]) for side in ("before", "after"))
+            st.session_state["comparison_result"] = compare_reports(before, after)
+        except InputError as exc:
+            st.session_state["comparison_error"] = exc.diagnostic()
+        st.session_state["comparison_snapshot"] = snapshot
+        st.rerun()
+    if "comparison_error" in st.session_state:
+        st.error("Report comparison rejected. No previous comparison remains available.")
+        st.json(st.session_state["comparison_error"])
+    elif "comparison_result" in st.session_state:
+        result = st.session_state["comparison_result"]
+        st.subheader("Changes between the saved reports")
+        st.caption("Records match only when study, participant, site and visit identities are complete and unique. Ambiguous records remain unpaired.")
+        labels = {"matched": "Uniquely matched", "changed": "Changed values", "provenance_only": "Evidence fingerprints only",
+                  "unchanged": "Unchanged", "added": "Present only in later report", "removed": "Present only in earlier report",
+                  "unmatched_before": "Unpaired in earlier report", "unmatched_after": "Unpaired in later report"}
+        st.dataframe([{"Comparison": label, "Records": result["summary"][key]} for key, label in labels.items()], hide_index=True, width="stretch")
+        st.caption("Unpaired counts include records present on only one side and ambiguous identities. These counts do not describe missed or completed activities.")
+        critical = [item for item in result["context_changes"] if item["field"] != "input_files"]
+        if critical:
+            st.warning("Rule, source or report context differs. Review these differences before interpreting changed outcomes.")
+            st.json(critical)
+        with st.expander("Input file fingerprints across reports"):
+            file_changes = [item for item in result["context_changes"] if item["field"] == "input_files"]
+            if file_changes:
+                st.json(file_changes)
+            else:
+                st.write("Declared input file fingerprints are unchanged.")
+        with st.expander("Matched records and field changes", expanded=True):
+            include_provenance = st.checkbox("Include records whose only changes are evidence fingerprints", key="comparison_show_provenance")
+            changed = [item for item in result["matched"] if any(field != "evidence_provenance" or include_provenance for field in item["changed_fields"])]
+            if changed:
+                selection_key = "compared_finding_" + hashlib.sha256(json.dumps([(item["before_finding_id"], item["after_finding_id"]) for item in changed]).encode()).hexdigest()
+                chosen = st.selectbox("Select changed record", range(len(changed)), key=selection_key,
+                                      format_func=lambda i: " · ".join(str(changed[i]["identity"].get(k) or "—") for k in ("participant_id", "site_id", "visit_id")))
+                item = changed[chosen]
+                values = []
+                for field in ("status", "reason", "visit_code"):
+                    if field in item["changes"]:
+                        change = item["changes"][field]
+                        values.append({"Field": field.replace("_", " ").title(), "Earlier": str(change["before"]), "Later": str(change["after"])})
+                if "calculation" in item["changes"]:
+                    change = item["changes"]["calculation"]
+                    for field in ("actual", "target", "earliest", "latest", "days_outside"):
+                        before_value = (change["before"] or {}).get(field)
+                        after_value = (change["after"] or {}).get(field)
+                        if before_value != after_value:
+                            values.append({"Field": field.replace("_", " ").title(), "Earlier": str(before_value) if before_value is not None else "No calculation",
+                                           "Later": str(after_value) if after_value is not None else "No calculation"})
+                if values:
+                    st.dataframe(values, hide_index=True, width="stretch")
+                st.caption("Changed fields: " + ", ".join(field.replace("_", " ") for field in item["changed_fields"]))
+                with st.expander("Exact comparison record and source evidence"):
+                    st.json(item)
+            else:
+                st.write("No changed outcome, timing, reason or source-row values among the uniquely matched records.")
+        with st.expander("Unpaired and ambiguous records", expanded=bool(result["unmatched_before"] or result["unmatched_after"])):
+            unpaired = [{"Report": label, "Participant": (item["identity"] or {}).get("participant_id"),
+                         "Visit": (item["identity"] or {}).get("visit_id"), "Record": item["record_ordinal"], "Reason": item["reason"]}
+                        for label, key in (("Earlier", "unmatched_before"), ("Later", "unmatched_after")) for item in result[key]]
+            if unpaired:
+                st.dataframe(unpaired, hide_index=True, width="stretch")
+            else:
+                st.write("Every record has a unique matching identity in the other report.")
+            with st.expander("Exact unpaired identities and report references"):
+                st.json({key: result[key] for key in ("unmatched_before", "unmatched_after", "ambiguous_groups")})
+        st.download_button("Download comparison JSON", json.dumps(result, ensure_ascii=False, indent=2).encode("utf-8"),
+                           file_name="trialtrace-comparison.json", mime="application/json", key="comparison_download", on_click="ignore")
+        st.caption("This comparison is separate from both original evidence reports; neither report is changed.")
+    else:
+        st.info("No current comparison. Choose both saved reports, then compare.")
+
+
 def render_source(rule, rule_hash, source):
     st.subheader("Public source · draft interpretation")
     st.write("NCT04470427 · Moderna mRNA-1273-P301")
@@ -57,8 +245,11 @@ def render_source(rule, rule_hash, source):
     st.link_button("Open public protocol", rule["source_url"])
     st.link_button("Open trial registry", "https://clinicaltrials.gov/study/NCT04470427")
     metadata_path = ROOT / "docs/trialtrace/review/g3_source/registry_snapshot.json"
-    if metadata_path.exists():
-        snapshot = json.loads(metadata_path.read_text())
+    try:
+        snapshot = load_registry_snapshot(metadata_path)
+    except InputError:
+        st.caption("Public registry metadata is unavailable. The pinned protocol and rule remain available below.")
+    else:
         study = snapshot["study"]
         st.text(f"Registry: {study['overall_status']} · {study['lead_sponsor']}")
         st.caption(f"Public metadata fetched {snapshot['source']['fetched_at_utc'][:10]}; registry updated {study['last_update_posted']}. Snapshot, not a live feed.")
@@ -84,6 +275,7 @@ def render_report(bundle, encoded):
     st.write(f"{len(bundle['findings'])} documented visit record(s) checked. Counts always describe the whole report.")
     st.download_button("Download evidence JSON", encoded, file_name="trialtrace-evidence.json", mime="application/json", key="evidence_download", on_click="ignore")
     st.caption("The download contains the full report, including original evidence and unresolved records. Filters do not change it.")
+    render_worklist(bundle)
     first, second = st.columns([1, 2])
     status = first.selectbox("Outcome filter", ("ALL", *OUTCOMES), key="outcome_filter")
     search = second.text_input("Search participant, visit, site or reason", key="finding_search").casefold().strip()
@@ -139,11 +331,15 @@ def main():
         st.stop()
     with st.sidebar:
         render_source(rule, rule_hash, source)
-    workspace, saved = st.tabs(["Check uploaded data", "Open saved evidence report"])
+    workspace, saved, comparison = st.tabs(["Check uploaded data", "Open saved evidence report", "Compare saved reports"])
     with workspace:
         st.subheader("1. Supply the three source tables")
         st.caption("UTF-8 CSV · up to 1,000,000 bytes and 500 rows per table · dates YYYY-MM-DD. Files stay in this local app session; no database or model service is used.")
         st.caption("To replace or remove a selected file, clear it first. This also clears the current report before another file is chosen.")
+        with st.expander("How the three tables connect"):
+            st.write("Each visit names an anchor_id and assignment_id. The linked records must agree on study_id, participant_id and site_id. The anchor is the actual vaccination date; the visit is a documented completed safety phone call.")
+            st.write("Keep identifiers exactly as recorded. Dates use YYYY-MM-DD. Download the header templates below; unsupported events or unresolved mappings remain visible as uncertainties.")
+            st.write("This local workflow accepts synthetic draft examples only. The application cannot detect or de-identify real participant data.")
         uploads = {}
         for column, (role, headers) in zip(st.columns(3), HEADERS.items()):
             with column:
@@ -159,12 +355,15 @@ def main():
                     st.button("Clear " + role, key="clear_" + role, on_click=clear_upload, args=(role,))
                 uploads[role] = selected_upload
                 st.download_button("Download " + role + " template", ",".join(headers) + "\n", file_name=role, mime="text/csv", key="template_" + role, on_click="ignore")
+        if any(value is not None for value in uploads.values()):
+            st.button("Start a new check", key="reset_check", on_click=reset_check)
+        intake = render_intake(uploads, rule, rule_hash)
         confirmed = st.checkbox("These are synthetic records; run the unreviewed draft timing check.", key="draft_confirmed", on_change=invalidate)
         snapshot = tuple((role, None if value is None else (value[0], hashlib.sha256(value[1]).hexdigest())) for role, value in uploads.items()) + (("rule", rule_hash), ("source", None if source is None else source["pdf_sha256"]), ("draft", confirmed))
         if st.session_state.get("result_snapshot") != snapshot:
             invalidate()
         st.subheader("2. Run the timing check")
-        ready = confirmed and all(value is not None for value in uploads.values())
+        ready = confirmed and intake["ready_for_draft_check"]
         if st.button("Run timing check", type="primary", disabled=not ready):
             invalidate()
             try:
@@ -195,6 +394,8 @@ def main():
             st.iframe(html, height=1050)
         else:
             st.info("The separate viewer has not been installed in this checkout.")
+    with comparison:
+        render_comparison()
 
 
 if __name__ == "__main__":

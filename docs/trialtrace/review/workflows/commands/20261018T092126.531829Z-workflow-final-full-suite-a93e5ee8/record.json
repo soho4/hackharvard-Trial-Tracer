@@ -1,0 +1,21 @@
+{
+  "label": "workflow-final-full-suite",
+  "command": [
+    ".venv/bin/python",
+    "-m",
+    "pytest",
+    "-q"
+  ],
+  "cwd": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace",
+  "started_at": "2026-10-18T09:21:26.531829+00:00",
+  "finished_at": "2026-10-18T09:21:37.906803+00:00",
+  "elapsed_seconds": 11.374613,
+  "status": "EXIT_ZERO",
+  "exit_code": 0,
+  "stdout_path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/docs/trialtrace/review/workflows/commands/20261018T092126.531829Z-workflow-final-full-suite-a93e5ee8/stdout.log",
+  "stderr_path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/docs/trialtrace/review/workflows/commands/20261018T092126.531829Z-workflow-final-full-suite-a93e5ee8/stderr.log",
+  "stdout_sha256": "be9db4536a5799a4ee09a721b78e3c74cdb3ef88b4e41df813a75ae93fed76c7",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "gate_acceptance": "NOT_DETERMINED_BY_COMMAND_RECORDER",
+  "warning": "Logs are not tamper-proof; this does not establish test assertions, source review, or clinical validity."
+}

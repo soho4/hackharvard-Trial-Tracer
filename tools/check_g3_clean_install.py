@@ -28,9 +28,10 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--repo', type=Path, required=True)
     parser.add_argument('--source-pdf', type=Path)
+    parser.add_argument('--out', type=Path, help='Evidence directory; defaults to the original G3 review folder')
     args = parser.parse_args()
     repo = args.repo.resolve()
-    output = repo/'docs/trialtrace/review/g3_clean_install'
+    output = args.out.resolve() if args.out else repo/'docs/trialtrace/review/g3_clean_install'
     run_id = datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%S.%fZ') + '-' + uuid.uuid4().hex[:8]
     run = output/'runs'/run_id
     run.mkdir(parents=True, exist_ok=False)
@@ -48,6 +49,8 @@ def main():
     from trialtrace.exporter import code_digest
     from trialtrace.source import hash_source_pdf
     from trialtrace.workflow import check_uploads
+    from trialtrace.comparison import load_report, compare_reports
+    from trialtrace.inspection import inspect_uploads, build_worklist, build_input_issue_list
 
     installed_path = Path(trialtrace.__file__).resolve()
     environment = Path(sys.prefix).resolve()
@@ -83,6 +86,9 @@ def main():
         folder = repo/'examples/browser'/name
         paths = {role: folder/role for role in ('anchors.csv', 'visits.csv', 'assignments.csv')}
         uploads = {role: (path.name, path.read_bytes()) for role, path in paths.items()}
+        intake = inspect_uploads(uploads, rule, rule_sha)
+        assert intake['ready_for_draft_check'] and intake['timing_evaluated'] is False
+        assert [item['record_count'] for item in intake['files']] == ([0, 1, 1] if name == 'missing_anchor' else [1, 1, 1])
         bundle, encoded = check_uploads(uploads, rule, rule_sha, draft_confirmed=True, source_metadata=source)
         assert len(bundle['findings']) == 1
         finding = bundle['findings'][0]
@@ -111,11 +117,24 @@ def main():
         assert bundle['review_status'] == 'PENDING_TEAM_SOURCE_REVIEW'
         assert bundle['clinical_validation'] is False
         assert bundle['producer']['code_sha256'] == code_digest()
+        assert load_report(encoded) == bundle
+        review_rows = build_worklist(bundle)
+        assert len(review_rows) == (0 if status == 'PASS' else 1)
+        input_issues = build_input_issue_list(bundle)
+        assert len(input_issues) == (1 if name == 'missing_anchor' else 0)
+        if input_issues:
+            assert input_issues[0]['code'] == 'MISSING_ANCHOR_ID'
         outputs[name] = encoded
         cases.append({'case': name, 'status': status, 'calculation': expected_calc,
                       'cli_exit_code': completed.returncode, 'cli_adapter_bytes_identical': True,
+                      'intake_ready_without_timing': True, 'review_findings': len(review_rows), 'input_issues': len(input_issues),
                       'output_sha256': sha(encoded), 'input_sha256': {role: sha(path.read_bytes()) for role,path in paths.items()},
-                      'command_record': str((run/(name+'-cli.command.json')).relative_to(repo))})
+                      'command_record': str(run/(name+'-cli.command.json'))})
+
+    comparison = compare_reports(load_report(outputs['boundary']), load_report(outputs['outside']))
+    assert comparison['summary']['matched'] == comparison['summary']['changed'] == 1
+    assert comparison['summary']['unmatched_before'] == comparison['summary']['unmatched_after'] == 0
+    assert comparison['matched'][0]['changes']['status'] == {'before': 'PASS', 'after': 'POTENTIAL_DEVIATION'}
 
     # Confirm malformed bytes reach the installed parser, not a successful fixture fallback.
     folder = repo/'examples/browser/corrupt'
@@ -137,10 +156,13 @@ def main():
             sys.argv += ['--source-pdf', str(args.source_pdf.resolve())]
         app = AppTest.from_file(app_path, default_timeout=30).run()
         assert not app.exception, [item.message for item in app.exception]
-        assert len(app.file_uploader) == 3
+        assert len(app.file_uploader) == 5
+        csv_uploaders = [uploader for uploader in app.file_uploader if uploader.label in ('anchors.csv', 'visits.csv', 'assignments.csv')]
+        assert len(csv_uploaders) == 3
+        assert {uploader.label for uploader in app.file_uploader} == {'anchors.csv', 'visits.csv', 'assignments.csv', 'Earlier report', 'Later report'}
         assert 'result' not in app.session_state
         assert next(button for button in app.button if button.label == 'Run timing check').disabled
-        for uploader in app.file_uploader:
+        for uploader in csv_uploaders:
             role = uploader.label
             path = repo/'examples/browser/boundary'/role
             uploader.set_value((path.name, path.read_bytes(), 'text/csv'))
@@ -154,6 +176,7 @@ def main():
         assert app.session_state['result_bytes'] == outputs['boundary'], 'App script bytes differ from installed CLI'
         assert [metric.value for metric in app.metric] == ['1','0','0','0']
         assert len([button for button in app.download_button if button.key == 'evidence_download']) == 1
+        assert {button.key for button in app.download_button} >= {'intake_download', 'worklist_download', 'input_issues_download'}
         assert app.session_state['result']['findings'][0]['calculation']['target'] == '2040-02-29'
         # The real UI's explicit clear action retires stale results before replacement.
         next(button for button in app.button if button.label == 'Clear visits.csv').click().run()
@@ -180,7 +203,9 @@ def main():
         'schema_sha256': sha(schema), 'app_sha256': app_sha, 'requirements_ui_lock_sha256': lock_sha,
         'rule_sha256': rule_sha, 'source_metadata': source, 'dependencies': dependencies,
         'cases': cases, 'malformed_upload_rejection': malformed_code,
+        'comparison': comparison['summary'],
         'app_test': {'actual_script': str(app_path), 'uploads': 3, 'draft_confirmed': True,
+                     'initial_upload_slots': 5, 'csv_slots_selected_by_role': True,
                      'findings_status': 'PASS', 'metrics': ['1','0','0','0'], 'bytes_match_cli': True,
                      'clear_retires_report_and_download': True, 'app_exceptions': 0,
                      'classification': 'IN_PROCESS_APPTEST_NOT_BROWSER'},

@@ -1,0 +1,86 @@
+........................................................................ [ 60%]
+.............................................FFF                         [100%]
+=================================== FAILURES ===================================
+_ test_accounting_cannot_contradict_records_observed_in_finding_evidence[zero_records] _
+
+records = {'anchors.csv': [{'study_id': 'NCT04470427', 'participant_id': 'synthetic-never-bundled-817', 'site_id': 'synthetic-si...pant_id': 'synthetic-never-bundled-817', 'site_id': 'synthetic-site-new', 'assignment_id': 'assignment-new-817', ...}]}
+make_bundle = <function make_bundle.<locals>.make at 0x11128c220>
+claim = 'zero_records'
+
+        with pytest.raises(InputError) as caught:
+            build_input_issue_list(bundle)
+        assert caught.value.code == "ACCOUNTING_METADATA"
+    
+    
+    @pytest.mark.parametrize("claim", ["zero_records", "unreferenced_evidence", "too_few_referenced"])
+    def test_accounting_cannot_contradict_records_observed_in_finding_evidence(records, make_bundle, claim):
+        bundle = make_bundle(records)
+        table = bundle["input_accounting"]["anchors.csv"]
+        if claim == "zero_records":
+            table.update(record_count=0, referenced_record_count=0, unreferenced_record_ordinals=[])
+        elif claim == "unreferenced_evidence":
+            table.update(referenced_record_count=0, unreferenced_record_ordinals=[1])
+        else:
+            # Conservation alone is insufficient when it contradicts observed refs.
+>           table.update(record_count=2, referenced_record_count=0, unreferenced_record_ordinals=[1, 2])
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E           IndexError: list index out of range
+
+tests/test_inspection.py:248: IndexError
+_ test_accounting_cannot_contradict_records_observed_in_finding_evidence[unreferenced_evidence] _
+
+records = {'anchors.csv': [{'study_id': 'NCT04470427', 'participant_id': 'synthetic-never-bundled-817', 'site_id': 'synthetic-si...pant_id': 'synthetic-never-bundled-817', 'site_id': 'synthetic-site-new', 'assignment_id': 'assignment-new-817', ...}]}
+make_bundle = <function make_bundle.<locals>.make at 0x11128e520>
+claim = 'unreferenced_evidence'
+
+        with pytest.raises(InputError) as caught:
+            build_input_issue_list(bundle)
+        assert caught.value.code == "ACCOUNTING_METADATA"
+    
+    
+    @pytest.mark.parametrize("claim", ["zero_records", "unreferenced_evidence", "too_few_referenced"])
+    def test_accounting_cannot_contradict_records_observed_in_finding_evidence(records, make_bundle, claim):
+        bundle = make_bundle(records)
+        table = bundle["input_accounting"]["anchors.csv"]
+        if claim == "zero_records":
+            table.update(record_count=0, referenced_record_count=0, unreferenced_record_ordinals=[])
+        elif claim == "unreferenced_evidence":
+            table.update(referenced_record_count=0, unreferenced_record_ordinals=[1])
+        else:
+            # Conservation alone is insufficient when it contradicts observed refs.
+>           table.update(record_count=2, referenced_record_count=0, unreferenced_record_ordinals=[1, 2])
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E           IndexError: list index out of range
+
+tests/test_inspection.py:248: IndexError
+_ test_accounting_cannot_contradict_records_observed_in_finding_evidence[too_few_referenced] _
+
+records = {'anchors.csv': [{'study_id': 'NCT04470427', 'participant_id': 'synthetic-never-bundled-817', 'site_id': 'synthetic-si...pant_id': 'synthetic-never-bundled-817', 'site_id': 'synthetic-site-new', 'assignment_id': 'assignment-new-817', ...}]}
+make_bundle = <function make_bundle.<locals>.make at 0x11128c400>
+claim = 'too_few_referenced'
+
+        with pytest.raises(InputError) as caught:
+            build_input_issue_list(bundle)
+        assert caught.value.code == "ACCOUNTING_METADATA"
+    
+    
+    @pytest.mark.parametrize("claim", ["zero_records", "unreferenced_evidence", "too_few_referenced"])
+    def test_accounting_cannot_contradict_records_observed_in_finding_evidence(records, make_bundle, claim):
+        bundle = make_bundle(records)
+        table = bundle["input_accounting"]["anchors.csv"]
+        if claim == "zero_records":
+            table.update(record_count=0, referenced_record_count=0, unreferenced_record_ordinals=[])
+        elif claim == "unreferenced_evidence":
+            table.update(referenced_record_count=0, unreferenced_record_ordinals=[1])
+        else:
+            # Conservation alone is insufficient when it contradicts observed refs.
+>           table.update(record_count=2, referenced_record_count=0, unreferenced_record_ordinals=[1, 2])
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E           IndexError: list index out of range
+
+tests/test_inspection.py:248: IndexError
+=========================== short test summary info ============================
+FAILED tests/test_inspection.py::test_accounting_cannot_contradict_records_observed_in_finding_evidence[zero_records]
+FAILED tests/test_inspection.py::test_accounting_cannot_contradict_records_observed_in_finding_evidence[unreferenced_evidence]
+FAILED tests/test_inspection.py::test_accounting_cannot_contradict_records_observed_in_finding_evidence[too_few_referenced]
+3 failed, 117 passed in 5.22s

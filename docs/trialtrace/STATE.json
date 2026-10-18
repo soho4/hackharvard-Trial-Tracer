@@ -1,12 +1,12 @@
 {
   "spec_version": "4.0",
-  "status": "G3_LOCAL_DRAFT_TECHNICAL_COMPLETE",
+  "status": "LOCAL_WORKFLOW_TECHNICAL_COMPLETE",
   "repo": "https://github.com/soho4/hackharvard-Trial-Tracer",
   "branch": "codex/trialtrace-core-v4",
-  "preceding_delivery_commit": "27f825450212d14269ee04bfdf494fe5245f481b",
+  "preceding_delivery_commit": "7bcf96a461815ed907902d7373f056810b0d178a",
   "commit_locator": "Final HEAD and post-push remote SHA are in the external DELIVERY_MANIFEST.json; this commit cannot embed its own hash.",
-  "code_sha256": "eb7350f8c7adef275604cfc03b2c27fe8d1c0dd0b4a794f9bf39e41bbc80ebc2",
-  "app_sha256": "6ab33e3e3f7253b16e2226ab4037fba904e958b9f2ced15de18d34cb9f092a9e",
+  "code_sha256": "5c3a04fc876cd946228433b156bfc78912b8c342011154288fda619fa08451d9",
+  "app_sha256": "1068c0d08a744acbeef751873641003e495540a33e0addde0ec3feeed1b4a9d6",
   "rule_sha256": "f36336df90a1793a80b92f48ce273488a091547110856bdcc602587ddad9e7f0",
   "schema_sha256": "706c2b68086f1c9d38ac5ddbc37653e6f1da45d7d595eabff194c3e9737abee0",
   "source_acceptance": "BLOCKED_PENDING_HUMAN_REVIEW",
@@ -18,25 +18,43 @@
     "G3_TECHNICAL": "PASS_LOCAL_DRAFT_CHROME",
     "G4_HUMAN_REVIEW": "PENDING_AI_TECHNICAL_CHALLENGE_COMPLETE",
     "G5_REPRODUCTION": "PASS_SAME_MACHINE_FRESH_ENVIRONMENT_ONLY",
-    "REVIEWED_PRODUCT_PROMOTION": "BLOCKED_SOURCE_REVIEW"
+    "REVIEWED_PRODUCT_PROMOTION": "BLOCKED_SOURCE_REVIEW",
+    "LOCAL_WORKFLOWS": "PASS_LOCAL_SYNTHETIC_DRAFT"
   },
   "real_data_scope": "Actual public protocol and registry metadata; all operational records synthetic.",
   "next_action": "Independent human source/rule review and hand-worked challenge; an actual participant-data pilot requires explicitly authorized data and agreed handling scope.",
-  "last_command_record": "docs/trialtrace/commands/20261018T084350.963706Z-g3-final-application-tests-repaired-5b811e23/record.json",
-  "updated_at": "2026-10-18T08:51:44.703885+00:00",
+  "last_command_record": "docs/trialtrace/review/workflows/commands/20261018T092201.707696Z-workflow-restored-snapshot-full-suite-7611b4f8/record.json",
+  "updated_at": "2026-10-18T09:24:19.971137+00:00",
   "evidence": {
-    "gate": "gates/G3_TECHNICAL.json",
-    "application_tests": 264,
-    "viewer_tests": 58,
-    "standalone_browser_cases": 21,
-    "embedded_chrome_cases": 8,
-    "independent_synthetic_visits": 24
+    "gate": "gates/WORKFLOW_TECHNICAL.json",
+    "application_tests": 424,
+    "historical_viewer_tests": 58,
+    "workflow_browser": "review/workflows/BROWSER_REVIEW.md",
+    "workflow_downloads": "review/workflows/browser_final/result.json",
+    "fresh_environment": "review/workflows/clean_install_final/result.json",
+    "new_synthetic_workflow_visit_rows_per_report": 6
   },
   "limitations": [
-    "One candidate timing rule only",
+    "One unreviewed candidate timing rule only",
     "No real participant dataset tested",
-    "In-app browser iframe download event unverified; actual Chrome download passes",
+    "IAB embedded viewer chooser/download not established in this continuation; historical Chrome viewer checks passed",
     "OS print and complete embedded PDF pagination not established",
     "No public deployment or another-machine installation"
-  ]
+  ],
+  "continuation": {
+    "status": "WORKFLOW_TECHNICAL_COMPLETE",
+    "basis": "User asked to keep building the application processes and provide percentage updates.",
+    "baseline_commit": "7bcf96a461815ed907902d7373f056810b0d178a",
+    "baseline_local_workflow_estimate_percent": 75,
+    "percent_scope": "100/100 for the explicitly bounded local synthetic workflow checklist, not overall clinical or production application readiness.",
+    "work": [
+      "Intake preflight",
+      "Finding and input-issue CSV lists",
+      "Conservative saved-report comparison",
+      "Optional registry metadata recovery"
+    ],
+    "validation": "Current app/core hashes above are bound to the final full suite, recorded browser artifacts and fresh environment probe.",
+    "local_workflow_checklist_points": 100,
+    "progress_document": "BUILD_PROGRESS.md"
+  }
 }

@@ -1,0 +1,63 @@
+{
+  "status": "PASS",
+  "scope": "Actual installed CLI and helper functions on six new synthetic CSV files; not browser or human source review.",
+  "code_sha256": "5c3a04fc876cd946228433b156bfc78912b8c342011154288fda619fa08451d9",
+  "app_sha256": "a90a5695a105d5e89a45da41514f049726edaa3db7c1ab21c6e6f2c15c279f23",
+  "rule_sha256": "f36336df90a1793a80b92f48ce273488a091547110856bdcc602587ddad9e7f0",
+  "expected_sha256": "a1f61fdc54716d8d9cee45051f3165f26b520888e5ce251a90cd811a1f09afe7",
+  "source_metadata": {
+    "pdf_sha256": "da946b1ae23d40c41b332f1d0cb3311f0634e57009b4a37b9c6d6c60ee8bf186",
+    "retrieval_status": "LOCAL_PDF_BYTES_HASHED_IDENTITY_NOT_CHECKED_BY_RUNTIME"
+  },
+  "runs": [
+    {
+      "version": "before",
+      "counts": {
+        "DATA_QUERY": 3,
+        "NOT_EVALUABLE": 1,
+        "PASS": 2,
+        "POTENTIAL_DEVIATION": 0
+      },
+      "review_findings": 4,
+      "input_issues": 7,
+      "cli_adapter_bytes_equal": true,
+      "bytes": 20754,
+      "sha256": "7a402a5ad58cbf3b6dcf981814e6a4f490933af8fdbd0ea029838a7ff5244a36",
+      "inputs": {
+        "anchors.csv": "28b237bf7e7b4ed3117eca99f8321d1767bb260716f6a0869d1c0db5f39d0a0a",
+        "visits.csv": "1f4ed10dc2950b5196ea2645c912c2a41e67d10cb26483db89c8159fa474ddbc",
+        "assignments.csv": "ce0dd6b9a903f334908187929d30914c30d6a997daab090bc48109dd31b09be1"
+      }
+    },
+    {
+      "version": "after",
+      "counts": {
+        "DATA_QUERY": 3,
+        "NOT_EVALUABLE": 1,
+        "PASS": 1,
+        "POTENTIAL_DEVIATION": 1
+      },
+      "review_findings": 5,
+      "input_issues": 7,
+      "cli_adapter_bytes_equal": true,
+      "bytes": 20771,
+      "sha256": "51db5c6548cf19324cfc08b198445be0eb7c52ae6e384b1d0a4c008794bb3c54",
+      "inputs": {
+        "anchors.csv": "28b237bf7e7b4ed3117eca99f8321d1767bb260716f6a0869d1c0db5f39d0a0a",
+        "visits.csv": "4de08979496e62c1ff5580d2d5839695b5c65a8d48c9f91c02af405ab122ce84",
+        "assignments.csv": "ce0dd6b9a903f334908187929d30914c30d6a997daab090bc48109dd31b09be1"
+      }
+    }
+  ],
+  "comparison": {
+    "matched": 4,
+    "changed": 1,
+    "provenance_only": 3,
+    "unchanged": 0,
+    "added": 0,
+    "removed": 0,
+    "unmatched_before": 2,
+    "unmatched_after": 2
+  },
+  "formula_escape": "CSV escaped; original JSON value preserved"
+}

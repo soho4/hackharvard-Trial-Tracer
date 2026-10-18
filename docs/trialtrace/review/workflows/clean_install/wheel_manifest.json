@@ -1,0 +1,16 @@
+{
+  "wheel": "docs/trialtrace/review/workflows/clean_install/wheel/trialtrace_core-0.1.0-py3-none-any.whl",
+  "sha256": "6081984d49d4feaab0311a5fab209a5ef12daf4ef268cbb24244d2eab60ed48a",
+  "bytes": 31378,
+  "installation": "regular noneditable wheel in newly created workflow_clean_env",
+  "direct_url": {
+    "archive_info": {
+      "hash": "sha256=6081984d49d4feaab0311a5fab209a5ef12daf4ef268cbb24244d2eab60ed48a",
+      "hashes": {
+        "sha256": "6081984d49d4feaab0311a5fab209a5ef12daf4ef268cbb24244d2eab60ed48a"
+      }
+    },
+    "url": "file:///Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/docs/trialtrace/review/workflows/clean_install/wheel/trialtrace_core-0.1.0-py3-none-any.whl"
+  },
+  "wheel_packages": "Python core and pinned schema; app.py, viewer assets and registry snapshot remain repository files"
+}

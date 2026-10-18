@@ -1,0 +1,26 @@
+{
+  "label": "workflow-final-app-isolated-probe",
+  "command": [
+    "workflow_clean_env/bin/python",
+    "-I",
+    "TrialTrace/tools/check_g3_clean_install.py",
+    "--repo",
+    "TrialTrace",
+    "--out",
+    "TrialTrace/docs/trialtrace/review/workflows/clean_install_final",
+    "--source-pdf",
+    "source_check/.sources/Prot_000.pdf"
+  ],
+  "cwd": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work",
+  "started_at": "2026-10-18T09:19:59.384898+00:00",
+  "finished_at": "2026-10-18T09:20:00.920897+00:00",
+  "elapsed_seconds": 1.535619,
+  "status": "EXIT_ZERO",
+  "exit_code": 0,
+  "stdout_path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/docs/trialtrace/review/workflows/commands/20261018T091959.384898Z-workflow-final-app-isolated-probe-7564a048/stdout.log",
+  "stderr_path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/docs/trialtrace/review/workflows/commands/20261018T091959.384898Z-workflow-final-app-isolated-probe-7564a048/stderr.log",
+  "stdout_sha256": "c3477beae8b85bdebeae880430d88066786249c78236e5321df36e8ca810070d",
+  "stderr_sha256": "d28dad44f7023abe792488aceecdf40e0ea5b22dec8746245621d26b6ce31ec0",
+  "gate_acceptance": "NOT_DETERMINED_BY_COMMAND_RECORDER",
+  "warning": "Logs are not tamper-proof; this does not establish test assertions, source review, or clinical validity."
+}
