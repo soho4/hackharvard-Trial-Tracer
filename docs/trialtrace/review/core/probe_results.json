@@ -1,0 +1,117 @@
+{
+  "reviewed_source_hashes": {
+    "importer.py": "5da2fb5de5f49a364f225cf1c20dfd7745c9240903ebc315ef5d2faa58106bf8",
+    "exporter.py": "d8d6ff64ad4b9a15902f4c04b14a3d7042c72415cc3c09355b5873ae9b45388f",
+    "__init__.py": "f73c7fc3426695231fe9fc8ddc89dfcd53b8c211d2d8f1b1ff4eb511c701542c",
+    "import_cli.py": "fc29843ac0d43c6295ae64d61f7a72e497e0878a934c1ce05c6e7307e0a44afc",
+    "engine.py": "0945d9216b34644478d370ffacd08b542d65579ba7d79bf2b8cc2ec49cbd22d9",
+    "cli.py": "3ba744edfffa468d3b108ffaacc79b75d16b6fe8da7da0abb1b538c88f03d96c",
+    "errors.py": "21751b169405f8f79486ab57ea226c88ba3d1f416ec1560b2ce4f5a198744ae3",
+    "relationships.py": "23a46a43723158334bbaa7406dcc695a08eea9a4265029d2ff495380e3318ef2"
+  },
+  "baseline": {
+    "command": [
+      "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/.venv/bin/python",
+      "-m",
+      "trialtrace.cli",
+      "--anchors",
+      "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/review_core/inputs/anchors.csv",
+      "--visits",
+      "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/review_core/inputs/visits.csv",
+      "--assignments",
+      "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/review_core/inputs/assignments.csv",
+      "--rule",
+      "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/review_core/inputs/candidate_rule.json",
+      "--draft-synthetic",
+      "--output",
+      "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/review_core/good.json"
+    ],
+    "started_at_utc": "2026-10-18T07:29:02.026825+00:00",
+    "finished_at_utc": "2026-10-18T07:29:02.111575+00:00",
+    "exit_code": 0,
+    "stdout": "{\"status\": \"SUCCESS_DRAFT_ENGINEERING\", \"output\": \"/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/review_core/good.json\", \"run_id\": \"92eaafa890a3ad143902f1cdd52564a6fc24af43c28a39ca31568221629c3721\", \"summary\": {\"visit_evaluations\": 10, \"statuses\": {\"PASS\": 4, \"POTENTIAL_DEVIATION\": 2, \"DATA_QUERY\": 2, \"NOT_EVALUABLE\": 2}}, \"previous_output\": null}\n",
+    "stderr": "",
+    "output_exists_after_run": true,
+    "output_sha256": "091e0376d9ed0fbb7f159e99c2085f1c59fa967eb768b7813efa18df928348dd"
+  },
+  "dangling_option": {
+    "command": [
+      "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/.venv/bin/python",
+      "-m",
+      "trialtrace.cli",
+      "--anchors",
+      "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/review_core/inputs/anchors.csv",
+      "--visits",
+      "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/review_core/inputs/visits.csv",
+      "--assignments",
+      "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/review_core/inputs/assignments.csv",
+      "--rule",
+      "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/review_core/inputs/candidate_rule.json",
+      "--draft-synthetic",
+      "--output",
+      "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/review_core/good.json",
+      "--anchors"
+    ],
+    "started_at_utc": "2026-10-18T07:29:02.112296+00:00",
+    "finished_at_utc": "2026-10-18T07:29:02.189850+00:00",
+    "exit_code": 2,
+    "stdout": "",
+    "stderr": "{\"status\": \"FAILED\", \"diagnostic\": {\"code\": \"CLI_ARGUMENTS\", \"message\": \"argument --anchors: expected one argument\"}, \"previous_output\": null, \"success_bundle_written\": false}\n",
+    "output_exists_after_run": true,
+    "output_sha256": "091e0376d9ed0fbb7f159e99c2085f1c59fa967eb768b7813efa18df928348dd"
+  },
+  "diagnostic_directory": {
+    "command": [
+      "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/.venv/bin/python",
+      "-m",
+      "trialtrace.cli",
+      "--anchors",
+      "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/review_core/inputs/anchors.csv",
+      "--visits",
+      "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/review_core/inputs/visits.csv",
+      "--assignments",
+      "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/review_core/inputs/assignments.csv",
+      "--rule",
+      "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/review_core/inputs/candidate_rule.json",
+      "--draft-synthetic",
+      "--output",
+      "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/review_core/diagnostic_directory.json"
+    ],
+    "started_at_utc": "2026-10-18T07:29:02.190621+00:00",
+    "finished_at_utc": "2026-10-18T07:29:02.275976+00:00",
+    "exit_code": 2,
+    "stdout": "",
+    "stderr": "{\"status\": \"FAILED\", \"diagnostic\": {\"code\": \"IO_ERROR\", \"message\": \"[Errno 1] Operation not permitted: '/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/review_core/diagnostic_directory.json.diagnostics.json'\"}, \"previous_output\": null, \"success_bundle_written\": false, \"diagnostic_write_error\": \"[Errno 21] Is a directory: '/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/review_core/.trialtrace-cns3ud3d' -> '/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/review_core/diagnostic_directory.json.diagnostics.json'\"}\n",
+    "output_exists_after_run": true,
+    "output_sha256": "091e0376d9ed0fbb7f159e99c2085f1c59fa967eb768b7813efa18df928348dd"
+  },
+  "nested_rule": {
+    "command": [
+      "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/.venv/bin/python",
+      "-m",
+      "trialtrace.cli",
+      "--anchors",
+      "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/review_core/inputs/anchors.csv",
+      "--visits",
+      "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/review_core/inputs/visits.csv",
+      "--assignments",
+      "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/review_core/inputs/assignments.csv",
+      "--rule",
+      "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/review_core/inputs/nested_rule.json",
+      "--draft-synthetic",
+      "--output",
+      "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/review_core/nested_output.json"
+    ],
+    "started_at_utc": "2026-10-18T07:29:02.276759+00:00",
+    "finished_at_utc": "2026-10-18T07:29:02.356663+00:00",
+    "exit_code": 2,
+    "stdout": "",
+    "stderr": "{\"status\": \"FAILED\", \"diagnostic\": {\"code\": \"RULE_FIELDS\", \"message\": \"Rule has missing or unknown fields/policy\"}, \"previous_output\": null, \"success_bundle_written\": false}\n",
+    "output_exists_after_run": false,
+    "output_sha256": null
+  },
+  "unknown_declared_role": {
+    "validation": "ACCEPTED",
+    "unexpected_role": "arbitrary_unapproved_role.csv"
+  }
+}

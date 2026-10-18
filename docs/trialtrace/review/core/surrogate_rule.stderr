@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/src/trialtrace/cli.py", line 161, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+  File "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/src/trialtrace/cli.py", line 141, in main
+    bundle = build_bundle(tables, rule, digest, mode="DRAFT_ENGINEERING", source_metadata=source)
+  File "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/src/trialtrace/exporter.py", line 61, in build_bundle
+    digest.update(chunk.encode("utf-8"))
+                  ~~~~~~~~~~~~^^^^^^^^^
+UnicodeEncodeError: 'utf-8' codec can't encode character '\ud800' in position 2: surrogates not allowed

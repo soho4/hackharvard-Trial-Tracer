@@ -1,0 +1,16 @@
+{
+  "command": [
+    ".venv/bin/python",
+    "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/trialtrace_handoff/reference/v3/tools/verify_source.py",
+    "--pdf",
+    ".sources/Prot_000.pdf",
+    "--out",
+    "verifier_local_manifest.json"
+  ],
+  "cwd": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/source_check",
+  "started_at_utc": "2026-10-18T07:19:33.031905+00:00",
+  "finished_at_utc": "2026-10-18T07:19:35.197058+00:00",
+  "exit_code": 0,
+  "stdout_path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/source_check/logs/verifier_local.stdout",
+  "stderr_path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/source_check/logs/verifier_local.stderr"
+}

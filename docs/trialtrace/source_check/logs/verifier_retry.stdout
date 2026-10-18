@@ -1,0 +1,7 @@
+{
+  "url": "https://cdn.clinicaltrials.gov/large-docs/27/NCT04470427/Prot_000.pdf",
+  "checked_at": "2026-10-18T07:19:11.547886+00:00",
+  "status": "BLOCKED",
+  "sha256": null,
+  "error": "URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)>"
+}

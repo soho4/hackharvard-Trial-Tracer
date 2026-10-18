@@ -1,0 +1,120 @@
+{
+  "teammate_validator": {
+    "ref": "origin/abinet/evidence-viewer",
+    "commit": "1b216519e93866bca3fc36be174ec0f5bf05f793",
+    "path": "features/evidence_viewer/contract.js",
+    "sha256": "e79299e71aa0a84f33299070af8cc596cf2a7740f9a71a3416b768ae3ae6ebc6"
+  },
+  "reference_validator": {
+    "path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/trialtrace_handoff/reference/v3/reference_evidence_viewer/contract.js",
+    "sha256": "1c11eda80196f95132a7f7bd9ad235376fec013843bc2e68ac76ffc86a64b1c6"
+  },
+  "cases": [
+    {
+      "year": "0001",
+      "core_status": "PASS",
+      "calculation": {
+        "target": "0001-01-08",
+        "earliest": "0001-01-08",
+        "latest": "0001-01-11",
+        "actual": "0001-01-08",
+        "days_outside": 0
+      },
+      "core_code_sha256": "58a1a80115a5409160529739efe27163a81af1d1184433a20900721e57a90a9f",
+      "bundle_sha256": "745210ba214cd87f8507e4d5fb285c59878638f41773b36419567f38b21b224d",
+      "validator_exit_code": 0,
+      "validator": {
+        "ok": false,
+        "errors": [
+          "findings[0].calculation.target: must be a valid YYYY-MM-DD date",
+          "findings[0].calculation.earliest: must be a valid YYYY-MM-DD date",
+          "findings[0].calculation.latest: must be a valid YYYY-MM-DD date",
+          "findings[0].calculation.actual: must be a valid YYYY-MM-DD date"
+        ]
+      },
+      "stderr": "",
+      "reference_validator": {
+        "ok": true,
+        "errors": []
+      },
+      "reference_validator_exit_code": 0
+    },
+    {
+      "year": "0099",
+      "core_status": "PASS",
+      "calculation": {
+        "target": "0099-01-08",
+        "earliest": "0099-01-08",
+        "latest": "0099-01-11",
+        "actual": "0099-01-08",
+        "days_outside": 0
+      },
+      "core_code_sha256": "58a1a80115a5409160529739efe27163a81af1d1184433a20900721e57a90a9f",
+      "bundle_sha256": "0638e7f20f16d254cb7de117633219330af7f2505c71417b7d3608257d83c4e2",
+      "validator_exit_code": 0,
+      "validator": {
+        "ok": false,
+        "errors": [
+          "findings[0].calculation.target: must be a valid YYYY-MM-DD date",
+          "findings[0].calculation.earliest: must be a valid YYYY-MM-DD date",
+          "findings[0].calculation.latest: must be a valid YYYY-MM-DD date",
+          "findings[0].calculation.actual: must be a valid YYYY-MM-DD date"
+        ]
+      },
+      "stderr": "",
+      "reference_validator": {
+        "ok": true,
+        "errors": []
+      },
+      "reference_validator_exit_code": 0
+    },
+    {
+      "year": "0100",
+      "core_status": "PASS",
+      "calculation": {
+        "target": "0100-01-08",
+        "earliest": "0100-01-08",
+        "latest": "0100-01-11",
+        "actual": "0100-01-08",
+        "days_outside": 0
+      },
+      "core_code_sha256": "58a1a80115a5409160529739efe27163a81af1d1184433a20900721e57a90a9f",
+      "bundle_sha256": "93806ba1d16be42446d23683191e2d912209be65d37e1150aeff807c4a9abb41",
+      "validator_exit_code": 0,
+      "validator": {
+        "ok": true,
+        "errors": []
+      },
+      "stderr": "",
+      "reference_validator": {
+        "ok": true,
+        "errors": []
+      },
+      "reference_validator_exit_code": 0
+    },
+    {
+      "year": "2026",
+      "core_status": "PASS",
+      "calculation": {
+        "target": "2026-01-08",
+        "earliest": "2026-01-08",
+        "latest": "2026-01-11",
+        "actual": "2026-01-08",
+        "days_outside": 0
+      },
+      "core_code_sha256": "58a1a80115a5409160529739efe27163a81af1d1184433a20900721e57a90a9f",
+      "bundle_sha256": "5961066ec159fbd4be4029bf2cd58a91bd8e7710ce64896a69fb7c42b931311a",
+      "validator_exit_code": 0,
+      "validator": {
+        "ok": true,
+        "errors": []
+      },
+      "stderr": "",
+      "reference_validator": {
+        "ok": true,
+        "errors": []
+      },
+      "reference_validator_exit_code": 0
+    }
+  ]
+}

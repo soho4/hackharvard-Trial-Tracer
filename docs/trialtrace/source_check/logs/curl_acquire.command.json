@@ -1,0 +1,27 @@
+{
+  "command": [
+    "/usr/bin/curl",
+    "--fail",
+    "--location",
+    "--proto",
+    "=https",
+    "--tlsv1.2",
+    "--connect-timeout",
+    "15",
+    "--max-time",
+    "60",
+    "--dump-header",
+    "logs/curl.headers",
+    "--output",
+    ".sources/Prot_000.pdf",
+    "--write-out",
+    "%{json}",
+    "https://cdn.clinicaltrials.gov/large-docs/27/NCT04470427/Prot_000.pdf"
+  ],
+  "cwd": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/source_check",
+  "started_at_utc": "2026-10-18T07:19:26.152214+00:00",
+  "finished_at_utc": "2026-10-18T07:19:26.506238+00:00",
+  "exit_code": 0,
+  "stdout_path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/source_check/logs/curl_acquire.stdout",
+  "stderr_path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/source_check/logs/curl_acquire.stderr"
+}

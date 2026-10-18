@@ -1,0 +1,35 @@
+{
+  "command": [
+    "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/.venv/bin/python",
+    "-m",
+    "trialtrace.cli",
+    "--anc",
+    "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/review_core/abbrev_fixed/anchors.csv",
+    "--visits",
+    "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/review_core/abbrev_fixed/visits.csv",
+    "--assignments",
+    "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/review_core/abbrev_fixed/assignments.csv",
+    "--rule",
+    "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/review_core/inputs/candidate_rule.json",
+    "--draft-synthetic",
+    "--output",
+    "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/review_core/abbrev_fixed/anchors.csv"
+  ],
+  "started_at_utc": "2026-10-18T07:35:56.287964+00:00",
+  "finished_at_utc": "2026-10-18T07:35:56.387192+00:00",
+  "exit_code": 2,
+  "before_input_hashes": {
+    "anchors": "000ec9ada84e19e86145578acf0488837f1adbf88c9371a2974c096ad4646a52",
+    "visits": "f0a2729d3250e518f831c5786c984b62517b929a5a262ea66b42d62c88c31b64",
+    "assignments": "c2ca800261ccffa28fd4df92a23e2f87a95b183b6a9c8ed2c5a237d5657a87ab"
+  },
+  "after_input_hashes": {
+    "anchors": "000ec9ada84e19e86145578acf0488837f1adbf88c9371a2974c096ad4646a52",
+    "visits": "f0a2729d3250e518f831c5786c984b62517b929a5a262ea66b42d62c88c31b64",
+    "assignments": "c2ca800261ccffa28fd4df92a23e2f87a95b183b6a9c8ed2c5a237d5657a87ab"
+  },
+  "inputs_unchanged": true,
+  "previous_directory_exists": false,
+  "stderr": "{\"status\": \"FAILED\", \"diagnostic\": {\"code\": \"OUTPUT_INPUT_COLLISION\", \"message\": \"Output and diagnostic paths must not overwrite any input or rule\"}, \"previous_output\": null, \"success_bundle_written\": false}\n",
+  "cli_sha256": "cd7bd3322ca250a2c8171f9425100e6bf34e19a3bcbc4a316dd2599fdd63a823"
+}

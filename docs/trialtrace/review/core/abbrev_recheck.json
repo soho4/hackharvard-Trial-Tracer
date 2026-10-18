@@ -1,0 +1,22 @@
+{
+  "command": [
+    "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/.venv/bin/python",
+    "-m",
+    "trialtrace.cli",
+    "--anc",
+    "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/review_core/abbrev_recheck/anchors.csv",
+    "--visits",
+    "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/review_core/abbrev_recheck/visits.csv",
+    "--assignments",
+    "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/review_core/abbrev_recheck/assignments.csv",
+    "--rule",
+    "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/review_core/inputs/candidate_rule.json",
+    "--draft-synthetic",
+    "--output",
+    "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/review_core/abbrev_recheck/anchors.csv"
+  ],
+  "exit_code": 2,
+  "anchor_input_exists_after": false,
+  "stderr": "{\"status\": \"FAILED\", \"diagnostic\": {\"code\": \"CLI_ARGUMENTS\", \"message\": \"Unknown arguments: --anc /Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/review_core/abbrev_recheck/anchors.csv\"}, \"previous_output\": \"/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/review_core/abbrev_recheck/.previous/anchors.csv.20261018T073449.060444Z.138a68af04944502832f59cdcf8bb5c5.json\", \"success_bundle_written\": false}\n",
+  "cli_sha256": "2479e24d06124664c353e2e77abb25c36f45df2c874180f26fd4188444cfdc1c"
+}

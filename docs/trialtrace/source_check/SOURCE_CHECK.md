@@ -3,7 +3,7 @@
 Technical acquisition succeeded on 2026-10-18. This record is new execution evidence; historical package claims were not treated as current evidence. The candidate and all human-review fields remain unchanged. No repository, application, or frontend was modified.
 
 - Exact source URL: https://cdn.clinicaltrials.gov/large-docs/27/NCT04470427/Prot_000.pdf
-- Preserved bytes: `.sources/Prot_000.pdf` under this directory only.
+- Preserved bytes: `.sources/Prot_000.pdf` in the original local `work/source_check/` directory only; no PDF or rendered page is included in this repository.
 - SHA-256: `da946b1ae23d40c41b332f1d0cb3311f0634e57009b4a37b9c6d6c60ee8bf186`.
 - Size: 2,728,675 bytes. PDF page count: 193.
 - Acquisition: native curl, HTTP 200, application/pdf, no redirects, TLS verification result 0. UTC start/end: `2026-10-18T07:19:26.152214+00:00` / `2026-10-18T07:19:26.506238+00:00`.

@@ -3,3 +3,4 @@ docs/trialtrace/commands/**/*.log -whitespace
 docs/trialtrace/review_tests/**/*.log -whitespace
 docs/trialtrace/review/**/*.stdout -whitespace
 docs/trialtrace/review/**/*.stderr -whitespace
+docs/trialtrace/source_check/logs/** -whitespace

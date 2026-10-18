@@ -1,0 +1,11 @@
+{
+  "url": "https://cdn.clinicaltrials.gov/large-docs/27/NCT04470427/Prot_000.pdf",
+  "checked_at": "2026-10-18T07:18:42.517185+00:00",
+  "http_status": 200,
+  "content_type": "application/pdf",
+  "resolved_url": "https://cdn.clinicaltrials.gov/large-docs/27/NCT04470427/Prot_000.pdf",
+  "acquisition": "PINNED_URL_FETCH",
+  "status": "BLOCKED",
+  "sha256": null,
+  "error": "ValueError: Install the source-only dependency: pip install -r requirements-source.txt"
+}

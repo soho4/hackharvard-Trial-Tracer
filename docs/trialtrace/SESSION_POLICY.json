@@ -33,8 +33,6 @@
     "environment or platform needs intervention"
   ],
   "source_acceptance_initial": "BLOCKED_PENDING_RETRIEVAL_AND_HUMAN_REVIEW",
-  "deadline_from_user_material": "2026-10-18T08:00:00-04:00",
-  "deadline_is_not_permission_to_invent_results": true,
-  "sleep_constraint_hours": 4,
-  "do_not_reuse_old_timetable": true
+  "do_not_reuse_old_timetable": true,
+  "sanitization": "Personal schedule fields omitted; original retained in local handoff."
 }

@@ -1,0 +1,66 @@
+{
+  "case_output": {
+    "command": [
+      "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/.venv/bin/python",
+      "-m",
+      "trialtrace.cli",
+      "--anchors",
+      "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/review_core/case_output/anchors.csv",
+      "--visits",
+      "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/review_core/case_output/visits.csv",
+      "--assignments",
+      "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/review_core/case_output/assignments.csv",
+      "--rule",
+      "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/review_core/inputs/candidate_rule.json",
+      "--draft-synthetic",
+      "--output",
+      "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/review_core/case_output/ANCHORS.CSV"
+    ],
+    "exit_code": 2,
+    "before": {
+      "anchors": "000ec9ada84e19e86145578acf0488837f1adbf88c9371a2974c096ad4646a52",
+      "visits": "f0a2729d3250e518f831c5786c984b62517b929a5a262ea66b42d62c88c31b64",
+      "assignments": "c2ca800261ccffa28fd4df92a23e2f87a95b183b6a9c8ed2c5a237d5657a87ab"
+    },
+    "after": {
+      "anchors": null,
+      "visits": "f0a2729d3250e518f831c5786c984b62517b929a5a262ea66b42d62c88c31b64",
+      "assignments": "c2ca800261ccffa28fd4df92a23e2f87a95b183b6a9c8ed2c5a237d5657a87ab"
+    },
+    "stdout": "",
+    "stderr": "{\"status\": \"FAILED\", \"diagnostic\": {\"code\": \"FILE_ACCESS\", \"message\": \"Cannot read anchors.csv: No such file or directory\", \"file\": \"anchors.csv\"}, \"previous_output\": \"/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/review_core/case_output/.previous/ANCHORS.CSV.20261018T073242.087489Z.9c0a23a766e54715ac057a2d10bd1a4f.json\", \"success_bundle_written\": false}\n",
+    "cli_sha256": "a1c70bb8139e09fd5523cb4f4001bbd299a80a66cb49434edaf02211d62d1dd0"
+  },
+  "case_diagnostic": {
+    "command": [
+      "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/.venv/bin/python",
+      "-m",
+      "trialtrace.cli",
+      "--anchors",
+      "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/review_core/case_diagnostic/anchors.csv",
+      "--visits",
+      "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/review_core/case_diagnostic/REPORT.JSON.DIAGNOSTICS.JSON",
+      "--assignments",
+      "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/review_core/case_diagnostic/assignments.csv",
+      "--rule",
+      "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/review_core/inputs/candidate_rule.json",
+      "--draft-synthetic",
+      "--output",
+      "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/review_core/case_diagnostic/report.json"
+    ],
+    "exit_code": 0,
+    "before": {
+      "anchors": "000ec9ada84e19e86145578acf0488837f1adbf88c9371a2974c096ad4646a52",
+      "visits": "f0a2729d3250e518f831c5786c984b62517b929a5a262ea66b42d62c88c31b64",
+      "assignments": "c2ca800261ccffa28fd4df92a23e2f87a95b183b6a9c8ed2c5a237d5657a87ab"
+    },
+    "after": {
+      "anchors": "000ec9ada84e19e86145578acf0488837f1adbf88c9371a2974c096ad4646a52",
+      "visits": null,
+      "assignments": "c2ca800261ccffa28fd4df92a23e2f87a95b183b6a9c8ed2c5a237d5657a87ab"
+    },
+    "stdout": "{\"status\": \"SUCCESS_DRAFT_ENGINEERING\", \"output\": \"/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/review_core/case_diagnostic/report.json\", \"run_id\": \"65cd7a50a98fdfaec96e819e4551cc726319a7d75aaca8891910b4e2baa60827\", \"summary\": {\"visit_evaluations\": 10, \"statuses\": {\"PASS\": 4, \"POTENTIAL_DEVIATION\": 2, \"DATA_QUERY\": 2, \"NOT_EVALUABLE\": 2}}, \"previous_output\": null}\n",
+    "stderr": "",
+    "cli_sha256": "a1c70bb8139e09fd5523cb4f4001bbd299a80a66cb49434edaf02211d62d1dd0"
+  }
+}

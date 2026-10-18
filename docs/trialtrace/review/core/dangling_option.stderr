@@ -1,0 +1,1 @@
+{"status": "FAILED", "diagnostic": {"code": "CLI_ARGUMENTS", "message": "argument --anchors: expected one argument"}, "previous_output": null, "success_bundle_written": false}

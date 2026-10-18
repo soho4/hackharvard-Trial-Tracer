@@ -53,5 +53,15 @@
   },
   "source_gate": "BLOCKED_PENDING_REAL_HUMAN_REVIEW",
   "reviewed_mode": "FAIL_CLOSED; approved-mode enabling mechanism not delivered",
-  "next_allowed_work": "Finish CORE_EXPORT compatibility/reproduction and hand-back"
+  "next_allowed_work": "Finish CORE_EXPORT compatibility/reproduction and hand-back",
+  "input_hashes": {
+    "examples/novel/anchors.csv": "5e61be512e024f2abc02355186f995c481fe366136d31668481c3af15f731337",
+    "examples/novel/assignments.csv": "972ab8ff63b14b27b4d962d3ad78dfd5575284481938d019529b5ad9d1b26fe7",
+    "examples/novel/visits.csv": "bf9282afa71bc6480a9d62b24a5925ea39deb7c280dba2de3c1bb17bfeafc97d",
+    "examples/novel/visits_changed.csv": "30e22c63dec0bf2a911142318acea00b05708d00734d166de1d0cd2e80f78af9",
+    "examples/novel/visits_corrupt.csv": "c9e192db253a0add47aa3662fa5191abbb8140d7e1b1c5f23702aae17a8f480e",
+    "fixtures/core_draft/anchors.csv": "000ec9ada84e19e86145578acf0488837f1adbf88c9371a2974c096ad4646a52",
+    "fixtures/core_draft/assignments.csv": "c2ca800261ccffa28fd4df92a23e2f87a95b183b6a9c8ed2c5a237d5657a87ab",
+    "fixtures/core_draft/visits.csv": "f0a2729d3250e518f831c5786c984b62517b929a5a262ea66b42d62c88c31b64"
+  }
 }
