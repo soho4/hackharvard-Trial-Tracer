@@ -16,6 +16,7 @@ from trialtrace.workflow import check_uploads
 from trialtrace.inspection import inspect_uploads, build_worklist, worklist_csv, build_input_issue_list, input_issues_csv
 from trialtrace.comparison import load_report, compare_reports
 from trialtrace.registry_metadata import load_registry_snapshot
+from trialtrace.preparation_ui import render_preparation
 
 
 ROOT = Path(__file__).resolve().parent
@@ -318,7 +319,7 @@ def main():
     args = parser.parse_args()
     st.caption("TRIALTRACE / LOCAL WORKSPACE")
     st.title("TrialTrace timing checks")
-    st.write("Upload three tables, check the supported timing rule, and inspect every result against the original records.")
+    st.write("Check recorded safety-call timing against one supported draft rule. Map a spreadsheet or supply prepared tables, then inspect the evidence behind each result.")
     st.warning("DRAFT · Synthetic inputs only. Public protocol data is real; participant examples are synthetic. Source interpretation awaits human review. No clinical validation.")
     try:
         rule, rule_hash = load_rule(ROOT / "rules/candidate_rule.json")
@@ -331,7 +332,9 @@ def main():
         st.stop()
     with st.sidebar:
         render_source(rule, rule_hash, source)
-    workspace, saved, comparison = st.tabs(["Check uploaded data", "Open saved evidence report", "Compare saved reports"])
+    preparation, workspace, saved, comparison = st.tabs(["Map one spreadsheet", "Check uploaded data", "Open saved evidence report", "Compare saved reports"])
+    with preparation:
+        render_preparation(rule, rule_hash, source)
     with workspace:
         st.subheader("1. Supply the three source tables")
         st.caption("UTF-8 CSV · up to 1,000,000 bytes and 500 rows per table · dates YYYY-MM-DD. Files stay in this local app session; no database or model service is used.")

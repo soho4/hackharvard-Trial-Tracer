@@ -1,0 +1,20 @@
+{
+  "label": "preparation-diff-check",
+  "command": [
+    "git",
+    "diff",
+    "--check"
+  ],
+  "cwd": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace",
+  "started_at": "2026-10-18T10:22:30.599323+00:00",
+  "finished_at": "2026-10-18T10:22:30.679367+00:00",
+  "elapsed_seconds": 0.079512,
+  "status": "EXIT_ZERO",
+  "exit_code": 0,
+  "stdout_path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/docs/trialtrace/review/preparation/commands/20261018T102230.599323Z-preparation-diff-check-87ea6b30/stdout.log",
+  "stderr_path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/docs/trialtrace/review/preparation/commands/20261018T102230.599323Z-preparation-diff-check-87ea6b30/stderr.log",
+  "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "gate_acceptance": "NOT_DETERMINED_BY_COMMAND_RECORDER",
+  "warning": "Logs are not tamper-proof; this does not establish test assertions, source review, or clinical validity."
+}

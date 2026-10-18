@@ -1,43 +1,25 @@
-# What actually works, and what it proves
+# What works and what remains unproven
 
-| Capability | Current behavior and evidence |
+| Capability | Actual scope |
 |---|---|
-| Public study source | Real ClinicalTrials.gov API snapshot and original public protocol identity evidence; dated snapshot, not a live feed |
-| CSV input | User-supplied bytes, strict parsing, exact hashes, preserved rows; no fixture fallback |
-| Intake checks | Per-file missing/parsed/rejected state, byte/record counts and actionable diagnostics before calculation; header templates and intake JSON export; does not evaluate timing |
-| Identity joins | Study/participant/site validation, duplicates and unresolved references exposed |
-| Timing calculation | One supported Table 21 OL-D8 candidate rule; inclusive calendar-day math, tested on varied dates and new identifiers |
-| Uncertainty | DATA_QUERY and NOT_EVALUABLE retain evidence and omit confident timing calculations |
-| Upload app | Actual local Streamlit server, three uploads, explicit draft mode, clear-before-replacement, recalculation |
-| Evidence inspection | Original rows, ordinals, hashes, selected finding, filters/search; all input accounting remains visible |
-| Findings to review | All non-PASS findings with reason, source ordinal and suggested next check; full CSV export remains independent of display filters |
-| Input rows to review | Separate issue list and CSV for invalid/conflicting input records, including unused anchors and assignments; counts issues rather than participants |
-| JSON export | Current browser before/after downloads byte-identical to installed-CLI output; adapter uses the same functions |
-| Saved-report viewer | Upstream reader integrated against unchanged contract; focused date/wrapping fixes; earlier G3 Chrome checks passed, but this continuation's in-app-browser chooser timed out and adds no new viewer pass |
-| Saved-report comparison | Strict, bounded loading; uniquely identified records only; duplicate/incomplete identities remain unpaired; values, evidence fingerprints and rule/source/producer context are distinguished; originals unchanged |
-| Reset/replacement | Clear selected bytes before choosing replacements; current-check reset clears files/results/filters/opt-in while saved comparison remains independent |
-| Spreadsheet exports | Formula-like cells escaped in derived CSVs; canonical JSON preserves original values |
-| Optional registry metadata failure | Browser fault injection showed unavailable metadata while valid draft calculation/download continued; exact original metadata restored |
-| Installation | Fresh pinned Python 3.13 environment and regular wheel verified on this Mac |
-| Human-reviewed rule | **Pending.** No human approval or clinical validation record exists |
-| Real participant evaluation | **Unsupported.** The public registry provides no matching participant visit records; all operational inputs used here are synthetic |
-| Other trials/rules, arbitrary PDFs | **Not implemented.** Unsupported event/anchor/scope records do not become confident findings |
-| Missed-activity/eligibility inference | **Not implemented.** Missing records do not prove that an activity was missed |
-| Clinical/regulatory decisions | **Not provided.** Potential deviations require review; PASS covers only the stated draft timing check |
-| Public deployment, production auth/database | **Not performed/implemented.** Local engineering app only |
+| Public source | Real public protocol and dated registry metadata; no participant feed |
+| One-spreadsheet preparation | Explicit eight-field mapping, exact completion value, preview and synthetic draft scope; both actual dates/IDs must already be on each row |
+| Complete derivation package | Original source CSV, column choices, declared constants, row lineage, generated three tables and computed evidence JSON; all rows retained |
+| Three-table intake | Strict parsing, preflight diagnostics, relationships and original row evidence; unchanged route remains available |
+| Timing computation | One pinned Table 21 OL-D8 candidate rule; actual vaccination +7..+10 inclusive; uncertain inputs do not receive confident calculations |
+| Review and comparison | Findings list, separate input-issue list, conservative saved-report matching; no inference of resolution or missed activity |
+| Download behavior | New mapped report, package and review CSV verified through actual browser controls against installed engine output |
+| Replacement lifecycle | Changed mapping, scope or cleared source retires mapped results; browser size rejection does not retain old downloads |
+| Installation/regressions | 447 tests pass; fresh pinned installed wheel reproduces old and new paths on this Mac |
+| Vendor export connector | Not implemented or certified. The wide CSV example is authored synthetic data. Repeated/longitudinal records need another specified adapter. |
+| Source approval | Pending independent human source review; no rule approval or clinical validation |
+| Eligibility/amendment/missing activity/safety assessment | Not inferred. The app checks recorded call timing, not clinical safety or whether an unrecorded activity happened. |
+| User benefit/time savings | Unmeasured. Existing EDC tools already provide checks; the portable evidence workflow is a hypothesis. |
+| Real participant pilot | Not performed; current scope is synthetic data only |
+| Production/deployment | No public release, clinical operations, production authentication/database or multi-user workflow |
 
-The added workflows passed the current **424-test** Python suite and an actual
-installed-CLI exercise using [new synthetic files](../../examples/workflows/README.md).
-A fresh same-machine wheel reproduced current code and app behavior. See
-[HAND_BACK.md](HAND_BACK.md) for exact records and hashes. The current served-browser
-exercise verified report and CSV byte equality, comparison JSON object equality,
-malformed/oversized replacement rejection without stale downloads, recovery,
-independent reset and simultaneous file diagnostics with calculation blocked.
-Recovered locator/timeouts and recovered upload errors remain recorded in the
-[browser review](review/workflows/BROWSER_REVIEW.md). The earlier G3 viewer-browser
-results remain historical evidence for that version.
+All canonical evidence keeps exact values. Derived review CSVs escape formula-like cells; original/generated machine-input CSVs in the package are deliberately unescaped. A JSON report alone refers to generated tables; retain the complete package to trace back to the upstream spreadsheet.
 
-The next meaningful validation step is independent human review of the exact
-protocol interpretation and independently worked examples. A future real-data
-pilot also needs an explicitly authorized dataset, real mapping review, and a
-separately agreed data-handling scope. More synthetic tests cannot substitute for that.
+The new [browser review](review/preparation/BROWSER_REVIEW.md) preserves three upload-transport errors and the successful parser rejection/recovery. It does not claim a clean console or a diagnosed transport fix. Earlier embedded-viewer/print limitations remain historical limits; no new saved-viewer browser pass is claimed here.
+
+See [acceptance evidence](review/preparation/ACCEPTANCE.md), [research](review/preparation/RESEARCH.md), [progress](BUILD_PROGRESS.md) and [pilot plan](PILOT_VALIDATION_PLAN.md).

@@ -21,3 +21,7 @@ tools/g3_viewer/*.patch -text -whitespace
 # Preserve actual continuation evidence and uploaded CSV byte fingerprints.
 docs/trialtrace/review/workflows/**/*.log -whitespace
 docs/trialtrace/review/workflows/**/*.csv -text whitespace=cr-at-eol
+
+# Preserve exact mapped upload and command evidence.
+docs/trialtrace/review/preparation/**/*.log -whitespace
+docs/trialtrace/review/preparation/**/*.csv -text whitespace=cr-at-eol

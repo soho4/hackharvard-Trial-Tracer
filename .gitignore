@@ -40,3 +40,6 @@ docs/trialtrace/source_check/logs/curl_acquire.stdout
 # Reviewed G3 execution logs (public/synthetic data only).
 !docs/trialtrace/review/g3_*/**/*.log
 !docs/trialtrace/review/workflows/**/*.log
+
+# Explicit synthetic preparation command evidence.
+!docs/trialtrace/review/preparation/**/*.log

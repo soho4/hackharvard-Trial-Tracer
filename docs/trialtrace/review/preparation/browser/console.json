@@ -1,0 +1,20 @@
+[
+  {
+    "level": "error",
+    "message": "Client Error: File uploader error on file upload - AxiosError: Network Error",
+    "timestamp": "2026-10-18T10:14:38.233Z",
+    "url": "http://127.0.0.1:8503/static/js/index.DucWPHXi.js"
+  },
+  {
+    "level": "error",
+    "message": "Client Error: File uploader error on file upload - AxiosError: Network Error",
+    "timestamp": "2026-10-18T10:15:20.459Z",
+    "url": "http://127.0.0.1:8503/static/js/index.DucWPHXi.js"
+  },
+  {
+    "level": "error",
+    "message": "Client Error: File uploader error on file upload - AxiosError: Network Error",
+    "timestamp": "2026-10-18T10:15:54.130Z",
+    "url": "http://127.0.0.1:8503/static/js/index.DucWPHXi.js"
+  }
+]

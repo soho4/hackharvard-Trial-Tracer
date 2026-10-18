@@ -1,12 +1,12 @@
 {
   "spec_version": "4.0",
-  "status": "LOCAL_WORKFLOW_TECHNICAL_COMPLETE",
+  "status": "RESEARCH_AND_PREPARATION_TECHNICAL_COMPLETE",
   "repo": "https://github.com/soho4/hackharvard-Trial-Tracer",
   "branch": "codex/trialtrace-core-v4",
-  "preceding_delivery_commit": "7bcf96a461815ed907902d7373f056810b0d178a",
+  "preceding_delivery_commit": "fbd6000b62315b02df8ef041ff383e55c2ba3c4a",
   "commit_locator": "Final HEAD and post-push remote SHA are in the external DELIVERY_MANIFEST.json; this commit cannot embed its own hash.",
-  "code_sha256": "5c3a04fc876cd946228433b156bfc78912b8c342011154288fda619fa08451d9",
-  "app_sha256": "1068c0d08a744acbeef751873641003e495540a33e0addde0ec3feeed1b4a9d6",
+  "code_sha256": "d20f8e50e3aafb80802847cef31bdee6b8c73b458bc0b718b413e3108426aebd",
+  "app_sha256": "1103ee12833069c2425652e2607735e74da00bbf1f7dd137fbf2a299269f24b5",
   "rule_sha256": "f36336df90a1793a80b92f48ce273488a091547110856bdcc602587ddad9e7f0",
   "schema_sha256": "706c2b68086f1c9d38ac5ddbc37653e6f1da45d7d595eabff194c3e9737abee0",
   "source_acceptance": "BLOCKED_PENDING_HUMAN_REVIEW",
@@ -19,42 +19,45 @@
     "G4_HUMAN_REVIEW": "PENDING_AI_TECHNICAL_CHALLENGE_COMPLETE",
     "G5_REPRODUCTION": "PASS_SAME_MACHINE_FRESH_ENVIRONMENT_ONLY",
     "REVIEWED_PRODUCT_PROMOTION": "BLOCKED_SOURCE_REVIEW",
-    "LOCAL_WORKFLOWS": "PASS_LOCAL_SYNTHETIC_DRAFT"
+    "LOCAL_WORKFLOWS": "PASS_LOCAL_SYNTHETIC_DRAFT",
+    "EXPLICIT_SPREADSHEET_PREPARATION": "PASS_BOUNDED_LOCAL_SYNTHETIC_WITH_BROWSER_TRANSPORT_LIMITATION"
   },
   "real_data_scope": "Actual public protocol and registry metadata; all operational records synthetic.",
-  "next_action": "Independent human source/rule review and hand-worked challenge; an actual participant-data pilot requires explicitly authorized data and agreed handling scope.",
-  "last_command_record": "docs/trialtrace/review/workflows/commands/20261018T092201.707696Z-workflow-restored-snapshot-full-suite-7611b4f8/record.json",
-  "updated_at": "2026-10-18T09:24:19.971137+00:00",
+  "next_action": "Obtain a reviewer-verified synthetic export and dictionary from an actual configured workflow; independent source/rule review and known-answer challenge; measure total preparation plus review burden. Do not accept real patient data under current scope.",
+  "last_command_record": "review/preparation/commands/20261018T101957.055466Z-preparation-browser-download-parity-1a6ba82d/record.json",
+  "updated_at": "2026-10-18T10:22:30.462253+00:00",
   "evidence": {
-    "gate": "gates/WORKFLOW_TECHNICAL.json",
-    "application_tests": 424,
+    "gate": "gates/PREPARATION_TECHNICAL.json",
+    "application_tests": 447,
     "historical_viewer_tests": 58,
     "workflow_browser": "review/workflows/BROWSER_REVIEW.md",
     "workflow_downloads": "review/workflows/browser_final/result.json",
-    "fresh_environment": "review/workflows/clean_install_final/result.json",
-    "new_synthetic_workflow_visit_rows_per_report": 6
+    "fresh_environment": "review/preparation/clean_install/result.json",
+    "new_synthetic_workflow_visit_rows_per_report": 6,
+    "preparation_acceptance": "review/preparation/ACCEPTANCE.md",
+    "preparation_browser": "review/preparation/BROWSER_REVIEW.md",
+    "synthetic_preparation_rows": 7
   },
   "limitations": [
-    "One unreviewed candidate timing rule only",
-    "No real participant dataset tested",
-    "IAB embedded viewer chooser/download not established in this continuation; historical Chrome viewer checks passed",
-    "OS print and complete embedded PDF pagination not established",
-    "No public deployment or another-machine installation"
+    "One wide-CSV preparation path; no repeating/longitudinal adapter or vendor certification.",
+    "Three actual upload transport failures preserved; later valid/malformed transfers succeeded; root cause unestablished.",
+    "No independent human source or case review, real participant pilot or measured workflow benefit.",
+    "Fresh install on same Mac only; no public deployment.",
+    "Existing saved-viewer/OS-print browser limitations retained; no new viewer browser acceptance."
   ],
   "continuation": {
-    "status": "WORKFLOW_TECHNICAL_COMPLETE",
-    "basis": "User asked to keep building the application processes and provide percentage updates.",
-    "baseline_commit": "7bcf96a461815ed907902d7373f056810b0d178a",
-    "baseline_local_workflow_estimate_percent": 75,
-    "percent_scope": "100/100 for the explicitly bounded local synthetic workflow checklist, not overall clinical or production application readiness.",
+    "status": "RESEARCH_AND_PREPARATION_TECHNICAL_COMPLETE",
+    "basis": "Direct request to research, build and validate useful honest hackathon prototype.",
+    "baseline_commit": "fbd6000b62315b02df8ef041ff383e55c2ba3c4a",
+    "overall_percentage": null,
+    "stage": "Functioning local synthetic prototype before independent pilot validation",
     "work": [
-      "Intake preflight",
-      "Finding and input-issue CSV lists",
-      "Conservative saved-report comparison",
-      "Optional registry metadata recovery"
+      "Primary-source export/alternative research",
+      "Explicit one-spreadsheet mapping with full provenance",
+      "Actual UI downloads and adverse input checks",
+      "Validation plan and honest hackathon demo"
     ],
-    "validation": "Current app/core hashes above are bound to the final full suite, recorded browser artifacts and fresh environment probe.",
-    "local_workflow_checklist_points": 100,
-    "progress_document": "BUILD_PROGRESS.md"
+    "progress_document": "BUILD_PROGRESS.md",
+    "validation": "Current code/app digests bound to full suite, actual file, served-browser downloads and isolated fresh installed package."
   }
 }

@@ -1,26 +1,19 @@
-# Build progress — 2026-10-18
+# Build progress — 18 October 2026
 
-The defined **local synthetic workflow milestone is complete: 100/100 weighted acceptance points**, up from the recorded 75/100 baseline. This is a checklist score for the bounded local demo, not an estimate that the overall clinical application is complete, percent of development effort, or a measure of clinical readiness.
+**Current stage: functioning local synthetic prototype, before independent pilot validation.** There is no defensible overall-product completion percentage yet. The previous 75→100 score measured only a bounded local workflow checklist, not production readiness or completed clinical validation. Its original rubric remains in [the historical workflow baseline](review/workflows/BASELINE_REVIEW.md) and [historical technical gate](gates/WORKFLOW_TECHNICAL.json).
 
-The denominator is unchanged from [the baseline rubric](review/workflows/BASELINE_REVIEW.md). Evidence, including repaired failures and browser limitations, is in [the browser review](review/workflows/BROWSER_REVIEW.md), [artifact verification](review/workflows/browser_final/result.json), [installed-file exercise](review/workflows/actual_run_final/result.json) and [fresh-environment probe](review/workflows/clean_install_final/result.json).
+| Milestone | Current state |
+|---|---|
+| Process actual supplied files through a deterministic check | Working for one draft Table 21 timing rule |
+| Inspect original evidence, uncertainty and saved-run differences | Implemented; prior browser evidence retained and current regression suite passes |
+| Prepare one spreadsheet with visible mapping and complete provenance | Implemented; actual file, browser downloads and fresh installed environment verified |
+| Research export assumptions and existing alternatives | First primary-documentation pass completed; useful workflow remains a hypothesis |
+| Independently confirm source interpretation and applicable records | Pending human review; G0 blocked |
+| Fit a real configured export and verify its dictionary | Pending; current example is authored synthetic data, not a vendor export |
+| Demonstrate user benefit and total time saved | Pending; no interviews, workflow study or measured savings |
+| Another person/machine reproduces results | Pending; fresh installation was on this Mac |
+| Production data handling, deployment and operations | Outside implemented local scope |
 
-| Local workflow | Weight | Before | Now | Acceptance evidence |
-|---|---:|---:|---:|---|
-| Trustworthy draft computation | 30 | 30 | 30 | 424 current tests; pinned rule/schema unchanged; actual browser/CLI report bytes equal |
-| Understand and prepare inputs | 15 | 10 | 15 | Per-role preflight, record counts, all independent errors, actual two-invalid-file browser check |
-| Inspect findings and plan corrections | 20 | 14 | 20 | Findings list plus separate unused/input-row issues; actual formula-safe full exports and evidence selectors |
-| Correct and compare saved runs | 15 | 3 | 15 | Strict validation, unique identity matching, duplicate refusal, visible field changes, real export/rejection/recovery |
-| Reproduce and hand off local workflow | 20 | 18 | 20 | Documented new-file scenario, fresh installed environment, actual optional-metadata failure/recovery |
-| **Total** | **100** | **75** | **100** | **Bounded engineering milestone only** |
+Current technical evidence: **447 application tests passed**, actual browser output matches installed CLI and complete source-preserving package, and fresh regular-wheel installation succeeds. Browser transport failures during malformed-file attempts are retained; a subsequent file reached the parser and was correctly rejected. See [acceptance](review/preparation/ACCEPTANCE.md).
 
-The application actually parses supplied CSV bytes, checks the one supported candidate rule and produces evidence-linked results. No canned-result fallback or model service is involved. Public protocol bytes and dated registry metadata are real; every operational participant record remains synthetic.
-
-The overall application remains a draft. The remaining work is not honestly reducible to a percentage without agreeing a larger scope:
-
-- Independent human review of the exact protocol interpretation, applicability and candidate rule; G0 remains blocked.
-- An explicitly authorized, appropriately handled participant dataset matching the supported rule. No real participant pilot has been performed.
-- Installation and challenge by another person on another machine.
-- Any additional rules require their own source evidence, implementation and acceptance cases. Arbitrary protocol interpretation is not implemented.
-- Deployment, authentication, shared storage and production operations are outside the current local scope. No public deployment has occurred.
-
-The in-app embedded-viewer chooser and download limitations remain documented; historical Chrome viewer checks passed. OS print and complete embedded PDF pagination are not established. These are disclosed limits, not claims of universal browser support.
+The next useful milestone is a reviewer-verified synthetic export from an actual configured workflow, a field dictionary and independently worked answers. Source/rule review and a preparation-inclusive comparison against the existing process are separate gates. [Validation plan](PILOT_VALIDATION_PLAN.md) and [honest demo script](HACKATHON_DEMO.md) are ready to use; neither represents completed field research.

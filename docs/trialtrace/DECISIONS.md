@@ -85,3 +85,11 @@
   the display repair and optional-metadata failure path in the served browser;
   restore exact metadata bytes after deliberate fault injection and use a separate
   normal-state full-suite run for the final result.
+
+## 18 October 2026: research and explicit spreadsheet preparation
+
+- Follow the user's direct continuation with a source-preserving wide CSV path. One row must already contain the actual call and vaccination references; eight column meanings and exact completed-call value are explicit. Do not infer cross-row joins, dates, eligibility or applicability.
+- Generate the three existing input tables internally, retaining every row and declaring fixed candidate context as synthetic user input. Repeated anchors remain queries, not silently deduplicated records. Preserve exact candidate/schema/viewer files.
+- Keep original bytes and unused columns in the complete ZIP alongside chosen mapping, constants, lineage, generated table hashes and evidence JSON. The unchanged JSON schema refers to generated tables; never describe that alone as upstream source preservation.
+- Research shows existing EDC rules and heterogeneous exports. Treat portable evidence review as a hypothesis; no vendor certification, interviews, measured savings or clinical validation. Report current stage and milestones, not a new overall percentage.
+- Preserve literal-answer mutation failure and real browser transport failures. Actual file/component/browser/fresh-install evidence are distinct. No agent/source-review signature or production promotion is created.

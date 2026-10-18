@@ -1,0 +1,11 @@
+Processing /Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: trialtrace-core
+  Building wheel for trialtrace-core (pyproject.toml): started
+  Building wheel for trialtrace-core (pyproject.toml): finished with status 'done'
+  Created wheel for trialtrace-core: filename=trialtrace_core-0.1.0-py3-none-any.whl size=38646 sha256=9909687c08371882fc4cee7374cb1b39ceff69347d95b4082fe791c35afc10aa
+  Stored in directory: /private/var/folders/vm/bb1q66z528z8t83ytl7z3vx80000gn/T/pip-ephem-wheel-cache-c7dp4a07/wheels/37/3d/d7/dfde18698debf474b4822530e5333fb567ab52534ad871005b
+Successfully built trialtrace-core
+Installing collected packages: trialtrace-core
+Successfully installed trialtrace-core-0.1.0

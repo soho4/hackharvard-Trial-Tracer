@@ -1,3 +1,21 @@
+# Current hand-back: explicit spreadsheet preparation
+
+The new first tab, **Map one spreadsheet**, lets a user identify eight source columns, choose the exact completed-call value, review a preview and run the existing draft check. A downloadable package preserves the original source and complete transformation chain. The original three-table, review-list and saved-comparison routes remain.
+
+**Current stage: local synthetic prototype before independent pilot validation.** No overall completion percentage or measured saving is claimed. Research found that existing EDC systems already provide rules/scheduling and exports vary by study configuration. The portable evidence-review workflow is a hypothesis to validate, not an established unmet need.
+
+Follow [the mapping walkthrough](../../examples/preparation/README.md). Expected seven-row outcome: 1 PASS, 1 POTENTIAL_DEVIATION, 4 DATA_QUERY, 1 NOT_EVALUABLE. The dataset is authored synthetic CSV, not a vendor export. The app generates the three internal tables from explicit declarations; it does not prove amendment/cohort applicability.
+
+**Verification:** 447 tests passed; actual browser ZIP/JSON/review CSV match installed engine artifacts; a fresh isolated regular-wheel environment reproduced the current code and app. A deliberately swapped date mapping failed the literal-answer challenge as intended. Three browser upload transport errors remain recorded, with subsequent successful upload and parser rejection; no root-cause fix is claimed.
+
+[Current acceptance](review/preparation/ACCEPTANCE.md) · [Research](review/preparation/RESEARCH.md) · [Technical gate](gates/PREPARATION_TECHNICAL.json) · [Progress](BUILD_PROGRESS.md) · [Demo script](HACKATHON_DEMO.md) · [Pilot validation plan](PILOT_VALIDATION_PLAN.md).
+
+G0 independent human source review remains blocked; clinical validation is false. No actual participant dataset, interviews, measured savings or public deployment. Next external evidence: a synthetic export from a real configured workflow plus its dictionary, independently checked mappings/rule and a measured review exercise. No one has been contacted on the user's behalf.
+
+The final commit, verified remote SHA and delivery archive hashes are recorded in the external delivery manifest. Run commands below still apply. The rest of this file is the **historical preceding workflow hand-back**, with its original hashes and counts retained as history rather than current results.
+
+---
+
 # TrialTrace hand-back — working local draft application
 
 TrialTrace now checks uploaded files before calculation, computes the supported

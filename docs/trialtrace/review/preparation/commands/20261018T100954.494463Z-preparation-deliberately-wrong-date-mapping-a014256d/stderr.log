@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/tools/run_preparation_acceptance.py", line 62, in <module>
+    main()
+    ~~~~^^
+  File "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/tools/run_preparation_acceptance.py", line 35, in main
+    assert [f["status"] for f in bundle["findings"]] == expected["statuses"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

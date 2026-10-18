@@ -1,0 +1,24 @@
+{
+  "label": "preparation-fresh-isolated-probe",
+  "command": [
+    "preparation_clean_env/bin/python",
+    "-I",
+    "TrialTrace/tools/check_g3_clean_install.py",
+    "--repo",
+    "TrialTrace",
+    "--out",
+    "TrialTrace/docs/trialtrace/review/preparation/clean_install"
+  ],
+  "cwd": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work",
+  "started_at": "2026-10-18T10:16:55.702308+00:00",
+  "finished_at": "2026-10-18T10:17:12.100514+00:00",
+  "elapsed_seconds": 16.397726,
+  "status": "EXIT_ZERO",
+  "exit_code": 0,
+  "stdout_path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/docs/trialtrace/review/preparation/commands/20261018T101655.702308Z-preparation-fresh-isolated-probe-7d2294b6/stdout.log",
+  "stderr_path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/docs/trialtrace/review/preparation/commands/20261018T101655.702308Z-preparation-fresh-isolated-probe-7d2294b6/stderr.log",
+  "stdout_sha256": "0378eed4a608dc6c4ebd9804a332b93e66709edc479ada546a752fefbd1d99a6",
+  "stderr_sha256": "5492310e7114ef0341aa8c535f08a2130891d76e487822f8b1fd39e777ade0e0",
+  "gate_acceptance": "NOT_DETERMINED_BY_COMMAND_RECORDER",
+  "warning": "Logs are not tamper-proof; this does not establish test assertions, source review, or clinical validity."
+}

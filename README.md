@@ -1,9 +1,10 @@
 # TrialTrace — local draft timing checks
 
-TrialTrace checks three uploaded CSV files before calculation, applies one
-deterministic timing rule to explicitly mapped synthetic visits, and makes uncertain
-records available for review. It exports original evidence, separate finding and
-input-issue lists, and a conservative comparison of two saved reports.
+TrialTrace maps one spreadsheet—or accepts three prepared CSV tables—then applies
+one deterministic draft timing rule and exposes unresolved evidence. The mapped
+route preserves the original spreadsheet, explicit column choices and generated
+tables in a complete evidence package. Review lists and saved-report comparison
+remain available. This is a working local prototype before independent pilot validation.
 
 **Source interpretation is pending independent human review. Clinical validation is
 false. Only explicit `DRAFT_ENGINEERING` execution is enabled.** A potential deviation
@@ -27,7 +28,15 @@ python3.13 -m venv .venv
 .venv/bin/python -m streamlit run app.py
 ```
 
-Open the printed local URL. Select the three files in `examples/browser/boundary/`,
+Open the printed local URL. Start with **Map one spreadsheet** and follow the
+[seven-row mapping walkthrough](examples/preparation/README.md). The app generates
+its internal anchors/visits/assignments files. This is a limited flat CSV path, not
+a certified vendor connector; both actual dates and necessary identities must
+already be present. See [research](docs/trialtrace/review/preparation/RESEARCH.md),
+[validation plan](docs/trialtrace/PILOT_VALIDATION_PLAN.md) and
+[demo script](docs/trialtrace/HACKATHON_DEMO.md).
+
+For the original **Check uploaded data** tab, select the three files in `examples/browser/boundary/`,
 confirm synthetic draft mode, then run the check. Use **Clear visits.csv** before
 selecting `examples/browser/outside/visits.csv`: PASS becomes a potential deviation,
 one day outside. Clearing removes the current result before a replacement chooser

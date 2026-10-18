@@ -13,6 +13,10 @@ an actual review bundle, not just a plan. Do not start frontend work in that ses
 and technical fixes. Source approval and public deployment remain separate.
 The next direct continuation authorizes local intake, review-list, comparison and
 reproduction workflows, with progress estimates tied to explicit acceptance criteria.
+The further direct continuation on 2026-10-18 authorizes primary-source workflow
+research, explicit one-spreadsheet preparation with original provenance, and local
+validation/demo documentation. Report milestones rather than an unsupported
+overall-product percentage. Synthetic-only scope and human source review remain.
 
 Source acceptance is separate from technical success. Never invent human review,
 source bytes/hash, results, executed commands, clinical validity, or a successful push.

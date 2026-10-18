@@ -1,0 +1,50 @@
+[
+  {
+    "at": "2026-10-18T10:13:56.484Z",
+    "event": "Uploaded synthetic-wide.csv through file chooser; chose eight columns and exact done value; confirmed synthetic draft scope; prepared then ran; downloaded ZIP, JSON, review CSV through actual buttons."
+  },
+  {
+    "at": "2026-10-18T10:14:06.760Z",
+    "event": "Selected record 2; original dates February 22 and March 4, 2028 visible; calculated earliest February 29/latest March 3/actual March 4/days outside 1."
+  },
+  {
+    "at": "2026-10-18T10:14:17.788Z",
+    "event": "Changing actual-call column removed preview, report and all mapped downloads, unchecked scope, disabled Prepare."
+  },
+  {
+    "at": "2026-10-18T10:14:26.350Z",
+    "event": "Reconfirming and preparing with dose_actual used for both dates returned COLUMN_REUSED; no report."
+  },
+  {
+    "at": "2026-10-18T10:14:37.627Z",
+    "event": "Restored valid mapping and report, cleared source before chooser, then real 1,100,000-byte file rejected by browser with 1MB size error; no old mapped downloads."
+  },
+  {
+    "at": "2026-10-18T10:15:02.572Z",
+    "event": "Automation wait for Clear source spreadsheet after malformed upload timed out; inspecting actual UI before classifying."
+  },
+  {
+    "at": "2026-10-18T10:15:16.073Z",
+    "event": "Malformed file first attempt showed AxiosError: Network Error in uploader before parsing; server health was ok; no old outputs. This is a failed upload attempt, not parser success."
+  },
+  {
+    "at": "2026-10-18T10:15:43.335Z",
+    "event": "Second malformed upload attempt also failed before parser with AxiosError; no mapped output remained. Reloading only the temporary verification tab to recover upload transport."
+  },
+  {
+    "at": "2026-10-18T10:16:14.221Z",
+    "event": "Reload did not resolve malformed-file transport error; parser rejection is component-tested but not yet browser-established."
+  },
+  {
+    "at": "2026-10-18T10:17:26.070Z",
+    "event": "Known-valid repository CSV uploaded successfully after reload. Network failure appears specific to attempted file transfer; root cause not established."
+  },
+  {
+    "at": "2026-10-18T10:19:38.554Z",
+    "event": "Repository-local malformed.csv (wrong LF 1,2 LF; 10 bytes) transferred and was rejected by application as ROW_WIDTH at source record 1; no old report or downloads. Both location and trailing newline differed from failed 9-byte attempts, so root cause is not attributed."
+  },
+  {
+    "at": "2026-10-18T10:23:14.268Z",
+    "event": "Verified existing user server at 8502 is the same checkout; its page showed File change with no selected inputs. Clicked Rerun then Map one spreadsheet; updated first page visible. Did not stop or restart that server."
+  }
+]

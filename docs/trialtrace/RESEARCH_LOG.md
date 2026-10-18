@@ -124,3 +124,9 @@ Technical observations only; no human source approval.
   [normal-state final suite](review/workflows/commands/20261018T092201.707696Z-workflow-restored-snapshot-full-suite-7611b4f8/record.json)
   passed **424 tests in 11.26 seconds**, exit 0. This is the final full-suite claim,
   separate from the earlier 423-test and focused component checkpoints.
+
+## 18 October 2026 — export fit and product usefulness
+
+Opened primary OpenClinica extract/calendar/rules documentation, CDISC SDTMIG v3.3, REDCap software information and Medidata EDC overview. [Research record](review/preparation/RESEARCH.md) separates observations from the product hypothesis and records counterevidence. Custom export selection, repeat identifiers and separate exposure/visit concepts rule out assuming every file contains our exact fields. Existing systems already provide validation/scheduling.
+
+Implemented an explicitly limited wide CSV mapping path with original evidence, not a claimed vendor integration. Prepared a [validation plan](PILOT_VALIDATION_PLAN.md) and [honest demonstration](HACKATHON_DEMO.md). No external workflow interview, actual vendor export, participant-data pilot or savings measurement was performed.

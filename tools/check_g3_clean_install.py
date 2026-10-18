@@ -156,10 +156,10 @@ def main():
             sys.argv += ['--source-pdf', str(args.source_pdf.resolve())]
         app = AppTest.from_file(app_path, default_timeout=30).run()
         assert not app.exception, [item.message for item in app.exception]
-        assert len(app.file_uploader) == 5
+        assert len(app.file_uploader) == 6
         csv_uploaders = [uploader for uploader in app.file_uploader if uploader.label in ('anchors.csv', 'visits.csv', 'assignments.csv')]
         assert len(csv_uploaders) == 3
-        assert {uploader.label for uploader in app.file_uploader} == {'anchors.csv', 'visits.csv', 'assignments.csv', 'Earlier report', 'Later report'}
+        assert {uploader.label for uploader in app.file_uploader} == {'Source spreadsheet CSV', 'anchors.csv', 'visits.csv', 'assignments.csv', 'Earlier report', 'Later report'}
         assert 'result' not in app.session_state
         assert next(button for button in app.button if button.label == 'Run timing check').disabled
         for uploader in csv_uploaders:
@@ -184,6 +184,33 @@ def main():
         assert 'result' not in app.session_state and 'result_bytes' not in app.session_state
         assert not [button for button in app.download_button if button.key == 'evidence_download']
         assert next(button for button in app.button if button.label == 'Run timing check').disabled
+        # Exercise the explicit spreadsheet path through the installed package too.
+        from trialtrace.preparation import prepare_spreadsheet, evidence_package
+        profile = json.loads((repo/'examples/preparation/mapping.json').read_bytes())
+        original = (repo/'examples/preparation/synthetic-wide.csv').read_bytes()
+        expected = json.loads((repo/'examples/preparation/expected.json').read_bytes())
+        prepared = prepare_spreadsheet(original, 'synthetic-wide.csv', profile['columns'],
+                                       profile['completed_value'], rule, rule_sha, scope_confirmed=True)
+        mapped, mapped_bytes, package = evidence_package(prepared, rule, rule_sha, source_metadata=source)
+        assert [f['status'] for f in mapped['findings']] == expected['statuses']
+        assert mapped['findings'][1]['calculation'] == expected['second_calculation']
+        next(u for u in app.file_uploader if u.label == 'Source spreadsheet CSV').set_value(
+            ('synthetic-wide.csv', original, 'text/csv')).run()
+        for field, column in profile['columns'].items():
+            app.selectbox(key='prep_column_' + field).select(column).run()
+        app.selectbox(key='prep_completed').select(profile['completed_value']).run()
+        app.checkbox(key='prep_scope').check().run()
+        app.button(key='prep_prepare').click().run()
+        assert 'prep_result' not in app.session_state
+        app.button(key='prep_run').click().run()
+        assert not app.exception
+        assert app.session_state['prep_encoded'] == mapped_bytes
+        assert app.session_state['prep_package'] == package
+        (run/'mapped-evidence.json').write_bytes(mapped_bytes)
+        (run/'mapped-package.zip').write_bytes(package)
+        preparation_result = {'statuses': expected['statuses'], 'counts': mapped['summary']['statuses'],
+                              'app_adapter_bytes_equal': True, 'evidence_sha256': sha(mapped_bytes),
+                              'package_sha256': sha(package)}
     finally:
         sys.argv = original_argv
 
@@ -204,8 +231,9 @@ def main():
         'rule_sha256': rule_sha, 'source_metadata': source, 'dependencies': dependencies,
         'cases': cases, 'malformed_upload_rejection': malformed_code,
         'comparison': comparison['summary'],
+        'spreadsheet_preparation': preparation_result,
         'app_test': {'actual_script': str(app_path), 'uploads': 3, 'draft_confirmed': True,
-                     'initial_upload_slots': 5, 'csv_slots_selected_by_role': True,
+                     'initial_upload_slots': 6, 'csv_slots_selected_by_role': True,
                      'findings_status': 'PASS', 'metrics': ['1','0','0','0'], 'bytes_match_cli': True,
                      'clear_retires_report_and_download': True, 'app_exceptions': 0,
                      'classification': 'IN_PROCESS_APPTEST_NOT_BROWSER'},

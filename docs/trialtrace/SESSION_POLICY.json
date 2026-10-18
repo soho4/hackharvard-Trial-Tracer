@@ -1,6 +1,6 @@
 {
   "version": "4.0",
-  "session_mode": "LOCAL_WORKFLOW_CONTINUATION",
+  "session_mode": "RESEARCH_AND_PREPARATION_CONTINUATION",
   "primary_builder": "Codex",
   "allowed_technical_units": [
     "PREFLIGHT",
@@ -13,7 +13,10 @@
     "INDEPENDENT_CHALLENGE",
     "INTAKE_PREFLIGHT",
     "EVIDENCE_WORKLISTS",
-    "SAVED_REPORT_COMPARISON"
+    "SAVED_REPORT_COMPARISON",
+    "PRIMARY_SOURCE_WORKFLOW_RESEARCH",
+    "EXPLICIT_SPREADSHEET_PREPARATION",
+    "VALIDATION_AND_DEMO_PACKET"
   ],
   "routine_technical_confirmation_required": false,
   "advance_only_after_executed_required_checks": true,
@@ -33,7 +36,7 @@
     "change_repo_visibility": false
   },
   "stop_when": [
-    "Current local workflow increment built, actual browser behavior verified, progress and evidence handed back; report external review limitations",
+    "Current research and mapped preparation increment executed, validated, documented and handed back; state unperformed external validation honestly.",
     "no permitted independent work remains",
     "nondelegated interpretation/scope/security decision required",
     "environment or platform needs intervention"
@@ -41,5 +44,5 @@
   "source_acceptance_initial": "BLOCKED_PENDING_RETRIEVAL_AND_HUMAN_REVIEW",
   "do_not_reuse_old_timetable": true,
   "sanitization": "Personal schedule fields omitted; original retained in local handoff.",
-  "continuation_basis": "Direct user request to continue building application processes and report progress percentages on 2026-10-18. Source review/data scope/public deployment safeguards remain."
+  "continuation_basis": "Direct user request on 2026-10-18 to begin research, build and validate a useful honest hackathon prototype, following the existing process. Allows explicit spreadsheet preparation and local checks; no human approval, real patient inputs, outreach or public deployment inferred."
 }
