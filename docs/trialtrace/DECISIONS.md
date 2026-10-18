@@ -93,3 +93,23 @@
 - Keep original bytes and unused columns in the complete ZIP alongside chosen mapping, constants, lineage, generated table hashes and evidence JSON. The unchanged JSON schema refers to generated tables; never describe that alone as upstream source preservation.
 - Research shows existing EDC rules and heterogeneous exports. Treat portable evidence review as a hypothesis; no vendor certification, interviews, measured savings or clinical validation. Report current stage and milestones, not a new overall percentage.
 - Preserve literal-answer mutation failure and real browser transport failures. Actual file/component/browser/fresh-install evidence are distinct. No agent/source-review signature or production promotion is created.
+
+## 18 October 2026: private browser demonstration
+
+- Follow the user's final-hour request with a focused one-spreadsheet web interface,
+  original dark/yellow design inspired by the event palette, and an evidence-backed
+  presentation. Do not claim a complete clinical operations product.
+- Reuse exact Python core sources through a Pyodide module worker instead of
+  reimplementing timing logic in JavaScript. Keep runtime assets on the same origin
+  after actual external/classic-worker failures. Pin hashes and include licenses.
+- Preserve rule, schema, viewer and Streamlit behavior. The browser route does not
+  include saved-report comparison or the three-file intake UI.
+- Keep structured missing/conflicting information separate from timing conclusions.
+  A source date is never estimated. Display invalid dates literally.
+- All calculations use supplied bytes; actual downloads match native Python on the
+  tested case. Changing one source date changes the computed days outside.
+- The user explicitly chose owner-private hosted access. Deployment success is
+  separate from owner authentication, which failed in the in-app browser. No
+  access widening or authentication bypass is authorized.
+- Research establishes relevance of the underlying issues, not TrialTrace's savings,
+  customer demand or clinical validation. Retain independent review as pending.

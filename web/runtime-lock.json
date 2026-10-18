@@ -1,0 +1,78 @@
+{
+  "version": "314.0.7",
+  "base_url": "https://cdn.jsdelivr.net/pyodide/v314.0.7/full/",
+  "info": {
+    "abi_version": "2026_0",
+    "arch": "wasm32",
+    "platform": "emscripten_5_0_3",
+    "python": "3.14.2"
+  },
+  "packages": {
+    "jsonschema": "4.26.0",
+    "attrs": "26.1.0",
+    "six": "1.17.0",
+    "pyrsistent": "0.20.0",
+    "referencing": "0.37.0",
+    "rpds-py": "0.30.0",
+    "typing-extensions": "4.15.0",
+    "jsonschema-specifications": "2025.9.1"
+  },
+  "files": {
+    "attrs-26.1.0-py3-none-any.whl": {
+      "bytes": 67548,
+      "sha256": "0506ebb8e46c83017941a7239eecb2f74420d332cf1f341bddc43a217ab0bb66"
+    },
+    "jsonschema-4.26.0-py3-none-any.whl": {
+      "bytes": 55406,
+      "sha256": "7ce77bd37ad161555c166d815bf1bc84980fd388a74059c73c9bc9214faa0a6e"
+    },
+    "jsonschema_specifications-2025.9.1-py3-none-any.whl": {
+      "bytes": 17467,
+      "sha256": "8e4353ea148aca60a2ea2aabbc068a62cf8d3deab5ee3ef91cfb991ecdb61c1b"
+    },
+    "pyodide-lock.json": {
+      "bytes": 119077,
+      "sha256": "5dc2fc119108bc148c7457dc86e7675b5c87e1cafd420b9c34c1eaef7b36c010"
+    },
+    "pyodide.asm.mjs": {
+      "bytes": 1250344,
+      "sha256": "f7cdc8ece80678ceb712f8e65ebe6d3a83203a180c399865f49612a051693635"
+    },
+    "pyodide.asm.wasm": {
+      "bytes": 9598218,
+      "sha256": "cc36e3cab04fdfc9a63ff13eb52eae2b911bf46c025cc7b281f394bd3de1d5e6"
+    },
+    "pyodide.js": {
+      "bytes": 18912,
+      "sha256": "3141b814715a72e59b51b1b18b9ceae5bf19f7c852417e431bb0a34feadf825c"
+    },
+    "pyodide.mjs": {
+      "bytes": 17931,
+      "sha256": "6f1d60f7bf529beb300f0f47983c921d3982363640ba20af0e38efdddbc66109"
+    },
+    "pyrsistent-0.20.0-cp314-cp314-pyemscripten_2026_0_wasm32.whl": {
+      "bytes": 58223,
+      "sha256": "6252303d76b705f83c68a78fd2d7860be5b39f84482fee8aced8b52d7fd5ae80"
+    },
+    "python_stdlib.zip": {
+      "bytes": 2545637,
+      "sha256": "fa1957e5777068fc4f7437f96d860ae2fbe9c19732ba06c84e004ec16dd7dd7a"
+    },
+    "referencing-0.37.0-py3-none-any.whl": {
+      "bytes": 16903,
+      "sha256": "db67659fe2ec73040d2b9785f0c8a7c45b8c1ca03dc2cd8e8b1fbc6f752854d8"
+    },
+    "rpds_py-0.30.0-cp314-cp314-pyemscripten_2026_0_wasm32.whl": {
+      "bytes": 115722,
+      "sha256": "9997dcfaee4465d4e877397c0f95fb9ec1dddb0e9da6dac94e96ff9621cdcd05"
+    },
+    "six-1.17.0-py2.py3-none-any.whl": {
+      "bytes": 11050,
+      "sha256": "228c50f73aa7addf2c2ccf2979c256802a59ab69cad8152b31b9443cc8140f42"
+    },
+    "typing_extensions-4.15.0-py3-none-any.whl": {
+      "bytes": 44613,
+      "sha256": "4fec68770a05408e668a4fa53d6bf4f0f684b9dacf820c7c5d6e97d3ad225e29"
+    }
+  }
+}

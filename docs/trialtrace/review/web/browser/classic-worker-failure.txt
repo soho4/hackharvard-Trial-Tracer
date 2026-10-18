@@ -1,0 +1,3 @@
+Browser tab: 8, Title: "TrialTrace — every finding, explained", URL: "http://127.0.0.1:8504/".
+There has been no change in the accessibility tree.
+The focused UI element is 1 AXWebArea TrialTrace — every finding, explained, URL: 127.0.0.1:8504/

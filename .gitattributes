@@ -25,3 +25,8 @@ docs/trialtrace/review/workflows/**/*.csv -text whitespace=cr-at-eol
 # Preserve exact mapped upload and command evidence.
 docs/trialtrace/review/preparation/**/*.log -whitespace
 docs/trialtrace/review/preparation/**/*.csv -text whitespace=cr-at-eol
+
+docs/trialtrace/review/web/**/*.log -whitespace
+docs/trialtrace/review/web/**/*.txt -whitespace
+web/src/*LICENSE.txt -whitespace
+web/src/THIRD-PARTY-NOTICES.txt -whitespace

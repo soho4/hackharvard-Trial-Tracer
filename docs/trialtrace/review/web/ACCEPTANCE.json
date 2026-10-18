@@ -1,0 +1,27 @@
+{
+  "status": "PASS_BOUNDED_LOCAL_BROWSER_DEMONSTRATION",
+  "checked_at": "2026-10-18T11:06:07.982853+00:00",
+  "baseline_commit": "a668e6ef81376887bddbf338cb0f358e7ce71b54",
+  "core_sha256": "d20f8e50e3aafb80802847cef31bdee6b8c73b458bc0b718b413e3108426aebd",
+  "web_sources": {
+    "PYODIDE-LICENSE.txt": "1f256ecad192880510e84ad60474eab7589218784b9a50bc7ceee34c2b91f1d5",
+    "PYTHON-LICENSE.txt": "b0e25a78cffb43f4d92de8b61ccfa1f1f98ecbc22330b54b5251e7b6ba010231",
+    "THIRD-PARTY-NOTICES.txt": "1528baa69ff0f65552974706c8f92f5878452bc552f92a52e8dc61a4a6ab8323",
+    "app.js": "ac072af359c096f0426b3b7c80110ffa48eaade8b459faa78cf94bfadfca6a4a",
+    "bridge.py": "c1047fe81001756072941dd0c9a84841a56171f6347bdb7d8c73b0f43a7f586c",
+    "engine-worker.js": "d1f03995e256fba234c305e5c4dbe23e705e8ccc375e04c9f78d29238bab3865",
+    "index.html": "d7ff27ba8144359a8733bab795ec58c438047799d1df767a7e97eaa6a6b95c09",
+    "style.css": "44b9461c74bae5f08ef2b37e7782abce783fbed1f2e4d79e4e875994957d3677"
+  },
+  "rule_sha256": "f36336df90a1793a80b92f48ce273488a091547110856bdcc602587ddad9e7f0",
+  "application_tests": 457,
+  "new_bridge_tests": 10,
+  "browser_downloads": "browser/parity-result.json",
+  "browser_review": "BROWSER_REVIEW.md",
+  "deployment_receipt": "HOSTING.json",
+  "source_acceptance": "PENDING_INDEPENDENT_HUMAN_REVIEW",
+  "clinical_validation": false,
+  "measured_usefulness": false,
+  "hosted_calculation": "NOT_VERIFIED_BEHIND_OWNER_AUTHENTICATION",
+  "scope": "One wide-CSV mapping path; synthetic data; same Python rule engine. Earlier local Streamlit retains the broader local workflows."
+}

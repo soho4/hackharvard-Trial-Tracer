@@ -43,3 +43,10 @@ docs/trialtrace/source_check/logs/curl_acquire.stdout
 
 # Explicit synthetic preparation command evidence.
 !docs/trialtrace/review/preparation/**/*.log
+
+# Reproducible browser runtime assets; hashes and fetch script are tracked.
+web/vendor/
+!docs/trialtrace/review/web/**/*.log
+
+# Generated oversized browser rejection input; recipe retained in review.
+docs/trialtrace/review/web/browser/oversized.csv

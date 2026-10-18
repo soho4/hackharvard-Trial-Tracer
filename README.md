@@ -1,10 +1,10 @@
-# TrialTrace — local draft timing checks
+# TrialTrace — explainable draft timing checks
 
 TrialTrace maps one spreadsheet—or accepts three prepared CSV tables—then applies
 one deterministic draft timing rule and exposes unresolved evidence. The mapped
 route preserves the original spreadsheet, explicit column choices and generated
 tables in a complete evidence package. Review lists and saved-report comparison
-remain available. This is a working local prototype before independent pilot validation.
+remain available. The browser demonstration and the local application are working prototypes before independent pilot validation.
 
 **Source interpretation is pending independent human review. Clinical validation is
 false. Only explicit `DRAFT_ENGINEERING` execution is enabled.** A potential deviation
@@ -14,6 +14,12 @@ are in scope; the app cannot detect or de-identify real participant data.
 The public example protocol is Moderna's NCT04470427 / mRNA-1273-P301 amendment 10,
 [Table 21](https://cdn.clinicaltrials.gov/large-docs/27/NCT04470427/Prot_000.pdf).
 It is not Regeneron data. All operational CSV examples here are newly authored synthetic records.
+
+## Hackathon browser demonstration
+
+The redesigned browser interface supports the one-spreadsheet workflow, clear reasons and next checks, source details, and downloadable evidence. It runs the unchanged Python engine through Pyodide, with no participant database or runtime language model. See [browser setup](web/README.md), [presenter briefing](docs/trialtrace/HACKATHON_PRESENTER.md), [research claims](docs/trialtrace/HACKATHON_CLAIMS.md), and [actual browser checks](docs/trialtrace/review/web/BROWSER_REVIEW.md).
+
+The hosted demo is private to its owner by explicit request. Deployment and owner-browser authentication are tracked separately in the browser review. The older Streamlit interface below retains three-table intake, saved-viewer and comparison features that are not in the narrow browser presentation interface.
 
 ## Launch the local upload app
 
@@ -154,8 +160,7 @@ package after source changes before using the installed CLI or acceptance runner
 The workflow runner checks the literal expectations in the synthetic exercise;
 the application never reads those expectations.
 
-The current Python suite passed **424 tests**; the final focused app regression run
-passed 19. Recorded commands, the actual installed-CLI workflow and fresh-wheel
+The latest application suite passed **457 tests**; the web boundary and actual browser results are recorded in `docs/trialtrace/review/web/`. The earlier workflow checkpoint passed 424 tests and its focused app regression run passed 19. Recorded commands, the actual installed-CLI workflow and fresh-wheel
 reproduction are linked from [HAND_BACK](docs/trialtrace/HAND_BACK.md).
 The served browser produced before/after evidence JSON and review/input-issue CSVs
 byte-identical to the installed-CLI exercise. Its comparison download has equal

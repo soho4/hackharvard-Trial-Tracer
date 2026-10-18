@@ -1,0 +1,20 @@
+{
+  "id": "appgdep_6ad4a698b9548191b9168e274f689e8f",
+  "project_id": "appgprj_6ad4a284498881919c757fe8c335289c",
+  "title": "TrialTrace — every finding, explained",
+  "version_id": "appgprj_6ad4a284498881919c757fe8c335289c~appgver_715855d352108191bdef10e25ef54ad9",
+  "type": "publish",
+  "status": "succeeded",
+  "url": "https://trialtrace-hackharvard-review.noisylyric9.chatgpt.site",
+  "has_mcp": false,
+  "screenshot_asset_pointer": null,
+  "provider_deployment_id": "site---6ad4a284498881919c757fe8c335289c",
+  "failure_message": null,
+  "env_set_revision": 0,
+  "updated_at": "2026-10-18T10:59:49.971901+00:00",
+  "audience": "owner-private",
+  "audience_basis": "User explicitly selected Keep it private to my account",
+  "source_commit": "a8c9f3c90542368664dc0bf991679814c6deeacf",
+  "hosted_runtime_browser_verification": "NOT_COMPLETED_OWNER_SIGNIN_ROUTE_ERROR",
+  "local_browser_verification": "PASS_BOUNDED_SYNTHETIC_CASES"
+}

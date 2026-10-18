@@ -1,0 +1,19 @@
+{
+  "label": "web-first-build",
+  "command": [
+    ".venv/bin/python",
+    "tools/build_web.py"
+  ],
+  "cwd": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace",
+  "started_at": "2026-10-18T10:47:50.290173+00:00",
+  "finished_at": "2026-10-18T10:47:50.470798+00:00",
+  "elapsed_seconds": 0.180074,
+  "status": "EXIT_ZERO",
+  "exit_code": 0,
+  "stdout_path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/docs/trialtrace/review/web/commands/20261018T104750.290173Z-web-first-build-30f9fbc6/stdout.log",
+  "stderr_path": "/Users/yisak/Documents/Codex/2026-10-18/files-mentioned-by-the-user-trialtrace/work/TrialTrace/docs/trialtrace/review/web/commands/20261018T104750.290173Z-web-first-build-30f9fbc6/stderr.log",
+  "stdout_sha256": "79a0dad7c28ec80bd7602d3f99617d374669f6c43c8d1c62152c4ae845417061",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "gate_acceptance": "NOT_DETERMINED_BY_COMMAND_RECORDER",
+  "warning": "Logs are not tamper-proof; this does not establish test assertions, source review, or clinical validity."
+}

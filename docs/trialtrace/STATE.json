@@ -1,9 +1,9 @@
 {
   "spec_version": "4.0",
-  "status": "RESEARCH_AND_PREPARATION_TECHNICAL_COMPLETE",
+  "status": "PRIVATE_BROWSER_DEMO_TECHNICAL_COMPLETE_HOSTED_SIGNIN_UNVERIFIED",
   "repo": "https://github.com/soho4/hackharvard-Trial-Tracer",
   "branch": "codex/trialtrace-core-v4",
-  "preceding_delivery_commit": "fbd6000b62315b02df8ef041ff383e55c2ba3c4a",
+  "preceding_delivery_commit": "a668e6ef81376887bddbf338cb0f358e7ce71b54",
   "commit_locator": "Final HEAD and post-push remote SHA are in the external DELIVERY_MANIFEST.json; this commit cannot embed its own hash.",
   "code_sha256": "d20f8e50e3aafb80802847cef31bdee6b8c73b458bc0b718b413e3108426aebd",
   "app_sha256": "1103ee12833069c2425652e2607735e74da00bbf1f7dd137fbf2a299269f24b5",
@@ -20,15 +20,17 @@
     "G5_REPRODUCTION": "PASS_SAME_MACHINE_FRESH_ENVIRONMENT_ONLY",
     "REVIEWED_PRODUCT_PROMOTION": "BLOCKED_SOURCE_REVIEW",
     "LOCAL_WORKFLOWS": "PASS_LOCAL_SYNTHETIC_DRAFT",
-    "EXPLICIT_SPREADSHEET_PREPARATION": "PASS_BOUNDED_LOCAL_SYNTHETIC_WITH_BROWSER_TRANSPORT_LIMITATION"
+    "EXPLICIT_SPREADSHEET_PREPARATION": "PASS_BOUNDED_LOCAL_SYNTHETIC_WITH_BROWSER_TRANSPORT_LIMITATION",
+    "BROWSER_PRESENTATION": "PASS_LOCAL_SYNTHETIC_WITH_CANONICAL_DOWNLOAD_PARITY",
+    "PRIVATE_HOSTING": "DEPLOYED_OWNER_SIGNIN_FAILED_IN_APP_BROWSER"
   },
   "real_data_scope": "Actual public protocol and registry metadata; all operational records synthetic.",
   "next_action": "Obtain a reviewer-verified synthetic export and dictionary from an actual configured workflow; independent source/rule review and known-answer challenge; measure total preparation plus review burden. Do not accept real patient data under current scope.",
-  "last_command_record": "review/preparation/commands/20261018T101957.055466Z-preparation-browser-download-parity-1a6ba82d/record.json",
-  "updated_at": "2026-10-18T10:22:30.462253+00:00",
+  "last_command_record": "review/web/commands/20261018T110257.304516Z-runtime-integrity-rebuild-e5ebcf3d/record.json",
+  "updated_at": "2026-10-18T11:05:04.555349+00:00",
   "evidence": {
     "gate": "gates/PREPARATION_TECHNICAL.json",
-    "application_tests": 447,
+    "application_tests": 457,
     "historical_viewer_tests": 58,
     "workflow_browser": "review/workflows/BROWSER_REVIEW.md",
     "workflow_downloads": "review/workflows/browser_final/result.json",
@@ -36,28 +38,32 @@
     "new_synthetic_workflow_visit_rows_per_report": 6,
     "preparation_acceptance": "review/preparation/ACCEPTANCE.md",
     "preparation_browser": "review/preparation/BROWSER_REVIEW.md",
-    "synthetic_preparation_rows": 7
+    "synthetic_preparation_rows": 7,
+    "browser_presentation": "review/web/BROWSER_REVIEW.md",
+    "private_deployment": "review/web/HOSTING.json"
   },
   "limitations": [
     "One wide-CSV preparation path; no repeating/longitudinal adapter or vendor certification.",
     "Three actual upload transport failures preserved; later valid/malformed transfers succeeded; root cause unestablished.",
     "No independent human source or case review, real participant pilot or measured workflow benefit.",
-    "Fresh install on same Mac only; no public deployment.",
-    "Existing saved-viewer/OS-print browser limitations retained; no new viewer browser acceptance."
+    "Fresh install and local browser verification on same Mac only. Private deployment exists; hosted calculation remains unverified behind owner sign-in.",
+    "Existing saved-viewer/OS-print browser limitations retained; no new viewer browser acceptance.",
+    "Browser presentation covers one-spreadsheet workflow only; three-table intake and saved comparison remain in local Streamlit.",
+    "No patient-data database or operational clinical service; user explicitly chose owner-private access."
   ],
   "continuation": {
-    "status": "RESEARCH_AND_PREPARATION_TECHNICAL_COMPLETE",
-    "basis": "Direct request to research, build and validate useful honest hackathon prototype.",
-    "baseline_commit": "fbd6000b62315b02df8ef041ff383e55c2ba3c4a",
+    "status": "PRIVATE_BROWSER_DEMO_TECHNICAL_COMPLETE_HOSTED_SIGNIN_UNVERIFIED",
+    "basis": "Direct final-hour request for useful honest demonstration, improved UI, research, hosting and presentation; explicit private access choice.",
+    "baseline_commit": "a668e6ef81376887bddbf338cb0f358e7ce71b54",
     "overall_percentage": null,
-    "stage": "Functioning local synthetic prototype before independent pilot validation",
+    "stage": "Working narrow synthetic demonstration; private deployment with owner-authentication limitation",
     "work": [
-      "Primary-source export/alternative research",
-      "Explicit one-spreadsheet mapping with full provenance",
-      "Actual UI downloads and adverse input checks",
-      "Validation plan and honest hackathon demo"
+      "Browser interface using unchanged Python engine",
+      "Actual browser input/output checks and changed-date challenge",
+      "Primary-source claims and five-slide presentation",
+      "Private hosted deployment and self-contained local backup"
     ],
     "progress_document": "BUILD_PROGRESS.md",
-    "validation": "Current code/app digests bound to full suite, actual file, served-browser downloads and isolated fresh installed package."
+    "validation": "457 application tests; actual local-browser JSON and ZIP-member parity; unchanged core/rule/schema/Streamlit hashes."
   }
 }

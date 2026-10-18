@@ -1,0 +1,241 @@
+Browser tab: 8, Title: "TrialTrace — every finding, explained", URL: "http://127.0.0.1:8504/".
+1 AXWebArea TrialTrace — every finding, explained, URL: 127.0.0.1:8504/
+	2 link Description: Skip to workspace, Value: 127.0.0.1:8504/#content
+	3 container
+		4 link Description: TrialTrace home, Value: 127.0.0.1:8504/#workspace
+		5 text REVIEW WORKSPACE
+		6 container Main navigation
+			7 button Timing review
+			8 button How it works
+			9 button Evidence & scope
+		10 text ✦ Every finding.
+		11 text A clear reason. From a source record to a reviewable answer.
+		12 text  Hackathon demonstration
+		13 text Synthetic participant records only
+	14 container content
+		15 container
+			16 text Clinical trial review /
+			17 text Timing workspace
+			18 text  Engine ready · runs in your browser
+		19 container app
+			20 text PREPARE YOUR REVIEW
+			21 heading Make the meaning explicit., Value: 1
+				22 text Make the meaning explicit.
+			23 text Choose the source columns. We keep every original value.
+			24 button Change file, ID: clear
+			25 container Review progress
+				26 text 1 Choose a file 2 Confirm the mapping 3 Review findings
+			27 container
+				28 text CSV synthetic-wide.csv 7 records · 848 bytes · original file preserved Study identifier
+				29 pop up button (collapsed, settable) Study identifier, Value: trial_ref, ID: map-study_id, Secondary Actions: Expand
+					30 menu
+						31 Choose a column
+						32 (selected) trial_ref
+						33 subject_ref
+						34 clinic
+						35 contact_ref
+						36 dose_ref
+						37 dose_actual
+						38 phone_actual
+						39 contact_state
+						40 operator_note
+				41 text Participant identifier
+				42 pop up button (collapsed, settable) Participant identifier, Value: subject_ref, ID: map-participant_id, Secondary Actions: Expand
+					43 menu
+						44 Choose a column
+						45 trial_ref
+						46 (selected) subject_ref
+						47 clinic
+						48 contact_ref
+						49 dose_ref
+						50 dose_actual
+						51 phone_actual
+						52 contact_state
+						53 operator_note
+				54 text Site identifier
+				55 pop up button (collapsed, settable) Site identifier, Value: clinic, ID: map-site_id, Secondary Actions: Expand
+					56 menu
+						57 Choose a column
+						58 trial_ref
+						59 subject_ref
+						60 (selected) clinic
+						61 contact_ref
+						62 dose_ref
+						63 dose_actual
+						64 phone_actual
+						65 contact_state
+						66 operator_note
+				67 text Call record identifier
+				68 pop up button (collapsed, settable) Call record identifier, Value: contact_ref, ID: map-visit_id, Secondary Actions: Expand
+					69 menu
+						70 Choose a column
+						71 trial_ref
+						72 subject_ref
+						73 clinic
+						74 (selected) contact_ref
+						75 dose_ref
+						76 dose_actual
+						77 phone_actual
+						78 contact_state
+						79 operator_note
+				80 text Vaccination record identifier
+				81 pop up button (collapsed, settable) Vaccination record identifier, Value: dose_ref, ID: map-anchor_id, Secondary Actions: Expand
+					82 menu
+						83 Choose a column
+						84 trial_ref
+						85 subject_ref
+						86 clinic
+						87 contact_ref
+						88 (selected) dose_ref
+						89 dose_actual
+						90 phone_actual
+						91 contact_state
+						92 operator_note
+				93 text Actual vaccination date
+				94 pop up button (collapsed, settable) Actual vaccination date, Value: phone_actual, ID: map-anchor_date, Secondary Actions: Expand
+					95 menu
+						96 Choose a column
+						97 trial_ref
+						98 subject_ref
+						99 clinic
+						100 contact_ref
+						101 dose_ref
+						102 dose_actual
+						103 (selected) phone_actual
+						104 contact_state
+						105 operator_note
+				106 text Actual call date
+				107 pop up button (collapsed, settable) Actual call date, Value: phone_actual, ID: map-actual_date, Secondary Actions: Expand
+					108 menu
+						109 Choose a column
+						110 trial_ref
+						111 subject_ref
+						112 clinic
+						113 contact_ref
+						114 dose_ref
+						115 dose_actual
+						116 (selected) phone_actual
+						117 contact_state
+						118 operator_note
+				119 text Call completion status
+				120 pop up button (collapsed, settable) Call completion status, Value: contact_state, ID: map-visit_status, Secondary Actions: Expand
+					121 menu
+						122 Choose a column
+						123 trial_ref
+						124 subject_ref
+						125 clinic
+						126 contact_ref
+						127 dose_ref
+						128 dose_actual
+						129 phone_actual
+						130 (selected) contact_state
+						131 operator_note
+				132 text Which value means the call actually happened?
+				133 pop up button (collapsed, settable) Which value means the call actually happened?, Value: done, ID: completed, Secondary Actions: Expand
+					134 menu
+						135 Choose the completed-call value
+						136 (selected) done
+						137 entered
+				138 text A completed form does not necessarily mean a completed call. Other values remain unconfirmed. Dates must be YYYY-MM-DD.
+				139 heading Preview of the mapped records, Value: 3
+					140 text Preview of the mapped records
+				141 table
+					142 row
+						143 cell
+							144 text Record
+						145 cell
+							146 text Participant identifier
+						147 cell
+							148 text Actual vaccination date
+						149 cell
+							150 text Actual call date
+						151 cell
+							152 text Call completion status
+					153 row
+						154 cell
+							155 text 1
+						156 cell
+							157 text =SYNTH-PREP-01
+						158 cell
+							159 text 2028-03-03
+						160 cell
+							161 text 2028-03-03
+						162 cell
+							163 text done
+					164 row
+						165 cell
+							166 text 2
+						167 cell
+							168 text SYNTH-PREP-02
+						169 cell
+							170 text 2028-03-04
+						171 cell
+							172 text 2028-03-04
+						173 cell
+							174 text done
+					175 row
+						176 cell
+							177 text 3
+						178 cell
+							179 text SYNTH-PREP-03
+						180 cell
+							181 text 2028-03-01
+						182 cell
+							183 text 2028-03-01
+						184 cell
+							185 text done
+					186 row
+						187 cell
+							188 text 4
+						189 cell
+							190 text SYNTH-PREP-04
+						191 cell
+							192 text 2028-03-01
+						193 cell
+							194 text 2028-03-01
+						195 cell
+							196 text entered
+					197 row
+						198 cell
+							199 text 5
+						200 cell
+							201 text SYNTH-PREP-05
+						202 cell
+							203 text 2028-03-01
+						204 cell
+							205 text 2028-03-01
+						206 cell
+							207 text done
+					208 row
+						209 cell
+							210 text 6
+						211 cell
+							212 text SYNTH-PREP-06
+						213 cell
+							214 text 2028-03-01
+						215 cell
+							216 text 2028-03-01
+						217 cell
+							218 text done
+					219 row
+						220 cell
+							221 text 7
+						222 cell
+							223 text SYNTH-PREP-07
+						224 cell
+							225 text 2028-03-01
+						226 cell
+							227 text 2028-03-01
+						228 cell
+							229 text done
+				230 text Showing 7 of 7 rows. All rows are checked. No dates are guessed or corrected.
+				231 checkbox (settable, integer) Value: 0, ID: confirm, Description: These are synthetic records. I confirm the column meanings and declare that this batch uses the draft Table 21 safety-call rule. This declaration is not independent source approval.
+				232 text These are synthetic records. I confirm the column meanings and declare that this batch uses the draft Table 21 safety-call rule. This declaration is not independent source approval. Actual vaccination → recorded safety call
+				233 text Same Python checker as the local application.
+				234 button (disabled) Review 7 records →, ID: run
+			235 text DEMONSTRATION ONLY
+			236 text Synthetic records · one draft timing rule · independent source review pending
+		237 container
+			238 text Real public protocol. Synthetic participant data. One draft timing rule · Human source review pending
+
+The focused UI element is 1 AXWebArea TrialTrace — every finding, explained, URL: 127.0.0.1:8504/

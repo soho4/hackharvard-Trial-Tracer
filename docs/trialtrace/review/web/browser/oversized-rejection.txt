@@ -1,0 +1,60 @@
+Browser tab: 8, Title: "TrialTrace — every finding, explained", URL: "http://127.0.0.1:8504/".
+1 AXWebArea TrialTrace — every finding, explained, URL: 127.0.0.1:8504/
+	2 link Description: Skip to workspace, Value: 127.0.0.1:8504/#content
+	3 container
+		4 link Description: TrialTrace home, Value: 127.0.0.1:8504/#workspace
+		5 text REVIEW WORKSPACE
+		6 container Main navigation
+			7 button Timing review
+			8 button How it works
+			9 button Evidence & scope
+		10 text ✦ Every finding.
+		11 text A clear reason. From a source record to a reviewable answer.
+		12 text  Hackathon demonstration
+		13 text Synthetic participant records only
+	14 container content
+		15 container
+			16 text Clinical trial review /
+			59 text Timing workspace
+			58 text  Engine ready · runs in your browser
+		60 text This file is too large. Choose a CSV no larger than 1,000,000 bytes.
+		19 container app
+			61 container
+				62 text FROM RECORDS TO REASONS
+				63 heading Every finding. A clear reason., Value: 1
+					64 text Every finding.
+					65 text A clear reason.
+				66 text Check when a trial activity happened. See what falls outside the window, what information is missing, and exactly where to look next.
+			67 text DEMONSTRATION ONLY
+			68 text Synthetic records · one draft timing rule · independent source review pending
+			69 container Review progress
+				70 text 1 Choose a file 2 Confirm the mapping 3 Review findings
+			71 container
+				72 heading Start with your records, Value: 2
+					73 text Start with your records
+				74 text One CSV. One recorded safety call per row.
+				75 button Choose a CSV, ID: choose
+				76 text UTF-8 CSV · up to 500 records · 1 MB Synthetic data only. Files are processed in your browser. Just exploring? Try seven synthetic records with different outcomes.
+				77 button Load demo file, ID: demo
+				78 text Nothing is calculated until you review the mapping and confirm the scope.
+			79 container
+				80 text CURRENT SUPPORTED CHECK
+				81 heading Was the safety call within its timing window?, Value: 2
+					82 text Was the safety call
+					83 text within its timing window?
+				84 text 7–10 calendar days after the actual vaccination
+				85 definition list
+					86 container PUBLIC STUDY
+						87 text PUBLIC STUDY
+					88 text Moderna · mRNA-1273-P301
+					89 container CANDIDATE RULE
+						90 text CANDIDATE RULE
+					91 text Amendment 10 · Table 21 · OL-D8
+					92 container WHAT THIS CHECKS
+						93 text WHAT THIS CHECKS
+					94 text Timing of a recorded call, not medical safety.
+				95 button Read the source & limitations ↗
+		55 container
+			56 text Real public protocol. Synthetic participant data. One draft timing rule · Human source review pending
+
+The focused UI element is 1 AXWebArea TrialTrace — every finding, explained, URL: 127.0.0.1:8504/
